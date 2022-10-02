@@ -1,6 +1,7 @@
 # project-hack2022 - Hacktoberfest 2022
 
-(!) To avoid conflicts, all contributions in the form of files/images, please upload them to the additional-materials directory. i will approve any of it.
+<b>(!) To avoid conflicts, all contributions in the form of files/images, please upload them to the additional-materials directory.
+i will approve any of it. (!)</b>
 
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/firstcontributions/open-source-badges)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
