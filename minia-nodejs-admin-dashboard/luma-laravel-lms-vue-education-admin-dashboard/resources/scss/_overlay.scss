@@ -1,0 +1,48 @@
+//////////////////
+// CARD OVERLAY //
+//////////////////
+
+.overlay {
+  position: relative;
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity .4s, background-color .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    pointer-events: none;
+  }
+  &__action {
+    transition: opacity .4s, transform .4s;
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  &--show {
+    .overlay__content {
+      opacity: 1;
+    }
+    .overlay__action {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &--duserselect {
+    user-select: none;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .overlay--#{$color} {
+    .overlay__content {
+      background-color: rgba($value, .35);
+    }
+    &.overlay--show .overlay__content {
+      background-color: rgba($value, .95);
+    }
+  }
+}

@@ -1,0 +1,382 @@
+/*------------------------------------*/
+/* 6.1 side widgets styles
+/*------------------------------------*/
+.sidebar {
+  section {
+    margin-bottom: 40px;
+  }
+  .widget {
+    color: $theme-bg-dark;
+    ul, ol {
+      list-style: none;
+      @extend .poppins;
+
+    }
+    > ol, > ul {
+      padding-left: 0;
+
+    }
+    li {
+      margin-bottom: 17px;
+      font-weight: 600;
+      ul {
+        margin-top: 17px;
+      }
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 40px;
+      @extend .montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      color: $theme-bg-dark;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #ffd800;
+        position: absolute;
+        bottom: -15px;
+        pointer-events: none;
+      }
+    }
+    a {
+      color: $theme-bg-dark;
+      &:hover {
+        color: $theme-yellow-dark;
+      }
+    }
+    label {
+      @extend .montserrat;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .searchform {
+      label {
+        //display: none;
+      }
+    }
+  }
+
+  .widget_archive, .widget_categories {
+
+    li {
+      //text-align: right;
+      a {
+        //float: left;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .select2-container {
+    @extend .montserrat;
+    margin-top: 10px;
+    width: 100% !important;
+    outline: none;
+    height: 40px;
+  }
+
+  //.widget_search{
+  //  input{
+  //    height: 43px;
+  //    border: none;
+  //    outline: none;
+  //  }
+  //  input[type="text"],input[type="email"],input[type="password"]{
+  //    width: -webkit-calc(100% - 51px);
+  //    width: calc(100% - 50px);
+  //    vertical-align: middle;
+  //    padding-right: 20px;
+  //    padding-left: 20px;
+  //    background: #f0f0f0;
+  //    color: #525252;
+  //  }
+  //  input[type="submit"]{
+  //    background-color: $theme-yellow;
+  //    transition: .2s all;
+  //    text-indent: -999999px;
+  //    width: 50px;
+  //    background-image: url("../images/search-glass.png");
+  //    background-position: center center;
+  //    background-repeat: no-repeat;
+  //    vertical-align: middle;
+  //    margin-left: -4px;
+  //    &:hover{
+  //      background-color: $theme-yellow-dark;
+  //    }
+  //  }
+  //}
+  .widget_tag_cloud {
+    a {
+      display: inline-block;
+      @extend .poppins;
+      font-size: 12px !important;
+      background: #f8f8f8;
+      padding: 9px 20px;
+      margin-bottom: 5px;
+      color: $light-gray-text;
+      &:hover {
+        background: #ffd800;
+        color: $theme-bg-dark !important;
+      }
+    }
+  }
+}
+
+.selection {
+  &:focus {
+    outline: none;
+  }
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $theme-yellow;
+  color: $theme-bg-dark;
+
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 0;
+  border: none;
+  background: #f0f0f0;
+}
+
+.select2-container .select2-selection--single {
+  height: 42px;;
+  outline: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 0;
+  width: 50px;
+  height: 42px;
+  background: $theme-yellow;
+}
+
+.select2-container--open {
+  .select2-dropdown--below, .select2-dropdown--above {
+    border-radius: 0;
+    border-color: #f0f0f0;
+    @extend .montserrat;
+  }
+}
+
+.select2-results__option {
+
+}
+
+.widget_calendar {
+  table {
+    width: 100%;
+  }
+  caption {
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  th, td {
+    text-align: center;
+  }
+  tfoot {
+    padding-top: 10px;
+    td {
+      padding-top: 10px;
+    }
+  }
+}
+
+/*------------------------------------*/
+/* 6.2 footer widgets styles
+/*------------------------------------*/
+
+.footer-widgets-area {
+  background: $theme-bg-dark;
+  padding-top: 50px;
+  color: #b8b8b8;
+  @extend .montserrat;
+  a {
+    color: $footer-text;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  h3 {
+    margin-top: 0;
+    color: #ffffff;
+    @extend .montserrat-bold;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+    }
+  }
+  .widget {
+    margin-bottom: 50px;
+    li {
+      margin-bottom: 25px;
+      ul {
+        padding-left: 10px;
+      }
+      li {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .widget.inspiry_recent_posts_with_thumbnails {
+    ul {
+      li {
+        &:hover {
+          background: #121212;
+        }
+      }
+    }
+  }
+
+  .select2-container {
+    width: 100% !important;
+  }
+
+}
+
+.widget_search {
+  input {
+    height: 43px;
+    border: none;
+    outline: none;
+  }
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
+    width: -webkit-calc(100% - 51px);
+    width: calc(100% - 51px);
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #f0f0f0;
+    color: #525252;
+  }
+  input[type="submit"] {
+    background-color: $theme-yellow;
+    transition: .2s all;
+    text-indent: -999999px;
+    width: 50px;
+    background-image: url("../images/search-glass.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: -4px;
+    &:hover {
+      background-color: $theme-yellow-dark;
+    }
+  }
+}
+
+.widget.inspiry_recent_posts_with_thumbnails {
+  ul {
+    margin-left: -10px;
+    li {
+      margin-bottom: 0;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      &:hover {
+        background: #f0f0f0;
+      }
+      a {
+        display: inline-block;
+        img {
+          max-width: 60px;
+        }
+      }
+      .widget-thumb {
+        padding-right: 20px;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .list-heading {
+        //padding-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.widget.inspiry_contact_list {
+  ul {
+    li {
+      padding-left: 35px;
+      position: relative;
+      padding-top: 5px;
+      &:before {
+        font-family: FontAwesome;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        font-size: 20px;
+      }
+    }
+
+    .phone {
+      &:before {
+        content: "\f095";
+      }
+    }
+    .fax {
+      &:before {
+        content: "\f1ac";
+      }
+    }
+    .email {
+      &:before {
+        content: "\f0e0";
+      }
+    }
+    .location {
+      &:before {
+        content: "\f041";
+        left: 4px;;
+      }
+    }
+  }
+}
+
+.widget.inspiry_builderpress_services {
+  li {
+
+    padding-left: 30px;
+    position: relative;
+    &:before {
+      content: url("../images/widget-services-bullets.png");
+      position: absolute;
+      left: 0;
+      top: 1px;
+    }
+  }
+}
+
+abbr[title]{
+  border-bottom: 0 ;
+}

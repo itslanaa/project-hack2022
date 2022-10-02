@@ -1,0 +1,28 @@
+/*-------------------------------------------
+  -- Shape Mask
+-------------------------------------------*/
+.ts-shape-mask__up {
+  &:before {
+    background-image: url("../../assets/img/bg-shape-mask-up.png");
+    background-size: cover;
+    content: "";
+    left: 0;
+    height: 60px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+}
+
+.ts-shape-mask__down {
+  &:after {
+    background-image: url("../../assets/img/bg-shape-mask-down.png");
+    background-size: cover;
+    bottom: -1px;
+    content: "";
+    left: 0;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+  }
+}

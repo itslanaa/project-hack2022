@@ -1,0 +1,194 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+////////////
+// BUTTON //
+////////////
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: $btn-text-transform;
+
+  &--raised {
+    @include mdc-elevation-mixins.elevation(10, $shadow-baseline-color, $shadow-opacity-boost);
+  }
+}
+
+.button-list > .btn,
+.button-list > .btn-group {
+  margin-bottom: .75rem;
+  margin-left: .5rem;
+}
+
+///////////////////////////////////////////
+// Clear default styles from button tags //
+///////////////////////////////////////////
+
+.btn-flush {
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  color: inherit;
+}
+
+///////////////////////////
+// Dropdown toggle caret //
+///////////////////////////
+
+.dropdown-toggle::after {
+  align-self: center;
+}
+
+///////////
+// ICONS //
+///////////
+
+.btn .material-icons {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/////////////
+// ROUNDED //
+/////////////
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+///////////////////////////////////
+// Disable dropdown toggle caret //
+///////////////////////////////////
+
+.dropdown-toggle[data-caret="false"]::after {
+  display: none;
+}
+
+/////////////////////////////////////////////
+// Add a secondary line of text to buttons //
+/////////////////////////////////////////////
+
+.btn__secondary-text {
+  display: block;
+  margin-top: -2px;
+  font-size: .925rem;
+}
+
+///////////////////////////////////////////
+// Override Bootstrap color-yiq contrast //
+///////////////////////////////////////////
+
+.btn-success,
+.btn-warning {
+  &:not(:hover) {
+    color: $white;
+  }
+}
+
+.btn-outline-light {
+  color: color-yiq($light);
+  border-color: color-yiq($light);
+}
+
+.btn-outline-success,
+.btn-outline-warning {
+  @include hover {
+    color: $white;
+  }
+}
+
+//////////////////////////////////////
+// A darker version of .btn-primary //
+//////////////////////////////////////
+
+.btn-primary--dark {
+  @include button-variant($primary-dark, $primary-dark);
+  color: #fff;
+}
+
+////////////////////
+// Secondary Text //
+////////////////////
+
+.btn-primary,
+.btn-primary--dark {
+  .btn__secondary-text {
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
+//////////////////
+// Black Button //
+//////////////////
+
+.btn-black {
+  @include button-variant($black, $black);
+}
+
+////////////////////
+// A white button //
+////////////////////
+
+.btn-white {
+  @include button-variant(#fff, #fff);
+  .btn__secondary-text {
+    color: rgba(0, 0, 0, .3);
+  }
+}
+
+.btn-outline-white {
+  @include button-outline-variant(#fff, $primary);
+  .btn__secondary-text {
+    color: rgba(255,255,255, .54);
+  }
+  @include hover-focus {
+    .btn__secondary-text { 
+      color: rgba($black, .5);
+    }
+  }
+}
+
+//////////////////////////////////////
+// .btn-block on small screens only //
+//////////////////////////////////////
+
+@include media-breakpoint-only(xs) {
+  .btn-block-xs {
+    display: block;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+///////////////////////////////////
+// .btn-sm on small screens only //
+///////////////////////////////////
+
+@include media-breakpoint-only(xs) {
+  .btn-group-xs > .btn {
+    @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm);
+  }
+}
+
+.btn-light {
+  @include button-variant(#EDF0F2, #EDF0F2);
+}
+
+.btn-accent-yellow {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+  }
+}
+
+.badge-accent-yellow {
+  color: white;
+}

@@ -1,0 +1,28 @@
+.navbar-dark {
+  .navbar-border {
+    border-color: $navbar-dark-toggler-border-color !important;
+  }
+
+  .badge-notifications {
+    border: 1px solid $dark;
+  }
+
+  .navbar-text-50 { color: rgba($white, .5); }
+  .navbar-text-70 { color: rgba($white, .7); }
+  .navbar-text-100 { color: $white; }
+
+  .navbar-btn {
+    @extend .btn-black;
+  }
+
+  .navbar-search {
+    @extend .search-form--black;
+  }
+
+  &.navbar--active-undeline {
+    .navbar-nav > .active > .nav-link::before,
+    .navbar-nav .nav-link.active::before {
+      background-color: white;
+    }
+  }
+}

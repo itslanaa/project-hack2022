@@ -1,0 +1,11 @@
+<md-bottom-sheet class="md-list md-has-header bottomsheet--list">
+  <md-subheader>Comment Actions</md-subheader>
+  <md-list>
+    <md-item ng-repeat="item in items">
+      <md-button aria-label="{{item.name}}" ng-click="listItemClick($index)">
+        <md-icon class="{{item.icon_class}}" md-svg-src="{{item.icon}}"></md-icon>
+        <span class="md-inline-list-icon-label">{{ item.name }}</span>
+      </md-button>
+    </md-item>
+  </md-list>
+</md-bottom-sheet>

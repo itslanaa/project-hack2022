@@ -1,0 +1,66 @@
+---
+title: Staff
+slug: staff
+---
+{% extends "layouts/fluid.html" %}
+
+{% block page %}
+<div class="page__header">
+  <div class="container-fluid page__container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+        <h1>Staff</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Staff</li>
+          </ol>
+        </nav>
+      </div>
+      <a href="" class="btn btn-success ml-3">Add New</a>
+    </div>
+  </div>
+</div>
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+
+<div class="container-fluid page__container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="inlineFormFilterBy">Filter by:</label>
+              <input type="text" class="form-control" id="inlineFormFilterBy" placeholder="Type a name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="inlineFormRole">Role</label>
+              <select id="inlineFormRole" class="custom-select">
+                <option value="All Roles">All Roles</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="inlineFormPurchase">
+                <label class="custom-control-label" for="inlineFormPurchase">Made a Purchase?</label>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-success">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="card">
+        {% include 'pages/_staff.table.html' %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

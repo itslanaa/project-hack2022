@@ -1,0 +1,303 @@
+<!-- Logo -->
+<div class="logo" data-ng-controller="AdminAppCtrl">
+    <a class="logo-link" href="#/">
+      <md-icon md-svg-src="dist/img/icons/ic_whatshot_24px.svg"></md-icon>
+        <!--<span>{{info.theme_name}}</span>-->
+    </a>
+    <div class="form-group logo-search">
+        <div>
+            <input type="text" class="form-control" placeholder="Search site">
+            <span class="icon glyphicon glyphicon-search"></span>
+        </div>
+    </div>
+</div>
+<header class="clearfix md-whiteframe-z1">
+
+<div class="top-nav">
+<ul class="nav-left list-unstyled">
+    <li>
+        <!-- needs to be put after logo to make it working-->
+        <div class="menu-button" toggle-off-canvas>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+
+    </li>
+    <li>
+        <a md-ink-ripple="#bbb" href="#/" data-toggle-min-nav
+           class="toggle-min"
+                ><i class="fa fa-list color-white"></i></a>
+    </li>
+
+
+</ul>
+
+<ul class="nav-left pull-left list-unstyled list-notifications">
+    <li class="dropdown list-notifications__item">
+        <a  md-ink-ripple="#8C8C8C" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+           <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_access_alarms_24px.svg"></md-icon>
+          <md-tooltip>
+            Messages
+          </md-tooltip>
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 2 messages.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                        <span class="pull-left media-icon">
+                            <span class="circle-icon sm bg-info">
+                              <!--<i class="fa fa-comment-o"></i>-->
+                              <md-icon class="color-white" md-svg-src="dist/img/icons/ic_comment_24px.svg"></md-icon>
+                            </span>
+                        </span>
+
+                        <div class="media-body">
+                            <span class="block">Jane sent you a message</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-danger">
+                                          <md-icon class="color-white" md-svg-src="dist/img/icons/ic_comment_24px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lynda sent you a mail</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all messages.</a>
+            </div>
+        </div>
+    </li>
+    <li class="dropdown list-notifications__item">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <md-icon  md-ink-ripple="#8C8C8C" class="color-primary" md-svg-src="dist/img/icons/ic_mail_24px.svg"></md-icon>
+          <md-tooltip>
+            Mails
+          </md-tooltip>
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 3 mails.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-warning">
+                                          <md-icon class="color-white" md-svg-src="dist/img/icons/ic_email_24px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lisa sent you a mail</span>
+                            <span class="text-muted block">2min ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-info">
+                                          <md-icon class="color-white" md-svg-src="dist/img/icons/ic_email_24px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Jane sent you a mail</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-success">
+                                          <md-icon class="color-white" md-svg-src="dist/img/icons/ic_email_24px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lynda sent you a mail</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all mails.</a>
+            </div>
+        </div>
+    </li>
+    <li class="dropdown list-notifications__item">
+        <a md-ink-ripple="#8C8C8C" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <md-icon  md-ink-ripple="#8C8C8C" class="color-primary" md-svg-src="dist/img/icons/ic_notifications_active_24px.svg"></md-icon>
+          <md-tooltip>
+            Notifications
+          </md-tooltip>
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 3 notifications.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-success">
+                                          <md-icon class="colo-white" md-svg-src="dist/img/icons/ic_assignment_48px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">New tasks needs to be done</span>
+                            <span class="text-muted block">2min ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-info">
+                                          <md-icon class="colo-white" md-svg-src="dist/img/icons/ic_lock_open_48px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Change your password</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-danger">
+                                          <md-icon class="colo-white" md-svg-src="dist/img/icons/ic_phonelink_off_24px.svg"></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">New feature added</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all notifications.</a>
+            </div>
+        </div>
+    </li>
+  <li class="list-notifications__item" ng-controller="UserSwitchColorsCtrl">
+    <a md-ink-ripple="#8C8C8C" href="javascript:;" ng-click="showGridBottomSheet($event)" class="">
+      <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_settings_brightness_24px.svg"></md-icon>
+      <md-tooltip>
+        Change theme colors
+      </md-tooltip>
+    </a>
+  </li>
+    <li class="list-notifications__item">
+        <a md-ink-ripple="#8C8C8C" href="#/tasks" class="">
+          <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_assignment_48px.svg"></md-icon>
+          <md-tooltip>
+            My todo list
+          </md-tooltip>
+        </a>
+    </li>
+  <li class="list-notifications__item" ng-controller="NavCtrl">
+    <a md-ink-ripple="#8C8C8C" ng-click="toggleAlternativeMenu()" class="">
+      <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_radio_button_checked_24px.svg"></md-icon>
+      <md-tooltip>
+        Toggle alternate menu
+      </md-tooltip>
+    </a>
+  </li>
+</ul>
+
+
+<ul class="nav-button pull-right list-unstyled" ng-controller="RightNavbarCtrl">
+    <li>
+        <a md-ink-ripple="#bbb" ng-click="toggleRightNavbar()" href="javascript:;" class="">
+          <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_format_align_right_24px.svg"></md-icon>
+        </a>
+    </li>
+</ul>
+
+<ul class="nav-button pull-right list-unstyled">
+
+    <li class="dropdown text-small nav-profile">
+        <a md-ink-ripple="#bbb" href="javascript:;" class="dropdown-toggle text-muted" data-toggle="dropdown" aria-expanded="false">
+            <span class="nav-profile__welcome-text"><i class="fa fa-angle-down"></i>&nbsp; Welcome John Doe &nbsp; </span><img src="dist/images/user.png" alt="" class="img30_30">
+        </a>
+
+        <div class="dropdown-menu pull-right panel panel-default">
+
+            <ul class="list-group">
+
+                <li class="list-group-item--header">
+                  Profile settings
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#/pages/profile">
+
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#/tasks">
+
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/contact">
+
+                    <span>Contact</span>
+                  </a>
+                </li>
+
+            </ul>
+            <div class="panel-footer">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#/pages/lock-screen">
+                    <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_lock_48px.svg"></md-icon>
+                    <span>Lock</span>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/pages/signin">
+                    <md-icon class="color-danger" md-svg-src="dist/img/icons/ic_exit_to_app_24px.svg"></md-icon>
+                    <span>Log out</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+        </div>
+    </li>
+
+</ul>
+
+</div>
+
+</header>
+
+

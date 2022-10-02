@@ -1,0 +1,131 @@
+.card {
+  
+  box-shadow: 0 1px 2px 0 rgba(0,0,0, .05);
+  margin-bottom: $grid-gutter-width / 2;
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.card-body {
+  padding: $card-spacer-y $card-spacer-x;
+}
+
+.card-margin { 
+  margin-bottom: $grid-gutter-width / 2;
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.form-row .card.form-row__card {
+  margin-bottom: 10px;
+}
+
+.card-list > .card:last-child {
+  margin-bottom: 0;
+}
+
+.card-group {
+  @include media-breakpoint-up(sm) {
+    margin-bottom: $grid-gutter-width;
+    @if $enable-rounded {
+      @include border-radius($card-border-radius);
+    }
+    > .card {
+      box-shadow: none;
+      border: $card-border-width solid $card-border-color;
+    }
+  }
+}
+
+.card-header__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  font-family: $font-family-base;
+  letter-spacing: 0;
+  color: $headings-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .active & {
+    color: $primary;
+  }
+}
+
+.card-header-large {
+  padding-top: 1.4375rem;
+  padding-bottom: 1.4375rem;
+}
+
+
+.card-header-sm {
+  padding-top: .85rem;
+  padding-bottom: .85rem;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-body-lg {
+  padding: 1.6875rem;
+}
+.card-body-x-lg {
+  padding-left: 1.6875rem;
+  padding-right: 1.6875rem;
+}
+
+.card__course {
+  .card-header-dark {
+    vertical-align: middle;
+    .card-header__title, 
+    .card-header__title a {
+      color: #ffffff;
+      &:hover { 
+        text-decoration: none;
+      }
+      .course__title { 
+        color: rgba(255,255,255,.54); 
+        display: block; 
+        font-size: .9rem; 
+        margin-bottom: 5px; 
+      }
+    }
+  }
+  .card-header {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+///////////////////////////////////////////////////////
+// CARD GROUP combined with GRID                     //
+//                                                   //
+// <div class="row card-group-row">                  //
+//   <div class="col-md-4 card-group-row__col">      //
+//     <div class="card card-group-row__card"></div> //
+//   </div>                                          //
+// </div>                                            //
+///////////////////////////////////////////////////////
+
+.card-group-row {
+  display: flex;
+  flex-flow: row wrap;
+  &__col {
+    display: flex;
+  }
+  &__card {
+    flex: 1 0 0;
+  }
+}
+.card-margin-md-negative-40 {
+  @include media-breakpoint-up(md) {
+    margin-top:-40px !important;
+  }
+}

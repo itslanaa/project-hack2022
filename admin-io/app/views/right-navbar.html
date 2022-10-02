@@ -1,0 +1,62 @@
+<md-toolbar class="md-primary">
+  <h1 class="md-toolbar-tools">My navigation menu</h1>
+</md-toolbar>
+<md-content ng-controller="RightNavbarCtrl" class="">
+
+  <div class="messagesList">
+
+    <div ng-controller="ToolbarShrinkDemoCtrl" layout="column" flex layout-fill>
+      <md-content style="height: 350px;">
+        <md-list>
+          <md-list-item class="md-3-line" ng-repeat="item in todos">
+            <img ng-src="{{item.face}}" alt="{{item.who}}" class="face">
+
+            <div class="md-list-item-text">
+              <h3>{{item.what}}</h3>
+              <h4>{{item.who}}</h4>
+
+              <p>
+                {{item.notes}}
+              </p>
+            </div>
+            <md-divider md-inset ng-if="!$last"></md-divider>
+          </md-list-item>
+        </md-list>
+      </md-content>
+    </div>
+
+  </div>
+
+  <br/>
+
+  <section class="md-content-section">
+    <md-content>
+      <div>
+        <section class="panel-box text-center">
+          <ul class="list-justified text-center">
+            <li>
+              <p class="size-h2 color-info"><i class="wi wi-cloudy"></i></p>
+              <p class="text-muted">Tuesday</p>
+            </li>
+            <li>
+              <p class="size-h2 color-warning"><i class="wi wi-day-thunderstorm"></i></p>
+              <p class="text-muted">Wednesday</p>
+            </li>
+            <li>
+              <p class="size-h2 color-danger"><i class="wi wi-day-snow"></i></p>
+              <p class="text-muted">Thursday</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </md-content>
+  </section>
+
+  <div class="text-center">
+    <md-button ng-click="close()" class="md-accent md-raised btn-width-medium">
+      <md-icon md-svg-src="dist/img/icons/ic_format_align_left_24px.svg"></md-icon>
+      Close Sidenav
+    </md-button>
+  </div>
+
+</md-content>

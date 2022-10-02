@@ -1,0 +1,356 @@
+/////////////
+// FLEXBOX //
+/////////////
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .flex#{$infix} {
+      flex: 1 1 0% !important;
+    }
+    .flex#{$infix}-none,
+    .flex#{$infix}-0 {
+      flex: none !important;
+    }
+    .flex#{$infix}-grow {
+      flex: 1 1 auto !important;
+    }
+    .flex#{$infix}-shrink-0 {
+      flex-shrink: 0 !important;
+    }
+  }
+}
+
+////////////
+// SIZING //
+////////////
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
+  }
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+////////////////////
+// TEXT UTILITIES //
+////////////////////
+
+.text-underline {
+  text-decoration: underline;
+}
+
+///////////////////
+// SOCIAL COLORS //
+///////////////////
+
+.text-facebook {
+  color: #3b5998;
+}
+.text-twitter {
+  color: #0084b4;
+}
+.text-dribbble {
+  color: #ea4c89;
+}
+
+.hover-text-decoration-0 {
+  @include hover-focus {
+    text-decoration: none;
+  }
+}
+
+.lh-1 {
+  line-height: 1rem;
+}
+
+.text-20, .text-black-20 { color: rgba($body-color, .2) !important; }
+.text-50, .text-black-50 { color: rgba($body-color, .5) !important; }
+.text-70, .text-black-70 { color: rgba($body-color, .7) !important; }
+.text-100, .text-black-100 { color: $body-color !important; }
+.text-white-20 { color: rgba($white, .2) !important; }
+.text-white-50 { color: rgba($white, .5) !important; }
+.text-white-60 { color: rgba($white, .6) !important; }
+.text-white-70 { color: rgba($white, .7) !important; }
+
+/////////////
+// SPACING //
+/////////////
+
+.mb-heading {
+  margin-bottom: $headings-margin-bottom !important;
+}
+.mb-grid-gutter {
+  margin-bottom: $grid-gutter-width !important;
+}
+.mb-card-y {
+  margin-bottom: $card-spacer-y;
+}
+@include media-breakpoint-only(xs) {
+  .p-0-xs {
+    padding: 0 !important;
+  }
+}
+
+//////////
+// GRID //
+//////////
+
+.col {
+  padding-left:  $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+}
+
+///////////
+// ICONS //
+///////////
+
+.icon--left {
+  margin-right: .5rem;
+}
+.icon--right {
+  margin-left: .5rem;
+}
+
+//////////////
+// POSITION //
+//////////////
+
+.fullbleed {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0;
+}
+
+.position-absolute-top,
+.absolute-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+////////////////
+// VISIBILITY //
+////////////////
+
+.o-hidden {
+  overflow: hidden !important;
+}
+
+@include media-breakpoint-only(sm) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+//////////////
+// STACKING //
+//////////////
+
+@each $value in (0, 1, 2) {
+  .z-#{$value} {
+    z-index: $value;
+  }
+}
+
+/////////////////
+// BACKGROUNDS //
+/////////////////
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+.bg-alt {
+  background: $alt !important;
+}
+.bg-body {
+  background-color: $body-bg !important;
+}
+.bg-transparent {
+  background: transparent !important;
+}
+.bg-darker {
+  background-color: darken($dark, 3%) !important;
+}
+.bg-gradient-purple {
+  background-image: linear-gradient(-128deg, #8A4182 0%, #3289DC 100%);
+}
+.bg-gradient-primary {
+  background-image: $primary-gradient;
+}
+.bg-dark-blue {
+  background-color: $dark-blue !important;
+}
+.bg-dark-purple {
+  background: $primary-purple !important;
+}
+
+//////////////////////
+// BORDER UTILITIES //
+//////////////////////
+
+@each $size in (1, 2, 3, 4) {
+  .border-#{$size} {
+    border: #{$size}px solid $border-color !important;
+  }
+  @each $position in (left, right, top, bottom) {
+    .border-#{$position}-#{$size} {
+      border-#{$position}: #{$size}px solid $border-color !important;
+    }
+    .border-#{$position}-#{$size} {
+      border-#{$position}: #{$size}px solid $border-color !important;
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}         { border: $border-width solid $border-color !important; }
+    .border-top#{$infix}     { border-top: $border-width solid $border-color !important; }
+    .border-right#{$infix}   { border-right: $border-width solid $border-color !important; }
+    .border-bottom#{$infix}  { border-bottom: $border-width solid $border-color !important; }
+    .border-left#{$infix}    { border-left: $border-width solid $border-color !important; }
+
+    .border#{$infix}-0        { border: 0 !important; }
+    .border-top#{$infix}-0    { border-top: 0 !important; }
+    .border-right#{$infix}-0  { border-right: 0 !important; }
+    .border-bottom#{$infix}-0 { border-bottom: 0 !important; }
+    .border-left#{$infix}-0   { border-left: 0 !important; }
+
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+  @each $position in (left, right, top, bottom) {
+    .border-#{$position}-#{$color} {
+      border-#{$position}-color: $value !important;
+    }
+  }
+}
+
+.border-bottom-white {
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+////////////////
+// FLEX ORDER //
+////////////////
+
+@each $order in (0, 1, 2) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      .order#{$infix}-#{$order} {
+        order: $order !important;
+      }
+    }
+  }
+}
+
+.position-close-4pt {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  display: flex;
+}
+
+.text-white-100 {
+  color: white !important;
+}
+
+.text-shadow {
+  text-shadow: rgba($card-shadow-base-color, 0.2) 0px 9px 10px;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  white-space: nowrap;
+}
+
+.text-headings { font-family: $headings-font-family !important; }
+
+.lh-24pt {
+  line-height: 1.5rem;
+}
+
+.bg-dark-blue {
+  background-image: $dark-blue;
+}
+
+.bg-purple-gradient {
+  background-image: $purple-gradient; 
+}
+
+.bg-black,
+.bg-black-100 {
+  background-color: $black !important;
+}
+
+.bg-black-50 {
+  background-color: rgba($black, .5) !important;
+}
+
+.bg-black-20 {
+  background-color: rgba($black, .2) !important;
+}
+
+.p-card-header {
+  padding: $card-spacer-y $card-spacer-x;
+}
+
+.link-date {
+  color: $link-color;
+  position: relative;
+  overflow: hidden;
+  background: rgba($primary, .05);
+  padding: 2px 4px;
+  border-radius: 2px;
+  
+  &::after {
+    content: "................................................................";
+    color: rgba($body-color, .4);
+    font-size: .75rem;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    top: .525rem;
+    white-space: nowrap;
+  }
+
+  @include hover {
+    text-decoration: none;
+  }
+}

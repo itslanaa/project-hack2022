@@ -1,0 +1,98 @@
+
+.page-lock .lock-centered {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -65px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-lock .lock-centered {
+    margin-top: -75px;
+  }
+}
+
+.page-lock .lock-container {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.page-lock .lock-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.page-lock .lock-box .lock-user {
+  background: #fff;
+  width: 50%;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 50px;
+  padding: 0 20px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: $color--primary;
+}
+
+.page-lock .lock-box .lock-img img {
+  position: absolute;
+  @include border-radius(50%);
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #fff;
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-lock .lock-box .lock-img img {
+    left: 33%;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #fff;
+  }
+}
+
+.page-lock .lock-box .lock-pwd {
+  background: #fff;
+  width: 50%;
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 0 0 50px;
+  margin-top: 50px;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: $color--primary;
+}
+
+@media screen and (min-width: 768px) {
+  .page-lock .lock-box .lock-pwd {
+    padding: 0 0 0 80px;
+  }
+}
+
+.page-lock .lock-box .lock-pwd input {
+  width: 80%;
+  height: 50px;
+  color: #3F4245;
+  border: 0;
+}
+
+.page-lock .lock-box .lock-pwd .btn-submit {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}

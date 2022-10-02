@@ -1,0 +1,52 @@
+{% macro component(
+  pages=2, 
+  first=false, 
+  prev=true, 
+  next=true, 
+  last=false,
+  labels=false,
+  align='left',
+  class='') %}
+<ul class="pagination{% if align === 'center' %} justify-content-center{% endif %}{% if align === 'right' %} justify-content-end{% endif %} {{ class }}">
+  {% if first %}
+  <li class="page-item disabled">
+    <a class="page-link" href="#" aria-label="Previous">
+      <span aria-hidden="true" class="material-icons">first_page</span>
+      <span{% if not labels %} class="sr-only"{% endif %}>First</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if prev %}
+  <li class="page-item disabled">
+    <a class="page-link" href="#" aria-label="Previous">
+      <span aria-hidden="true" class="material-icons">chevron_left</span>
+      <span{% if not labels %} class="sr-only"{% endif %}>Prev</span>
+    </a>
+  </li>
+  {% endif %}
+  {% for page in range(pages) %}
+  <li class="page-item{% if loop.index === 1 %} active{% endif %}">
+    <a class="page-link" href="#" aria-label="{{ loop.index }}">
+      <span>{{ loop.index }}</span>
+    </a>
+  </li>
+  {% endfor %}
+  {% if next %}
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+      <span{% if not labels %} class="sr-only"{% endif %}>Next</span>
+      <span aria-hidden="true" class="material-icons">chevron_right</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if last %}
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+      <span{% if not labels %} class="sr-only"{% endif %}>Last</span>
+      <span aria-hidden="true" class="material-icons">last_page</span>
+    </a>
+  </li>
+  {% endif %}
+</ul>
+{% endmacro %}
+{{ component() }}

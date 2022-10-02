@@ -1,0 +1,159 @@
+///////////////////////////////
+// NAV button secondary text //
+///////////////////////////////
+
+.nav-link__secondary-text {
+  display: block;
+  margin-top: -2px;
+  font-size: .825rem;
+}
+
+///////////////
+// Nav links //
+///////////////
+
+.nav-link {
+  color: $text-muted;
+  display: flex;
+}
+
+/////////////////////
+// Flush nav links //
+/////////////////////
+
+.nav--flush .nav-link {
+  padding: 0;
+}
+
+///////////////////////////
+// Simple nav with links //
+///////////////////////////
+
+.nav-link.active,
+.active .nav-link {
+  font-weight: 500;
+  color: $body-color;
+}
+
+//////////
+// TABS //
+//////////
+
+.nav-tabs--flush {
+  .nav-link {
+    border: none;
+    @include hover-focus {
+      border-color: transparent;
+    }
+  }
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    background-color: transparent;
+  }
+}
+
+.nav-tabs--active-bg {
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+.nav-tabs--active-underline {
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    border: none;
+    border-bottom: 4px solid $primary;
+  }
+}
+
+//////////////////////////////
+// Card with tab navigation //
+//////////////////////////////
+
+.card-nav {
+  z-index: 0;
+  .nav-tabs {
+    border-bottom: none;
+    z-index: 2;
+    position: relative;
+    .nav-item {
+      margin-bottom: 0;
+    }
+    .nav-link:not(.active) {
+      @include hover {
+        border-color: transparent;
+      }
+    }
+  }
+  .tab-content {
+    @extend .card;
+  }
+  @include media-breakpoint-up(sm) {
+    &:not(&--vertical) {
+      .nav-tabs {
+        padding: 0 $card-spacer-x;
+      }
+      .tab-content {
+        margin-top: -$nav-tabs-border-width;
+      }
+    }
+  }
+  &--vertical {
+    .nav-tabs {
+      flex-direction: column;
+    }
+    @include media-breakpoint-down(md) {
+      .nav-tabs .active {
+        border-color: $card-border-color;
+      }
+      .nav-tabs {
+        margin-bottom: $card-spacer-y;
+        .nav-link {
+          @include border-radius($nav-tabs-border-radius);
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: $spacer;
+      .tab-content {
+        overflow: hidden;
+        margin-bottom: 0;
+        flex: 1;
+        &:last-child {
+          margin-left: -$nav-tabs-border-width;
+        }
+        &:first-child {
+          margin-right: -$nav-tabs-border-width;
+        }
+      }
+      .nav-tabs {
+        padding: $card-spacer-x 0;
+        &:last-child {
+          .nav-link.active,
+          .nav-item.show .nav-link {
+            border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-bg;
+          }
+          .nav-link {
+            @include border-right-radius($nav-tabs-border-radius);
+            @include border-left-radius(0);
+          }
+        }
+        &:first-child {
+          .nav-link.active,
+          .nav-item.show .nav-link {
+            border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-bg $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color;
+          }
+          .nav-link {
+            @include border-left-radius($nav-tabs-border-radius);
+            @include border-right-radius(0);
+          }
+        }
+      }
+    }
+  }
+}

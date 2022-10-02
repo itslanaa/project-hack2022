@@ -1,0 +1,68 @@
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mtn-30 {
+    margin-top: -30px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+.mtn-35 {
+    margin-top: -35px;
+}
+
+// section-padding
+.section-py {
+    padding: 40px 0px;
+}
+.section-pt-100 {
+    padding-top: 100px;
+}
+.section-pt {
+    padding-top: 40px;
+}
+.section-pb {
+    padding-bottom: 40px;
+}
+.section-pt-150 {
+    padding-top: 150px;
+    //res
+    @include max-screen(1199) {
+        padding-top: 100px;
+    }
+}
+.section-pb-150 {
+    padding-bottom: 150px;
+    //res
+    @include max-screen(1199) {
+        padding-bottom: 100px;
+    }
+}
+.section-ptb-150 {
+    padding: 150px 0;
+    //res
+    @include max-screen(1199) {
+        padding: 100px 0;
+    }
+}
+
+
+// section-margin
+.section-mt {
+    margin-top: 40px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pb-90 {
+    padding-bottom: 90px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}

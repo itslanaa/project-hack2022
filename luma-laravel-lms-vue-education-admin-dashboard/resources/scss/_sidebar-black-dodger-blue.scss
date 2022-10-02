@@ -1,0 +1,219 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.sidebar-black-dodger-blue {
+
+  @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+
+  /////////////
+  // general //
+  /////////////
+  
+  color: $sidebar-dark-text-color;
+  background: $black-dodger-blue;
+
+  // borders
+  @each $direction, $border-direction in (left: right, right: left) {
+    &.sidebar-#{$direction} {
+      border-#{$border-direction}-width: $sidebar-dark-container-border-width;
+      border-#{$border-direction}-style: solid;
+      border-#{$border-direction}-color: $sidebar-dark-container-border-color;
+    }
+  }
+
+  // link
+  .sidebar-link {
+    color: $sidebar-dark-link-color;
+  }
+
+  // borders
+  [class*="sidebar-b-"] {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+
+  // text
+  .sidebar-text, 
+  .text-100, 
+  p {
+    color: white !important;
+  }
+
+  .text-50 {
+    color: rgba($sm-dark-blue-button-color, .5) !important;
+  }
+
+  // heading
+  .sidebar-heading {
+    &, & > a {
+      color: $sidebar-dark-blue-heading-color;
+    }
+  }
+
+  // divider
+  hr {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+
+  // brand
+  .sidebar-brand {
+    color:  $sidebar-dark-brand-color;
+  }
+  .sidebar-brand-bg {
+    background: $sidebar-dark-brand-bg;
+  }
+  .sidebar-brand-border {
+    border-color: $sidebar-dark-brand-border-color;
+  }
+
+  //////////
+  // menu //
+  //////////
+  
+  .sidebar-menu-button {
+    color: $sm-dark-blue-button-color;
+  }
+  .sidebar-menu-toggle-icon {
+    color: $sm-dark-toggle-color;
+  }
+  .sidebar-menu-icon {
+    color: $sm-dark-blue-icon-color;
+  }
+  .sidebar-menu-button:hover {
+    color: $sm-dark-hover-button-color;
+    background: $sm-dark-blue-hover-button-bg;
+    .sidebar-menu-icon {
+      color: $sm-dark-blue-hover-icon-color;
+    }
+    .sidebar-menu-toggle-icon {
+      color: $sm-dark-blue-hover-icon-color;
+    }
+  }
+  .open {
+    background: $sm-dark-dodger-blue-open-bg;
+  }
+  .open > .sidebar-menu-button .sidebar-menu-toggle-icon {
+    color: $sm-dark-blue-open-toggle-color;
+  }
+  .open > .sidebar-menu-button {
+    background: $sm-dark-open-button-bg;
+    color: $sm-dark-blue-open-button-color;
+    .sidebar-menu-icon {
+      color: $sm-dark-blue-open-icon-color;
+    }
+  }
+  .active > .sidebar-menu-button {
+    color: $sm-dark-active-button-color;
+    .sidebar-menu-icon {
+      color: $sm-dark-active-icon-color;
+    }
+  }
+  .sidebar-submenu {
+    .sidebar-menu-text {
+      border-left: 1px solid $sidebar-dark-dodger-blue-border-color;
+    }
+    .sidebar-menu-button {
+      color: $ssm-dark-blue-button-color;
+    }
+    .sidebar-menu-icon {
+      color: $ssm-dark-blue-icon-color;
+    }
+    .sidebar-menu-button:hover {
+      color: $ssm-dark-hover-button-color;
+      .sidebar-menu-icon {
+        color: $ssm-dark-hover-icon-color;
+      }
+    }
+    .active > .sidebar-menu-button {
+      color: $ssm-dark-active-button-color;
+      .sidebar-menu-icon {
+        color: $ssm-dark-active-icon-color;
+      }
+    }
+  }
+
+  ///////////
+  // utils //
+  ///////////
+  
+  // bordered menu
+  .sm-bordered {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+  // bordered submenu
+  .sm-bordered.sidebar-submenu {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+  // bordered menu item
+  .sm-item-bordered > .sidebar-menu-item {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+  // bordered submenu item
+  .sm-item-bordered.sidebar-submenu > .sidebar-menu-item {
+    border-color: $sidebar-dark-dodger-blue-border-color;
+  }
+  // icons block
+  .sm-icons-block > .sidebar-menu-item {
+    > .sidebar-menu-button .sidebar-menu-icon {
+      background: $sm-dark-icon-bg;
+      color: $sm-dark-iconsblock-icon-color;
+    }
+    &.open > .sidebar-menu-button .sidebar-menu-icon {
+      color: $sm-dark-blue-open-icon-color;
+      background: $sm-dark-open-icon-bg;
+    }
+    &.active > .sidebar-menu-button .sidebar-menu-icon {
+      background: $sm-dark-active-iconsblock-icon-bg;
+      color: $sm-dark-activebuttonbg-icon-color;
+    }
+  }
+  
+  // active button background
+  .sm-active-button-bg > .active > .sidebar-menu-button {
+    background: $sm-dark-blue-active-button-bg;
+    color: $sm-dark-blue-activebuttonbg-button-color;
+    .sidebar-menu-icon {
+      color: $sm-dark-blue-activebuttonbg-icon-color;
+    }
+    .sidebar-menu-toggle-icon {
+      color: $sm-dark-blue-activebuttonbg-icon-color;
+    }
+  }
+  // icons block + active button bg
+  .sm-icons-block.sm-active-button-bg > .active > .sidebar-menu-button .sidebar-menu-icon {
+    background: $sm-dark-active-iconsblock-activebuttonbg-icon-bg;
+  }
+
+  .sidebar-account {
+    background: white;
+  }
+
+  .sidebar-submenu .sidebar-menu-text::after {
+    background-color: $accent-yellow;
+  }
+
+  .search-form--black {
+    background-color: $sm-dark-dodger-blue-open-bg;
+    border-color: $sm-dark-dodger-blue-open-bg;
+    .form-control {
+      color: $white;
+      &::placeholder {
+        color: $sm-dark-blue-open-icon-color;
+      }
+      &:focus {
+        background-color: transparent !important;
+      }
+    }
+    .btn {
+      background: transparent;
+      color: $sm-dark-blue-open-icon-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $sm-dark-blue-icon-color;
+
+    @include hover {
+      color: $sm-dark-blue-hover-icon-color;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.bread-crumb-section {
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    position: relative;
+    padding: 120px 0px;
+    @include max-screen(1199) {
+        font-size: 100px;
+    }
+    @include max-screen(767) {
+        font-size: 80px;
+    }
+    background-image: url("/images/bread/bg.jpg");
+    .shape {
+        z-index: 1;
+    }
+    & .shape1 {
+        top: 0;
+        left: 0;
+    }
+    & .shape2 {
+        top: auto;
+        bottom: 0;
+        right: 0;
+    }
+    .title {
+        color: $white;
+        font-weight: 700;
+        line-height: 1.545;
+        font-size: 55px;
+
+        @include max-screen(768, 1199) {
+            font-size: 45px;
+        }
+        @include max-screen(767) {
+            font-size: 35px;
+        }
+    }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding: 0;
+}
+.breadcrumb-item {
+    a {
+        color: $white;
+        &:hover {
+            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    font-weight: 700;
+    font-size: 15px;
+    & + .breadcrumb-item::before {
+        padding-right: 0.5rem;
+        color: $white;
+        font-family: "IcoFont";
+        content: var(--bs-breadcrumb-divider, "\ea7c");
+    }
+    &.active {
+        span {
+            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "sourceType": "unambiguous",
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "helpers": true,
+      "forceAllTransforms": false
+    }]
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      "debug": false,
+      "useBuiltIns": "usage",
+      "corejs": "3.6",
+      "modules": "auto",
+      "targets": {
+        "browsers": [
+          "last 2 versions",
+          "ie >= 11"
+        ]
+      }
+    }]
+  ]
+}

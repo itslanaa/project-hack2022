@@ -1,0 +1,41 @@
+.section-common.recent-blog {
+  padding-bottom: 40px;
+}
+
+.recent-blog {
+  background: #ffffff;
+  padding-bottom: 60px;
+}
+
+.wrapper-recent-single {
+  margin-bottom: 60px;
+  .wrapper-recent-thumbs {
+    @extend .transition-200ms;
+    display: block;
+    &:hover {
+      opacity: .9;
+    }
+  }
+  img {
+    width: 100%;
+
+  }
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    a {
+      font-size: 18px;
+      color: $theme-bg-dark;
+      &:hover {
+        color: $theme-yellow;
+      }
+    }
+  }
+  p {
+    @extend .montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+  }
+
+}

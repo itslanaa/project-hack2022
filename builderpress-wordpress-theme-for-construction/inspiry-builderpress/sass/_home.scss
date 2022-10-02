@@ -1,0 +1,29 @@
+.section-common {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-heading-intro {
+  margin-bottom: 30px;
+  @extend .poppins;
+  overflow: hidden;
+  h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $theme-bg-dark;
+    line-height: 46px;
+
+  }
+  .section-text {
+    color: #808080;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+

@@ -1,0 +1,9 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.tooltip-inner {
+  @include mdc-elevation-mixins.elevation(1, $shadow-baseline-color, $shadow-opacity-boost);
+  font-size: .9375rem;
+  font-weight: $headings-font-weight;
+  font-family: $headings-font-family;
+}

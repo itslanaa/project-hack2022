@@ -1,0 +1,97 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.layout-compact {
+  .container-fluid {
+    @include media-breakpoint-up(xl) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .mdk-drawer[data-persistent].layout-compact__drawer,
+  &__drawer .mdk-drawer__content {
+    width: $layout-compact-drawer-width;
+  }
+
+  .sidebar-secondary {
+    left: $layout-compact-drawer-width#{'/* rtl:ignore */'};
+    transition: transform 0.2s ease;
+    transform: translate3d(-100%, 0, 0)#{'/* rtl:ignore */'};
+    width: $mdk-drawer-width;
+    position: absolute;
+    top: 0;
+    box-shadow: none;
+  }
+
+  &__drawer[data-position="right"] .sidebar-secondary {
+    transform: translate3d(100%, 0, 0)#{'/* rtl:ignore */'};
+    left: auto#{'/* rtl:ignore */'};
+    right: $layout-compact-drawer-width#{'/* rtl:ignore */'};
+  }
+
+  &__drawer .mdk-drawer__content {
+    display: flex;
+    z-index: 0;
+  }
+
+  .sidebar-mini {
+    width: $layout-compact-drawer-width;
+    position: relative;
+    z-index: 1;
+
+    &.sidebar-light .active.show .sidebar-menu-icon {
+      color: $dark;
+    }
+
+    &.sidebar-dark .active.show .sidebar-menu-icon {
+      color: $sm-dark-active-icon-color;
+    }
+    
+    .sidebar-menu-toggle-icon {
+      display: none;
+    }
+
+    .sidebar-menu-item {
+      margin: 0;
+      border-radius: 0;
+    }
+
+    .sidebar-menu-initials {
+      content: attr(data-initials);
+      display: block;
+      visibility: visible;
+    }
+
+    .sidebar-menu-button {
+      flex-direction: column;
+      padding: 1.25rem 0;
+      justify-content: center;
+      // font-size: .875rem;
+      font-size: .8125rem;
+      // font-weight: 400;
+      line-height: 1rem;
+    }
+    .sidebar-menu-icon {
+      margin: 0 0 .25rem;
+      font-size: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    & &__d-none {
+      display: none;
+    }
+  }
+
+  &--open {
+    .sidebar-secondary,
+    .layout-compact__drawer[data-position="right"] .sidebar-secondary {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .sidebar-secondary {
+      @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+    }
+  }
+}

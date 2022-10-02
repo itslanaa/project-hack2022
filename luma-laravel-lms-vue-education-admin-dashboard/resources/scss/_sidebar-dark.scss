@@ -1,0 +1,30 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.sidebar-dark .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px solid $ssm-dark-item-border-color;
+  }
+}
+
+.sidebar-dark .sidebar-account {
+  background: white;
+}
+
+.sidebar-dark .navbar-toggler {
+  color: $sm-dark-icon-color;
+
+  @include hover {
+    color: $sm-dark-hover-icon-color;
+  }
+}
+
+.sidebar-dark {
+  @include mdc-elevation-mixins.elevation(3, #000, $shadow-opacity-boost);
+  .text-100 {
+    color: $sidebar-dark-text-color !important;
+  }
+  .text-50 {
+    color: rgba($sidebar-dark-text-color, .5) !important;
+  }
+}

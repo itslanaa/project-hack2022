@@ -1,0 +1,33 @@
+.dashboard-area-tabs {
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    @include hover {
+      text-decoration: none;
+    }
+
+    &, * {
+      color: $body-color;
+    }
+
+    &:not(.active) {
+      background-color: $body-bg;
+      &, * {
+        color: rgba($body-color, .5);
+      }
+    }
+
+    &.active {
+      position: relative;
+    }
+    &.active::before {
+      content: " ";
+      height: 4px;
+      background-color: $primary;
+      left: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+}

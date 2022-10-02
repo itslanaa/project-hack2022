@@ -1,0 +1,101 @@
+.container,
+.container-fluid,
+.page__container {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+@include media-breakpoint-down(sm) {
+  .has-drawer-opened .mdk-header-layout__content {
+    z-index: 2;
+  }
+}
+
+.mdk-header-layout {
+  overflow: visible; // fix children with position: sticky;
+}
+.mdk-drawer-layout .container,
+.mdk-drawer-layout .container-fluid {
+  @include make-container-max-widths($drawer-layout-container-max-widths);
+}
+
+.sub-layout {
+  .mdk-header-layout__content {
+    height: 100%;
+  }
+  .page-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #page-content {
+    height: 100%;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////
+// Flexbox Page Layout                                                   //
+// - the page takes the viewport height;                                 //
+// - the page content fills as much height as possible;                  //
+// - the footer is always at the bottom even if there is no page content //
+///////////////////////////////////////////////////////////////////////////
+
+@if $enable-flex-layout {
+  html,
+  body {
+    min-height: 100vh;
+  }
+
+  body,
+  .mdk-header-layout,
+  .page-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mdk-header-layout,
+  .mdk-drawer-layout,
+  .page-content {
+    flex: 1 1 0%;
+  }
+
+  .mdk-drawer-layout__content {
+    min-height: 100vh;
+  }
+
+  .mdk-header-layout .mdk-drawer-layout__content {
+    min-height: calc(100vh - #{$navbar-height});
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-brand {
+    flex-shrink: 0;
+  }
+}
+
+body:not(.sub-layout) .mdk-drawer-layout {
+  overflow: visible; // fix children with position: sticky;
+}
+
+.sub-layout-content {
+  min-height: initial;
+}
+
+@include media-breakpoint-up(lg) {
+  .sub-layout-drawer .mdk-drawer__content {
+    position: absolute;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .mdk-header-layout .sub-layout-drawer .mdk-drawer__content {
+    top: $navbar-height;
+  }
+}
+
+.ui .page__container {
+  max-width: 944px;
+}

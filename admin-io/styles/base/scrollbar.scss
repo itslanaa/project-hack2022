@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+
+}
+
+::-webkit-scrollbar-track {
+
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  /* Select the thumb when the browser window isn't in focus */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background:$color--primary;
+  border-radius: 0px !important;
+  width: 4px !important;
+  right: 0px !important;
+}
+
+.slimScrollBar {
+  background:$color--primary !important;
+  border-radius: 0px !important;
+  width: 4px !important;
+  opacity: 1 !important;
+  right: 0px !important;
+}

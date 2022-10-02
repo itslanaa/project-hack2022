@@ -1,0 +1,35 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.popover-lg {
+  @include mdc-elevation-mixins.elevation(10, $shadow-baseline-color, $shadow-opacity-boost);
+  border: none;
+  .popover-body {
+    padding: 1.5rem;
+  }
+  .bs-popover-top .arrow::before {
+    border-top-color: transparent;
+  }
+  .bs-popover-right .arrow::before {
+    border-right-color: transparent;
+  }
+  .bs-popover-bottom .arrow::before {
+    border-bottom-color: transparent;
+  }
+  .bs-popover-left .arrow::before {
+    border-left-color: transparent;
+  }
+}
+
+.bs-popover-top {
+  margin-bottom: $popover-arrow-height + .5rem;
+}
+.bs-popover-right {
+  margin-left: $popover-arrow-height + .5rem;
+}
+.bs-popover-bottom {
+  margin-top: $popover-arrow-height + .5rem;
+}
+.bs-popover-left {
+  margin-right: $popover-arrow-height + .5rem;
+}

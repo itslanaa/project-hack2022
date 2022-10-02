@@ -1,0 +1,179 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }} page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <li class="breadcrumb-item">UI Components</li>
+        <li class="breadcrumb-item active" aria-current="page">Drag &amp; Drop</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Drag &amp; Drop</h1>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="card">
+    <div class="card-header card-header-large bg-white">
+      <h4 class="card-header__title">Simple Drag and Drop</h4>
+    </div>
+    <div class="card-body">
+      <p>Just add the data attribute <code>data-toggle="dragula"</code> to have drag and drop support in your container.</p>
+
+      <div class="form-row" data-toggle="dragula">
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card text-white bg-primary">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div>
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card bg-dark text-white">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div>
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card text-white bg-success">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->   
+        
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card text-white bg-info">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->
+
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card text-white bg-warning">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col-->
+
+        <div class="col-md col-lg-4">
+          <div class="card form-row__card text-white bg-danger">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col--> 
+
+      </div>
+    </div>
+  </div>
+
+  {% set leftCards = [{
+    avatar: "assets/images/256_rsz_1andy-lee-642320-unsplash.jpg",
+    name: "Jenell D. Matney", 
+    title: "Founder and CEO"
+  }, {
+    avatar: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+    name: "Sherri J. Cardenas", 
+    title: "Software Engineer"
+  }, {
+    avatar: "assets/images/256_jeremy-banks-798787-unsplash.jpg",
+    name: "Joseph S. Ferland", 
+    title: "Web Designer"
+  }] %}
+
+  {% set rightCards = [{
+    avatar: "assets/images/256_joao-silas-636453-unsplash.jpg",
+    name: "Bryan K. Davis", 
+    title: "Web Developer"
+  }, {
+    avatar: "assets/images/256_luke-porter-261779-unsplash.jpg",
+    name: "Elizabeth J. Ohara", 
+    title: "Business Analyst"
+  }, {
+    avatar: "assets/images/256_michael-dam-258165-unsplash.jpg",
+    name: "Kaci M. Langston", 
+    title: "Human Resources"
+  }] %}
+
+  <h4>Containers</h4>
+  <p>Add the data attribute <code>data-dragula-containers='["#cards-left", "#cards-right"]'</code> to allow the user to drag an element in any of the containers and drop it in any other container in the list.</p>
+  
+  {% import "components/user-feedback.html" as feedback %}
+
+  <div class="row" data-toggle="dragula" data-dragula-containers='["#cards-left", "#cards-right"]'>
+    <div class="col-md">
+      <div class="card shadow-none border bg-light">
+        <div class="card-body">
+          <div class="text-label mb-3">Container #1</div>
+          <div id="cards-left" class="card-list">
+            {% for card in leftCards %}
+              {{ feedback.component(avatar=card.avatar, name=card.name, title=card.title) }}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card shadow-none border bg-light">
+        <div class="card-body">
+          <div class="text-label mb-3">Container #2</div>
+          <div id="cards-right" class="card-list">
+            {% for card in rightCards %}
+              {{ feedback.component(avatar=card.avatar, name=card.name, title=card.title) }}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4>Handles</h4>
+  <p>Add the data attribute <code>data-dragula-moves="js-dragula-handle"</code> to allow the user to drag an element in any of the containers and drop it in any other container in the list <strong>using a handle</strong>.</p>
+
+  {% import "components/user-handle.html" as user %}
+
+  <div 
+    class="row" 
+    data-toggle="dragula" 
+    data-dragula-containers='["#cards-moves-left", "#cards-moves-right"]'
+    data-dragula-moves="js-dragula-handle">
+    <div class="col-md">
+      <div class="card shadow-none border bg-light">
+        <div class="card-body">
+          <div class="text-label mb-3">Container #1</div>
+          <div id="cards-moves-left" class="card-list">
+            {% for card in leftCards %}
+              {{ user.component(avatar=card.avatar, name=card.name, title=card.title) }}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card shadow-none border bg-light">
+        <div class="card-body">
+          <div class="text-label mb-3">Container #2</div>
+          <div id="cards-moves-right" class="card-list">
+            {% for card in rightCards %}
+              {{ user.component(avatar=card.avatar, name=card.name, title=card.title) }}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

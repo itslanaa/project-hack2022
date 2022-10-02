@@ -1,0 +1,246 @@
+.home-mini-card {
+  text-align:center;
+  .circle-icon.md {
+    margin:auto;
+  }
+
+  @media (min-width: 768px) {
+   text-align:left;
+
+    h2 {
+      margin :{
+        top:0px;
+        bottom:5px;
+      }
+    }
+    p {
+      margin-bottom:0px;
+    }
+  }
+}
+
+.audiojs audio {
+  position: absolute;
+  left: -1px;
+}
+
+.audiojs .play {
+  display:block;
+}
+
+.audiojs .pause,
+.audiojs .loading_music{
+  display:none;
+}
+
+.audiojs .play,
+.audiojs .pause,
+.audiojs .loading_music{
+
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  z-index:10;
+
+  .trigger {
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: .2s linear;
+    transition-property: -webkit-transform,box-shadow;
+    transition-property: transform,box-shadow;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    text-transform: none;
+    outline: 0;
+    border: 0;
+    padding: 6px;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    background-color: $color--primary;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 20;
+    width: 56px;
+    height: 56px;
+    line-height:50px;
+    border-radius: 50%;
+
+    i{
+      font-size: 20px;
+    }
+  }
+
+  .trigger:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+    -webkit-transform: translate3d(0,-1px,0);
+    transform: translate3d(0,-1px,0);
+    border-radius: 50%;
+  }
+}
+
+.audiojs.playing .play, .playing .loading_music, .playing .error { display: none; }
+.audiojs.playing .pause { display: block; }
+
+md-card.card-music .audiojs.player-loading .play, .loading_music .pause, .loading_music .error { display: none; }
+md-card.card-music .audiojs.player-loading .loading_music { display: block; }
+md-card.card-music .audiojs.player-loading .scrubber .progress {
+  width:0px;
+}
+
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading_music { display: none; }
+.error .error { display: block; }
+.error .pause p { cursor: auto; }
+.error .error-message { display: block; }
+
+.audiojs .scrubber .progress {
+  background:$color--primary;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  height:5px;
+}
+.card-music .scrubber {
+  bottom: auto;
+  top: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  left: 0;
+}
+
+md-card.md-default-theme{
+  overflow:hidden;
+  @include box-shadow(0 2px 5px 0 rgba(0,0,0,.06));
+  margin:0px;
+}
+
+@media (max-width: 768px) {
+  md-card.md-default-theme{
+    margin:0px;
+  }
+}
+
+md-card md-card-content {
+  background:white;
+  position:relative;
+  @include border-radius(3px);
+  display:block;
+}
+
+md-card md-card-header {
+  padding:25px;
+  display:block;
+
+  h3 {
+    margin-top:0px;
+    font-weight:normal;
+  }
+}
+
+md-card.md-default-theme img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+md-card .md-fab.middle-right{
+  position:absolute;
+  right:20px;
+  top:-20px;
+}
+
+$card-styles: (
+        primary:$color--primary,
+        accent:$color--accent,
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger
+);
+
+@each $card, $card-color in $card-styles {
+
+  md-card md-card-content.card-#{$card}{
+    background-color: $card-color;
+    color: #fff;
+  }
+
+  md-card md-card-content.card-#{$card} md-icon{
+    color: #fff;
+  }
+
+  md-card.card-#{$card}.card-music {
+    .audiojs .play,
+    .audiojs .pause,
+    .audiojs .loading_music{
+      .trigger {
+        background-color: $card-color;
+      }
+    }
+  }
+
+  .card-#{$card}.card-music .scrubber .progress {
+    background: $card-color;
+  }
+
+}
+
+md-card .card-bg-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  font-size: 200px;
+  opacity: .3;
+  color: #fff;
+
+  md-icon {
+    height: 50%;
+    width: auto;
+  }
+}
+
+md-card.card-background-image{
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  md-card-content{
+    background:rgba(0,0,0,0.4);
+    color:white;
+  }
+
+  md-icon {
+    color: white;
+  }
+}
+
+md-card.card-background-image.bg1{
+  background:url('../images/background/bg_weather1.png');
+  background-size:cover;
+}
+
+md-card.card-background-image.bg2{
+  background:url('../images/background/bg_weather2.png');
+  background-size:cover;
+}
+
+md-card.card-background-image.bg3{
+  background:url('../images/background/bg_weather3.png');
+  background-size:cover;
+}
+
+md-card {
+
+  display:block;
+
+  img {
+    height:auto;
+  }
+
+  md-fab-speed-dial {
+    margin-top: -50px;
+    margin-right: -50px;
+  }
+}

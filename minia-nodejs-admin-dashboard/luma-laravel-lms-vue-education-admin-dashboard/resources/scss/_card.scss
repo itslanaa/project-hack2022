@@ -1,0 +1,257 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+@use '@material/elevation/variables' as mdc-elevation-variables;
+@use '@material/elevation/functions' as mdc-elevation-functions;
+
+//////////
+// CARD //
+//////////
+
+.card,
+.card-group {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  @if $enable-card-shadow {
+    @include mdc-elevation-mixins.elevation(3, $card-shadow-base-color, $shadow-opacity-boost);
+  }
+
+  transition: mdc-elevation-functions.transition-value();
+  will-change: mdc-elevation-variables.$property;
+
+  &--elevated {
+    @include hover {
+      @include mdc-elevation-mixins.elevation(5, $card-shadow-base-color, $shadow-opacity-boost);
+    }
+  }
+
+  &--raised {
+    @include mdc-elevation-mixins.elevation(10, $card-shadow-base-color, $shadow-opacity-boost);
+  }
+
+  &--scaled {
+    transform: scale(1.05);
+  }
+
+  &--transparent {
+    background-color: rgba(white, .9);
+  }
+
+  &--connect {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: $border-color;
+      left: 50%;
+      margin-left: -2px;
+      z-index: -1;
+    }
+  }
+}
+
+////////////////
+// FLUSH CARD //
+////////////////
+
+.card.card-flush {
+  #{mdc-elevation-variables.$property}: none;
+  border: none;
+  &,
+  .card-img,
+  .card-img-top {
+    border-radius: 0;
+  }
+}
+
+.card.card-flush-y {
+  #{mdc-elevation-variables.$property}: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+/////////////////
+// CARD SIZING //
+/////////////////
+
+.card-2by1 .card-body {
+  padding: $card-spacer-x/2 $card-spacer-x;
+}
+
+.card-sm {
+  .card-body,
+  .card-footer {
+    padding: 0.625rem 0.75rem;
+  }
+}
+
+.card-lg {
+  .card-body,
+  .card-footer {
+    padding: 1.25rem;
+  }
+}
+
+.card-title {
+  font-size: $card-title-font-size;
+  font-family: $card-title-font-family;
+  font-weight: $card-title-font-weight;
+  color: $card-title-color;
+  line-height: $card-title-line-height;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-normal;
+  margin-top: 0;
+}
+
+////////////////
+// CARD GROUP //
+////////////////
+
+@include media-breakpoint-up(sm) {
+  .card-group > .card {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .card-group--lg-up .card {
+    flex: 0 0 100% !important;
+    margin-bottom: $spacer;
+  }
+}
+
+///////////////////////////////////////////////////////
+// CARD GROUP combined with GRID                     //
+//                                                   //
+// <div class="row card-group-row">                  //
+//   <div class="col-md-4 card-group-row__col">      //
+//     <div class="card card-group-row__card"></div> //
+//   </div>                                          //
+// </div>                                            //
+///////////////////////////////////////////////////////
+
+.card-group-row {
+  display: flex;
+  flex-flow: row wrap;
+  &__col {
+    display: flex;
+    min-width: 0;
+  }
+  &__card {
+    flex: 1 0 0;
+  }
+}
+
+////////////////////////////////////
+// FLUSH CARDS WITHIN CARD GROUPS //
+////////////////////////////////////
+
+.card-group-flush > .card {
+  #{mdc-elevation-variables.$property}: none;
+  &,
+  .card-img,
+  .card-img-top {
+    border-radius: 0;
+  }
+  border-bottom: 0;
+  margin-bottom: 0;
+  background: transparent;
+  &:first-child {
+    border-left: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+  @include media-breakpoint-only(xs) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+//////////////////
+// CARD COLUMNS //
+//////////////////
+
+@include media-breakpoint-up(sm) {
+  .card-columns--2 {
+    column-count: 2;
+  }
+}
+
+.card-column {
+  display: inline-block;
+  width: 100%;
+}
+
+////////////////////////
+// CARD BLOCK DIVIDER //
+////////////////////////
+
+.card-body + .card-body {
+  border-top: 1px solid $card-border-color;
+}
+
+////////////////////////////////
+// CARD DECK WITH GRID SYSTEM //
+////////////////////////////////
+
+.card-deck-row {
+  display: flex;
+  flex-flow: row wrap;
+  > [class*="col-"] {
+    display: flex;
+  }
+  .card {
+    flex: 1 1 0%;
+  }
+}
+
+///////////////////
+// CARD ELEMENTS //
+///////////////////
+
+.card-title {
+  font-weight: 500;
+
+  a, &[href] {
+    color: inherit;
+    display: flex;
+    text-decoration: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card-header {
+  position: relative;
+  border-bottom: $card-inner-border-width solid $card-border-color;
+}
+
+.card-footer {
+  border-top: $card-inner-border-width solid $card-border-color;
+  padding: .75rem;
+  &:last-child {
+    @include border-bottom-radius($card-inner-border-radius);
+  }
+}
+
+.card > .fullbleed {
+  @include border-radius($card-border-radius);
+}
+
+.card-img-cover {
+  position: relative;
+  height: 200px;
+  object-fit: cover;
+}

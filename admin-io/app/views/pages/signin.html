@@ -1,0 +1,58 @@
+<div class="page-signin">
+
+    <div class="signin-header">
+        <div class="container text-center">
+            <section class="logo">
+                <a href="#/">
+                  <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_whatshot_24px.svg"></md-icon>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="container">
+            <div class="form-container">
+
+                <section class="row signin-social text-center">
+                    <md-button class="md-default-theme md-raised md-twitter"><i class="fa fa-twitter"></i></md-button>
+                    <div class="space"></div>
+                    <md-button class="md-default-theme md-raised md-facebook"><i class="fa fa-facebook"></i></md-button>
+                    <div class="space"></div>
+                    <md-button class="md-default-theme md-raised md-gplus"><i class="fa fa-google"></i></md-button>
+                </section>
+
+                <br/>
+
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                          <md-input-container md-no-float>
+                            <md-icon md-svg-src="dist/img/icons/ic_person_24px.svg"></md-icon>
+                            <input ng-model="user.name" type="text" placeholder="Name">
+                          </md-input-container>
+                        </div>
+                        <div class="form-group">
+                          <md-input-container class="md-primary" md-no-float>
+                            <md-icon md-svg-src="dist/img/icons/ic_lock_24px.svg"></md-icon>
+                            <input ng-model="user.phone" type="text" placeholder="Password">
+                          </md-input-container>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                        <div class="form-group">
+                          <md-button class="btn-width-large btn-block btn-lg md-primary md-raised">Sign in</md-button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <section>
+                    <p class="text-center"><a href="signin.html#/pages/forgot">Forgot your password?</a></p>
+                    <p class="text-center text-muted text-small">Don't have an account yet? <a href="signin.html#/pages/signup">Sign up</a></p>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+
+</div>

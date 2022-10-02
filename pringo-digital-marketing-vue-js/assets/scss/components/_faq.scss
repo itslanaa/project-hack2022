@@ -1,0 +1,44 @@
+.faq-section {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    position: relative;
+    @include max-screen(991) {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+}
+
+.faq-bg {
+    position: absolute;
+    top: -170px;
+    left: 0;
+    z-index: -1;
+    @include max-screen(991) {
+        top: -30px;
+    }
+    @include max-screen(767) {
+        top: 0px;
+    }
+}
+
+.faq-image {
+    img {
+        animation: move 1s infinite alternate;
+    }
+    @include min-screen(1500) {
+        margin-left: -180px;
+    }
+    @include max-screen(1499) {
+        text-align: center;
+    }
+    @include max-screen(991) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+.faq-content {
+    @include min-screen(1500) {
+        margin-left: 80px;
+    }
+}

@@ -1,0 +1,82 @@
+.brand-section {
+    padding-top: 260px;
+    @include max-screen(1200, 1499) {
+        padding-top: 150px;
+    }
+    @include max-screen(1199) {
+        padding-top: 100px;
+    }
+
+    .container {
+        @include min-screen(1920) {
+            max-width: 1400px;
+        }
+    }
+}
+
+.brand-card {
+    background-color: $primary;
+    background-image: url("/images/brand-logo/bg.png");
+    padding: 65px 115px 90px;
+    border-radius: 35px;
+
+    @include max-screen(1499) {
+        padding: 65px 0px 90px;
+    }
+    @include max-screen(991) {
+        padding: 50px 20px 70px;
+    }
+    
+    p {
+        font-weight: 700;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        color: $white;
+        font-size: 22px;
+        @include max-screen(767) {
+            line-height: 2;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 35px;
+            font-weight: 900;
+            line-height: 1.7;
+            vertical-align: middle;
+
+            @include max-screen(767) {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .brand-item {
+        text-align: center;
+    }
+
+    .brand-before {
+        display: block;
+        margin: auto;
+        transition: all 0.4s;
+    }
+    .brand-after {
+        top: 150%;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transition: all 0.4s;
+    }
+    .swiper-slide {
+        &:hover {
+            .brand-before {
+                transform: translateY(-100%);
+            }
+
+            .brand-after {
+                top: 0%;
+            }
+        }
+    }
+}

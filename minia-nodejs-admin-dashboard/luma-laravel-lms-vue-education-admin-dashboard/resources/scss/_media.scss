@@ -1,0 +1,49 @@
+///////////
+// Media //
+///////////
+
+.media-left,
+.media-right {
+  display: flex;
+  flex-direction: column;
+}
+.media-left {
+  margin-right: $spacer / 2;
+}
+.media-right {
+  margin-left: $spacer / 2;
+}
+.media-body {
+  flex: 1 1 0%;
+}
+.media {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+///////////////////////////////////////
+// Stack media elements horizontally //
+///////////////////////////////////////
+
+@each $bp in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($bp) {
+    .media-stack-#{$bp} {
+      flex-direction: column;
+      .media-left {
+        width: 100% !important;
+        margin: 0 0 $card-spacer-y 0;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////
+// Add style to .media-left, .media-right //
+// Specific for thumbnails                //
+////////////////////////////////////////////
+
+@include media-breakpoint-up(sm) {
+  .media__thumbnail {
+    width: 150px;
+  }
+}

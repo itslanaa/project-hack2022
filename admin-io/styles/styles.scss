@@ -1,0 +1,136 @@
+/*
+* Import all styling to be exported to dist folder with grunt
+*/
+/* Contains the settings for the theme collors */
+@import "settings/colors";
+
+/* Contains the mixins for the theme */
+@import "partials/arrow";
+@import "partials/helpers";
+@import "partials/animations";
+
+/* Customization for the browser scrollbar */
+@import "base/scrollbar";
+
+/* Contains styling on images and other media objects */
+@import "base/media";
+
+/* Contains styling on theme typography */
+@import "base/typography";
+
+/* Contains styling on .container class*/
+@import "base/containers";
+
+/* Contains styling on tables */
+@import "base/tables";
+
+/* Contains styling on forms */
+@import "base/forms";
+
+/* Contains styling on tabs */
+@import "base/tabs";
+
+/* Contains styling on dropdowns */
+@import "base/dropdowns";
+
+/* Contains styling on labels */
+@import "base/labels";
+
+/* Contains styling on alert messages */
+@import "base/alerts";
+
+/* Contains all buttons styling, including Angular Material design buttons md-button */
+@import "base/buttons";
+
+/* Contains styling on progress bar objects */
+@import "base/progress_bars";
+
+/* Contains styling on list groups (bootstrap) */
+@import "base/list_groups";
+
+/* Contains styling on panel contents */
+@import "base/panels";
+
+/* Contains styling on modals */
+@import "base/modals";
+
+/* Contains styling for spacers and dividers between elements */
+@import "base/dividers";
+
+/* Contains styling on messages (toasts / tooltips) */
+@import "base/messages";
+
+/* Contains styling on material design toolbar */
+@import "base/toolbar";
+
+/* Contains styling on cards */
+@import "base/cards";
+
+/* Contains styling on chips */
+@import "base/chips";
+
+/* Contains styling for easypie charts */
+@import "components/charts/easypiechart";
+
+/* Contains styling for morris charts */
+@import "components/charts/morris";
+
+/* Contains styling for chartjs */
+@import "components/charts/chartjs";
+
+/* Contains styling for flot charts */
+@import "components/charts/flot";
+
+/* Contains styling for the page (overral layout) */
+@import "components/layout/page";
+
+/* Contains styling for top header menus (submenus in header) */
+@import "components/layout/top_header";
+
+/* Contains styling for maps */
+@import "components/maps/maps";
+
+/* Contains styling for team members blocks */
+@import "components/team/team";
+
+/* Contains styling for material design bottom sheet */
+@import "components/navigation/bottomsheet";
+
+/* Contains styling for navbars */
+@import "components/navigation/navbars";
+
+/* Contains styling for breadcrumbs */
+@import "components/navigation/breadcrumbs";
+
+/* Contains styling for Main menu */
+@import "components/navigation/main_menu";
+
+/* Contains styling for Profile page */
+@import "components/pages/profile";
+
+/* Contains styling for 404 and error pages */
+@import "components/pages/error";
+
+/* Contains styling for lock page */
+@import "components/pages/lock";
+
+/* Contains styling for tasks page */
+@import "components/pages/tasklist";
+
+/* Contains styling for Sign in page */
+@import "components/pages/signin";
+
+/* Contains styling for icons page */
+@import "components/pages/page_icons";
+
+/* Contains styling for Services page */
+@import "components/pages/services";
+
+/* Contains styling for Contcact page */
+@import "components/pages/contact";
+
+/* Contains styling for About page */
+@import "components/pages/about";
+
+/* Contains styling for Invoice page */
+@import "components/pages/invoice";

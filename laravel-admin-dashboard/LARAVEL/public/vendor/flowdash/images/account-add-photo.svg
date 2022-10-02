@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <path id="account-add-photo-a" d="M0,0 L80,0 L80,80 L0,80 L0,0 Z"/>
+    <mask id="account-add-photo-b" width="80" height="80" x="0" y="0" fill="#fff">
+      <use xlink:href="#account-add-photo-a"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#374D67" fill-opacity=".05" stroke="#DBDFE4" stroke-dasharray="8" stroke-width="2" mask="url(#account-add-photo-b)" xlink:href="#account-add-photo-a"/>
+    <g opacity=".54" transform="translate(27 27)">
+      <polygon points="24 24 0 24 0 0 24 0"/>
+      <path fill="#A3AEB9" d="M3,4 L3,1 L5,1 L5,4 L8,4 L8,6 L5,6 L5,9 L3,9 L3,6 L0,6 L0,4 L3,4 L3,4 Z M6,10 L6,7 L9,7 L9,4 L16,4 L17.83,6 L21,6 C22.1,6 23,6.9 23,8 L23,20 C23,21.1 22.1,22 21,22 L5,22 C3.9,22 3,21.1 3,20 L3,10 L6,10 L6,10 Z M13,19 C15.76,19 18,16.76 18,14 C18,11.24 15.76,9 13,9 C10.24,9 8,11.24 8,14 C8,16.76 10.24,19 13,19 L13,19 Z M10,14 C10,15.659375 11.340625,17 13,17 C14.659375,17 16,15.659375 16,14 C16,12.340625 14.659375,11 13,11 C11.340625,11 10,12.340625 10,14 L10,14 Z"/>
+    </g>
+  </g>
+</svg>

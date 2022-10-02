@@ -1,0 +1,129 @@
+<!-- drawer -->
+<div class="mdk-drawer {{ drawerClass or '' }} js-mdk-drawer" id="default-drawer" data-align="{{ drawerAlign }}">
+  <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="992px">
+
+    <div class="sidebar sidebar-mini sidebar-primary sidebar-left" data-perfect-scrollbar>
+      <ul class="nav flex-column sidebar-menu mt-3" id="sidebar-mini-tabs" role="tablist">
+        <li class="sidebar-menu-item{% if dashboards_menu %} active{% endif %}" data-toggle="tooltip" data-title="Dashboards" data-placement="right" data-boundary="window">
+          <a class="sidebar-menu-button" href="#sm_dashboards" data-toggle="tab" role="tab" aria-selected="true">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+            <span class="sidebar-menu-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item{% if apps_menu %} active{% endif %}" data-toggle="tooltip" data-title="Apps" data-placement="right" data-container="body" data-boundary="window">
+          <a class="sidebar-menu-button" href="#sm_apps" data-toggle="tab" role="tab" aria-selected="false">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
+            <span class="sidebar-menu-text">Apps</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item {% if pages_menu %} active {% endif %}" data-toggle="tooltip" data-title="Pages" data-placement="right" data-container="body" data-boundary="window">
+          <a class="sidebar-menu-button" href="#sm_pages" data-toggle="tab" role="tab">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">description</i>
+            <span class="sidebar-menu-text">Pages</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item{% if components_menu %} active {% endif %}" data-toggle="tooltip" data-title="UI Components" data-placement="right" data-container="body" data-boundary="window">
+          <a class="sidebar-menu-button" href="#sm_components" data-toggle="tab" role="tab">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">list</i>
+            <span class="sidebar-menu-text">UI Components</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item" data-toggle="tooltip" data-title="Layouts" data-placement="right" data-boundary="window">
+            <a class="sidebar-menu-button" href="#sm_layouts" data-toggle="tab" role="tab" aria-controls="sm_layouts" aria-selected="false">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_compact</i>
+              <span class="sidebar-menu-text">Layouts</span>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="sidebar sidebar-light sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+      <div class="tab-content">
+      <div class="tab-pane{% if dashboards_menu %} fade active show{% endif %}" id="sm_dashboards">
+          <div class="sidebar-heading">Dashboards</div>
+          <div class="sidebar-block p-0">
+            <ul class="sidebar-menu">
+              <li class="sidebar-menu-item{% if slug === 'dashboard' %} active{% endif %}">
+                <a class="sidebar-menu-button" href="{{ home_url }}">
+                  <span class="sidebar-menu-text">Default</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-item{% if slug === 'analytics' %} active{% endif %}">
+                <a class="sidebar-menu-button" href="{{ prefix or '' }}analytics.html">
+                  <span class="sidebar-menu-text">Analytics</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-item{% if slug === 'staff' %} active{% endif %}">
+                <a class="sidebar-menu-button" href="{{ prefix or '' }}staff.html">
+                  <span class="sidebar-menu-text">CRM/Staff</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-item{% if slug === 'ecommerce' %} active{% endif %}">
+                <a class="sidebar-menu-button" href="{{ prefix or '' }}ecommerce.html">
+                  <span class="sidebar-menu-text">E-commerce</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-item{% if slug === 'dashboard-quick-access' %} active{% endif %}">
+                <a class="sidebar-menu-button" href="{{ prefix or '' }}dashboard-quick-access.html">
+                  <span class="sidebar-menu-text">Quick Access</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane{% if apps_menu %} fade active show{% endif %}" id="sm_apps">
+          <div class="sidebar-heading">Apps</div>
+          <div class="sidebar-block p-0">
+            <ul class="sidebar-menu">
+              {% include 'layouts/_sidebar.menu.apps.html' %}
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane {% if pages_menu %} fade active show {% endif %}" id="sm_pages">
+          <div class="sidebar-heading">Pages</div>
+          <div class="sidebar-block p-0">
+            <ul class="sidebar-menu">
+              {% include 'layouts/_sidebar.menu.pages.html' %}
+            </ul>
+            <div class="sidebar-p-a sidebar-b-y layout-mini__d-none">
+              <div class="d-flex align-items-center mb-2">
+                <div class="sidebar-heading m-0 p-0 flex">Progress</div>
+                <div>60%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane{% if components_menu %} fade active show{% endif %}" id="sm_components">
+          <div class="sidebar-heading">Components</div>
+          <div class="sidebar-block p-0">
+            {% include 'layouts/_sidebar.menu.components.html' %}
+          </div>
+        </div>
+        <div class="tab-pane" id="sm_layouts">
+            <div class="sidebar-heading">Layouts</div>
+            <div class="sidebar-block p-0">
+              <ul class="sidebar-menu">    
+                <li class="sidebar-menu-item{% if prefix === '' %} active{% endif %}">
+                    <a class="sidebar-menu-button" href="{% if slug === 'dashboard' %}index{% else %}{{ slug }}{% endif %}.html">Default</a>
+                  </li>
+                  <li class="sidebar-menu-item{% if prefix === 'fluid-' %} active{% endif %}">
+                    <a class="sidebar-menu-button" href="fluid-{{ slug }}.html">Fluid</a>
+                  </li>
+                  <li class="sidebar-menu-item{% if prefix === 'fixed-' %} active{% endif %}">
+                    <a class="sidebar-menu-button" href="fixed-{{ slug }}.html">Fixed</a>
+                  </li>
+                  <li class="sidebar-menu-item{% if prefix === 'mini-' %} active{% endif %}">
+                    <a class="sidebar-menu-button" href="mini-{{ slug }}.html">Mini</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- // END drawer -->

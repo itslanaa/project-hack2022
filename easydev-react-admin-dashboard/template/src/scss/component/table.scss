@@ -1,0 +1,477 @@
+.table {
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    opacity: 0.3;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+
+    @include themify($themes) {
+      background-color: themed('colorScrollbar');
+    }
+  }
+
+  @include directify($directions) {
+    text-align: directed('left');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  table {
+    width: inherit;
+  }
+
+  thead tr {
+    position: sticky;
+    top: 0;
+  }
+
+  thead th {
+    min-height: 45px;
+    min-width: 100px;
+    padding: 10px 0 10px 0;
+    top: 0;
+    position: sticky;
+
+    &:first-child {
+      min-width: 45px;
+    }
+
+    @include themify($themes) {
+      color: themed('colorText');
+      border-bottom-color: themed('colorBorder');
+      background: themed('colorBackground');
+    }
+  }
+
+  tbody td, th {
+    border: none;
+    padding: 10px 0 10px 0;
+
+    @include themify($themes) {
+      color: themed('colorTextAdditional');
+    }
+  }
+
+  th, td {
+
+    &:first-child {
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+
+  .badge {
+    font-size: 100%;
+  }
+
+  tfoot td {
+    min-height: 45px;
+    min-width: 100px;
+    padding: 10px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    color: $color-text;
+    font-weight: 700;
+
+    &:first-child {
+      min-width: 45px;
+      white-space: nowrap
+    }
+  }
+
+  &.table--not-pagination {
+    height: 458px;
+
+    tbody {
+      top: 30px;
+    }
+  }
+
+  &.table--bordered {
+
+    @include directify($directions) {
+      text-align: directed('left');
+    }
+
+    tr {
+
+      @include themify($themes) {
+        border-bottom: 1px solid themed('colorBorder');
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.table--head-accent {
+
+    thead {
+
+      @include themify($themes) {
+        color: themed('colorTextAdditional');
+        background-color: themed('colorHover');
+      }
+
+      th {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.table-striped {
+
+    tbody tr:nth-of-type(odd) {
+
+      @include themify($themes) {
+        background-color: themed('colorHover');
+      }
+    }
+  }
+
+  &.table-hover {
+
+    tbody tr {
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+
+        @include themify($themes) {
+          background-color: themed('colorBackgroundBody');
+        }
+      }
+    }
+  }
+
+  .react-table {
+
+    thead tr {
+      position: sticky;
+      top: 0;
+      background: white;
+    }
+  }
+
+  .react-table__column-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    &:first-child{
+      margin-right: 10px;
+    }
+
+    &.sortable {
+      cursor: pointer;
+
+      svg {
+        width: 16px;
+        height: 16px;
+
+        @include directify($directions) {
+          #{directed('right')}: -20px;
+        }
+      }
+    }
+  }
+
+  .resizable-table {
+
+    thead {
+      min-width: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      &:first-child {
+        min-width: 45px;
+      }
+    }
+
+    tbody {
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    th,
+    td {
+      min-width: 100px !important;
+
+      &:first-child {
+        max-width: 45px;
+        min-width: 45px !important;
+      }
+
+      .resizer {
+        top: 5px;
+        right: 10px;
+        width: 4px;
+        height: 70%;
+        position: absolute;
+        touch-action :none;
+
+        @include themify($themes) {
+          background: themed('colorBorder');
+        }
+
+        &.isResizing {
+
+          @include themify($themes) {
+            background: themed('colorHeaderDataPicker');
+          }
+        }
+      }
+    }
+  }
+
+  .react-dnd--off {
+    pointer-events: none;
+  }
+
+  .react-dnd-draggable {
+    z-index: 98 !important;
+
+    td {
+      width: inherit;
+
+      &:first-child {
+        width: 70px;
+        min-width: 70px !important;
+      }
+    }
+  }
+
+  .editable-table {
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -ms-user-select: none; /* IE10+ */
+
+    thead {
+      min-width: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      &:first-child {
+        min-width: 45px;
+      }
+    }
+
+    th,
+    td {
+      min-width: 100px;
+
+      &:first-child {
+        max-width: 45px;
+        min-width: 45px;
+      }
+    }
+
+    .table__editable-table--cell-active {
+      max-width: inherit;
+      border: none;
+      outline: 2px solid $color-blue;
+      margin: -7px 10px -6px 0;
+    }
+
+    .table__edit-form {
+      max-width: fit-content;
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      font-size: 13px;
+      font-family: 'Roboto', sans-serif;
+      padding-left: 0;
+
+      @include themify($themes) {
+        background-color: themed('colorBackground');
+        color: themed('colorTextAdditional');
+      }
+
+      &:active {
+        border: none;
+        outline: 1px solid $color-blue;
+      }
+    }
+
+    .form-control {
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.react-table__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.react-table__customizer {
+  padding: 0 20px 20px 15px;
+}
+
+.table__search {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+  color: $color-additional;
+
+  .table__search-input {
+    max-width: 250px;
+    font-size: 12px;
+    margin-right: 20px;
+
+    @include themify($themes) {
+      color: themed('colorText');
+      background: themed('colorBackground');
+    }
+  }
+}
+
+.table__collapse-content {
+  width: 275px;
+  position: absolute;
+  z-index: 101;
+  box-shadow: 0 10px 25px 0 rgba(33, 36, 50, 0.13);
+
+  @include directify($directions) {
+    #{directed('right')}: 20px;
+  }
+
+  @include themify($themes) {
+    background: themed('colorBackground');
+  }
+}
+
+.react-table__highlighter {
+
+  mark {
+    background-color: $color-accent;
+    padding: 0;
+  }
+}
+
+.table__collapse-title-wrap {
+  padding: 25px 20px 10px 20px;
+
+  p {
+    color: $color-additional;
+  }
+
+  @include themify($themes) {
+    border-bottom: 1px solid themed('colorBorder');
+  }
+}
+
+.table__collapse-item {
+  padding: 10px 20px 25px 20px;
+
+  @include themify($themes) {
+    border-bottom: 1px solid themed('colorBorder');
+  }
+}
+
+.table__collapse-item--tooltip .tooltip {
+  z-index: 101;
+}
+
+.table__btn {
+  font-size: 18px;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  border: none;
+  background: transparent;
+  transition: all 0.3s;
+
+  h5 {
+    color: $color-additional;
+    margin-right: 10px;
+  }
+
+  svg {
+    margin: auto;
+    height: 18px;
+    width: 18px;
+
+    @include themify($themes) {
+      fill: themed('colorIcon');
+    }
+  }
+
+  @include themify($themes) {
+    color: themed('colorText');
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 0 5px;
+  }
+
+  @keyframes beforePulse {
+
+    from {
+      width: 7px;
+      height: 7px;
+    }
+
+    25% {
+      width: 13px;
+      height: 13px;
+    }
+
+    to {
+      width: 7px;
+      height: 7px;
+    }
+  }
+}
+
+.table__collapse-back {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  border: none;
+}
+
+.table__icon {
+  margin: auto 0;
+}
+
+.table__toggle {
+  margin-left: 0 !important;
+
+  &--disabled {
+    opacity: 0.4;
+  }
+}
+
+
+.table-fetch-spinner {
+  color: $color-accent;
+}

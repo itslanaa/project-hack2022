@@ -1,0 +1,67 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+/////////////
+// GENERAL //
+/////////////
+
+.mdk-header {
+  margin-bottom: $spacer;
+  height: auto;
+
+  &--shadow {
+    transition: .25s box-shadow;
+  }
+
+  &--shadow-show {
+    @include mdc-elevation-mixins.elevation(10, $shadow-baseline-color, $shadow-opacity-boost);
+    border-color: transparent !important;
+  }
+
+  &--shadow::after {
+    // box-shadow: inset 0px 5px 6px -3px rgba($header-shadow-base-color, .4);
+    display: none;
+  }
+
+  &__bg-front {
+    background-position: center;
+    &::after {
+      display: block;
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+////////////////////////////////
+// GRADIENT BACKGROUND HEADER //
+////////////////////////////////
+
+.mdk-header--bg-gradient-primary .mdk-header__bg-front::after {
+  background-image: $primary-gradient;
+  opacity: .9;
+}
+
+.mdk-header--bg-gradient-purple .mdk-header__bg-front::after {
+  background-image: linear-gradient(-128deg, #8A4182 0%, #3289DC 100%);
+  opacity: .9;
+}
+
+.mdk-header--bg-white .mdk-header__bg-front::after {
+  background-color: rgba(white, .9);
+}
+
+@each $color, $value in $theme-colors {
+  .mdk-header--bg-#{$color} .mdk-header__bg-front::after {
+    background-color: rgba($value, .9);
+  }
+}

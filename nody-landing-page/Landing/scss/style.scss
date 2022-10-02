@@ -1,0 +1,40 @@
+/* Template Name: Nody - Responsive Bootstrap 4 Landing Page Template
+   Author: Themesdesign
+   Version: 1.0.0
+   Created: Jan 2020
+   File Description: Main Css file of the template
+*/
+
+/**********************
+01.General
+02.Menu
+03.Components
+04.Helper
+05.Loader
+06.Hero
+07.About Us
+08.services
+09.features
+10.project
+11.testimonial
+12.blog
+13.contact
+14.footer
+***********************/
+
+
+@import "variables";
+@import "general";
+@import "menu";
+@import "components";
+@import "helper";
+@import "loader";
+@import "hero";
+@import "about";
+@import "services";
+@import "features";
+@import "project";
+@import "testimonial";
+@import "blog";
+@import "contact";
+@import "footer";

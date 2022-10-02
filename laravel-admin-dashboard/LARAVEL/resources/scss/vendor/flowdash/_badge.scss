@@ -1,0 +1,30 @@
+.badge { 
+  box-sizing:border-box;
+  font-weight:600;
+  display:inline-flex;
+  align-items:center;
+  vertical-align:middle;
+}
+
+.badge-success,.badge-danger {
+  color: white
+}
+
+.badge-light {
+  color: rgba(#66768A, .4);
+}
+
+@each $color, $value in $theme-colors {
+  .badge-outline-#{$color} {
+    color: $value;
+    border: 1px solid $value;
+  }
+}
+
+
+@each $color, $value in $theme-colors {
+  .badge-soft-#{$color} {
+    color: darken(theme-color($color), 5%);
+    background-color: rgba(theme-color($color), .1);
+  }
+}

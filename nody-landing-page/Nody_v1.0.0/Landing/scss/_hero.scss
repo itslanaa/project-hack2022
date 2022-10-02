@@ -1,0 +1,121 @@
+// 
+// Hero
+// 
+
+@mixin hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+// Hero 1
+.hero-1-bg {
+    padding: 200px 0 180px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    .hero-1-title {
+        font-size: 46px;
+    }
+}
+
+// Hero 2
+.hero-2-bg {
+    padding: 250px 0 340px;
+    .hero-2-overlay {
+        @include hero-overlay;
+    }
+    .hero-2-title {
+        font-size: 48px;
+        text-shadow: 1px 3px 5px rgba($black, 0.15);
+    }
+}
+
+// Hero 3
+.hero-3-bg {
+    padding: 210px 0 380px;
+    .hero-3-title {
+        font-size: 44px;
+        text-shadow: 1px 3px 5px rgba($black, 0.15);
+    }
+}
+
+// Hero 4
+.hero-4-bg {
+    padding: 220px 0 180px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .hero-4-title {
+        font-size: 46px;
+    }
+}
+
+// Hero 5
+.hero-5-bg {
+    padding: 100px 0 80px;
+    overflow: hidden;
+    .hero-5-title {
+        font-size: 44px;
+        text-shadow: 1px 3px 5px rgba($black, 0.15);
+    }
+    .Subcribe-form {
+        form {
+            position: relative;
+            margin: 0px auto;
+        }
+        input {
+            padding: 12px 20px;
+            min-width: 290px;
+            height: 46px;
+            font-size: 17px;
+            color: $muted !important;
+            outline: none !important;
+            position: relative;
+        }
+    }
+}
+
+// Responsive
+
+@media (min-width: 200px) and (max-width: 768px) { 
+    .hero-1-bg {
+        padding: 120px 0 60px;
+    }
+    .hero-2-bg {
+        padding: 150px 0;
+    }
+    .hero-3-bg {
+        padding: 160px 0 180px;
+    }
+    .hero-4-bg {
+        padding: 110px 0 80px;
+    }
+    .hero-5-bg {
+        .hero-5-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 576px) { 
+    .hero-1-title, .hero-2-title {
+        font-size: 36px !important;
+    }
+    .hero-3-bg {
+        padding: 120px 0 120px;
+        .hero-3-title {
+            font-size: 26px;
+        }
+    }
+    .hero-4-title, .hero-5-title {
+        font-size: 32px !important;
+    }
+}
+

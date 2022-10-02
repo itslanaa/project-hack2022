@@ -1,0 +1,1944 @@
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1800px) {
+.container-full-padding,
+.s-container-full-padding {
+    padding: 0 60px;
+}
+.slider-img {
+	right: 40px;
+}
+.slider-img.slider-img2 {
+	right: 210px;
+}
+.slider-active .slick-arrow {
+	opacity: 0;
+	transition: .3s linear;
+}
+.slider-active .slick-arrow {
+	left: 0;
+}
+.slider-active .slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-active:hover .slick-arrow {
+	opacity: 1;
+}
+.footer-fire {
+	left: 0;
+}
+.footer-fire-right {
+	left: auto;
+	right: 0;
+}
+.game-gallery-area .slider-nav {
+	max-width: 1080px;
+	position: unset;
+}
+.game-gallery-bg {
+	display: none;
+}
+.game-gallery-area.position-relative {
+	background-image: url(../img/bg/game_gallery_bg.png);
+	background-position: top center;
+	background-size: cover;
+	padding: 120px 0 120px;
+	margin-bottom: 0;
+}
+.my-match-bg {
+	padding-top: 110px;
+}
+
+}
+
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1500px) {
+.container-full-padding,
+.s-container-full-padding {
+    padding: 0 30px;
+}
+.product-active .slick-arrow {
+	left: 0px;
+}
+.product-active .slick-arrow.slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-bg {
+	padding: 180px 0;
+}
+.slider-style-two {
+	padding: 250px 0 150px;
+}
+.slider-img img {
+	width: 400px;
+}
+.slider-img.slider-img2 img {
+	width: 480px;
+}
+.slider-circle-shape img {
+	width: 650px;
+}
+.slider-circle-shape {
+	right: 310px;
+}
+.slider-img {
+	right: 20px;
+}
+.slider-img.slider-img2 {
+	right: 165px;
+}
+.footer-fire {
+	display: none;
+}
+.header-bottom-bg {
+	width: 100%;
+	background-position: center;
+}
+.game-gallery-area .slider-nav {
+	max-width: 900px;
+	position: unset;
+}
+.home-four-slider .slider-img img {
+    width: auto;
+}
+.home-four-slider .slider-img img {
+    width: 600px;
+}
+.custom-container-two {
+    max-width: 1230px;
+}
+.header-four-wrap::before {
+    width: 22%;
+}
+.home-four-slider .slider-bg {
+    padding: 180px 0 180px;
+}
+.home-four-slider .slider-content h6 {
+    font-size: 20px;
+}
+.home-four-slider .slider-content h2 {
+    font-size: 75px;
+    text-transform: capitalize;
+}
+.home-four-slider .slider-content p {
+    width: 90%;
+}
+.home-four-area-bg .bg {
+    height: 1395px;
+}
+.new-released-game-area .featured-game-content h4 {
+	font-size: 20px;
+}
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+.container-full-padding,
+.s-container-full-padding {
+    padding: 0 15px;
+}
+.product-active .slick-arrow {
+	left: 0px;
+}
+.product-active .slick-arrow.slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-bg {
+	padding: 180px 0;
+}
+.navbar-wrap ul li a {
+	font-size: 12px;
+	padding: 40px 20px;
+}
+.about-content {
+	padding-right: 0;
+}
+.tournament-schedule-item {
+	flex-wrap: wrap;
+}
+.match-team-logo img {
+	width: 75px;
+}
+.coming-match-status img {
+	width: 50px;
+}
+.coming-match-status {
+	margin: 0 15px;
+}
+.coming-match-team {
+	padding: 25px 15px 30px;
+	flex-wrap: wrap;
+}
+.coming-match-info {
+	padding: 35px 15px;
+}
+.match-info-action .btn.transparent-btn {
+	padding: 15px 17px;
+	margin-left: 10px;
+}
+.match-info-action .btn {
+	font-size: 12px;
+	padding: 17px 15px;
+}
+.coming-match-time .coming-time {
+	padding: 20px 15px;
+}
+.newsletter-wrap {
+	flex-direction: column;
+}
+.newsletter-title {
+	margin-bottom: 30px;
+}
+.menu-style-two {
+	padding: 28px 0px;
+	border-radius: 0;
+	background-image: none;
+}
+.transparent-header {
+	background-image: url(../img/bg/header_bg.jpg);
+}
+.menu-style-two .navbar-wrap ul li a {
+	padding: 15px 20px;
+}
+.slider-img.slider-img2 {
+	display: none;
+}
+.slider-style-two .slider-content h2 {
+	font-size: 75px;
+}
+.slider-style-two .slider-content p {
+	width: 90%;
+}
+.slider-style-two {
+	padding: 250px 0 150px;
+}
+.slider-circle-shape {
+	right: 170px;
+	bottom: 50px;
+}
+.slider-circle-shape img {
+	width: 600px;
+}
+.released-game-item {
+	margin: 50px 10px;
+}
+.released-game-nav-item {
+	margin: 0 10px;
+}
+.released-games-area.gray-bg {
+	padding-bottom: 120px;
+}
+.gamers-chart-shape {
+	display: none;
+}
+.just-gamers-img {
+	right: -55px;
+}
+.just-gamers-bg::before {
+	left: auto;
+	right: 100px;
+	margin: unset;
+}
+.just-gamers-bg::after {
+	left: auto;
+	right: 136px;
+	margin: unset;
+}
+.cta-img img {
+	width: 80%;
+}
+.cta-content {
+	padding: 0;
+}
+.cta-content .section-title h2 {
+	font-size: 45px;
+}
+.latest-match-box .tournament-schedule-content {
+	padding: 20px 25px 36px;
+}
+.latest-match-box .tournament-schedule-content p {
+	padding-right: 0;
+}
+.team-member-content h4 {
+	font-size: 18px;
+}
+.breadcrumb-bg {
+	padding-top: 225px;
+	padding-bottom: 120px;
+}
+.breadcrumb-content h2 {
+	font-size: 60px;
+}
+.upcoming-game-item {
+	padding: 25px 20px 30px;
+}
+.uc-game-head-title {
+	margin-right: 30px;
+}
+.uc-game-head-title h4 {
+	font-size: 18px;
+}
+.uc-game-price h5 {
+	padding: 6px 20px;
+}
+.breadcrumb-content.pl-80 {
+	padding-left: 0;
+}
+.game-overview-img {
+	margin-left: 0;
+}
+.game-overview-img img {
+	width: 100%;
+}
+.overview-history-content {
+	padding-right: 0;
+}
+.overview-list-thumb img {
+	width: 100px;
+}
+.overview-list-content {
+	padding-right: 25px;
+	margin-right: 25px;
+}
+.overview-list-content h4 {
+	font-size: 14px;
+}
+.overview-list-content span {
+	font-size: 12px;
+}
+.overview-list-price h4 {
+	font-size: 14px;
+}
+.blog-sidebar {
+	margin-left: 0;
+	padding: 25px 15px;
+}
+.sidebar-widget-title h4 {
+	font-size: 18px;
+}
+.rc-post-content h5 {
+	font-size: 14px;
+}
+.sidebar-trending-match ul li {
+	padding: 15px 15px;
+}
+.sidebar-trend-match-action span:nth-child(2) {
+	margin: 0 10px;
+}
+.sidebar-trend-match-thumb img {
+	width: 50px;
+}
+.sidebar-trend-match-date {
+	width: 115px;
+	font-size: 10px;
+	padding: 6px 14px;
+}
+.sidebar-tag-list ul li {
+	margin: 0 5px 5px 0px;
+}
+.sidebar-tag-list ul li a {
+	font-size: 12px;
+	padding: 14px 16px;
+}
+.table {
+	width: 790px;
+	max-width: 790px;
+	margin-top: 1rem;
+}
+.create-topic {
+	margin-top: 1rem;
+}
+.community-widget {
+	padding: 35px 20px;
+}
+.sidebar-new-game-content h5 {
+	font-size: 14px;
+}
+.contact-area .row [class*="col-"]:last-child.pl-45 {
+	padding-left: 15px;
+}
+.header-four-wrap .menu-style-two .navbar-wrap > ul > li > a {
+    padding: 13px 20px;
+}
+.header-four-wrap::before {
+    width: 18%;
+}
+.slider-style-two .slider-content h2 {
+    font-size: 64px;
+}
+.home-four-slider .slider-img img {
+    width: 480px;
+}
+.home-four-slider .slider-img {
+    right: 15px;
+}
+.home-four-slider .slider-bg {
+    padding: 140px 0 140px;
+}
+.home-four-area-bg .bg {
+    height: 1230px;
+}
+.live-match-team img {
+    max-width: 100%;
+}
+.live-match-time .live-overlay-text {
+    font-size: 315px;
+}
+.live-match-team::before {
+	display: none;
+}
+.featured-game-area .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.latest-games-content {
+    padding: 35px 25px;
+}
+.third-header-bg .navbar-wrap .logo img {
+    width: 195px;
+}
+.third-banner-content h2 {
+    font-size: 94px;
+}
+.third-banner-img::after {
+    width: 820px;
+}
+.my-match-wrap {
+    padding: 0;
+}
+.third-about-img .main-img {
+    max-width: 100%;
+}
+.third-title-style h2 {
+    font-size: 36px;
+}
+.third-title-style .inner p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.game-gallery-area.position-relative {
+    padding: 120px 0 80px;
+}
+.my-match-box-wrap {
+    margin-top: -27px;
+}
+.my-match-box-wrap ul li:first-child {
+    width: 360px;
+    flex: 0 0 360px;
+}
+.my-match-box-wrap ul li:nth-child(2) {
+    width: 300px;
+    flex: 0 0 300px;
+}
+.my-match-box-wrap ul {
+    top: 60px;
+    left: 80px;
+    right: 80px;
+}
+.my-match-info h5 {
+    font-size: 18px;
+}
+.my-match-info {
+    padding: 0 30px;
+}
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+.container-full-padding,
+.s-container-full-padding {
+    padding: 0 30px;
+}
+.header-top-right {
+	justify-content: center;
+	padding: 10px 0;
+}
+.main-header,
+.main-header.sticky-menu {
+	padding: 25px 0 10px;
+}
+.main-menu nav {
+	justify-content: space-between;
+}
+.header-action {
+	margin-right: 80px;
+}
+.header-shop-cart:hover ul.minicart {
+	transform: translateY(-10px);
+}
+.slider-content h2 {
+	font-size: 82px;
+}
+.slider-content p {
+	width: 90%;
+}
+.about-img {
+	margin-bottom: 50px;
+}
+.product-active .slick-arrow {
+	left: 0px;
+}
+.product-active .slick-arrow.slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-bg {
+	padding: 180px 0;
+}
+.navbar-wrap ul li a {
+	font-size: 12px;
+	padding: 40px 20px;
+}
+.about-content {
+	padding-right: 0;
+}
+.tournament-schedule-item {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tournament-schedule-item .match-team-logo img {
+	width: auto;
+}
+.tournament-schedule-item .coming-match-status img {
+	width: auto;
+}
+.tournament-schedule-item .coming-match-status {
+	margin: 0 25px;
+}
+.tournament-menu button {
+	font-size: 13px;
+	margin-left: 20px;
+}
+.match-team-logo img {
+	width: 75px;
+}
+.coming-match-status img {
+	width: 50px;
+}
+.coming-match-status {
+	margin: 0 15px;
+}
+.coming-match-team {
+	padding: 25px 15px 30px;
+	flex-wrap: wrap;
+}
+.coming-match-info {
+	padding: 35px 15px;
+}
+.match-info-action .btn.transparent-btn {
+	padding: 15px 17px;
+	margin-left: 15px;
+}
+.match-info-action .btn {
+	font-size: 12px;
+	padding: 17px 15px;
+}
+.coming-match-time .coming-time {
+	padding: 20px 15px;
+}
+.features-item {
+	padding: 45px 25px;
+}
+.features-list-img {
+	margin-left: 25px;
+}
+.newsletter-wrap {
+	flex-direction: column;
+}
+.newsletter-title {
+	margin-bottom: 30px;
+}
+.newsletter-form form input {
+	width: 320px;
+}
+.payment-method-img img {
+	width: 100%;
+}
+.slider-img {
+	display: none;
+}
+.transparent-header {
+	padding: 25px 0 10px;
+	top: 0;
+}
+.menu-style-two {
+	padding: 0;
+}
+.slider-style-two {
+	padding: 240px 0 150px;
+	text-align: center;
+}
+.slider-circle-shape {
+	right: 70px;
+}
+.slider-style-two .slider-content p {
+	width: 80%;
+	margin: 0 auto 45px;
+}
+.slider-style-two .row {
+	justify-content: center;
+}
+.released-game-item {
+	margin: 50px 0px;
+}
+.just-gamers-bg::before,
+.just-gamers-bg::after {
+	display: none;
+}
+.cta-img {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.cta-content {
+	padding: 0 50px;
+	text-align: center;
+}
+.cta-content .title-style-three.white-title::before {
+	margin: 0 auto;
+	right: 0;
+}
+.cta-img img {
+	width: auto;
+}
+.inner-about-img {
+	margin-bottom: 45px;
+}
+.latest-match-box .tournament-schedule-content {
+	padding: 41px 30px;
+}
+.team-member-content h4 {
+	font-size: 20px;
+}
+#contact-map {
+	margin-bottom: 50px;
+}
+.inner-about-padding {
+	padding-bottom: 174px;
+}
+.game-overview-img img {
+	width: auto;
+}
+.game-overview-breadcrumb .breadcrumb-content .breadcrumb {
+	justify-content: center;
+}
+.game-overview-img {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.overview-history-img {
+	margin-bottom: 40px;
+}
+.overview-history-img img {
+	width: auto;
+}
+.overview-list-thumb img {
+	width: auto;
+}
+.overview-list-content h4 {
+	font-size: 16px;
+}
+.overview-list-content span {
+	font-size: 14px;
+}
+.overview-list-price h4 {
+	font-size: 18px;
+}
+.overview-list-content {
+	padding-right: 50px;
+	margin-right: 30px;
+}
+.blog-sidebar {
+	padding: 25px;
+	margin: 120px 100px 0;
+}
+.sidebar-widget-title h4 {
+	font-size: 22px;
+}
+.rc-post-content h5 {
+	font-size: 16px;
+}
+.sidebar-trending-match ul li {
+	padding: 17px 20px;
+}
+.sidebar-trend-match-thumb img {
+	width: auto;
+}
+.sidebar-trend-match-action span:nth-child(2) {
+	margin: 0 20px;
+}
+.sidebar-trend-match-date {
+	width: 140px;
+	font-size: 12px;
+	padding: 6px 14px;
+}
+.sidebar-tag-list ul li a {
+	font-size: 14px;
+	padding: 15px 20px;
+}
+.community-sidebar {
+	padding-top: 120px;
+}
+.community-widget {
+	padding: 35px;
+}
+.sidebar-new-game-content h5 {
+	font-size: 16px;
+}
+.header-four-wrap {
+    border-top: none;
+    padding: 18px 0 8px;
+}
+.header-four-wrap::before {
+    width: 28%;
+}
+.home-four-area-bg .bg {
+    height: 1275px;
+}
+.header-style-four .logo img {
+    filter: brightness(0) invert(1);
+}
+.header-four-wrap::before {
+    width: 0;
+}
+.header-four-wrap .mean-container a.meanmenu-reveal {
+    margin-top: -38px;
+}
+.live-match-time {
+    margin: 50px 0;
+}
+.live-match-time > span {
+    margin: 0 auto 40px;
+}
+.third-header-bg .bg,
+.header-bottom-bg {
+	display: none;
+}
+.third-header-bg {
+    background: #1c1f26;
+    padding: 20px 0 5px;
+}
+.third-header-bg .sticky-menu {
+    padding: 20px 0 5px;
+}
+.third-banner-img::after {
+	display: none;
+}
+.custom-container {
+    max-width: 720px;
+}
+.third-banner-content h2 {
+    font-size: 80px;
+}
+.third-banner-img img {
+    width: 480px;
+}
+.third-banner-img {
+    margin-bottom: -30px;
+}
+.third-banner-bg {
+    padding: 120px 0 120px;
+    margin-top: 0;
+}
+.third-about-img {
+    text-align: center !important;
+    margin-bottom: 40px;
+}
+.my-match-box-wrap > img {
+    display: none;
+}
+.my-match-box-wrap {
+    margin: 0 auto 50px;
+    max-width: 60%;
+    background-color: rgba(42, 40, 49, 0.49);
+    box-shadow: 0px 3px 43px 0px rgba(15, 14, 13, 0.68);
+    padding: 50px 30px;
+}
+.my-match-box-wrap:last-child {
+    margin-bottom: 0;
+}
+.my-match-box-wrap ul {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: unset;
+    display: block;
+}
+.my-match-box-wrap ul li:first-child,
+.my-match-box-wrap ul li:nth-child(2),
+.my-match-box-wrap ul li:last-child  {
+    width: 100%;
+    flex: 0 0 100%;
+}
+.my-match-team {
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.my-match-info {
+    padding: 0;
+    text-align: center;
+}
+.watch-stream {
+    justify-content: center;
+    margin-top: 25px;
+}
+.my-match-info h5 {
+    font-size: 20px;
+}
+.donation-img {
+    margin-top: 50px;
+}
+form.third-contact-form {
+    margin-top: 50px;
+}
+.footer-widget.text-right {
+    text-align: left !important;
+}
+.third-footer-bg .fw-title.mb-35 {
+    margin-bottom: 20px;
+}
+
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) {
+.container-full-padding,
+.s-container-full-padding {
+    padding: 0 15px;
+}
+.header-top-right {
+	justify-content: center;
+	padding: 10px 0;
+}
+.main-header,
+.main-header.sticky-menu {
+	padding: 25px 0 10px;
+}
+.main-menu nav {
+	justify-content: space-between;
+}
+.header-action {
+	display: none;
+}
+.slider-content h6 {
+	font-size: 16px;
+}
+.slider-content h6::before {
+	border-width: 5px 90px 5px 0;
+}
+.slider-content h6::after {
+	border-width: 5px 0 5px 90px;
+}
+.slider-content h2 {
+	font-size: 60px;
+}
+.slider-content p {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 500;
+}
+.about-img {
+	margin-bottom: 50px;
+}
+.product-active .slick-arrow {
+	left: 0px;
+}
+.product-active .slick-arrow.slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-bg {
+	padding: 120px 0;
+}
+.section-title h2 {
+	font-size: 36px;
+}
+.about-content {
+	padding-right: 0;
+}
+.tournament-schedule-wrap {
+	padding: 30px 15px 15px;
+}
+.tournament-schedule-content {
+	padding: 35px 15px 60px;
+}
+.tournament-schedule-item {
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 30px 15px;
+}
+.tournament-schedule-item .match-team-logo img {
+	width: 75px;
+}
+.tournament-schedule-item .coming-match-status img {
+	width: 50px;
+}
+.tournament-schedule-item .coming-match-status {
+	margin: 0 15px;
+}
+.tournament-top-wrap {
+	justify-content: center;
+	padding: 25px 20px;
+}
+.tournament-title h2 {
+	font-size: 24px;
+}
+.tournament-menu {
+	justify-content: center;
+}
+.tournament-menu button {
+	font-size: 14px;
+	margin: 0 10px;
+	margin-top: 10px;
+}
+.tournament-menu button::before {
+	display: none;
+}
+.match-team-logo img {
+	width: 75px;
+}
+.coming-match-status img {
+	width: 50px;
+}
+.coming-match-status {
+	margin: 0 25px;
+}
+.coming-match-team {
+	padding: 25px 15px 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.coming-match-info {
+	padding: 35px 15px;
+}
+.match-info-action .btn.transparent-btn {
+	padding: 15px 17px;
+	margin-left: 15px;
+}
+.match-info-action .btn {
+	font-size: 12px;
+	padding: 17px 15px;
+}
+.coming-match-time .coming-time {
+	padding: 20px 15px;
+}
+.features-item {
+	padding: 45px 25px;
+}
+.features-list-img {
+	margin-left: 15px;
+}
+.features-list-img img {
+	width: 90px;
+}
+.features-list-content h6 {
+	font-size: 15px;
+}
+.fact-item {
+	justify-content: center;
+}
+.blog-post-wrap {
+	padding: 30px 15px;
+}
+.blog-style-one {
+	display: block;
+}
+.blog-style-one .blog-thumb img {
+	width: 100%;
+}
+.blog-style-one .blog-post-content {
+	padding: 18px 15px;
+}
+.testimonial-item {
+	padding: 0 15px;
+}
+.testimonial-content p {
+	font-size: 16px;
+}
+.testimonial-active.owl-carousel .owl-nav {
+	margin-left: 15px;
+}
+.testi-quote {
+	right: 15px;
+	bottom: 15px;
+}
+.testi-quote img {
+	width: 100px;
+}
+.newsletter-wrap {
+	flex-direction: column;
+	padding: 40px 15px;
+}
+.newsletter-title {
+	margin-bottom: 30px;
+}
+.newsletter-title h2 {
+	font-size: 24px;
+}
+.newsletter-form form input {
+	width: 100%;
+}
+.newsletter-form form {
+	margin-right: 0;
+	flex-direction: column;
+}
+.newsletter-form button {
+	margin-left: 0;
+	margin-top: 15px;
+}
+.newsletter-form-grp {
+	margin: 0 10px;
+}
+.copyright-text p {
+	text-align: center;
+}
+#scrollUp {
+	right: 10px;
+	bottom: 10px;
+}
+.slider-style-two .slider-content h2 {
+	font-size: 45px;
+	line-height: 1;
+}
+.slider-style-two {
+	padding: 205px 0 120px;
+}
+.slider-style-two .slider-content p {
+	width: 100%;
+}
+.released-game-item {
+	display: block;
+	padding: 30px 15px 30px;
+}
+.released-game-img {
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+.released-game-img img {
+	width: 100%;
+}
+.just-gamers-list ul li {
+	padding-right: 0;
+	text-align: center;
+}
+.just-gamers-list-icon {
+	float: unset;
+	margin: 0 auto 15px;
+}
+.just-gamers-bg .title-style-three {
+	text-align: center;
+}
+.just-gamers-bg .title-style-three::before {
+	right: 0;
+	margin: 0 auto;
+}
+.cta-img img {
+	width: 100%;
+}
+.cta-content {
+	padding: 0;
+}
+.cta-content .section-title h2 {
+	font-size: 36px;
+}
+.breadcrumb-content h2 {
+	font-size: 40px;
+	line-height: 1;
+}
+.inner-about-img img:nth-child(2),
+.inner-about-img img:nth-child(3) {
+	display: none;
+}
+.inner-about-img img {
+	margin-left: 0;
+	width: 100%;
+}
+.latest-match-box {
+	display: block;
+}
+.latest-match-box .tournament-schedule-content {
+	padding: 25px 20px 45px;
+}
+.latest-match-thumb img {
+	width: 100%;
+}
+.inner-about-area {
+	padding-top: 110px;
+}
+.game-single-content {
+	padding: 40px 20px;
+}
+.game-single-info ul li span {
+	margin-right: 15px;
+}
+.game-overview-img img {
+	width: 100%;
+}
+.overview-history-img img {
+	width: 100%;
+}
+.overview-history-list ul li {
+	display: block;
+	text-align: center;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+.overview-list-thumb {
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+.overview-list-content {
+	padding-right: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+}
+.overview-list-content::before {
+	display: none;
+}
+.blog-list-post-content {
+	padding: 25px 20px;
+}
+.blog-list-post-tag.mb-25 {
+	margin-bottom: 15px;
+}
+.blog-list-post-bottom ul {
+	padding: 23px 20px 8px;
+}
+.pagination-wrap ul li {
+	margin-top: 10px;
+}
+.blog-sidebar {
+	padding: 25px 15px;
+	margin: 120px 0px 0;
+}
+.sidebar-widget-title h4 {
+	font-size: 18px;
+}
+.rc-post-content h5 {
+	font-size: 14px;
+}
+.sidebar-trending-match ul li {
+	padding: 15px 15px;
+}
+.sidebar-trend-match-action span:nth-child(2) {
+	margin: 0 10px;
+}
+.sidebar-trend-match-thumb img {
+	width: 50px;
+}
+.sidebar-trend-match-date {
+	width: 115px;
+	font-size: 10px;
+	padding: 6px 14px;
+}
+.sidebar-tag-list ul li {
+	margin: 0 5px 5px 0px;
+}
+.sidebar-tag-list ul li a {
+	font-size: 12px;
+	padding: 14px 16px;
+}
+.blog-details-wrap .blog-list-post-content {
+	padding: 25px 20px;
+}
+.blog-details-wrap .blog-list-post-content h4 {
+	font-size: 20px;
+}
+.sidebar-widget-title.blog-details-title h4 {
+	font-size: 20px;
+}
+.blog-comment ul li {
+	padding: 25px 20px;
+	display: block;
+}
+.comment-avatar-thumb {
+	margin-bottom: 15px;
+}
+.comment-avatar-info h4 span {
+	display: block;
+	margin-left: 0;
+	margin-top: 5px;
+}
+.blog-comment ul li.comment-children {
+	margin-left: 0;
+}
+.comment-text p {
+	padding-right: 0;
+}
+.community-widget {
+	padding: 35px 20px;
+}
+.sidebar-new-game-content h5 {
+	font-size: 14px;
+}
+.live-match-wrap .popup-video img {
+	width: 40px;
+}
+.home-four-area-bg .bg {
+    height: 1065px;
+}
+.live-match-time > span {
+    margin: 0 auto 30px;
+}
+.live-match-time {
+    margin: 50px 0;
+}
+.live-match-team.right {
+    text-align: center;
+}
+.live-match-team {
+    text-align: center;
+}
+.live-match-time .live-overlay-text {
+    font-size: 215px;
+    letter-spacing: -20px;
+}
+.third-banner-img img {
+    width: auto;
+    max-width: 100%;
+}
+.third-banner-content h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+.third-banner-content h6 {
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-size: 18px;
+}
+.third-title-style h2 {
+    font-size: 30px;
+    letter-spacing: 0;
+}
+.third-section-title h2 {
+    font-size: 30px;
+}
+.game-gallery-active .slick-slide {
+    margin-top: 0;
+}
+.game-gallery-item {
+    padding: 0 15px;
+}
+.game-gallery-area.position-relative {
+    padding: 120px 0 120px;
+}
+.my-match-box-wrap {
+    margin: 0 auto 50px;
+    max-width: 100%;
+    padding: 50px 25px;
+}
+.my-match-team .vs img {
+    max-width: 45px;
+}
+.team-one img {
+    max-width: 70px;
+}
+.donation-wrap {
+    padding: 0;
+}
+.donation-img img {
+    max-width: 100%;
+}
+.team-bg {
+    overflow: hidden;
+}
+.fw-text p {
+    padding-right: 0;
+}
+.third-about-img .shadow {
+	max-width: 500px;
+}
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.match-team-logo img {
+	width: auto;
+}
+.coming-match-status img {
+	width: auto;
+}
+.coming-match-team {
+	padding: 30px 35px 40px;
+}
+.tournament-schedule-item {
+	padding: 37px 20px;
+}
+.tournament-schedule-item .match-team-logo img {
+	width: auto;
+}
+.tournament-schedule-item .coming-match-status img {
+	width: auto;
+}
+.tournament-schedule-item .coming-match-status {
+	margin: 0 25px;
+}
+.tournament-schedule-content {
+	padding: 35px 35px 60px;
+}
+.tournament-menu button {
+	margin: 0 15px;
+	margin-top: 15px;
+}
+.features-item {
+	padding: 45px 35px;
+}
+.features-list-img img {
+	width: auto;
+}
+.features-list-content h6 {
+	font-size: 16px;
+}
+.blog-style-one .blog-post-content {
+	padding: 25px 30px;
+}
+.blog-post-wrap {
+	padding: 60px;
+}
+.tournament-schedule-wrap {
+	padding: 30px 30px 15px;
+}
+.testimonial-item {
+	padding: 0 45px;
+}
+.testimonial-active.owl-carousel .owl-nav {
+	margin-left: 45px;
+}
+.header-action {
+	display: block;
+}
+#search-modal .modal-dialog .modal-content form {
+	width: 470px;
+}
+.slider-style-two .slider-content h2 {
+	font-size: 70px;
+}
+.slider-style-two .slider-content p {
+	width: 95%;
+}
+.released-game-item {
+	padding: 30px 30px 30px;
+	margin: 50px 10px;
+	overflow: hidden;
+}
+.just-gamers-list ul li {
+	padding: 0 60px;
+}
+.featured-game-content {
+	left: 20px;
+	bottom: 25px;
+	right: 20px;
+}
+.featured-game-content h4 {
+	font-size: 20px;
+}
+.featured-game-overlay-content {
+	left: 50%;
+	right: auto;
+	bottom: auto;
+}
+.cta-img img {
+	width: auto;
+}
+.latest-match-box {
+	display: flex;
+}
+.latest-match-box .tournament-schedule-content {
+	padding: 37px 25px 45px;
+}
+.latest-match-thumb img {
+	width: auto;
+}
+.accessories-content h5 {
+	font-size: 16px;
+}
+.breadcrumb-content h2 {
+	font-size: 44px;
+}
+.upcoming-game-item {
+	padding: 30px 25px 35px;
+}
+.uc-game-head-title h4 {
+	font-size: 22px;
+}
+.uc-game-price h5 {
+	padding: 6px 25px;
+}
+.game-overview-img img {
+	width: auto;
+}
+.game-single-content {
+	padding: 40px 30px;
+}
+.blog-sidebar {
+	padding: 25px;
+}
+.sidebar-trending-match ul li {
+	padding: 17px 20px;
+}
+.sidebar-trend-match-thumb img {
+	width: auto;
+}
+.sidebar-trend-match-date {
+	width: 140px;
+	font-size: 12px;
+	padding: 6px 14px;
+}
+.sidebar-trend-match-action span:nth-child(2) {
+	margin: 0 20px;
+}
+.rc-post-content h5 {
+	font-size: 16px;
+}
+.sidebar-widget-title h4 {
+	font-size: 22px;
+}
+.blog-comment ul li {
+	padding: 25px 25px;
+}
+.community-widget {
+	padding: 35px;
+}
+.sidebar-new-game-content h5 {
+	font-size: 16px;
+}
+.home-four-area-bg .bg {
+    height: 1385px;
+}
+.live-match-time .live-overlay-text {
+	top: 30px;
+}
+.third-banner-content h2 {
+    font-size: 64px;
+}
+.team-one img {
+    max-width: unset;
+}
+.my-match-team .vs img {
+    max-width: unset;
+}
+.my-match-box-wrap {
+    max-width: 75%;
+}
+.third-section-title h2 {
+    font-size: 36px;
+}
+.third-title-style h2 {
+    font-size: 36px;
+}
+
+}
+
+/* New Responsive CSS */
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1800px) {
+.h-seven-slider-active .slick-dots {
+    right: 6%;
+}
+
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1500px) {
+.home-five-banner {
+	padding: 170px 0 150px;
+}
+.h-seven-slider-img {
+    text-align: left !important;
+}
+.h-seven-slider-active .slick-dots {
+    right: 4%;
+}
+.h-seven-slider-content .title {
+    font-size: 85px;
+}
+.h-seven-slider-content .title strong {
+    font-size: 70px;
+}
+.makes-gaming-chair::before,
+.makes-gaming-chair::after {
+    left: 45%;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+.gameplay-content {
+    margin-right: 30px;
+}
+.gameplay-content .title {
+    font-size: 16px;
+}
+.treand-gameplay-overlay {
+    right: 15px;
+    bottom: 15px;
+}
+.episodes-wrapper {
+    padding: 40px 20px 40px;
+}
+.game-episodes-item .content .title {
+    font-size: 16px;
+}
+.video-blog-content .title {
+    font-size: 16px;
+	padding-right: 0;
+}
+.banner-magazine-content {
+    width: auto;
+}
+.banner-magazine-content .title {
+    font-size: 18px;
+}
+.trend-news-content .title {
+    font-size: 18px;
+}
+.trending-news-item.horizontal-item .trend-news-thumb {
+    width: 100px;
+    flex: 0 0 100px;
+}
+.trending-news-item.horizontal-item .trend-news-content .title {
+    font-size: 14px;
+}
+.sidebar-popular-item .sp-content .title {
+    font-size: 15px;
+}
+.world-news-item .banner-magazine-content {
+    width: auto;
+}
+.latest-game-news-item .lgn-thumb {
+    max-width: 260px;
+    flex: 0 0 260px;
+}
+.h-seven-slider-img {
+    text-align: center !important;
+}
+.h-seven-slider-content .title {
+    font-size: 75px;
+}
+.h-seven-slider-content .title strong {
+    font-size: 60px;
+}
+.h-seven-slider-content p {
+    width: 80%;
+}
+.home-seven-slider {
+    padding: 95px 0 90px;
+}
+.lc-item-content {
+    left: 40px;
+    width: 50%;
+}
+.lc-item-content .rotated-btn {
+    font-size: 14px;
+    padding: 16px 18px;
+}
+.lc-item-content h4 {
+    font-size: 24px;
+}
+.lc-item-content .rotated-btn::before {
+    border-top: 46px solid #fff;
+}
+.lc-item-content .rotated-btn::after {
+    border-top: 46px solid #fff;
+}
+.gs-category-item .content {
+    left: 40px;
+    top: 40px;
+    width: 45%;
+}
+.gs-category-item.style-two .content {
+    left: 25px;
+    top: 25px;
+    width: 55%;
+}
+.gaming-chair-active {
+    margin-left: 0;
+}
+.makes-gaming-chair .chair-zoom,
+.makes-gaming-chair .chair-chart {
+	display: none;
+}
+.makes-gaming-chair::before,
+.makes-gaming-chair::after {
+    left: 53%;
+}
+.makes-gaming-chair .main-chair {
+    width: 450px;
+}
+.chair-discount-img img {
+    max-width: 100%;
+}
+.chair-discount-content {
+    margin-left: 0;
+    margin-right: 0;
+}
+.chair-product-top-content .title,
+.chair-product-price .price {
+	font-size: 16px;
+}
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+.live-stream-item.style-two .content {
+    width: auto;
+    right: 30px;
+}
+.live-stream-item.style-two .content .popup-video {
+    margin-bottom: 20px;
+}
+.banner-news-heading .headline h5 {
+    font-size: 16px;
+}
+.banner-news-heading .headline p {
+    font-size: 14px;
+}
+.trending-news-item.horizontal-item .trend-news-content .title {
+    font-size: 16px;
+}
+.sidebar-popular-item .sp-content .title {
+    font-size: 16px;
+}
+.home-sidebar-news {
+    margin-top: 20px;
+}
+.banner-magazine-content .title {
+    font-size: 20px;
+}
+.world-news-area .banner-magazine-content .title {
+    font-size: 20px;
+}
+.latest-game-news-item .lgn-thumb {
+    max-width: 340px;
+    flex: 0 0 340px;
+}
+.latest-game-news-area .pagination-wrap {
+	margin-top: 50px;
+}
+.latest-game-news-area .home-sidebar-news {
+    margin-top: 60px;
+}
+.h-seven-slider-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.h-seven-slider-content p {
+    width: 65%;
+    margin: 0 auto 40px;
+}
+.home-seven-slider {
+    padding: 110px 0 100px;
+    margin-top: 0;
+}
+.gs-category-active .col-5 {
+    -ms-flex: 0 0 61%;
+    flex: 0 0 61%;
+    max-width: 61%;
+}
+.gs-category-active .col-3 {
+    -ms-flex: 0 0 39%;
+    flex: 0 0 39%;
+    max-width: 39%;
+}
+.makes-gaming-chair::before,
+.makes-gaming-chair::after {
+    display: none;
+}
+.chair-discount-img {
+    margin-bottom: 35px;
+}
+.chair-product-top-content .title,
+.chair-product-price .price {
+    font-size: 18px;
+}
+.makes-gaming-chair {
+    padding: 100px 0 120px;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) {
+.home-five-banner {
+    padding: 140px 0 120px;
+}
+.home-five-banner .banner-content .title-one {
+    font-size: 50px;
+    line-height: .9;
+    margin-bottom: 10px;
+}
+.home-five-banner .banner-content .title-two {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.gameplay-content .title {
+    font-size: 18px;
+}
+.gameplay-status {
+    margin-top: 13px;
+}
+.live-stream-item .thumb .popup-video {
+	display: none;
+}
+.live-stream-item .content .title {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.live-stream-item .content {
+    left: 20px;
+    bottom: 20px;
+    width: auto;
+    right: 20px;
+}
+.live-stream-item.style-two .content .popup-video {
+	display: none;
+}
+.live-stream-item.style-two .content {
+    width: auto;
+    right: 20px;
+    left: 20px;
+}
+.live-stream-item.style-two .content .title {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.episodes-wrapper {
+    padding: 30px 20px 30px;
+}
+.game-episodes-item .content {
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+.home-six-banner .banner-content .title-one {
+    font-size: 50px;
+    line-height: .9;
+    margin-bottom: 10px;
+}
+.home-six-banner .banner-content .title-two {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.banner-news-heading {
+    display: block;
+}
+.banner-news-heading .headline {
+    display: block;
+    width: 100%;
+    flex: 0 0 100%;
+}
+.banner-news-heading .headline h5 {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.banner-news-heading .social-link {
+    margin-top: 10px;
+}
+.latest-game-news-item {
+	display: block;
+}
+.trending-news-item.horizontal-item .trend-news-content .title {
+    font-size: 14px;
+}
+.latest-game-news-item .lgn-thumb {
+    max-width: 100%;
+    flex: 0 0 100%;
+	margin-right: 0;
+	margin-bottom: 25px;
+}
+.latest-game-news-item .trend-news-content .title {
+    padding-right: 0;
+}
+.banner-magazine-item {
+    max-width: 100%;
+}
+.banner-magazine-thumb img {
+    width: 100%;
+}
+.trend-news-thumb img {
+    width: 100%;
+}
+.h-seven-slider-content .title {
+    font-size: 48px;
+}
+.h-seven-slider-content .title strong {
+    font-size: 40px;
+}
+.h-seven-slider-content p {
+    width: 100%;
+    margin: 0 auto 40px;
+}
+.h-seven-slider-img img {
+    max-width: 100%;
+}
+.lc-item-content {
+    left: 25px;
+    width: 60%;
+}
+.lc-item-content p {
+	display: none;
+}
+.lc-item-content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.game-shop-title .title {
+    font-size: 30px;
+}
+.gs-category-active .col-5,
+.gs-category-active .col-3 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.gs-category-item .thumb img {
+    width: 100%;
+}
+.gs-category-item .content {
+    left: 30px;
+    top: 30px;
+    width: 55%;
+}
+.makes-gaming-chair .game-shop-title {
+    text-align: center !important;
+}
+.makes-gaming-chair .game-shop-title::after {
+    margin: 0 auto;
+}
+.makes-gaming-chair .game-shop-title p {
+    padding-right: 0;
+}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.home-five-banner .banner-content .title-one{
+	font-size: 60px;
+}
+.home-five-banner .banner-content .title-two {
+    font-size: 45px;
+}
+.gameplay-status {
+    margin-top: 0;
+}
+.gameplay-thumb img {
+    width: 100%;
+}
+.live-stream-item .thumb img {
+    width: 100%;
+}
+.live-stream-item .content .title {
+    font-size: 22px;
+    line-height: 1.4;
+}
+.live-stream-item .content {
+    left: 35px;
+    bottom: 35px;
+    width: auto;
+    right: 35px;
+}
+.live-stream-item .thumb .popup-video {
+    display: block;
+}
+.live-stream-item.style-two .content .title {
+    font-size: 22px;
+    line-height: 1.4;
+}
+.live-stream-item.style-two .content .popup-video {
+    display: block;
+}
+.live-stream-item.style-two .content {
+    width: 61%;
+    right: 30px;
+    left: 30px;
+    bottom: 30px;
+}
+.game-episodes-item .thumb img {
+    width: 100%;
+}
+.game-episodes-item .content {
+    left: 25px;
+    bottom: 25px;
+    right: 25px;
+}
+.game-episodes-item .content .title {
+    font-size: 18px;
+}
+.video-blog-thumb img {
+    width: 100%;
+}
+.video-blog-content .title {
+    font-size: 18px;
+}
+.trend-news-content .title {
+    font-size: 20px;
+}
+.trending-news-item.horizontal-item .trend-news-content .title {
+    font-size: 16px;
+}
+.sidebar-popular-item .sp-thumb img,
+.popular-banner-ad img {
+    width: 100%;
+}
+.business-news-post img,
+.latest-game-news-item .lgn-thumb img {
+    width: 100%;
+}
+.h-seven-slider-content p {
+    width: 76%;
+    margin: 0 auto 40px;
+}
+.h-seven-slider-content .title {
+    font-size: 55px;
+}
+.h-seven-slider-content .title strong {
+    font-size: 45px;
+}
+.lc-item-content p {
+    display: block;
+}
+.lc-item-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.lc-item-content {
+    left: 40px;
+    width: 50%;
+}
+.gs-category-active .col-3 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.gs-category-item .content {
+    left: 40px;
+    top: 40px;
+    width: 45%;
+}
+
+}
+
+
+
+

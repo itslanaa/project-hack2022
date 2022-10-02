@@ -1,0 +1,14 @@
+.layout-sticky-subnav {
+  .mdk-header-layout {
+    overflow: initial;
+  }
+  .page__subnav {
+    position: sticky;
+    top: $navbar-height;
+    z-index: 2;
+  }
+  .page__container {
+    z-index: 0;
+    position: relative;
+  }
+}

@@ -1,0 +1,133 @@
+.ta-hidden-input {
+  display: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  overflow: hidden;
+  background-color: transparent;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $color--text;
+  background:$color--background;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+::selection {
+  background: $color--primary;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $color--primary;
+  color: #fff;
+}
+
+.no-border {
+  border: 0;
+}
+
+
+
+.page-main-header {
+  padding: 20px;
+  border-bottom: 1px solid #E5E5E5;
+  display:none;
+
+  h4 {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-main-header .text-right {
+    text-align: left;
+  }
+
+  .page-main-header .col-sm-6 .col-sm-6 {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+.non-display {
+  display: none;
+}
+
+.page {
+  padding: 40px;
+  background-color: darken($color--background,2%);
+}
+
+.page-form-ele h3 {
+  margin: 0;
+}
+
+
+.view-containter {
+  position: relative;
+}
+
+#content {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: -blackberry-touch;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+@media (min-width: 768px) {
+  #content {
+    top: 80px;
+    width: auto;
+    left: 270px;
+  }
+}
+
+.body-special #content,
+.body-special .nav-style--alternative #content {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.body-lock #content {
+  background: url("../images/background/3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

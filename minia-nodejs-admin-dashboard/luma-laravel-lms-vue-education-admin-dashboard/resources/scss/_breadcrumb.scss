@@ -1,0 +1,55 @@
+////////////////
+// Breadcrumb //
+////////////////
+
+.breadcrumb {
+  align-items: center;
+  font-size: $breadcrumb-font-size;
+  font-weight: $breadcrumb-font-weight;
+  text-transform: $breadcrumb-text-transform;
+  font-family: $breadcrumb-font-family;
+  letter-spacing: $breadcrumb-letter-spacing;
+  .container > &:first-of-type {
+    padding-top: 1rem;
+  }
+}
+
+.text-breadcrumb {
+  font-size: $breadcrumb-font-size;
+  font-weight: $breadcrumb-font-weight;
+  text-transform: $breadcrumb-text-transform;
+  font-family: $breadcrumb-font-family;
+  letter-spacing: $breadcrumb-letter-spacing;
+  color: $breadcrumb-color;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: $breadcrumb-color;
+  > a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+  + .breadcrumb-item {
+    &::before {
+      font-family: "Material Icons";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "liga";
+      content: "keyboard_arrow_right";
+    }
+  }
+}

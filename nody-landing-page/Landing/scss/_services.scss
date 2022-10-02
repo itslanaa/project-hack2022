@@ -1,0 +1,41 @@
+//
+// services.scss
+//
+
+.service-box {
+    transition: all 0.5s;
+    .service-icon-bg {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .service-box-icon {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            filter: brightness(0.55);
+            transition: all 0.5s;
+        }
+    }
+    .service-title, .read-more {
+        color: $dark;
+    }
+    .service-subtitle {
+        color: $muted;
+    }
+    &:hover {
+        background: $primary;
+        border-color: $primary;
+        .service-box-icon {
+            filter: brightness(1);
+        }
+        .service-title, .read-more, .service-subtitle, .service-box-icon {
+             transition: all 0.5s;
+         }
+         .service-title, .read-more {
+            color: $white;
+        }
+        .service-subtitle {
+            color: rgba($white, 0.5);
+        }
+    }
+}

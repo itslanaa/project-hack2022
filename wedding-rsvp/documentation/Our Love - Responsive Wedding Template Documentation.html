@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Our Love - Responsive Wedding Template Complete Documentation v1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Our Love - Responsive Wedding Template Documentation" />
+    <meta name="keywords" content="love, wedding, rsvp, story, gallery" />
+    <meta name="author" content="lmpixels" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title">
+              <h1>Our Love - Responsive Wedding Template v1.0</h1> 
+              <h4>Complete Documentation</h4>
+            </div>
+            <div class="template-preview"><img src="images/template_preview.jpg" alt="Template Preview"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Thank you very much for purchasing from LMPixels!</h3>
+            <p>If you have any issue or question that this document does not cover, you can contact me via email <a href="mailto:mlinar73@gmail.com">mlinar73@gmail.com</a>.</p>
+
+            <h2>Table of Contents</h2>
+            <ol>
+              <li><a href="#installing">Template Installation</a></li>
+              <li><a href="#html_structure">HTML Structure</a></li>
+              <li><a href="#css_structure">CSS Files and Structure</a></li>
+              <li><a href="#scripts">Scripts</a></li>
+              <li><a href="#php_integration">PHP Integration (Contact Form)</a></li>
+              <li><a href="#fonts">Fonts</a></li>
+              <li><a href="#credits">Credits</a></li>
+            </ol>
+
+
+            <h2 id="installing">Template Installation</h2>
+            <p>You can view this template in any web browser from your computer, mobile device. Because the files are written in HTML, you do not need an internet connection in order to display or edit the template.</p>
+            <p>All of the HTML files are given a descriptive name to make it easier to distingish what each file will display.</p>
+            <h3 style="margin-bottom:10px;">Upload to The Server</h3>
+            <ol>
+              <li>It's important to understand that you must either have your own server space or use someone elses. The server space can be purchased at many different places around the internet. You need somewhere to put the files that you purchased so others can find them online.</li>
+              <li>Select several files with the extension labeled <em>.html</em>. This is where all your content will. In addition to .html you should see a file labeled <em>.css</em>. <em>.css</em> files are going to be the files that will tell the .html how to to be styled. CSS is simply a way to take text, images, and other elements and change the look of them. It's very important to keep the <em>.css</em> file with the HTML or the HTML will not look how the design is meant to look. Along with the HTML and CSS files, you will also have three additional folders to upload: <em>images, js and php</em>.</li>
+              <li>Start your FTP client (I persoanlly use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</li>
+              <li>Locate the domain folder you wish to upload your template files to on your server. You are going to want to click and drag every file that you have labeled <em>.html, .css, .js, .php</em> into your FTP client.</li>
+              <li>Once the files are done uploading, you can try access your website via browser.</li>
+            </ol>
+
+            <h2 id="html_structure">HTML Structure</h2>
+
+            <p>This site template has a Responsive and Mobile-Friendly layout based on Bootstrap Boilerplate.</p>
+
+            <h3>HTML files</h3>
+
+            <p>The main structure of this site is wrapped in a <em>'#main-container'</em> div. Inside of that div you will find sections of the site.</p>
+            <div><img src="images/html_structure.jpg" alt="Html Structure"></div>
+            </ol>
+
+
+            <h2 id="css_structure">CSS Files and Structure</h2>
+
+            <p>I'm using one main CSS file <em>(style.css)</em> in this template which you are free to modify depending on the customization you require.</p>
+
+            <p>If you would like to edit the color, font, or style of any elements, you would do the following in <em>css/main.css</em> :</p>
+
+            <div><img src="images/main_css.jpg" alt="main.css"></div>
+
+            <p>If you would like to edit a specific section or page of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+            <p>There are also five additional style sheets that I do not recommend changing. Those style sheets reside in the <em>'css'</em> folder. The 5 style sheets are:</p>
+
+            <ul class="square">
+              <li><em>bootstrap.css</em> - A Beautiful Boilerplate for Responsive, Mobile-Friendly Development.</li>
+              <li><em>bootstrap.min.css</em> - Minified version of <em>bootstrap.css</em>.</li>
+              <li><em>normalize.css</em> - Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.</li>
+              <li><em>owl.carousel.css</em> - The main stylesheet for Carousels.</li>
+              <li><em>magnific-popup.css</em> -  The main stylesheet for styling the lightbox.</li>
+              <li><em>animate.css</em> -  CSS3 animation sets for portfolio content loading.</li>
+            </ul>
+
+            <p>These files are included in the <em>'head'</em> of <em>index.html</em> and <em>blog-post-1.html</em>:</p>
+            <div><img src="images/head_css.jpg" alt=""></div>
+
+            <h2 id="scripts">Scripts</h2>
+            <p>This template uses several scripts. If you're a developer, you will find this particularly useful.</p>
+
+            <ul class="circle">
+              <li>jquery-1.2.4.min.js (version 1.2.4) - used by the various JS files as a library.</li>
+              <li>bootstrap.min.js - <a href="http://getbootstrap.com/javascript/">Bootstrap JS.</a></li>
+              <li>imagesloaded.pkgd.min.js - <a href="http://imagesloaded.desandro.com/">Detect when images have been loaded.</a></li>
+              <li>jquery.magnific-popup.min.js - <a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.</a></li>
+              <li>modernizr.custom.js - <a href="http://modernizr.com/">Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser</a></li>
+              <li>owl.carousel.min.js - <a href="https://owlcarousel2.github.io/OwlCarousel2/">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</a></li>
+              <li>validator.js - <a href="https://github.com/1000hz/bootstrap-validator">Contact form validator</a></li>
+              <li>jquery.stellar.min.js - <a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js is a jQuery plugin that provides parallax scrolling effects to any scrolling element.</a></li>
+              <li>jquery.malihu.PageScroll2id.min.js - <a href="http://manos.malihu.gr/page-scroll-to-id/">Page scroll to id is an easy-to-use jQuery plugin that enables animated page scrolling to specific id within the document.</a></li>
+              <li>jquery.countdown.min.js - <a href="http://hilios.github.io/jQuery.countdown/">The Final Countdown is a plugin tailored to be used in any layout, without any CSS/HTML dependency.</a></li>
+              <li>main.js - jQuery Plugins Initialisation, mobile menu, page scroll.</li>
+            </ul>
+
+            <h2 id="php_integration">PHP Integration (RSVP Form)</h2>
+            <p>This template also use the PHP engine for activate the RSVP form.</p>
+            <p>For RSVP data direct send to your email address you can edit your email address in <em>/rsvp_form/rsvp_form.php</em> file.</p>
+            <div><img src="images/rsvp_form.jpg" alt=""></div>
+
+            <h2 id="fonts">Fonts</h2>
+            <ul class="circle">         
+              <li>Arial, Helvetica, Sans-serif (both should be on your system as standard fonts)</li> 
+              <li>Google Fonts <a href="http://www.google.com/webfonts/specimen/Oswald">Oswald</a>, <a href="http://www.google.com/webfonts/specimen/PT+Sans">PT Sans</a>.</li>
+              <li>Font Awesome <a href="http://fontawesome.io/icons/">Font Awesome version 4.7.0 </a>(The complete set of 675 icons).</li>
+              <li><a href="http://themes-pixeden.com/font-demos/7-stroke/index.html">7 stroke</a> icons font by Pixeden.</li>
+            </ul>
+
+            <h2 id="credits">Credits</h2>
+
+            <p>Images (Just on live preview, not included in the download package):
+            <ul>
+               <li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
+               <li><a href="https://www.flickr.com/photos/ryan_polei">https://www.flickr.com/photos/ryan_polei</a></li>
+            </ul>
+
+            <hr>
+            <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template.</p>
+
+          </div>
+        </div>
+    </div>
+    <footer class="container bottom copyright">
+      <div class="row">
+        <div class="col-md-12">
+         <p>Copyright © 2016 <a href="http://themeforest.net/user/lmpixels" target="_blank">LMPixels</a>, All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

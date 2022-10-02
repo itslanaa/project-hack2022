@@ -1,0 +1,141 @@
+<div class="mdk-drawer {{ drawerClass or '' }} js-mdk-drawer" id="default-drawer" data-align="{{ drawerAlign }}">
+  <div class="mdk-drawer__content">
+    <div class="sidebar sidebar-light sidebar-left sidebar-p-t" data-perfect-scrollbar>
+      <div class="sidebar-heading">Menu</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item{% if dashboards_menu %} active open{% endif %}">
+          <a class="sidebar-menu-button" data-toggle="collapse" href="#dashboards_menu">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+            <span class="sidebar-menu-text">Dashboards</span>
+            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+          </a>
+          <ul class="sidebar-submenu collapse{% if dashboards_menu %} show {% endif %}" id="dashboards_menu">
+            <li class="sidebar-menu-item{% if slug === 'dashboard' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{{ home_url }}">
+                <span class="sidebar-menu-text">Default</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if slug === 'analytics' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{{ prefix or '' }}analytics.html">
+                <span class="sidebar-menu-text">Analytics</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if slug === 'staff' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{{ prefix or '' }}staff.html">
+                <span class="sidebar-menu-text">Staff</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if slug === 'ecommerce' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{{ prefix or '' }}ecommerce.html">
+                <span class="sidebar-menu-text">E-commerce</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if slug === 'dashboard-quick-access' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{{ prefix or '' }}dashboard-quick-access.html">
+                <span class="sidebar-menu-text">Quick Access</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar-menu-item{% if apps_menu %} active open{% endif %}">
+          <a class="sidebar-menu-button" data-toggle="collapse" href="#apps_menu">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
+            <span class="sidebar-menu-text">Apps</span>
+            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+          </a>
+          <ul class="sidebar-submenu collapse{% if apps_menu %} show {% endif %}" id="apps_menu">
+            {% include 'layouts/_sidebar.menu.apps.html' %}
+          </ul>
+        </li>
+
+        <li class="sidebar-menu-item{% if pages_menu %} active open{% endif %}">
+          <a class="sidebar-menu-button" data-toggle="collapse" href="#pages_menu">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">description</i>
+            <span class="sidebar-menu-text">Pages</span>
+            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+          </a>
+          <ul class="sidebar-submenu collapse{% if pages_menu %} show {% endif %}" id="pages_menu">
+            {% include 'layouts/_sidebar.menu.pages.html' %}
+          </ul>
+        </li>
+
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" data-toggle="collapse" href="#layouts_menu">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_compact</i>
+            <span class="sidebar-menu-text">Layouts</span>
+            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+          </a>
+          <ul class="sidebar-submenu collapse{% if layouts_menu %} show{% endif %}" id="layouts_menu">
+            <li class="sidebar-menu-item{% if prefix === '' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="{% if slug === 'dashboard' %}index{% else %}{{ slug }}{% endif %}.html">
+                <span class="sidebar-menu-text">Default</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if prefix === 'fluid-' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="fluid-{{ slug }}.html">
+                <span class="sidebar-menu-text">Full Width Navs</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if prefix === 'fixed-' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="fixed-{{ slug }}.html">
+                <span class="sidebar-menu-text">Fixed Navs</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item{% if prefix === 'mini-' %} active{% endif %}">
+              <a class="sidebar-menu-button" href="mini-{{ slug }}.html">
+                <span class="sidebar-menu-text">Mini Sidebar + Navs</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="sidebar-heading">Components</div>
+      <div class="sidebar-block p-0 mb-0">
+        {% include 'layouts/_sidebar.menu.components.html' %}
+  
+        <div class="sidebar-p-a sidebar-b-y">
+          <div class="d-flex align-items-top mb-2">
+            <div class="sidebar-heading m-0 p-0 flex text-body js-text-body">Progress</div>
+            <div class="font-weight-bold text-success">60%</div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center sidebar-p-a border-bottom sidebar-account">
+        <a href="{{ prefix }}profile.html" class="flex d-flex align-items-center text-underline-0 text-body">
+          <span class="avatar avatar-sm mr-2">
+            <img src="assets/images/avatar/demi.png" alt="avatar" class="avatar-img rounded-circle">
+          </span>
+          <span class="flex d-flex flex-column">
+            <strong>Adrian Demian</strong>
+            <small class="text-muted text-uppercase">Site Manager</small>
+          </span>
+        </a>
+        <div class="dropdown ml-auto">
+          <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i class="material-icons">more_vert</i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-item-text dropdown-item-text--lh">
+              <div><strong>Adrian Demian</strong></div>
+              <div>@adriandemian</div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item{% if slug === 'dashboard' %} active{% endif %}" href="{{ home_url }}">Dashboard</a>
+            <a class="dropdown-item{% if slug === 'profile' %} active{% endif %}" href="{{ prefix }}profile.html">My profile</a>
+            <a class="dropdown-item{% if slug === 'edit-account' %} active{% endif %}" href="{{ prefix }}edit-account.html">Edit account</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ prefix }}login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-p-a">
+        <a href="https://themeforest.net/item/stack-admin-bootstrap-4-dashboard-template/22959011" class="btn btn-primary btn-block">Purchase &dollar;35</a>
+      </div>
+
+    </div>
+  </div>
+</div>

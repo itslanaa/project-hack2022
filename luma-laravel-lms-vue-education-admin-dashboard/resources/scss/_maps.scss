@@ -1,0 +1,49 @@
+.map {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-pin {
+  width: 64px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  left: -32px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: top center;
+  color: #888;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.map-pin span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+.blue {
+  background-image: url('../images/marker/blue.png');
+}
+
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+  box-sizing: content-box;
+  background: $primary;
+  padding: .25rem;
+}
+.jqvmap-label {
+  z-index: 1;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: white;
+  padding: .25rem .5rem;
+  color: $body-color;
+}

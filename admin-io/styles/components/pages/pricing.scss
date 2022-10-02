@@ -1,0 +1,90 @@
+/************************************
+14 - Pricing / Ribbons
+*************************************/
+
+.pricing-table {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.pricing-table > header {
+  display: block;
+  margin: 0;
+  padding: 25px 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pricing-table .pricing-price {
+  position: relative;
+  padding: 35px 10px;
+  font-size: 60px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-table .pricing-price em {
+  font-size: .6em;
+  font-weight: 300;
+  font-style: normal;
+  vertical-align: 10px;
+}
+
+.pricing-table .pricing-price sup {
+  font-size: .45em;
+}
+
+.pricing-table .pricing-price sub {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: .25em;
+  margin-left: -50px;
+}
+
+.pricing-table .pricing-body > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.pricing-table .pricing-body > ul > li {
+  padding: 22px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-table > footer > a {
+  display: block;
+  margin: 0;
+  padding: 22px 10px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table > footer > a > i {
+  margin-right: 10px;
+}
+
+.pricing-table-success {
+  background-color: $color--primary;
+}
+
+.pricing-table-info {
+  background-color: $color--info;
+}
+
+.pricing-table-warning {
+  background-color: $color--warning;
+}
+
+.pricing-table-danger {
+  background-color: $color--danger;
+}

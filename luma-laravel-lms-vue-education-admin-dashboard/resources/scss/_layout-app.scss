@@ -1,0 +1,8 @@
+.layout-app {
+  .container-fluid {
+    @include media-breakpoint-up(xl) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

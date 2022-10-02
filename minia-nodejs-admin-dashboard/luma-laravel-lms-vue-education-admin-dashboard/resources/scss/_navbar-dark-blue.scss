@@ -1,0 +1,75 @@
+.navbar-dark-blue {
+  background: $dark-blue;
+
+  .navbar-text-50 { color: rgba($white, .5); }
+  .navbar-text-70 { color: rgba($white, .7); }
+  .navbar-text-100 { color: $white; }
+
+  .navbar-search {
+    background-color: $sm-dark-blue-open-bg;
+    border-color: $sm-dark-blue-open-bg;
+    .form-control {
+      color: $white;
+      &::placeholder {
+        color: $sm-dark-blue-open-icon-color;
+      }
+      &:focus {
+        background-color: transparent !important;
+      }
+    }
+    .btn {
+      background: transparent;
+      color: $sm-dark-blue-open-icon-color;
+    }
+  }
+
+  .navbar-btn {
+    @include button-variant($sm-dark-blue-open-bg, $sm-dark-blue-open-bg);
+  }
+
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: rgba(white, .7);
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: rgba(white, .7);
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-border {
+    border-color: $navbar-dark-toggler-border-color !important;
+  }
+
+  .badge-notifications {
+    border: 1px solid $dark;
+  }
+}

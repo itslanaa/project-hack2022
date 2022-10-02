@@ -1,0 +1,41 @@
+.dropdown-notifications {
+  .dropdown-menu {
+    min-width: 300px;
+    padding: 0;
+    .list-group {
+      position: relative;
+      overflow: hidden;
+    }
+    .list-group-item {
+      display: flex;
+      flex-direction: column;
+      border-color: rgba($black, .05);
+    }
+    .unread {
+      &-indicator {
+        display: inline-block;
+        content: '';
+        width: .5rem;
+        height: .5rem;
+        border-radius: 100%;
+      }
+    }
+  }
+  .dropdown-toggle {
+    display: flex;
+    .material-icons {
+      font-size: 2rem;
+    }
+  }
+  .badge-notifications {
+    position: relative;
+    display: block;
+    margin-left: -.75rem;
+  }
+}
+
+.dropdown-notifications {
+  .dropdown-menu {
+    width: 300px;
+  }
+}

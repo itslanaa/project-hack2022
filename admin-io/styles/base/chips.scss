@@ -1,0 +1,79 @@
+.chipsdemo .custom-chips .md-chip {
+  position: relative;
+  padding-right: 35px; }
+.chipsdemo .custom-chips .md-chip .md-chip-remove-container {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  margin-right: 0;
+  height: 24px; }
+.chipsdemo .custom-chips .md-chip .md-chip-remove-container button.vegetablechip {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  line-height: 30px;
+  text-align: center;
+  background: $color--text;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  transition: background 0.15s linear;
+  display: block; }
+.chipsdemo .custom-chips .md-chip .md-chip-remove-container button.vegetablechip md-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(0.7);
+  color: white;
+  fill: white; }
+.chipsdemo .custom-chips .md-chip .md-chip-remove-container button.vegetablechip:hover, .chipsdemo .custom-chips .md-chip .md-chip-remove-container button.vegetablechip:focus {
+  background: $color--danger; }
+
+
+
+.chipsdemoContactChips md-content.autocomplete {
+  min-height: 250px; }
+.chipsdemoContactChips .md-item-text.compact {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+.chipsdemoContactChips .contact-item {
+  box-sizing: border-box; }
+.chipsdemoContactChips .contact-item.selected {
+  opacity: 0.5; }
+.chipsdemoContactChips .contact-item.selected h3 {
+  opacity: 0.5; }
+.chipsdemoContactChips .contact-item .md-list-item-text {
+  padding: 14px 0; }
+.chipsdemoContactChips .contact-item .md-list-item-text h3 {
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.2em !important; }
+.chipsdemoContactChips .contact-item .md-list-item-text h3, .chipsdemoContactChips .contact-item .md-list-item-text p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+@media (min-width: 900px) {
+  .chipsdemoContactChips .contact-item {
+    float: left;
+    width: 33%; } }
+.chipsdemoContactChips md-contact-chips {
+  margin-bottom: 10px; }
+.chipsdemoContactChips .md-chips {
+  padding: 5px 0 8px; }
+.chipsdemoContactChips .fixedRows {
+  height: 250px;
+  overflow: hidden; }
+
+.md-contact-suggestion img {
+  vertical-align: top;
+}
+
+md-chips .md-chip.md-focused {
+  background: $color--primary;
+}
+
+md-chips .md-chips.md-focused {
+  box-shadow: 0 2px $color--primary;
+}

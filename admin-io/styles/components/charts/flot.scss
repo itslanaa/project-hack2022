@@ -1,0 +1,55 @@
+#flotTip {
+  background: white;
+  @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  @include css-arrow(top, center, 8px, 10px, $color--background,'#ccc');
+  border:1px solid #ccc;
+  text-align:center;
+
+  .tooltip-header {
+    color:$color--gray-dark;
+    text-align:center;
+    padding:{
+      top:10px;
+      bottom:10px;
+      left:30px;
+      right:30px;
+    }
+    background:$color--background;
+    border-bottom:1px solid #ccc;
+  }
+
+  .tooltip-body {
+    text-align:center;
+    padding:{
+      top:10px;
+      bottom:10px;
+      left:30px;
+      right:30px;
+    }
+  }
+}
+
+.choices {
+  display:none;
+}
+
+.homepage-performance-chart .legend {
+  position: absolute !important;
+  top: -60px !important;
+  right: 0px !important;
+  width: 200px !important;
+
+  .legendColorBox > div{
+    border: none !important;
+    padding: 1px !important;
+    border-radius: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+.small-box-icon {
+  .small-flot {
+    margin-top:10px;
+    margin:auto;
+  }
+}

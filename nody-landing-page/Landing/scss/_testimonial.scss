@@ -1,0 +1,47 @@
+//
+// testimonial.scss
+//
+
+
+.testi-content {
+    .testi-box {
+        .test-user-info {
+            .testi-user-img {
+                border: 5px solid $white;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
+        margin-top: 16px;
+        .owl-dot {
+            outline: none;
+            span {
+                width: 12px;
+                height: 12px;
+                border: 3px solid $white;
+                margin: 5px 4px;
+                background: rgba($primary, 0.4);
+            }
+            &.active, &:hover {
+                span {
+                    background: $primary;
+                    box-shadow: 0 0 0 1px $primary;
+                }
+            }
+        }
+    }
+    .owl-item {
+        &.center, &:hover {
+            .testi-box {
+                .testi-user-img {
+                    box-shadow: 0 3px 0 -1px rgba($primary, 0.6);
+                    transform: translateY(-4px);
+                }
+            }
+        }
+    }
+}

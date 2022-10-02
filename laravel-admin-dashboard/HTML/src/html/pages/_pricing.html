@@ -1,0 +1,90 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }}  page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <li class="breadcrumb-item">Pages</li>
+        <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Pricing</h1>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+{% set pricing = [{
+  title: 'Personal',
+  amount: 29,
+  features: [
+    'HTML/SCSS/JS',
+    '6 Months Support'
+  ]
+}, {
+  title: 'Developers',
+  amount: 59,
+  popular: true,
+  btn_variant: 'primary',
+  features: [
+    'HTML/SCSS/JS',
+    '6 Months Support',
+    'HTML/SCSS/JS',
+    '6 Months Support'
+  ]
+}, {
+  title: 'Personal',
+  amount: 199,
+  features: [
+    'HTML/SCSS/JS',
+    '6 Months Support',
+    'HTML/SCSS/JS',
+    '6 Months Support',
+    'HTML/SCSS/JS',
+    '6 Months Support'
+  ]
+}] %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="row card-group-row  pt-2">
+    {% for item in pricing %}
+    <div class="col-md-6 col-lg-4 card-group-row__col">
+      <div class="card card-group-row__card pricing__card{% if item.popular %} pricing__card--popular{% endif %}">
+        {% if item.popular %} 
+        <span class="pricing__card-badge">most popular</span>
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+          <div class="text-center">
+            <h4 class="pricing__title mb-0">{{ item.title }}</h4>
+            <div class="d-flex align-items-center justify-content-center border-bottom-2 flex pb-3">
+              <span class="pricing__amount headings-color">{{ item.amount }}</span>
+              <span class="d-flex flex-column">
+                <span class="pricing__currency text-dark-gray text-left">USD</span>
+                <span class="pricing__duration text-dark-gray">*monthly</span>
+              </span>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            {% if item.features %}
+            <ul class="list-unstyled pricing__features">
+              {% for feature in item.features %}
+              <li>{{ feature }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            <a href="https://themeforest.net/item/stack-admin-bootstrap-4-dashboard-template/22959011" class="btn btn-{{ item.btn_variant or 'success' }} mt-auto">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

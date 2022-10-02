@@ -1,0 +1,23 @@
+.dashboard-area-tabs {
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    @include hover {
+      text-decoration: none;
+    }
+
+    .text-label-large {
+      color: theme-color('muted-light');
+    }
+    &:not(.active) {
+      background-color: $body-bg;
+      .text-amount {
+        color: theme-color('dark-gray');
+      }
+    }
+
+    &.active .text-label-large {
+      color: $primary;
+    }
+  }
+}

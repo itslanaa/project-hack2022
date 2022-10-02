@@ -1,0 +1,104 @@
+{% set products = [{
+  name: "Bleu Snow Coat", 
+  amount: "$22",
+  stock: "4",
+  category: "Coats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/clem-onojeghuo-192088.jpg"
+}, { 
+  name: "Navy Hat with Stripes", 
+  amount: "$54",
+  stock: "10",
+  category: "Hats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/lobostudio-hamburg-64728.jpg"
+}, {
+  name: "Bleu Snow Coat", 
+  amount: "$22",
+  stock: "4",
+  category: "Coats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/nina-strehl-140734.jpg"
+}, { 
+  name: "Navy Hat with Stripes", 
+  amount: "$54",
+  stock: "10",
+  category: "Hats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/lobostudio-hamburg-64728.jpg"
+}, {
+  name: "Bleu Snow Coat", 
+  amount: "$22",
+  stock: "4",
+  category: "Coats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/clem-onojeghuo-192088.jpg"
+}, { 
+  name: "Navy Hat with Stripes", 
+  amount: "$54",
+  stock: "10",
+  category: "Hats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/nina-strehl-140734.jpg"
+}, {
+  name: "Bleu Snow Coat", 
+  amount: "$22",
+  stock: "4",
+  category: "Coats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/clem-onojeghuo-192088.jpg"
+}, { 
+  name: "Navy Hat with Stripes", 
+  amount: "$54",
+  stock: "10",
+  category: "Hats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/nina-strehl-140734.jpg"
+}, {
+  name: "Bleu Snow Coat", 
+  amount: "$22",
+  stock: "4",
+  category: "Coats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/lobostudio-hamburg-64728.jpg"
+}, { 
+  name: "Navy Hat with Stripes", 
+  amount: "$54",
+  stock: "10",
+  category: "Hats",
+  status: "ACTIVE",
+  image: "assets/images/avatars/clem-onojeghuo-192088.jpg"
+}] 
+%}
+
+
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+                <li class="breadcrumb-item active">Products</li>
+              </ol>
+            </nav>
+        <h1 class="m-0">Products</h1>
+      </div>
+      <a href="" class="btn btn-success ml-3">Create</a>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+  
+<div class="{{ containerClass }} page__container">
+  <div class="card">
+    {% include 'pages/_products.table.html' %}
+  </div>
+</div>

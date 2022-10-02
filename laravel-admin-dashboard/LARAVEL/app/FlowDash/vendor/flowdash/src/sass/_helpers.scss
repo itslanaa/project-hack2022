@@ -1,0 +1,85 @@
+.img-lg-150 {
+  @include media-breakpoint-up(lg) {
+    max-width: 150px;
+  }
+}
+
+.img-xl-200 {
+  @include media-breakpoint-up(xl) {
+    max-width: 200px;
+  }
+}
+
+.bg-body {
+  background-color: $body-bg !important;
+}
+.bg-primary-dark {
+  background-color: $primary-dark !important;
+}
+.border-style-dashed {
+  border-style: dashed !important;
+}
+.border-bottom-2 {
+  border-bottom: 2px solid $border-color;
+}
+.text-body {
+  color: $body-color;
+  &[href] {
+    @include hover {
+      color: $body-color;
+    }
+  }
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-underline-0 {
+  text-decoration: none;
+  @include hover {
+    text-decoration: none;
+  }
+}
+
+.fullbleed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.text-social {
+  text-align: center;
+  svg {
+    height: 100%;
+  }
+}
+
+.text-facebook {
+  color: $facebook;
+  fill: $facebook;
+  &:hover {
+    fill: darken($facebook, 10%);
+  }
+}
+.text-twitter {
+  color: $twitter;
+  fill: $twitter;
+  &:hover {
+    fill: darken($twitter, 10%);
+  }
+}
+.text-instagram {
+  color: $instagram;
+  fill: $instagram;
+  &:hover {
+    fill: darken($instagram, 10%);
+  }
+}
+.text-dribbble {
+  color: $dribbble;
+  fill: $dribbble;
+  &:hover {
+    fill: darken($dribbble, 10%);
+  }
+}

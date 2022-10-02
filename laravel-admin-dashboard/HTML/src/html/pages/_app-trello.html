@@ -1,0 +1,196 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+                <li class="breadcrumb-item">Apps</li>
+                <li class="breadcrumb-item active" aria-current="page">Trello</li>
+              </ol>
+            </nav>
+        <h1 class="m-0">Trello App</h1>
+      </div>
+      <a href="" class="btn btn-light ml-3"><i class="material-icons">settings</i> Settings</a>
+      <a href="" class="btn btn-primary ml-3">New Task</a>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  
+  {% if 'fluid' in prefix %}
+  <div class="page__header page__header-nav">
+    <div class="{{ containerClass }} page__container">
+      {% include "layouts/_navbar.secondary.html" %}
+    </div>
+  </div>
+  {% endif %}
+  
+  {% import 'components/trello-task.html' as trelloTask %}
+  
+  <div class="trello-container">
+    <div class="trello-board {{ containerClass }} page__container">
+      <div 
+        class="trello-board__tasks"
+        data-toggle="dragula"
+        data-dragula-containers='["#trello-tasks-1", "#trello-tasks-2", "#trello-tasks-3", "#trello-tasks-4"]'>
+        <div class="card bg-light border">
+          <div class="card-header card-header-sm bg-white border-primary">
+            <h4 class="card-header__title m-0">Todo (3)</h4>
+          </div>
+          <div class="card-body p-2">
+            <div class="trello-board__tasks-list card-list" id="trello-tasks-1">
+              
+              {% set tasks1 = [{
+                badgeLabel: 'OPEN',
+                badgeClass: 'badge-light-gray',
+                date: 'Oct 28, 2018',
+                title: 'Add UI Buttons Page',
+                comments: 28,
+                assigned: 'Janell D. Matney',
+                avatarCount: 1
+              }, {
+                badgeLabel: 'RESOLVED',
+                badgeClass: 'badge-success',
+                date: 'Nov 1, 2018',
+                title: 'Envato Item Presentation',
+                comments: 28,
+                assigned: 'Adrian Demian',
+                avatarGroup: true,
+                avatarCount: 3
+              }, {
+                badgeLabel: 'NEED HELP',
+                badgeClass: 'badge-warning',
+                date: 'Nov 1, 2018',
+                title: 'Add Trello App Page',
+                comments: 28,
+                assigned: 'Laza Bogdan',
+                avatarCount: 1
+              }] %}
+  
+              {% for task in tasks1 %}
+                {{ trelloTask.component(
+                  badgeLabel=task.badgeLabel, 
+                  badgeClass=task.badgeClass,
+                  date=task.date,
+                  title=task.title,
+                  comments=task.comments,
+                  assigned=task.assigned,
+                  avatarGroup=task.avatarGroup,
+                  avatarCount=task.avatarCount) }}
+              {% endfor %}
+  
+            </div>
+            <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+          </div>
+        </div>
+      </div>
+      <div class="trello-board__tasks">
+        <div class="card bg-light border">
+          <div class="card-header card-header-sm bg-white border-warning">
+            <h4 class="card-header__title m-0">In Progress (2)</h4>
+          </div>
+          <div class="card-body p-2">
+            <div class="trello-board__tasks-list card-list" id="trello-tasks-2">
+            
+              {% set tasks2 = [{
+                badgeLabel: 'HIGH',
+                badgeClass: 'badge-danger',
+                date: 'Nov 1, 2018',
+                title: 'Add Trello App Page',
+                comments: 28,
+                assigned: 'Laza Bogdan',
+                avatarGroup: true,
+                avatarCount: 2
+              }, {
+                badgeLabel: 'OPEN',
+                badgeClass: 'badge-light-gray',
+                date: 'Oct 28, 2018',
+                title: 'Add UI Alerts Page',
+                comments: 28,
+                assigned: 'Janell D. Matney',
+                avatarCount: 1
+              }] %}
+  
+              {% for task in tasks2 %}
+                {{ trelloTask.component(
+                  badgeLabel=task.badgeLabel, 
+                  badgeClass=task.badgeClass,
+                  date=task.date,
+                  title=task.title,
+                  comments=task.comments,
+                  assigned=task.assigned,
+                  avatarGroup=task.avatarGroup,
+                  avatarCount=task.avatarCount) }}
+              {% endfor %}
+  
+            </div>
+        <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+          </div>
+        </div>
+      </div>
+      <div class="trello-board__tasks">
+        <div class="card bg-light border">
+          <div class="card-header card-header-sm bg-white border-purple">
+            <h4 class="card-header__title m-0">Review (1)</h4>
+          </div>
+          <div class="card-body p-2">
+            <div class="trello-board__tasks-list card-list" id="trello-tasks-3">
+            
+              {% set tasks3 = [{
+                badgeLabel: 'RESOLVED',
+                badgeClass: 'badge-success',
+                date: 'Oct 28, 2018',
+                title: 'Add UI Modals Page',
+                comments: 28,
+                assigned: 'Janell D. Matney'
+              }] %}
+  
+              {% for task in tasks3 %}
+                {{ trelloTask.component(
+                  badgeLabel=task.badgeLabel, 
+                  badgeClass=task.badgeClass,
+                  date=task.date,
+                  title=task.title,
+                  comments=task.comments,
+                  assigned=task.assigned) }}
+              {% endfor %}
+            
+            </div>
+        <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+          </div>
+        </div>
+      </div>
+      <div class="trello-board__tasks">
+        <div class="card bg-light border">
+          <div class="card-header card-header-sm bg-white border-success">
+            <h4 class="card-header__title m-0">Done (1)</h4>
+          </div>
+          <div class="card-body p-2">
+            <div class="trello-board__tasks-list card-list" id="trello-tasks-4">
+            
+              {% set tasks4 = [{
+                badgeLabel: 'NEED HELP',
+                badgeClass: 'badge-warning',
+                date: 'Oct 28, 2018',
+                title: 'Add UI Avatars Page',
+                comments: 28,
+                assigned: 'Janell D. Matney'
+              }] %}
+  
+              {% for task in tasks4 %}
+                {{ trelloTask.component(
+                  badgeLabel=task.badgeLabel, 
+                  badgeClass=task.badgeClass,
+                  date=task.date,
+                  title=task.title,
+                  comments=task.comments,
+                  assigned=task.assigned) }}
+              {% endfor %}
+  
+            </div>
+        <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

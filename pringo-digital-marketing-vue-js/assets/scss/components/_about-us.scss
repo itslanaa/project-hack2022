@@ -1,0 +1,241 @@
+.about-section {
+    position: relative;
+    padding: 150px 0px;
+    @include max-screen(1199) {
+        padding: 100px 0px;
+    }
+    .container {
+        @include min-screen(1200) {
+            max-width: 100%;
+        }
+        @include min-screen(1500) {
+            max-width: 1370px;
+        }
+
+        .offset-about {
+            @include min-screen(1500) {
+                margin-left: 70px;
+            }
+        }
+    }
+}
+
+.about-section2 {
+    position: relative;
+    padding-bottom: 100px;
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about-bg2 {
+    position: absolute;
+    top: -260px;
+    right: 0;
+    z-index: -1;
+}
+
+.about-img-content {
+    img {
+        animation: move 0.8s infinite alternate;
+    }
+    @include max-screen(991) {
+        margin-bottom: 50px;
+    }
+}
+.about-img-content2 {
+    margin-top: 40px;
+    @include min-screen(1500) {
+        margin-right: -140px;
+    }
+    @include min-screen(1800) {
+        margin-right: -240px;
+    }
+}
+
+.about-object {
+    margin-top: 40px;
+    @include max-screen(992, 1199) {
+        margin-top: 100px;
+        margin-left: -350px;
+        max-width: 700px;
+    }
+
+    @include max-screen(991) {
+        margin-top: 0px;
+    }
+}
+
+.about-section2 {
+    .about-object {
+        @include max-screen(992, 1199) {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        @include max-screen(991) {
+            margin-top: 0px;
+        }
+    }
+}
+
+.about-object-list {
+    display: flex;
+    margin-bottom: 25px;
+    @include max-screen(575) {
+        flex-direction: column;
+    }
+    .icon {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 15px 30px 0px rgba(2, 18, 106, 0.05);
+        width: 85px;
+        height: 85px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        @include max-screen(991) {
+            width: 70px;
+            height: 70px;
+        }
+        @include max-screen(575) {
+            margin-bottom: 40px;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.about-object-content {
+    flex: 1;
+    .title {
+        color: $primary;
+        font-weight: 700;
+        line-height: 1.227;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        font-size: 22px;
+        @include max-screen(991) {
+            font-size: 20px;
+        }
+    }
+}
+
+// about us page
+.about-us-section {
+    padding: 150px 0px;
+
+    @include max-screen(1199) {
+        padding: 100px 0px;
+    }
+}
+.about-thumb {
+    padding: 75px 10px;
+    border: 1px solid #eaedf9;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    img {
+        border-radius: inherit;
+    }
+}
+
+.about-cards {
+    margin-bottom: -30px;
+}
+.about-card-list {
+    background-color: #f7faff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    .sub-title {
+        font-weight: 700;
+        line-height: 2.8;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .title {
+        font-weight: 700;
+        line-height: 1.4;
+        color: $primary;
+        margin-bottom: 20px;
+        font-size: 28px;
+
+        @include max-screen(992, 1199) {
+            font-size: 25px;
+        }
+        @include max-screen(768, 991) {
+            font-size: 22px;
+        }
+        @include max-screen(767) {
+            font-size: 20px;
+        }
+    }
+    .read-more {
+        font-family: $fontFamilyRoboto;
+        font-weight: 700;
+        font-size: 14px;
+        color: $warning;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.about-banner {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url("/images/about/3.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: 1;
+    border-radius: 15px;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-image: linear-gradient(90deg, rgb(2, 18, 106) 0%, rgb(38, 71, 200) 100%);
+        opacity: 0.9;
+        z-index: -1;
+    }
+    .logo {
+        display: block;
+        margin-bottom: 35px;
+    }
+    .title {
+        color: $white;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        font-size: 30px;
+        @include max-screen(767) {
+            font-size: 20px;
+        }
+    }
+    p {
+        color: $warning;
+        a {
+            color: $white;
+        }
+    }
+}
+
+.about-content {
+    .title {
+        @include min-screen(1200) {
+            font-size: 50px;
+        }
+    }
+}

@@ -1,0 +1,393 @@
+.md-content-section.panel {
+  border: none;
+  @include border-radius(3px);
+}
+
+.panel-body {
+}
+
+.panel-body:before, .panel-body:after {
+  content: " ";
+  display: table;
+}
+
+.panel-body:after {
+  clear: both;
+}
+
+.overflow-container{
+  overflow:hidden;
+}
+
+.panel-heading {
+  padding: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #e9e9e9;
+  border-bottom-right-radius: -1;
+  border-bottom-left-radius: -1;
+}
+
+.panel > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-right-radius: -1;
+  border-top-left-radius: -1;
+}
+
+.panel > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: -1;
+  border-bottom-left-radius: -1;
+}
+
+.panel > .table:first-child, .panel > .table-responsive:first-child > .table:first-child {
+  border-top-right-radius: -1;
+  border-top-left-radius: -1;
+}
+
+.panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel > .table:first-child > thead:first-child > tr:first-child th:first-child, .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child, .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child, .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child, .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child, .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: -1;
+}
+
+.panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel > .table:first-child > thead:first-child > tr:first-child th:last-child, .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child, .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child, .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child, .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child, .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: -1;
+}
+
+.panel > .table:last-child, .panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: -1;
+  border-bottom-left-radius: -1;
+}
+
+.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child, .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child, .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child, .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child, .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child, .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: -1;
+}
+
+.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child, .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child, .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child, .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child, .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child, .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: -1;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  @include border-radius(0px);
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: 1px solid #e9e9e9;
+}
+
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.panel-default {
+  border: none;
+  @include box-shadow(0 0 1px rgba(0, 0, 0, .1));
+}
+
+.panel-default > .panel-heading {
+  color: #3F4245;
+  background-color: #ececec;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #e9e9e9;
+}
+
+.panel-default > .panel-heading .badge {
+  color: #f6f6f6;
+  background-color: #767676;
+}
+
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #e9e9e9;
+}
+
+.panel-primary {
+  border-color: $color--primary;
+}
+
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: $color--primary;
+  border-color: $color--primary;
+}
+
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: $color--primary;
+}
+
+.panel-primary > .panel-heading .badge {
+  color: $color--primary;
+  background-color: #fff;
+}
+
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: $color--primary;
+}
+
+.panel-success {
+  border-color: #d5ffe1;
+}
+
+.panel-success > .panel-heading {
+  color: #4c9c77;
+  background-color: #eefff6;
+  border-color: #d5ffe1;
+}
+
+.panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d5ffe1;
+}
+
+.panel-success > .panel-heading .badge {
+  color: #eefff6;
+  background-color: #4c9c77;
+}
+
+.panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d5ffe1;
+}
+
+.panel-info {
+  border-color: #cbebff;
+}
+
+.panel-info > .panel-heading {
+  color: $color--info;
+  background-color: #eff6ff;
+  border-color: #cbebff;
+}
+
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cbebff;
+}
+
+.panel-info > .panel-heading .badge {
+  color: #eff6ff;
+  background-color: $color--info;
+}
+
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cbebff;
+}
+
+.panel-warning {
+  border-color: #ffeed6;
+}
+
+.panel-warning > .panel-heading {
+  color: #bfa34c;
+  background-color: #fffbef;
+  border-color: #ffeed6;
+}
+
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ffeed6;
+}
+
+.panel-warning > .panel-heading .badge {
+  color: #fffbef;
+  background-color: #bfa34c;
+}
+
+.panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ffeed6;
+}
+
+.panel-danger {
+  border-color: #ffd6d4;
+}
+
+.panel-danger > .panel-heading {
+  color: $color--danger;
+  background-color: #fff1ed;
+  border-color: #ffd6d4;
+}
+
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ffd6d4;
+}
+
+.panel-danger > .panel-heading .badge {
+  color: #fff1ed;
+  background-color: $color--danger;
+}
+
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ffd6d4;
+}
+
+.well {
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  @include border-radius(0px);
+}
+
+.well-lg {
+  @include border-radius(0px);
+}
+
+.well-sm {
+  @include border-radius(0px);
+}
+
+
+.panel .panel-heading {
+  background:$color--accent;
+  color:white;
+  text-transform:none;
+  font-size:14px;
+  font-weight:normal;
+
+  strong {
+    font-weight:normal;
+  }
+}
+
+.panel .panel-title {
+  font-size: 14px;
+}
+
+.panel-dark {
+  border-color: $color--accent;
+}
+
+.panel-dark > .panel-heading {
+  color: #fff;
+  background-color: $color--accent;
+  border-color: $color--accent;
+}
+
+.panel-dark > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: $color--accent;
+}
+
+.panel-dark > .panel-heading .badge {
+  color: $color--accent;
+  background-color: #fff;
+}
+
+.panel-dark > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: $color--accent;
+}
+
+.panel-box {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+}
+
+.panel-box .panel-item {
+  display: table-cell;
+  padding: 30px;
+  width: 1%;
+  vertical-align: top;
+  @include border-radius(0px);
+}
+
+.panel-box .panel-left {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.panel-box .panel-right {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.panel-box.info-box i {
+  line-height: 70px;
+}
+
+.panel-box .panel-top, .panel-box .panel-bottom {
+  display: block;
+}
+
+.panel-box .panel-top {
+  padding: 30px 20px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.panel-box .panel-bottom {
+  padding: 10px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.panel-box .panel-bottom p {
+  margin: 0;
+}
+
+.panel-box .list-justified-container {
+  padding: 15px 0;
+}
+
+.panel-box ul.list-justified {
+  display: table;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.panel-box ul.list-justified > li {
+  float: none;
+  display: table-cell;
+  padding: 10px;
+  width: 1%;
+  border-right: 1px solid #eee;
+}
+
+.panel-box ul.list-justified > li:last-child {
+  border: none;
+}
+
+.panel-box ul.list-justified > li p {
+  margin: 0;
+}
+
+.panel-box .panel-icon {
+  display: block;
+  margin: -75px auto 0;
+  padding: 28px 35px 35px;
+  @include border-radius(0px);
+  border: none;
+  width: 150px;
+  height: 60px;
+  line-height: 0;
+  text-align: center;
+  font-size: 58px;
+  padding-top: 0;
+}
+
+.panel-ico {
+  margin-right: 10px;
+  color: $color--primary;
+}

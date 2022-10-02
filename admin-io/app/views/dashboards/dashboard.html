@@ -1,0 +1,760 @@
+<!-- Breadcrumbs -->
+<div class="region-breadcrumbs">
+    <ol class="breadcrumb">
+        <li><a href="/#"><i class="fa fa-home"></i></a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+</div>
+<!-- end Breadcrumbs -->
+
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+<section>
+
+  <div class="row">
+
+    <div class="col-md-3">
+
+      <section class="md-content-section"  data-ng-controller="gaugeCtrl">
+
+        <md-content>
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="">
+              <canvas data-gauge-chart
+                      data-gauge-data="gaugeHome.gaugeData"
+                      data-gauge-options="gaugeHome.gaugeOptions"
+                      style="width: 220px; height: 110px; "
+                      ></canvas>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Sales
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-primary">80% </strong>
+                <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_trending_up_24px.svg"></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+      <section class="md-content-section" data-ng-controller="flotChartCtrl">
+
+        <md-content>
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+              <div class="small-flot" data-flot-chart
+                   data-data="line1Small.data"
+                   data-options="line1Small.options"
+                   style="width: 70%; height: 70px;"
+                      ></div>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Memory
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-accent">40% </strong><md-icon class="color-accent" md-svg-src="dist/img/icons/ic_memory_24px.svg"></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section" data-ng-controller="sparklineCtrl">
+
+        <md-content>
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+                <span data-sparkline
+                      data-spark-data="simpleChart2Long.sparkData"
+                      data-spark-options="simpleChart2Long.sparkOptions"
+                        ></span>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Warnings
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-warning">183 </strong>
+                <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_security_24px.svg"></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section" data-ng-controller="sparklineCtrl">
+
+        <md-content>
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+                <span data-sparkline
+                      data-spark-data="simpleChart2dangerLong.sparkData"
+                      data-spark-options="simpleChart2dangerLong.sparkOptions"
+                        ></span>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Critical issues
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-danger">90% </strong>
+                <md-icon class="color-danger" md-svg-src="dist/img/icons/ic_access_alarms_24px.svg"></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section>
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+
+                <div data-ng-controller="flotChartCtrl">
+
+                  <div class="choices">
+
+                  </div>
+
+                  <div class="choice-switches">
+
+                    <div layout="row" layout-wrap>
+
+                      <div flex>
+                        <md-switch ng-model="new_visitors" ng-change="switchClick(0)" name="0" class="md-primary" aria-label="New visitors">
+                          New visitors
+                        </md-switch>
+                      </div>
+
+                      <div flex>
+                        <md-switch ng-model="returning_visitors" ng-change="switchClick(1)" name="1" class="md-accent" aria-label="Returning visitors">
+                          Returning visitors
+                        </md-switch>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div data-flot-chart
+                       data-data="line1.data"
+                       data-options="line1.options"
+                       style="width: 100%; height: 300px;"
+                          ></div>
+                </div>
+
+                <br/><br/>
+
+                <div class="row text-center">
+
+                  <div class="col-md-7">
+                    <h2>
+                      Total earnings
+                    </h2>
+                    <h2 class="color-primary">
+                      $68,4545,454
+                    </h2>
+
+                    <br/>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_attach_money_48px.svg"></md-icon>
+                        </p>
+                        <p class="color-primary">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Monthly sales
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_timelapse_48px.svg"></md-icon>
+                        </p>
+                        <p class="color-warning">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Daily income
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-danger" md-svg-src="dist/img/icons/ic_equalizer_48px.svg"></md-icon>
+                        </p>
+                        <p class="color-danger">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Yearly costs
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-5">
+
+                    <br/><br/>
+
+                    <div data-ng-controller="jqvmapCtrl">
+                      <div class="ui-map" style="width: 100%; height: 150px;" ui-jqvmap options="worldMapSmall"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-4" data-ng-controller="chartingCtrl">
+            <div>
+              <section class="md-content-section">
+                <md-card>
+                  <!--<img src="dist/images/background/bg_weather3.png" alt="Washed Out">-->
+                  <md-card-header class="bg-primary">
+                    <h3>
+                      Sales in January
+                    </h3>
+                    <div data-ng-controller="sparklineCtrl">
+                      <span data-sparkline
+                            data-spark-data="simpleChartNoFill.sparkData"
+                            data-spark-options="simpleChartNoFill.sparkOptions"
+                              ></span>
+                    </div>
+                  </md-card-header>
+                  <md-card-content>
+                    <div ng-controller="HomeFabCtrl" layout="column">
+                      <div class="lock-size homeSpeedDial" layout="row" layout-align="center center">
+                        <md-fab-speed-dial md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}"
+                                           ng-class="demo.selectedMode">
+                          <md-fab-trigger>
+                            <md-button aria-label="menu" class="md-fab md-accent">
+                              <md-icon md-svg-src="dist/img/icons/ic_menu_24px.svg"></md-icon>
+                            </md-button>
+                          </md-fab-trigger>
+                          <md-fab-actions>
+                            <md-button aria-label="Airplane" class="md-fab md-raised md-mini md-danger">
+                              <md-icon md-svg-src="dist/img/icons/ic_airplanemode_inactive_24px.svg"></md-icon>
+                            </md-button>
+                            <md-button aria-label="Bluetooth" class="md-fab md-raised md-mini md-info">
+                              <md-icon md-svg-src="dist/img/icons/ic_bluetooth_24px.svg"></md-icon>
+                            </md-button>
+                            <md-button aria-label="Google Inbox" class="md-fab md-raised md-mini md-warning">
+                              <md-icon md-svg-src="dist/img/icons/ic_inbox_24px.svg"></md-icon>
+                            </md-button>
+                          </md-fab-actions>
+                        </md-fab-speed-dial>
+                      </div>
+                    </div>
+                    <div class="text-center circle-statistic" data-ng-controller="chartingCtrl">
+
+                      <br/>
+
+                      <ul>
+                        <li class="left-statistics-info">
+                          <p class="color-warning">
+                            50%
+                            <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_trending_up_24px.svg"></md-icon>
+                          </p>
+                          <p>
+                            Go up
+                          </p>
+                        </li>
+                        <li>
+                          <div easypiechart options="easypiemedium1.options" percent="easypiemedium1.percent" class="easypiechartmedium">
+                                    <span class="pie-percent">
+                                        <div class="countTo_small" data-ng-controller="countTo">
+                                          <span count-to="{{countersmall2.countTo}}" value="{{countersmall2.countFrom}}" duration="2"></span>%
+                                        </div>
+
+                                    </span>
+                          </div>
+                        </li>
+                        <li class="right-statistics-info">
+                          <p class="color-accent">
+                            20%
+                            <md-icon class="color-accent" md-svg-src="dist/img/icons/ic_trending_down_24px.svg"></md-icon>
+                          </p>
+                          <p>
+                            Go down
+                          </p>
+                        </li>
+                      </ul>
+
+                      <p class="text-small">
+                          Information is available every day at midningt
+                      </p>
+
+                    </div>
+
+                  </md-card-content>
+                </md-card>
+              </section>
+
+            </div>
+
+            <div>
+
+              <section class="md-content-section">
+                <md-content>
+                  <div class="md-content__body">
+                    <section class="panel-box text-center">
+                      <ul class="list-justified text-center">
+                        <li>
+                          <p class="size-h2 color-info"><i class="wi wi-cloudy"></i></p>
+                          <p class="text-muted">Tuesday</p>
+                        </li>
+                        <li>
+                          <p class="size-h2 color-warning"><i class="wi wi-day-thunderstorm"></i></p>
+                          <p class="text-muted">Wednesday</p>
+                        </li>
+                        <li>
+                          <p class="size-h2 color-danger"><i class="wi wi-day-snow"></i></p>
+                          <p class="text-muted">Thursday</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </md-content>
+              </section>
+
+            </div>
+
+            <div>
+              <section class="md-content-section">
+                <md-card>
+                  <md-card-content>
+                    <div class="home-mini-card" data-ng-controller="sparklineCtrl">
+
+                      <div class="row">
+                        <div class="col-md-5">
+                          <br/>
+                          <span data-sparkline
+                                data-spark-data="simpleChart2Long.sparkData"
+                                data-spark-options="simpleChart2Long.sparkOptions"
+                                  ></span>
+                        </div>
+                        <div class="col-md-7">
+                          <br/>
+                          <p class="color-warning">
+                            50%
+                            <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_trending_up_24px.svg"></md-icon>
+                          </p>
+                          <p>
+                            Daily returning visitors
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </md-card-content>
+                </md-card>
+              </section>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="md-content-section">
+
+  <div class="row">
+    <div class="col-md-3">
+      <md-content>
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-primary">
+                  <md-icon class="color-white" md-svg-src="dist/img/icons/ic_comment_48px.svg"></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-primary">
+                  550
+                </h2>
+                <p>
+                  Unread messages
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content>
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-accent">
+                  <md-icon class="color-white" md-svg-src="dist/img/icons/ic_done_all_48px.svg"></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-accent">
+                  150
+                </h2>
+                <p>
+                  Opened tasks
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content>
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-warning">
+                  <md-icon class="color-white" md-svg-src="dist/img/icons/ic_bug_report_48px.svg"></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-warning">
+                  560
+                </h2>
+                <p>
+                  Issues pending
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content>
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-danger">
+                  <md-icon class="color-white" md-svg-src="dist/img/icons/ic_android_48px.svg"></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-danger">
+                  330
+                </h2>
+                <p>
+                  Bugs reported
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+  </div>
+
+</section>
+
+
+<section>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <section class="md-content-section">
+
+          <md-content>
+            <div class="md-content__body">
+
+              <div class="text-left col-sm-6">
+                <h2>
+                  Realtime performance feed
+                </h2>
+                <p class="text-muted medium">
+                  Updated on realtime based on a number of API calls
+                </p>
+              </div>
+
+              <div class="panel-body col-sm-8" data-ng-controller="flotChartCtrl">
+
+                <div class="homepage-performance-chart" data-ng-controller="flotChartCtrl">
+                  <div data-flot-chart
+                       data-data="area.data"
+                       data-options="area.options"
+                       style="width: 100%; height: 300px;"
+                          ></div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-4">
+
+                <h4>
+                  Performance listing
+                </h4>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall CSS loading
+                    <span class="pull-right"> 60%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="60" type="warning"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall Js loading time
+                    <span class="pull-right"> 35%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="35" type="success"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Requests / user
+                    <span class="pull-right"> 92%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="92" type="danger"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Caching requests
+                    <span class="pull-right"> 82%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="82" type="info"></progressbar>
+                </div>
+
+              </div>
+            </div>
+          </md-content>
+
+        </section>
+
+
+      </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+                <h5>
+                  User management
+                </h5>
+                <br/>
+                <ul class="team">
+                  <li>
+                    <img src="dist/images/team1.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John doe</p></span>
+                    <span class="label label-primary">admin</span>
+                  </li>
+
+                  <li>
+                    <img src="dist/images/team2.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Jane Diamond</p></span>
+                    <span class="label label-warning">Tester</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team3.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Gustav Gurty</p></span>
+                    <span class="label label-danger">Tester</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team4.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John Gus</p></span>
+                    <span class="label label-accent">admin</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team6.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Anthony Watry</p></span>
+                    <span class="label label-success">API Guru</span>
+                  </li>
+                </ul>
+
+                <hr/>
+
+                <div>
+                  <span class="badge badge-info">2</span>
+                  <div class="space"></div>
+                  <span class="badge badge-warning">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-danger">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-success">1</span>
+                </div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-6" ng-controller="morrisChartCtrl">
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+                <div morris-chart
+                     data-data="comboData"
+                     data-type="line"
+                     data-xkey="year"
+                     data-ykeys='["a", "b", "c"]'
+                     data-labels='["Value A", "Value B", "Value C"]'
+                     data-line-colors="{{comboColors}}"
+                     data-line-width="3"
+                        ></div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="panel panel-default">
+    <!--<div class="panel-heading"><strong><i class="fa fa-list panel-ico"></i>Table</strong></div>-->
+
+  <section class="md-content-section">
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Task</th>
+              <th>Completion</th>
+              <th>Assigned to</th>
+              <th>Completion %</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td><span class="color-primary"><i class="fa fa-level-up"></i></span> TWLT</td>
+              <td><span class="label label-primary">Pending</span></td>
+              <td>John Doe</td>
+              <td><progressbar class="progressbar-xs no-margin" value="55"></progressbar>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><span class="color-accent"><i class="fa fa-level-up"></i></span> A16Z</td>
+              <td><span class="label label-accent">Testing</span></td>
+              <td>Carol Simmerman</td>
+              <td><progressbar class="progressbar-xs no-margin" value="34" type="accent"></progressbar></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><span class="color-warning"><i class="fa fa-level-down"></i></span> DARK</td>
+              <td><span class="label label-warning">Due</span></td>
+              <td>Joselie Hanna</td>
+              <td><progressbar class="progressbar-xs no-margin" value="68" type="warning"></progressbar></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><span class="color-success"><i class="fa fa-level-up"></i></span> Q300</td>
+              <td><span class="label label-success">Accepted</span></td>
+              <td>Johane Bayer</td>
+              <td><progressbar class="progressbar-xs no-margin" value="52" type="success"></progressbar></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><span class="color-danger"><i class="fa fa-level-down"></i></span> RVNG</td>
+              <td><span class="label label-danger">Suspended</span></td>
+              <td>Donnavon Franklin</td>
+              <td><progressbar class="progressbar-xs no-margin" value="77" type="danger"></progressbar></td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><span class="color-info"><i class="fa fa-level-down"></i></span> FDSA</td>
+              <td><span class="label label-info">In evaluation</span></td>
+              <td>Jane Modrid</td>
+              <td><progressbar class="progressbar-xs no-margin" value="55" type="success"></progressbar></td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+
+</div>
+
+</div>
+  

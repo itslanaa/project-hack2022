@@ -1,0 +1,20 @@
+@each $color, $value in $theme-colors {
+  .alert-soft-#{$color} {
+    @include alert-variant(
+      rgba(theme-color($color), .05),
+      theme-color-level($color, $alert-border-level), 
+      theme-color($color)
+    );
+  }
+}
+
+.alert-light,
+.alert-soft-light {
+  color: theme-color-level('light', $alert-color-level);
+  @include gradient-bg(theme-color('light'));
+  border-color: darken(theme-color('light'), 5%);
+
+  hr {
+    border-top-color: darken(theme-color('light'), 5%);
+  }
+}

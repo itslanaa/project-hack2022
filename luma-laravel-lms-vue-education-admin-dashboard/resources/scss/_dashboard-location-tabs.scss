@@ -1,0 +1,12 @@
+.dashboard-location-tabs {
+  &__tab {
+    margin-bottom: $grid-gutter-width/3;
+    cursor: pointer;
+
+    &:not(.active) {
+      .progress-bar {
+        background: rgba($body-color, .2) !important;
+      }
+    }
+  }
+}

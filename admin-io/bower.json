@@ -1,0 +1,47 @@
+{
+  "name": "ioadmin",
+  "version": "0.0.0",
+  "authors": [
+    "admin <admin@example.com>"
+  ],
+  "description": "An angular admin template",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.3",
+    "angular-animate": "~1.5.3",
+    "angular-route": "~1.5.3",
+    "underscore": "~1.8.3",
+    "angular-wizard": "~0.6.1",
+    "angular-ui-tree": "~2.15.0",
+    "jquery": "2.1.4",
+    "bootstrap": "~3.2.0",
+    "fontawesome": "~4.3.0",
+    "jqvmap": "*",
+    "weather-icons": "~1.3.2",
+    "angular-sanitize": "~1.5.3",
+    "angular-bootstrap": "~1.2.5",
+    "chartjs": "~1.0.1",
+    "morrisjs": "~0.5.1",
+    "flot": "~0.8.3",
+    "jquery.sparkline.build": "~2.1.3",
+    "easypie": "~2.1.6",
+    "slimScroll": "~1.3.3",
+    "dripicons": "~1.0.0",
+    "flot.curvedlines": "~1.1.1",
+    "angular-messages": "~1.5.3",
+    "html5shiv": "~3.7.2",
+    "flot.tooltip": "~0.8.4",
+    "textAngular": "~1.3.7",
+    "angular-material": "~1.0.7",
+    "material-design-icons": "~2.2.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}

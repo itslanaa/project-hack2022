@@ -1,0 +1,48 @@
+.input-group.input-group-merge {
+  .form-control {
+    box-shadow: none;
+
+    &:focus ~ [class*=input-group] .input-group-text {
+      border-color: $input-focus-border-color;
+      color: $input-focus-color;
+      background-color: $input-focus-bg;
+    }
+
+    &.is-valid ~ [class*=input-group] .input-group-text,
+    .was-validated &:valid ~ [class*=input-group] .input-group-text {
+      border-color: $form-feedback-valid-color;
+      color: $form-feedback-valid-color;
+      // background-color: $input-focus-bg;
+    }
+    &.is-invalid ~ [class*=input-group] .input-group-text,
+    .was-validated &:invalid ~ [class*=input-group] .input-group-text {
+      border-color: $form-feedback-invalid-color;
+      color: $form-feedback-invalid-color;
+      // background-color: $input-focus-bg;
+    }
+  }
+  .form-control-prepended {
+    padding-left: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    @include border-right-radius($input-border-radius);
+  }
+  .form-control-appended {
+    padding-right: 0;
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group-prepend {
+    order: -1;
+    > .input-group-text {
+      border-right-width: 0 !important;
+      @include border-left-radius($input-border-radius);
+    }
+  }
+  .input-group-append > .input-group-text {
+    border-left-width: 0 !important;
+    @include border-right-radius($input-border-radius);
+  }
+}

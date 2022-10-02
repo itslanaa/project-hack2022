@@ -1,0 +1,35 @@
+.layout-login-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(theme-color('dark'), .5);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &__form {
+    padding: 2rem;
+    position: relative;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-shrink: 0;
+
+    &__form {
+      width: calc(320px + 3rem * 2);
+      padding: 3rem;
+    }
+  }
+}

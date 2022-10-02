@@ -1,0 +1,24 @@
+.custom-file-naked {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  .custom-file-input {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .custom-file-label {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    cursor: pointer;
+    line-height: 1;
+    box-shadow: none;
+    &::after {
+      display: none;
+    }
+  }
+}

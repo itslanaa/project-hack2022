@@ -1,0 +1,169 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+@import 'sidebar-style-guide/sass/style';
+
+////////////
+// DRAWER //
+////////////
+
+.mdk-drawer {
+  // fix mozilla firefox issue
+  z-index: 1;
+}
+
+.mdk-drawer__content {
+  background: transparent;
+}
+
+.sidebar {
+  position: relative;
+  height: 100%;
+  text-align: initial;
+  overscroll-behavior: none;
+}
+
+.sidebar-brand {
+  margin-bottom: 0;
+  height: $navbar-height;
+  flex-direction: column;
+  padding: 2.5rem 0;
+}
+
+.sidebar-brand-icon {
+  display: flex;
+  width: $sidebar-brand-icon-width;
+  height: $sidebar-brand-icon-height;
+}
+
+//////////////////
+// SIDEBAR MENU //
+//////////////////
+
+.sidebar-menu-toggle-icon {
+  transition: transform .15s;
+  transform: translate(0,0);
+}
+.open > .sidebar-menu-button .sidebar-menu-toggle-icon {
+  transform: rotate(90deg);
+}
+
+.sidebar-submenu .sidebar-menu-item {
+  &:first-child {
+    padding-top: $sidebar-spacing/2;
+  }
+  &:last-child {
+    padding-bottom: $sidebar-spacing/2;
+  }
+}
+
+.sidebar-menu-item.active .sidebar-menu-button::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 1px;
+  background-color: $primary;
+  content: "";
+}
+
+.sidebar-menu-item.active, .sidebar-menu-item.open {
+  .sidebar-menu-button::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 1px;
+    content: "";
+  }
+}
+
+.sidebar-menu-item.open > .sidebar-menu-button::after {
+  background-color: $sm-dark-icon-color;
+}
+
+.sidebar-menu-item.active > .sidebar-menu-button::after {
+  background-color: $primary;
+}
+
+.sidebar-menu:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-brand {
+  height: auto;
+  line-height: 2rem;
+  margin-right: 0;
+
+  &-icon {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+}
+
+.sidebar-heading {
+  line-height: 1.5rem;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+.sidebar-menu > .sidebar-menu-item {
+  margin-right: 1rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.sidebar-menu-button {
+  padding-right: .5rem;
+
+  &.disabled,
+  &:disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+.sidebar-menu-badge {
+  padding: 0 0.5rem;
+}
+
+// increase sidebar menu buttons horizontal spacing
+.sm-indent > .sidebar-menu-item .sidebar-menu-button {
+  padding-left: $sm-indent-spacing;
+}
+
+.sidebar-submenu .sidebar-menu-item:first-child {
+  padding-top: 0;
+}
+
+.sidebar-menu-item.active, .sidebar-menu-item.open {
+  .sidebar-menu-button::after {
+    display: none;
+  }
+}
+
+.sidebar-submenu .sidebar-menu-text {
+  padding-left: 1.25rem;
+  position: relative;
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: $accent;
+    display: none;
+    left: -4px;
+    top: 12px;
+    border-radius: 100%;
+  }
+}
+
+.active > .sidebar-menu-button .sidebar-menu-text::after {
+  display: block;
+}
+
+.sidebar-account {
+  border-radius: 100px;
+  @include mdc-elevation-mixins.elevation(1, $shadow-baseline-color, $shadow-opacity-boost);
+}

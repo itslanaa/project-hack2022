@@ -1,0 +1,41 @@
+////////////////
+// PAGINATION //
+////////////////
+
+.page-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  line-height: 1.25 !important;
+  @include hover-focus {
+    text-decoration: none;
+  }
+}
+.page-item:last-of-type .page-link {
+  border-right: none;
+}
+.page-link .material-icons {
+  line-height: 1rem;
+}
+.pagination {
+  position: relative;
+  z-index: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pagination-xsm {
+  @include pagination-size($pagination-padding-y-xsm, $pagination-padding-x-xsm, $small-font-size, $pagination-line-height-xsm, $border-radius-sm);
+  .page-link {
+    line-height: $pagination-line-height-xsm !important;
+  }
+  .material-icons {
+    font-size: 1rem;
+  }
+}

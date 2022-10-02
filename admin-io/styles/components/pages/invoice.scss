@@ -1,0 +1,24 @@
+
+.page-invoice .invoice-wrapper {
+  padding: 0 0 30px;
+  background-color: #fff;
+}
+
+.page-invoice .invoice-container {
+  padding: 15px 15px 30px;
+  background-color: #fff;
+}
+
+.page-invoice .invoice-container .invoice-sum li {
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.page-invoice .table.table-bordered {
+  border: 0;
+}
+
+.page-invoice .table .bg-dark > th {
+  border: 0;
+}

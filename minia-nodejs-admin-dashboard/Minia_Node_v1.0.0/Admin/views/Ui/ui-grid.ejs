@@ -1,0 +1,475 @@
+<%- contentFor('HeaderCss') %>
+
+    <%- contentFor('breadcrumb') %>
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center
+                    justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18">Grid</h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript:
+                                    void(0);">Components</a></li>
+                            <li class="breadcrumb-item active">Grid</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+        <%- contentFor('body') %>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Grid Options</h4>
+                            <p class="card-title-desc">See how aspects of the
+                                Bootstrap grid
+                                system work across multiple devices with a handy
+                                table.</p>
+                        </div><!-- end card header -->
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped
+                                    table-nowrap mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col" class="text-center">
+                                                xs<br>
+                                                <span class="fw-normal">&lt;576px</span>
+                                            </th>
+                                            <th scope="col" class="text-center">
+                                                sm<br>
+                                                <span class="fw-normal">≥576px</span>
+                                            </th>
+                                            <th scope="col" class="text-center">
+                                                md<br>
+                                                <span class="fw-normal">≥768px</span>
+                                            </th>
+                                            <th scope="col" class="text-center">
+                                                lg<br>
+                                                <span class="fw-normal">≥992px</span>
+                                            </th>
+                                            <th scope="col" class="text-center">
+                                                xl<br>
+                                                <span class="fw-normal">≥1200px</span>
+                                            </th>
+                                            <th scope="col" class="text-center">
+                                                xxl<br>
+                                                <span class="fw-normal">≥1400px</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Grid
+                                                behavior</th>
+                                            <td>Horizontal at all times</td>
+                                            <td colspan="5">Collapsed to start,
+                                                horizontal above breakpoints</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Max
+                                                container width</th>
+                                            <td>None (auto)</td>
+                                            <td>540px</td>
+                                            <td>720px</td>
+                                            <td>960px</td>
+                                            <td>1140px</td>
+                                            <td>1320px</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Class
+                                                prefix</th>
+                                            <td><code>.col-</code></td>
+                                            <td><code>.col-sm-</code></td>
+                                            <td><code>.col-md-</code></td>
+                                            <td><code>.col-lg-</code></td>
+                                            <td><code>.col-xl-</code></td>
+                                            <td><code>.col-xxl-</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">#
+                                                of columns</th>
+                                            <td colspan="6">12</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Gutter
+                                                width</th>
+                                            <td colspan="6">24px (12px on each
+                                                side of a column)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Custom
+                                                gutters</th>
+                                            <td colspan="6">Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Nestable</th>
+                                            <td colspan="6">Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Offsets</th>
+                                            <td colspan="6">Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-nowrap" scope="row">Column
+                                                ordering</th>
+                                            <td colspan="6">Yes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- end card body -->
+                    </div><!-- end card -->
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Grid Example</h4>
+                            <p class="card-title-desc">Use flexbox alignment
+                                utilities to vertically and horizontally align
+                                columns</p>
+                        </div><!-- end card header -->
+
+                        <div class="card-body">
+                            <div class="grid-structure">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="grid-container">
+                                            <code>col-lg-12</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <div class="grid-container">
+                                            <code>col-lg-11</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <div class="grid-container">
+                                            <code>col-lg-1</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="grid-container">
+                                            <code>col-lg-10</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="grid-container">
+                                            <code>col-lg-2</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="grid-container">
+                                            <code>col-lg-9</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="grid-container">
+                                            <code>col-lg-3</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="grid-container">
+                                            <code>col-lg-8</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="grid-container">
+                                            <code>col-lg-4</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="grid-container">
+                                            <code>col-lg-7</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="grid-container">
+                                            <code>col-lg-5</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="grid-container">
+                                            <code>col-lg-6</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="grid-container">
+                                            <code>col-lg-6</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="grid-container">
+                                            <code>col-lg-5</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="grid-container">
+                                            <code>col-lg-7</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="grid-container">
+                                            <code>col-lg-4</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="grid-container">
+                                            <code>col-lg-8</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="grid-container">
+                                            <code>col-lg-3</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="grid-container">
+                                            <code>col-lg-9</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <div class="grid-container">
+                                            <code>col-lg-2</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="grid-container">
+                                            <code>col-lg-10</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <div class="grid-container">
+                                            <code>col-lg-1</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <div class="grid-container">
+                                            <code>col-lg-11</code>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <div class="grid-container">
+                                            <code>col-lg-2</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="grid-container">
+                                            <code>col-lg-3</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="grid-container">
+                                            <code>col-lg-4</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="grid-container">
+                                            <code>col-lg-2</code>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <div class="grid-container">
+                                            <code>col-lg-1</code>
+                                        </div>
+                                    </div>
+                                </div> <!-- end row -->
+                            </div> <!-- grid-structure -->
+
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div> <!-- end col-->
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Alignment</h4>
+                            <p class="card-title-desc">Use flexbox alignment
+                                utilities to vertically and horizontally align
+                                columns</p>
+                        </div><!-- end card header -->
+
+                        <div class="card-body">
+                            <div>
+                                <h5 class="font-size-13 mb-3">Vertical alignment
+                                    (align-items-start)</h5>
+                                <div class="bg-soft-light p-3 text-center">
+                                    <div class="row align-items-start"
+                                        style="min-height: 6rem;">
+                                        <div class="col-sm-4">
+                                            <div class="grid-example">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <h5 class="font-size-13 mb-2">Align Items Center</h5>
+                                <div class="bg-soft-light p-3 text-center">
+                                    <div class="row align-items-center"
+                                        style="min-height: 6rem;">
+                                        <div class="col-sm-4">
+                                            <div class="grid-example">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <h5 class="font-size-13 mb-2">Align Items End</h5>
+                                <div class="bg-soft-light p-3 text-center">
+                                    <div class="row align-items-end"
+                                        style="min-height: 6rem;">
+                                        <div class="col-sm-4">
+                                            <div class="grid-example">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>col-sm-4</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <h5 class="font-size-13 mb-2">Align Self</h5>
+                                <div class="bg-soft-light p-3 text-center">
+                                    <div class="row" style="min-height: 9rem;">
+                                        <div class="col-4 align-self-start">
+                                            <div class="grid-example">
+                                                <code>align-self-start</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 align-self-center">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>align-self-center</code>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 align-self-end">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>align-self-end</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <h5 class="font-size-13 mb-2">Horizontal
+                                    Alignment</h5>
+                                <div class="bg-soft-light p-3 text-center">
+                                    <div class="row justify-content-start">
+                                        <div class="col-4">
+                                            <div class="grid-example">
+                                                <code>justify-content-start</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>justify-content-center</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-4">
+                                            <div class="grid-example mt-2
+                                                mt-sm-0">
+                                                <code>justify-content-end</code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+            </div>
+
+            <%- contentFor('FooterJs') %>
+
+            <%- contentFor('BottomJs') %>

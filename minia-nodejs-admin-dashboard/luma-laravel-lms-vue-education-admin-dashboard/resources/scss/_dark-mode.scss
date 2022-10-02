@@ -1,0 +1,607 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+$dark-body-color:         #F2F9FF !default;
+$dark-headings-color:     $dark-body-color !default;
+$dark-body-bg:            #1D2126 !default;
+$dark-border-color:       #19191A !default;
+
+// card
+
+$dark-card-shadow-base-color:  #000000 !default;
+$dark-card-bg:            #22282E !default;
+$dark-card-border-color:  #19191A !default;
+
+// pagination
+
+$dark-pagination-color:                  rgba($dark-body-color, .7) !default;
+$dark-pagination-bg:                     $dark-card-bg !default;
+$dark-pagination-border-color:           $dark-border-color !default;
+
+$dark-pagination-hover-color:            darken($dark-pagination-color, 10%) !default;
+$dark-pagination-hover-bg:               darken($dark-card-bg, 5%) !default;
+$dark-pagination-hover-border-color:     darken($dark-border-color, 5%) !default;
+
+// popover
+$dark-popover-border-color:              $dark-border-color !default;
+$dark-popover-bg:                        $dark-card-bg !default;
+$dark-popover-arrow-color:               $dark-popover-bg !default;
+$dark-popover-arrow-outer-color:         fade-in($dark-popover-border-color, .05) !default;
+
+html.dark-mode {
+
+  //////////////////
+  // _reboot.scss //
+  //////////////////
+  
+  body {
+    color: $dark-body-color;
+    background-color: $dark-body-bg;
+  }
+
+  .link-color,
+  a:not([class]) {
+    color: rgba($dark-body-color, .7);
+    
+    @include hover {
+      color: rgba($dark-body-color, .5);
+    }
+  }
+
+  ////////////////
+  // _type.scss //
+  ////////////////
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $dark-headings-color;
+  }
+
+  ///////////////////
+  // _helpers.scss //
+  ///////////////////
+  
+  .bg-body {
+    background-color: $dark-body-bg !important;
+  }
+  .bg-alt {
+    background: $dark-body-bg;
+  }
+
+  .text-body { color: $dark-body-color !important; }
+  .text-20 { color: rgba($dark-body-color, .2) !important; }
+  .text-50, .text-muted { color: rgba($dark-body-color, .5) !important; }
+  .text-70 { color: rgba($dark-body-color, .7) !important; }
+  .text-100 { color: $dark-body-color !important; }
+  
+  @each $size in (1, 2, 3, 4) {
+    .border-#{$size} {
+      border-color: $dark-border-color !important;
+    }
+    @each $position in (left, right, top, bottom) {
+      .border-#{$position}-#{$size} {
+        border-#{$position}-color: $dark-border-color !important;
+      }
+      .border-#{$position}-#{$size} {
+        border-#{$position}-color: $dark-border-color !important;
+      }
+    }
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      .border#{$infix}         { border-color: $dark-border-color !important; }
+      .border-top#{$infix}     { border-top-color: $dark-border-color !important; }
+      .border-right#{$infix}   { border-right-color: $dark-border-color !important; }
+      .border-bottom#{$infix}  { border-bottom-color: $dark-border-color !important; }
+      .border-left#{$infix}    { border-left-color: $dark-border-color !important; }
+
+    }
+  }
+
+  ///////////////////
+  // _borders.scss //
+  ///////////////////
+  
+  .border         { border-color: $dark-border-color !important; }
+  .border-top     { border-top-color: $dark-border-color !important; }
+  .border-right   { border-right-color: $dark-border-color !important; }
+  .border-bottom  { border-bottom-color: $dark-border-color !important; }
+  .border-left    { border-left-color: $dark-border-color !important; }
+
+  /////////////////
+  // _alert.scss //
+  /////////////////
+  
+  .alert-soft-warning {
+    background-color: rgba(#E4A93C, .05);
+    border-color: rgba(#E4A93C, .3);
+  }
+
+  //////////////////////
+  // _breadcrumb.scss //
+  //////////////////////
+  
+  .breadcrumb {
+    color: rgba($dark-body-color, .5);
+  }
+
+  .breadcrumb-item.active {
+    color: rgba($dark-body-color, .5);
+  }
+
+  //////////////////////////
+  // _page-separator.scss //
+  //////////////////////////
+
+  .page-separator {
+    color: rgba($dark-body-color, .5);
+
+    &::before {
+      background-color: $dark-border-color;
+    }
+
+    &__text {
+      background-color: $dark-body-bg;
+      color: $dark-headings-color;
+    }
+    &__bg-bottom {
+      background-color: $dark-body-bg;
+    }
+    &__bg-top {
+      background-color: $dark-body-bg;
+    }
+  }
+
+  /////////////////////
+  // _accordion.scss //
+  /////////////////////
+
+  .accordion {
+    &__toggle {
+      color: $dark-body-color;
+    }
+
+    &__menu-link {
+      color: rgba($dark-body-color, .7);
+    
+      @include hover {
+        color: rgba($dark-body-color, .5);
+      }
+
+      &.active {
+        color: $dark-body-color;
+      }
+      
+      &:not(:last-child) {
+        border-bottom-color: $dark-card-border-color;
+      }
+    }
+
+    &--boxed .accordion__item {
+      border-color: $dark-card-border-color;
+      background-color: $dark-card-bg;
+
+      @if $enable-card-shadow {
+        @include mdc-elevation-mixins.elevation(3, $dark-card-shadow-base-color, $shadow-opacity-boost);
+      }
+    }
+  }
+
+  //////////////////
+  // reveal cards //
+  //////////////////
+
+  .mdk-reveal__content {
+    background-color: $dark-card-bg;
+  }
+
+  .mdk-reveal__partial {
+    background: linear-gradient(to bottom, rgba($dark-card-bg, 0) 60%, rgba($dark-card-bg, .95) 80%, rgba($dark-card-bg, 1) 100%);
+  }
+
+  /////////////////
+  // _stack.scss //
+  /////////////////
+
+  .stack {
+    &:before,
+    &:after {
+      background: $dark-card-bg;
+      box-shadow: 0 2px 0 darken($dark-card-bg, 2%) inset, 0 2px 0 darken($dark-card-bg, 2%);
+    }
+  }
+
+  ///////////////////
+  // _popover.scss //
+  ///////////////////
+
+  .popover {
+    background-color: $dark-popover-bg;
+    border-color: $dark-popover-border-color;
+  }
+
+  .popover-lg {
+    @include mdc-elevation-mixins.elevation(10, #000, $shadow-opacity-boost);
+  }
+
+  .bs-popover-top {
+    > .arrow {
+      &::before {
+        border-top-color: $dark-popover-arrow-outer-color;
+      }
+      &::after {
+        border-top-color: $dark-popover-arrow-color;
+      }
+    }
+  }
+
+  .bs-popover-right {
+    > .arrow {
+      &::before {
+        border-right-color: $dark-popover-arrow-outer-color;
+      }
+      &::after {
+        border-right-color: $dark-popover-arrow-color;
+      }
+    }
+  }
+
+  .bs-popover-bottom {
+    > .arrow {
+      &::before {
+        border-bottom-color: $dark-popover-arrow-outer-color;
+      }
+      &::after {
+        border-bottom-color: $dark-popover-arrow-color;
+      }
+    }
+  }
+
+  .bs-popover-left {
+    > .arrow {
+      &::before {
+        border-left-color: $dark-popover-arrow-outer-color;
+      }
+      &::after {
+        border-left-color: $dark-popover-arrow-color;
+      }
+    }
+  }
+
+  ////////////////
+  // _card.scss //
+  ////////////////
+
+  .card {
+    border-color: $dark-card-border-color;
+    background-color: $dark-card-bg;
+
+    @if $enable-card-shadow {
+      @include mdc-elevation-mixins.elevation(3, $dark-card-shadow-base-color, $shadow-opacity-boost);
+    }
+  }
+
+  .card-title {
+    color: $dark-headings-color;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border-bottom-color: $dark-border-color;
+  }
+
+  .card-footer {
+    background-color: transparent;
+    border-top-color: $dark-border-color;
+  }
+
+  .card-body + .card-body {
+    border-top-color: $dark-border-color;
+  }
+
+  .card--elevated {
+    @include hover {
+      @include mdc-elevation-mixins.elevation(5, $dark-card-shadow-base-color, $shadow-opacity-boost);
+    }
+  }
+
+  .card--raised {
+    @include mdc-elevation-mixins.elevation(10, $dark-card-shadow-base-color, $shadow-opacity-boost);
+  }
+
+  .card--connect::after {
+    background-color: $dark-border-color;
+  }
+
+  /////////////////////////
+  // _card-feedback.scss //
+  /////////////////////////
+
+  .card-feedback {
+    &::before, 
+    &::after {
+      border-top-color: $dark-card-border-color;
+    }
+    &::after {
+      border-top-color: $dark-card-bg;
+    }
+  }
+
+  ////////////////
+  // _type.scss //
+  ////////////////
+
+  .blockquote {
+    border-left-color: $dark-border-color;
+  }
+
+  .blockquote--reverse {
+    border-left: none;
+    border-right-color: $dark-border-color;
+  }
+
+  /////////////////////////////////////////
+  // fm-plugin-chartjs/scss/chartjs.scss //
+  /////////////////////////////////////////
+  
+  .chart-legend-item {
+    color: rgba($dark-body-color, .5);
+    border-color: $dark-border-color;
+  }
+
+  #chart-tooltip .popover-body {
+    color: rgba($dark-body-color, .7);
+  }
+
+  ////////////////////
+  // _progress.scss //
+  ////////////////////
+  
+  .progress {
+    background-color: #202224;
+  }
+
+  ///////////////////////////
+  // fm-avatar/avatar.scss //
+  ///////////////////////////
+
+  .avatar-group {
+    .avatar-img,
+    .avatar-title {
+      border-color: #22282E;
+    }
+  }
+
+  //////////////////
+  // _tables.scss //
+  //////////////////
+
+  .table {
+    color: $dark-body-color;
+
+    th,
+    td {
+      border-top-color: $dark-border-color;
+    }
+
+    thead th {
+      border-bottom-color: $dark-border-color;
+    }
+
+    tbody + tbody {
+      border-top-color: $dark-border-color;
+    }
+  }
+
+  .table thead th {
+    color: rgba($dark-body-color, .7);
+  }
+
+  .table tbody .selected > td {
+    background-color: rgba($dark-body-bg, .5);
+  }
+
+  .table .sort {
+    &.asc,
+    &.desc {
+      color: $dark-body-color;
+    }
+  }
+
+  .table-bordered {
+    border-color: $dark-border-color;
+
+    th,
+    td {
+      border-color: $dark-border-color;
+    }
+  }
+
+  ////////////////////////////////////////////
+  // ui-huma/scss/_dashboard-area-tabs.scss //
+  ////////////////////////////////////////////
+
+  .dashboard-area-tabs__tab {
+    &, * {
+      color: $dark-body-color;
+    }
+
+    &:not(.active) {
+      background-color: $dark-body-bg;
+      &, * {
+        color: rgba($dark-body-color, .5);
+      }
+    }
+  }
+
+  ///////////////////////////////
+  // ui-huma/scss/_navbar.scss //
+  ///////////////////////////////
+
+  .navbar-shadow {
+    @include mdc-elevation-mixins.elevation(10, #000, $shadow-opacity-boost);
+  }
+
+  ///////////////////////////////////////////////////
+  // bv-form-image-group/src/BvFormImageGroup.scss //
+  ///////////////////////////////////////////////////
+
+  .form-image-group :not(:checked) ~ label {
+    border-color: $dark-border-color;
+  }
+
+  /////////////////////////////
+  // ui-huma/scss/_form.scss //
+  /////////////////////////////
+  
+  .form-label {
+    color: rgba($dark-body-color, .7);
+  }
+
+  .card-form__body {
+    background-color: lighten($dark-body-bg, 1%);
+
+    label:not([class]) {
+      text-transform: uppercase;
+      font-size: 0.707rem;
+      color: rgba($dark-body-color, .7);
+    }
+  }
+
+  ///////////////////////////////////////////////
+  // ui-huma/scss/_card-header-tabs-basic.scss //
+  ///////////////////////////////////////////////
+
+  .card-header-tabs-basic {
+    a {
+      color: rgba($dark-body-color, .54);
+      &:hover {
+        color: rgba($dark-body-color, .84)
+      }
+    }
+    .active {
+      color: $dark-body-color;
+    }
+  }
+
+  //////////////////////
+  // _pagination.scss //
+  //////////////////////
+
+  .page-link {
+    color: $dark-pagination-color;
+    background-color: $dark-pagination-bg;
+    border-color: $dark-pagination-border-color;
+
+    &:hover {
+      color: $dark-pagination-hover-color;
+      background-color: $dark-pagination-hover-bg;
+      border-color: $dark-pagination-hover-border-color;
+    }
+  }
+
+  //////////////////
+  // _button.scss //
+  //////////////////
+
+  .btn-link {
+    color: rgba($dark-body-color, .7);
+
+    @include hover {
+      color: rgba($dark-body-color, .5);
+    }
+  }
+
+  /////////////////////////////////
+  // ui-huma/scss/_page-nav.scss //
+  /////////////////////////////////
+
+  .page-nav {
+    &::before {
+      background-color: $dark-border-color;
+    }
+    .page-nav__menu {
+      a {
+        color: rgba($dark-body-color, .7);
+        &:not(.active)::before {
+          background-color: lighten($dark-body-bg, 5%);
+          border-color: $dark-border-color;
+        }
+
+        &.active::before {
+          border-color: lighten($dark-border-color, 5%);
+        }
+      }
+    }
+  }
+
+  //////////////////////
+  // _list-group.scss //
+  //////////////////////
+  
+  .list-group:not(.list-group-flush) {
+    @if $enable-card-shadow {
+      @include mdc-elevation-mixins.elevation(1, $dark-card-shadow-base-color);
+    }
+  }
+
+  .list-group-item {
+    background-color: $dark-card-bg;
+    border-color: $dark-card-border-color;
+  }
+
+  ///////////////////////////////
+  // ui-huma/scss/_footer.scss //
+  ///////////////////////////////
+
+  .footer {
+    background-color: $dark-body-bg;
+  }
+
+  ////////////////////////////////////
+  // ui-huma/scss/_icon-holder.scss //
+  ////////////////////////////////////
+  
+  .icon-holder--outline-muted {
+    // @include icon-holder-outline-variant(rgba($dark-body-color, .5));
+  }
+
+  ///////////////////////////////////
+  // ui-huma/scss/_menu-modal.scss //
+  ///////////////////////////////////
+  
+  .menu-modal .menu .nav-link:not(.active) {
+    color: rgba($dark-body-color, .7);
+  }
+
+  .menu-modal .menu .nav-link.active:hover {
+    color: rgba($body-color, .7);
+  }
+
+  .sidebar {
+    @include mdc-elevation-mixins.elevation(3, #000, $shadow-opacity-boost);
+  }
+
+  /////////////////////////////////////
+  // ui-huma/scss/_layout-boxed.scss //
+  /////////////////////////////////////
+
+  .layout-boxed {
+    .page-content {
+      background-color: $dark-body-bg;
+      @include media-breakpoint-up(lg) {
+        @include mdc-elevation-mixins.elevation(3, #000, $shadow-opacity-boost);
+      }
+    }
+    #default-drawer .sidebar-brand {
+      @include mdc-elevation-mixins.elevation(3, #000, $shadow-opacity-boost);
+    }
+    .page-separator__text {
+      background-color: $dark-body-bg;
+    }
+  }
+
+}

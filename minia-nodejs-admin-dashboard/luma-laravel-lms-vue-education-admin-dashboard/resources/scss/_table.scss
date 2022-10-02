@@ -1,0 +1,95 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.table {
+  thead th,
+  tbody td { 
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+}
+
+.table-nowrap {
+  th,
+  td { 
+    white-space: nowrap;
+  }
+}
+
+.table .sort {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  
+  &::after {
+    margin-left: .5rem;
+    content: str-replace(url("data:image/svg+xml;utf8,<svg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3 0L6 4H0L3 0ZM3 10L0 6H6L3 10Z' fill='#{rgba($body-color, .54)}'/></svg>"), "#", "%23");
+  }
+
+  &.asc,
+  &.desc {
+    text-decoration: underline;
+    font-weight: $headings-font-weight;
+  }
+
+  & + .sort {
+    margin-left: 1rem;
+  }
+}
+
+.table--elevated {
+  @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+}
+
+.table-flush {
+  thead th {
+    border-top: 0;
+  }
+  margin-bottom: 0;
+}
+
+.table-responsive {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  color: $label-color;
+  text-transform: $label-text-transform;
+  font-size: $label-font-size;
+  font-family: $label-font-family;
+  font-weight: $label-font-weight;
+  letter-spacing: $label-letter-spacing;
+}
+
+.table tbody .selected > td {
+  background-color: rgba($body-bg, .5);
+}
+
+.thead-border-top-0 thead th {
+  border-top: 0;
+}
+
+.table {
+  thead th { 
+    font-size: $small-font-size;
+    padding: .5rem .75rem;
+  }
+  tbody td { 
+    line-height: 1.5;
+    padding: .75rem;
+  }
+}
+
+.table-flush {
+  thead th,
+  tbody td {
+    &:first-of-type {
+      border-left: 0;
+    }
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+  border-bottom: 0;
+}

@@ -1,0 +1,51 @@
+// STACK
+// Adds a horizontal stack effect to a card (or other elements i.e. list-group)
+
+.stack {
+  margin-bottom: calc(#{$spacer} + 10px);
+  position: relative;
+  overflow: initial;
+  z-index: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    right: 10px;
+    transition: .2s transform ease-in-out;
+    border-radius: 0 0 $card-border-radius $card-border-radius;
+    box-shadow: $stack-box-shadow;
+    display: block;
+    content: '';
+    background: $stack-bg;
+    height: 5px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  &::before {
+    height: 10px;
+    left: 20px;
+    right: 20px;
+  }
+
+  &--hidden,
+  &--hidden-hover:hover {
+    &::before,
+    &::after {
+      transform: translate3d(0, -12px, 0);
+    }
+  }
+
+  &--primary-dark {
+    &:before,
+    &:after {
+      background: $primary-dark;
+      box-shadow: 0 2px 0 darken($primary-dark, 2%) inset, 0 2px 0 darken($primary-dark, 2%);
+    }
+  }
+
+  &--1::before {
+    display: none;
+  }
+}

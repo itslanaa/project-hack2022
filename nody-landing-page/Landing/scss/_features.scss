@@ -1,0 +1,15 @@
+//
+// features.scss
+//
+
+.features-content {
+    .nav {
+        .nav-link {
+            padding: 30px;
+            &.active {
+                background: $white !important;
+                box-shadow: $shadow;
+            }
+        }
+    }
+}

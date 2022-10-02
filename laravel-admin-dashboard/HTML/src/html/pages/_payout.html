@@ -1,0 +1,111 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }} page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <!-- <li class="breadcrumb-item">UI Components</li> -->
+        <li class="breadcrumb-item active" aria-current="page">Payout</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Payout</h1>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Payout Account</strong></p>
+        <p class="text-muted">Where we will send you the money.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form>
+          <div class="form-group d-flex flex-column">
+            <img alt="PayPal Logo" src="assets/images/paypal.svg" width="140">
+            <div>contact@frontted.com</div>
+          </div>
+          <button type="submit" class="btn btn-success">Change</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Account</strong></p>
+        <p class="text-muted">Set your account type &amp; details.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form>
+          <div class="form-group">
+            <label>Account Type</label><br>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-light active">
+                <input type="radio" name="options" id="option1" checked=""> Individual
+              </label>
+              <label class="btn btn-light">
+                <input type="radio" name="options" id="option2"> Company
+              </label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="payoutFirstName">First name</label>
+              <input type="text" class="form-control" id="payoutFirstName" placeholder="First name" value="Adrian" required="">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="payoutLastName">Last name</label>
+              <input type="text" class="form-control" id="payoutLastName" placeholder="Last name" value="Demian" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="payoutAddress">Address</label>
+            <textarea id="payoutAddress" rows="4" class="form-control" placeholder="Enter invoice address"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="payoutCity">City</label>
+              <input type="text" class="form-control" id="payoutCity" placeholder="City" required="">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="payoutState">State</label>
+              <input type="text" class="form-control" id="payoutState" placeholder="State" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="payoutCountry">Country</label><br>
+            <select id="payoutCountry" class="custom-select w-auto">
+              <option value="usa">United States</option>
+              <option value="usa">Canada</option>
+            </select>
+            <small class="form-text text-muted">The country is not visible to other users.</small>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="payoutAgreeTerms" required="" checked="">
+              <label class="custom-control-label" for="payoutAgreeTerms">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

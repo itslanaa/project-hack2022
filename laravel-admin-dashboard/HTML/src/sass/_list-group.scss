@@ -1,0 +1,26 @@
+.list-group-small > .list-group-item {
+  padding-top: .8125rem;
+  padding-bottom: .8125rem;
+}
+
+.list-lessons {
+  .list-group-item {
+    border-left:2px solid transparent;
+    a {
+      font-size: 1rem;
+      color: $body-color;
+      font-weight: 600;
+    }
+    &:hover {
+      background: $body-bg;
+      a { text-decoration: none; color: $primary; }
+    }
+    &.active {
+      background-color: $body-bg !important;
+      border: none;
+      border-left:2px solid $primary;
+      background: none;
+      a {color: $primary; }
+    }
+  }
+}

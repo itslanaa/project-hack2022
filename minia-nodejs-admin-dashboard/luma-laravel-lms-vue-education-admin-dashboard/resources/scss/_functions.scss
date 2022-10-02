@@ -1,0 +1,4 @@
+@function container-max-width($map: $container-max-widths) {
+  $last: nth($map, length($map));
+  @return nth($last, length($last));
+}

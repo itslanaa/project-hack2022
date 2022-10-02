@@ -1,0 +1,144 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }} page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <li class="breadcrumb-item">UI Components</li>
+        <li class="breadcrumb-item active" aria-current="page">Vector Maps</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Vector Maps</h1>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Pins</h4>
+        </div>
+        <div class="card-body">
+          <div
+            class="map"  
+            data-toggle="vector-map" 
+            data-vector-map-map="world_en"
+            data-vector-map-show-tooltip="false"
+            data-vector-map-enable-zoom="true"
+            data-vector-map-pins='{
+              "it": "<div class=\"map-pin blue\"><span>Vatican City</span></div>",
+              "us": "<div class=\"map-pin blue\"><span>New York</span></div>",
+              "jp": "<div class=\"map-pin blue\"><span>Tokyo</span></div>"
+            }'>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Gross domestic product (GDP) by country</h4>
+        </div>
+        <div class="card-body">
+          <div
+            class="map"  
+            data-toggle="vector-map" 
+            data-vector-map-values="gdp"
+            data-vector-map-map="world_en">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Scale and focus</h4>
+        </div>
+        <div class="card-header card-header-tabs-basic nav" role="tablist">
+          <div 
+            data-toggle="vector-map-focus" 
+            data-target="#vector-map-focus" 
+            data-focus="it" 
+            data-animate="true">
+            <a href="javascript:void(0)" class="active" data-toggle="tab" role="tab" aria-selected="true">Italy</a>
+          </div>
+          <div 
+            data-toggle="vector-map-focus" 
+            data-target="#vector-map-focus" 
+            data-focus="jp" 
+            data-animate="true">
+            <a href="javascript:void(0)" data-toggle="tab" role="tab" aria-selected="false">Japan</a>
+          </div>
+          <div 
+            data-toggle="vector-map-focus" 
+            data-target="#vector-map-focus" 
+            data-focus='["it","jp"]' 
+            data-animate="true">
+            <a href="javascript:void(0)" data-toggle="tab" role="tab" aria-selected="false">United States &amp; Italy</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div
+            id="vector-map-focus"
+            class="map"  
+            data-toggle="vector-map" 
+            data-vector-map-map="world_en"
+            data-vector-map-show-tooltip="false"
+            data-vector-map-enable-zoom="false"
+            data-vector-map-scale="1.2"
+            data-vector-map-focus="it"
+            data-vector-map-pins='{
+              "it": "<div class=\"map-pin blue\"><span>Vatican City</span></div>",
+              "us": "<div class=\"map-pin blue\"><span>New York</span></div>",
+              "jp": "<div class=\"map-pin blue\"><span>Tokyo</span></div>"
+            }'>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Custom map - Mall</h4>
+        </div>
+        <div class="card-body">
+          <div
+            class="map"  
+            data-toggle="vector-map"
+            data-vector-map-map="mall"
+            data-vector-map-values="mall"
+            data-vector-map-enable-zoom="true"
+            data-vector-map-scale="1"
+            data-vector-map-values-colors='{
+              "FASHION": "#2761ad",
+              "LINGERIE & UNDERWEAR": "#d58aa3",
+              "BEAUTY & SPA": "success.500",
+              "URBAN FAVORITES": "primary.900",
+              "SPORTS & OUTDOOR": "success.500",
+              "KIDS STUFF": "success.300",
+              "ENTERTAINMENT": "success.500",
+              "HOME DECOR": "gray.400",
+              "LIFESTYLE": "gray.300",
+              "DINING": "success.500",
+              "REST ROOMS": "gray.700",
+              "SERVICES": "gray.300",
+              "OTHER": "gray.500"
+            }'>
+          </div>
+          Example of custom map created from SVG using converter available <a href="http://svgto.jvectormap.com/" target="_blank">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

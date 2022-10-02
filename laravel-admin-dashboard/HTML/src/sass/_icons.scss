@@ -1,0 +1,33 @@
+.material-icons {
+  vertical-align: middle;
+}
+
+.icon-muted {
+  color: rgba(#374D67, .2) !important;
+}
+
+a.icon-muted:hover .material-icons {
+  color: $primary;
+}
+.icon-light {
+  opacity: .24;
+}
+
+.icon-16pt {
+  font-size: 1rem !important;
+}
+.icon-20pt {
+  font-size: 1.25rem !important;
+}
+.icon-30pt {
+  font-size: 30px !important;
+}
+.icon-40pt {
+  font-size: 40px !important;
+}
+.icon-48pt {
+  font-size: 48px !important;
+}
+.icon-60pt {
+  font-size: 60px !important;
+}

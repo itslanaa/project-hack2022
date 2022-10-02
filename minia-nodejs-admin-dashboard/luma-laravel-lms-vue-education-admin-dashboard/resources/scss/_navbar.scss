@@ -1,0 +1,209 @@
+////////////
+// NAVBAR //
+////////////
+
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.navbar {
+  min-height: $navbar-height;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-shadow {
+  @include mdc-elevation-mixins.elevation(10, $shadow-baseline-color, $shadow-opacity-boost);
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .top#{$infix}-navbar {
+      top: $navbar-height;
+    }
+  }
+}
+
+.navbar-height {
+  min-height: $navbar-height;
+}
+
+.top-navbar {
+  top: $navbar-height !important;
+}
+
+.navbar-brand {
+  font-size: 1.625rem;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: $navbar-item-spacing;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand-icon {
+  margin-right: $navbar-padding-x/2;
+}
+.navbar-divider {
+  width: 1px;
+  height: $navbar-height;
+  background: $navbar-dark-border-color;
+  margin-left: $navbar-padding-x;
+  margin-right: $navbar-padding-x;
+}
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+  padding: 0;
+}
+// fix position static from bootstrap
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.navbar-toggler {
+  border: none;
+  width: $navbar-height;
+  height: $navbar-height;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+.navbar-toggler-right {
+  order: 1;
+}
+.navbar .container {
+  @include media-breakpoint-down(sm) {
+    max-width: none;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      .nav-link {
+        height: $navbar-height;
+      }
+
+      @include media-breakpoint-down($breakpoint) {
+        &.navbar-list {
+          height: auto;
+          .navbar-list__item {
+            padding: $navbar-padding-x;
+            width: 100%;
+          }
+          &.navbar-light .navbar-list__item:not(:last-child) {
+            border-bottom: 1px solid $border-color;
+          }
+        }
+      }
+      @include media-breakpoint-up($next) {
+        .navbar-nav {
+          .nav-item {
+            display: flex;
+            align-items: center;
+          }
+          .nav-link {
+            padding-left: 0;
+            padding-right: 0;
+          }
+          .nav-link + .nav-link,
+          .nav-item + .nav-item,
+          & + .navbar-nav {
+            margin-left: $navbar-item-spacing;
+          }
+        }
+        .navbar-list__content {
+          flex-direction: row;
+        }
+        .navbar-collapse__content {
+          display: flex;
+          width: 100%;
+          .navbar-nav {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .navbar-collapse {
+    &__content {
+      padding: $spacer;
+    }
+    .navbar-nav + .navbar-nav {
+      margin-top: $spacer;
+    }
+  }
+}
+
+.navbar-list {
+  padding-left: 0;
+  padding-right: 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding-top: $navbar-padding-y;
+    padding-bottom: $navbar-padding-y;
+  }
+}
+
+.navbar-submenu {
+  background: $navbar-submenu-bg;
+  border-bottom: 2px solid $border-color;
+  @include media-breakpoint-only(xs) {
+    .navbar-collapse {
+      border-bottom: 2px solid $border-color;
+    }
+  }
+}
+
+.navbar-mini {
+  min-height: $navbar-mini-height;
+  .navbar-nav .nav-link {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .navbar-nav > .active > .nav-link::before {
+    display: none;
+  }
+}
+
+.mr-navbar-x {
+  margin-right: $navbar-padding-x;
+}
+
+.bg-primary .navbar-dark .navbar-toggler {
+  color: #fff;
+}
+
+.navbar .ps {
+  // fix for .active .nav-link underline
+  padding-top: 3px;
+  padding-bottom: 3px;
+  .nav {
+    flex-wrap: nowrap;
+  }
+}
+
+.navbar--active-undeline {
+  .navbar-nav > .active > .nav-link::before,
+  .navbar-nav .nav-link.active::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $primary;
+    content: " ";
+    bottom: 0;
+  }
+}

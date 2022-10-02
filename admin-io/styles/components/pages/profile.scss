@@ -1,0 +1,82 @@
+
+/************************************
+13 - Profile
+*************************************/
+
+.panel-profile {
+  border: none;
+}
+
+.panel-profile .profile {
+  margin: 5px 15px 5px 5px;
+  @include border-radius(50%);
+}
+
+.panel-profile .panel-heading {
+  border-bottom: 2px solid $color--primary;
+  background: url(../images/background/bg_weather3.png) center;
+  background-size: cover;
+  position: relative;
+}
+
+.panel-profile .panel-heading .overlay_prof {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.panel-profile .panel-heading .profile_info {
+  z-index: 1;
+  position: relative;
+}
+
+.page-profile .panel-profile .panel-heading .profile_info {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.panel-profile .profile img {
+  @include border-radius(4px);
+}
+
+.panel-profile .list-group > li > i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #999;
+  table-layout: fixed;
+}
+
+.panel-profile .list-justified-container {
+  padding: 15px 0;
+}
+
+.panel-profile ul.list-justified {
+  display: table;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.panel-profile ul.list-justified > li {
+  float: none;
+  display: table-cell;
+  padding: 10px;
+  width: 1%;
+  border-right: 1px solid #eee;
+}
+
+.panel-profile ul.list-justified > li:last-child {
+  border: none;
+}
+
+.panel-profile ul.list-justified > li p {
+  margin: 0;
+}
+
+.page-profile img.media-object {
+  @include border-radius(0px);
+}

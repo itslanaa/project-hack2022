@@ -1,0 +1,23 @@
+.dashboard-chat {
+  &__message {
+    border-radius: .25rem;
+    display: inline-flex;
+    margin-bottom: 0;
+    padding: .625rem;
+    &-in {
+      background: $light;
+    }
+    &-out {
+      background: $link-color;
+      color: #ffffff;
+    }
+  }
+
+  &__head {
+    display: flex;
+    padding: $card-spacer-y $card-spacer-x;
+    margin-bottom: $card-spacer-y;
+    border-bottom: 1px solid $border-color;
+    align-items: center;
+  }
+}

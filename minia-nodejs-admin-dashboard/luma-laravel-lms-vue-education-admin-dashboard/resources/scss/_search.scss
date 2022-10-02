@@ -1,0 +1,65 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// <form class="search-form search-form--light input-group-lg">                                    //
+//   <input type="text" class="form-control" placeholder="Search">                                 //
+//   <button class="btn" type="button" role="button"><i class="material-icons">search</i></button> //
+// </form>                                                                                         //
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: $input-bg;
+  border: $input-btn-border-width solid $input-border-color;
+  @if $enable-rounded {
+    border-radius: $input-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+  @include box-shadow($input-box-shadow);
+  .form-control {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .btn {
+    padding: 0 .75rem;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .btn + .form-control {
+    padding-left: 0;
+  }
+}
+
+.search-form--black {
+  background-color: $black;
+  border-color: $black;
+  .form-control {
+    color: $white;
+    &:focus {
+      background-color: $black !important;
+    }
+  }
+  .btn {
+    background: transparent;
+    color: $secondary;
+  }
+}
+
+.search-form--light {
+  background-color: #EDF0F2;
+  border-color: #EDF0F2;
+  .form-control {
+    color: $black;
+    &::placeholder {
+      color: #949595;
+    }
+  }
+  .btn {
+    color: rgba($black, .4);
+  }
+}

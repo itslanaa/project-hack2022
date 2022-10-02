@@ -1,0 +1,123 @@
+/* ==========================
+    Sidebar Mobile Menu 
+==============================*/
+
+.show-mobile-menu {
+    &.offcanvas-mobile-menu {
+        opacity: 1;
+        visibility: visible;
+        .inner {
+            transform: none;
+        }
+    }
+}
+
+.offcanvas-mobile-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 99999;
+    .mobile-menu-overlay {
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba($dark, 0.7);
+    }
+    .inner {
+        width: 400px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: $white;
+        transition: all 0.3s;
+        transform: translateX(-100%);
+        z-index: 1;
+        //res
+        @include max-screen(479) {
+            width: 100%;
+        }
+
+        & .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary;
+            padding: 10px 15px 10px 30px;
+            .logo {
+                width: 140px;
+            }
+            .mobile-close-btn {
+                cursor: pointer;
+                border: none;
+                height: 40px;
+                width: 40px;
+                flex-shrink: 0;
+                position: relative;
+                background-color: transparent;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    top: 19px;
+                    left: 8px;
+                    content: "";
+                    width: 24px;
+                    height: 3px;
+                    background: $white;
+                    transform-origin: 50% 50%;
+                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                }
+                &::before {
+                    transform: rotate(-45deg);
+                }
+                &::after {
+                    transform: rotate(45deg);
+                }
+
+                &:hover {
+                    &::before,
+                    &::after {
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-content {
+    height: 300px;
+    margin: 30px;
+    overflow-y: auto;
+}
+
+.offcanvas-social {
+    margin: 30px;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 0;
+        a {
+            display: block;
+            color: $white;
+            background: $primary;
+            font-size: 15px;
+            line-height: 45px;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            border-radius: 100%;
+            &:hover {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                color: $white;
+            }
+        }
+    }
+}

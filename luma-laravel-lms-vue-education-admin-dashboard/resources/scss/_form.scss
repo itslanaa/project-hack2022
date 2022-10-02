@@ -1,0 +1,111 @@
+label {
+  font-weight: 500;
+}
+
+// .form-control {
+//   .was-validated &,
+//   &[class*=is-] {
+//     background-color: white;
+//     color: $black;
+//   }
+// }
+
+// .form-control:focus {
+//   box-shadow: none !important;
+// }
+
+.form-control-rounded {
+  border-radius: 20rem;
+}
+
+.form-control-flush {
+  padding: 0;
+  border-width: 0;
+  box-shadow: none;
+  background-color: transparent;
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.list-group-form .list-group-item {
+  padding: 1rem 1.5rem;
+}
+
+///////////////////////////
+// Checkboxes and radios //
+///////////////////////////
+
+.custom-controls-stacked .custom-control:last-child {
+  margin-bottom: 0;
+}
+
+//////////////////
+// INLINE FORMS //
+//////////////////
+
+.form-inline label {
+  margin-right: .25rem;
+}
+
+.form-label {
+  color: $label-color;
+  text-transform: $label-text-transform;
+  font-size: $label-font-size;
+  font-family: $label-font-family;
+  font-weight: $label-font-weight;
+  letter-spacing: $label-letter-spacing;
+}
+
+.card-form {
+  .card-body {
+    padding: 1.6875rem;
+  }
+  .card-body-form-group {
+    padding: $card-spacer-x;
+    padding-bottom: $card-spacer-x - $form-group-margin-bottom;
+  }
+  &__body {
+    background-color: lighten($body-bg, 1%);
+
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+    
+    @include media-breakpoint-up(sm) {
+      @include border-radius($card-inner-border-radius 0 0 $card-inner-border-radius);
+    }
+
+    label:not([class]) {
+      color: $label-color;
+      text-transform: $label-text-transform;
+      font-size: $label-font-size;
+      font-family: $label-font-family;
+      font-weight: $label-font-weight;
+      letter-spacing: $label-letter-spacing;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////
+// TODO: add to bv-form-image-group/src/BvFormImageGroup.scss; //
+/////////////////////////////////////////////////////////////////
+
+.form-image-group {
+  [disabled] ~ label,
+  :disabled ~ label {
+    &::after {
+      display: block;
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      top: 4px;
+      bottom: 4px;
+      background: $input-disabled-bg;
+      width: initial;
+      height: initial;
+      border-radius: 0;
+      content: " ";
+      opacity: .4;
+    }
+  }
+}

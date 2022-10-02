@@ -1,0 +1,145 @@
+.portfolio-section {
+  background: $theme-bg-dark;
+  overflow: hidden;
+  padding-bottom: 120px;
+  h2 {
+    color: #ffffff;
+  }
+
+}
+
+.wrapper-portfolio-slider {
+  img {
+    width: 100%;
+  }
+
+  .item-box {
+    a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  .overlay-slide {
+    position: absolute;
+    //top: 0;
+    //left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 216, 0, 0.85);
+    padding: 20px;
+    h3 {
+      @extend .poppins;
+      font-size: 18px;
+      color: $theme-bg-black;
+      margin-bottom: 5px;
+      line-height: 24px;
+    }
+    p {
+      @extend .montserrat;
+
+      color: #7a6d25;
+    }
+  }
+
+}
+
+.inner-detail-slide {
+  .item-box:first-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.wrapper-inner-owl {
+
+  position: relative;
+  .owl-prev, .owl-next {
+    //position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0 !important;
+    line-height: 50px;
+    border-radius: 0 !important;
+    //top: 50%;
+    //margin: -50px 0 0 0 !important;
+    background: #3d3d3d !important;
+    transition: .2s all;
+    opacity: 1 !important;
+    &:hover {
+      opacity: 1 !important;
+      background: $theme-yellow !important;
+      i {
+        color: $theme-bg-dark;
+      }
+    }
+    i {
+      line-height: 46px;
+      font-size: 24px;
+      transition: .2s all;
+    }
+  }
+
+  .owl-nav {
+    margin-top: 30px;
+  }
+  .disabled {
+    opacity: 1 !important;
+    &:hover {
+      background: #3d3d3d !important;
+      i {
+        color: #7d7a7a !important;
+      }
+    }
+    i {
+      color: #7d7a7a;
+    }
+  }
+
+}
+
+#customDots {
+  margin-bottom: 30px;
+  .owl-dot {
+    @extend .montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    a {
+      color: #ffffff;
+    }
+    //overflow: hidden;
+    &:after {
+      cursor: default;
+      transition: .2s all ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background: $theme-yellow;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &.active {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

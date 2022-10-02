@@ -1,0 +1,292 @@
+
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.table {
+  max-width: 100%;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 10px;
+}
+
+.table .table {
+  background-color: #f3f3f3;
+}
+
+.table > thead > tr > td.success, .table > thead > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr > td.success, .table > tbody > tr > th.success, .table > tbody > tr.success > td, .table > tbody > tr.success > th, .table > tfoot > tr > td.success, .table > tfoot > tr > th.success, .table > tfoot > tr.success > td, .table > tfoot > tr.success > th {
+  background-color: #eefff6;
+}
+
+.table-hover > tbody > tr > td.success:hover, .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
+  background-color: #d5ffe9;
+}
+
+.table > thead > tr > td.info, .table > thead > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th, .table > tbody > tr > td.info, .table > tbody > tr > th.info, .table > tbody > tr.info > td, .table > tbody > tr.info > th, .table > tfoot > tr > td.info, .table > tfoot > tr > th.info, .table > tfoot > tr.info > td, .table > tfoot > tr.info > th {
+  background-color: #eff6ff;
+}
+
+.table-hover > tbody > tr > td.info:hover, .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
+  background-color: #d6e8ff;
+}
+
+.table > thead > tr > td.warning, .table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th, .table > tbody > tr > td.warning, .table > tbody > tr > th.warning, .table > tbody > tr.warning > td, .table > tbody > tr.warning > th, .table > tfoot > tr > td.warning, .table > tfoot > tr > th.warning, .table > tfoot > tr.warning > td, .table > tfoot > tr.warning > th {
+  background-color: #fffbef;
+}
+
+.table-hover > tbody > tr > td.warning:hover, .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
+  background-color: #fff5d6;
+}
+
+.table > thead > tr > td.danger, .table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th {
+  background-color: #fff1ed;
+}
+
+.table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
+  background-color: #ffddd4;
+}
+
+.table-dynamic .table-filters {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.table-dynamic .filter-result-info {
+  padding: 7px;
+}
+
+.table-dynamic .table-bordered {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-dynamic .table-bordered thead th {
+  position: relative;
+  padding: 0;
+}
+
+.table-dynamic .table-bordered thead th > .th {
+  position: relative;
+  padding: 8px 20px 8px 8px;
+}
+
+.table-dynamic .table-bordered thead th .glyphicon-chevron-up, .table-dynamic .table-bordered thead th .glyphicon-chevron-down {
+  position: absolute;
+  color: #999;
+}
+
+.table-dynamic .table-bordered thead th .glyphicon-chevron-up:hover, .table-dynamic .table-bordered thead th .glyphicon-chevron-down:hover {
+  color: $color--primary;
+  cursor: pointer;
+}
+
+.table-dynamic .table-bordered thead th .glyphicon-chevron-up.active, .table-dynamic .table-bordered thead th .glyphicon-chevron-down.active {
+  color: $color--primary;
+}
+
+.table-dynamic .table-bordered thead th .glyphicon-chevron-up {
+  top: 4px;
+  right: 5px;
+}
+
+.table-dynamic .table-bordered thead th .glyphicon-chevron-down {
+  top: 18px;
+  right: 6px;
+}
+
+.table-dynamic .table-footer {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.table-dynamic .page-num-info span {
+  padding: 6px;
+}
+
+.table-dynamic .pagination-container ul {
+  margin: 0;
+}
+
+.table-dynamic .pagination-container ul li:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .table-flip-scroll .cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+  .table-flip-scroll * html .cf {
+    zoom: 1;
+  }
+
+  .table-flip-scroll *:first-child + html .cf {
+    zoom: 1;
+  }
+
+  .table-flip-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .table-flip-scroll th, .table-flip-scroll td {
+    margin: 0;
+    vertical-align: top;
+  }
+
+  .table-flip-scroll th {
+    text-align: left;
+  }
+
+  .table-flip-scroll table {
+    display: block;
+    position: relative;
+    width: 100%
+  }
+
+  .table-flip-scroll thead {
+    display: block;
+    float: left;
+  }
+
+  .table-flip-scroll tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table-flip-scroll thead tr {
+    display: block;
+  }
+
+  .table-flip-scroll .table > thead > tr > th:first-child {
+    border-top: 1px solid #ddd;
+  }
+
+  .table-flip-scroll th {
+    display: block;
+    text-align: right;
+  }
+
+  .table-flip-scroll tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .table-flip-scroll td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+
+  .table-flip-scroll th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .table-flip-scroll td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .table-flip-scroll tbody tr {
+    border-left: 1px solid #babcbf;
+  }
+
+  .table-flip-scroll th:last-child, .table-flip-scroll td:last-child {
+    border-bottom: 1px solid #babcbf;
+  }
+}
+
+.list-inline {
+  margin-left: -5px;
+}
+
+.dl-horizontal dd:before, .dl-horizontal dd:after {
+  content: " ";
+  display: table;
+}
+
+.dl-horizontal dd:after {
+  clear: both;
+}
+
+table.responsive {
+  border: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 767px) {
+  table.responsive {
+    margin-bottom: 0;
+  }
+
+  .pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 35%;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+
+  .pinned table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: none;
+    border-left: none;
+    width: 100%
+  }
+
+  .pinned table th, .pinned table td {
+    white-space: nowrap;
+  }
+
+  .pinned td:last-child {
+    border-bottom: 0;
+  }
+
+  div.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+  }
+
+  div.table-wrapper div.scrollable {
+    margin-left: 35%
+  }
+
+  div.table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  table.responsive td, table.responsive th {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
+    display: none;
+  }
+}

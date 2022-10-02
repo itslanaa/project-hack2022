@@ -1,0 +1,31 @@
+.partners-section {
+  padding-bottom: 100px;
+}
+
+.slider-partners {
+  .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+  &.owl-carousel .owl-item {
+    img {
+      margin: auto;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
+
+.clients-partners-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+  .client-wrapper {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+}

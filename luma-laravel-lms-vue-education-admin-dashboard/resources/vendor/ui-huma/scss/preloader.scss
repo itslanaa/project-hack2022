@@ -1,0 +1,18 @@
+@import './variables';
+
+:root {
+  --sk-size: 64px;
+  --sk-color: #fff;
+}
+
+.preloader {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,178 @@
+.team-section {
+    padding: 290px 0px;
+    @include max-screen(992, 1199) {
+        padding: 180px 0px;
+    }
+    @include max-screen(768, 991) {
+        padding: 150px 0px;
+    }
+    @include max-screen(767) {
+        padding: 100px 0px;
+    }
+    background-image: linear-gradient(to right, #03136b, #0d1e7f, #162993, #1c35a8, #2241be);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        content: "";
+        background-image: url("/images/team/shape-top.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 11%;
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        content: "";
+        background-image: url("/images/team/shape-bottom.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 11%;
+    }
+
+    .pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.team-card {
+    text-align: center;
+    overflow: hidden;
+    .thumb {
+        position: relative;
+        margin-bottom: 40px;
+        .social-hover {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            @include max-screen(992, 1199) {
+                top: 15px;
+                left: 0;
+                right: 0;
+                display: block;
+                margin: 0 auto;
+            }
+            @include max-screen(576, 991) {
+                top: 30px;
+                left: 0;
+                right: 0;
+                display: block;
+                margin: 0 auto;
+            }
+            @include max-screen(575) {
+                top: 30px;
+                left: 0;
+                right: 0;
+                display: block;
+                margin: 0 auto;
+            }
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+            animation: rotation 5s infinite linear;
+        }
+    }
+
+    &:hover {
+        .social-hover {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .title {
+        font-weight: 700;
+        color: $white;
+        text-transform: capitalize;
+        line-height: 0.8;
+        font-size: 25px;
+    }
+    p {
+        font-weight: 700;
+        line-height: 2.076;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fc7418;
+    }
+
+    .team-social {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        &-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: linear 0.3s;
+        }
+        &-link {
+            border: 1px solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            width: 39px;
+            height: 39px;
+            color: $white;
+            border-radius: 50%;
+            transition: 0.4s;
+            &:hover {
+                background: $white;
+                color: $primary;
+            }
+        }
+    }
+
+    &:hover {
+        .team-social {
+            opacity: 1;
+            visibility: visible;
+            &-item {
+                &:nth-child(1) {
+                    top: 85px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:nth-child(2) {
+                    top: 130px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                }
+                &:nth-child(3) {
+                    top: 130px;
+                    left: 60%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

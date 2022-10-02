@@ -1,0 +1,18 @@
+//////////////////
+// TABS IN CARD //
+//////////////////
+
+.nav-tabs-card {
+  .nav-link {
+    border-radius: 0;
+    @include hover {
+      color: $nav-tabs-link-active-color;
+    }
+  }
+  & + .card-footer {
+    border-top: none;
+  }
+  .card > &:not(:first-child) {
+    border-top: 1px solid $card-border-color;
+  }
+}

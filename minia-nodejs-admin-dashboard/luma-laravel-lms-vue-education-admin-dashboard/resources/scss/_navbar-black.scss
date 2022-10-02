@@ -1,0 +1,73 @@
+.navbar-black {
+  background: $sidebar-black-bg;
+
+  .navbar-text-50 { color: rgba($white, .5); }
+  .navbar-text-70 { color: rgba($white, .7); }
+  .navbar-text-100 { color: $white; }
+
+  .navbar-search {
+    background-color: #303840;
+    border-color: #303840;
+    .form-control {
+      color: $white;
+      &::placeholder {
+        color: $sm-dark-open-icon-color;
+      }
+      &:focus {
+        background-color: transparent !important;
+      }
+    }
+    .btn {
+      background: transparent;
+      color: $sm-dark-open-icon-color;
+    }
+  }
+
+  .navbar-btn {
+    @include button-variant(#303840, #303840);
+  }
+
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: rgba(white, .7);
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+
+      @include media-breakpoint-up(sm) {
+        &::before {
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: rgba(white, .7);
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+}

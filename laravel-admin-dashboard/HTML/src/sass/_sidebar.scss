@@ -1,0 +1,70 @@
+@import 'sidebar-style-guide/sass/style';
+
+.sidebar {
+  position: relative;
+  height: 100%;
+  text-align: initial;
+  overscroll-behavior: none;
+}
+
+.sidebar-heading {
+  margin-bottom: $sidebar-spacing-y/2;
+}
+
+.sidebar-menu + .sidebar-heading {
+  margin-top: 1.625rem;
+}
+.sidebar-heading + .sidebar-heading {
+  margin-top: 2.25rem;
+}
+.sidebar-heading:first-child {
+  margin-top: 1.25rem;
+}
+
+.sidebar-menu > .sidebar-menu-item > .sidebar-submenu > .sidebar-menu-item:last-child {
+  margin-bottom: 1rem;
+}
+
+.sidebar-submenu .sidebar-menu-text {
+  padding-left: 1rem;
+  margin-left: .75rem;
+}
+
+.sidebar .progress {
+  height: 7px;
+}
+
+.sidebar-light .sidebar-account {
+  background-color: $light;
+}
+
+.sidebar-dark .text-body {
+  color: $white !important;
+}
+
+.sidebar-dark [class*=border-] {
+  border-color: $sidebar-dark-border-color !important;
+}
+.sidebar-dark .text-muted {
+  color: $sm-dark-button-color !important;
+}
+
+.sidebar-light .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px dotted rgba($dark-gray, .24);
+  }
+}
+
+.sidebar-dark .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px dotted rgba($dark-gray, .24);
+  }
+}
+
+.sidebar-menu-toggle-icon {
+  font-weight: normal;
+}
+
+.sidebar-submenu .sidebar-submenu > .sidebar-menu-item .sidebar-menu-text {
+  padding-left:2rem;
+}

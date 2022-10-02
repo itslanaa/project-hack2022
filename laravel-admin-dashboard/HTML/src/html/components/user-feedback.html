@@ -1,0 +1,21 @@
+{% macro component(
+  avatar="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg", 
+  name="Jenell D. Matney", 
+  title="Founder and CEO") %}
+<div class="card">
+  <div class="card-body media">
+    <div class="media-left mr-3">
+      <div class="avatar">
+        <img src="{{ avatar }}" alt="Avatar" class="avatar-img rounded-circle">
+      </div>
+    </div>
+    <div class="media-body">
+      <p>
+        <strong>{{ name }}</strong><br>
+        <span class="text-muted">{{ title }}</span>
+      </p>
+      <p class="text-muted mb-0"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</em></p>
+    </div>
+  </div>
+</div>
+{% endmacro %}

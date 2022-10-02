@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ title }}</title>
+
+  {% include 'layouts/_header.html' %}
+
+  {% block head %}
+    {% include 'pages/_' + slug + '.head.html' ignore missing %}
+  {% endblock %}
+
+</head>
+<body class="{{ bodyClass or 'layout-fluid layout-sticky-subnav' }}">
+
+  {% set brand = 'flowdash' %}
+  {% set layout = 'fluid' %}
+  {% set prefix = 'fluid-' %}
+  {% set containerClass = 'container-fluid' %}
+  {% set drawerAlign = 'end' %}
+  {% set navbarClass = 'pr-0' %}
+  {% set home_url = prefix + 'dashboard.html' %}
+  {% set pages_menu = slug === 'invoice' or slug === 'stories' or slug === 'edit-account' or slug === 'pricing' or slug === 'profile' or slug === 'payout' or slug === 'digital-product' or slug === 'companies' or slug === 'discussions' or slug === 'product-listing' or slug === 'blank' %}
+  {% set components_menu = 'ui-' in slug %}
+  {% set apps_menu = 'app-' in slug %}
+  {% set dashboards_menu = 'dashboard' in slug or slug === 'staff' or slug === 'analytics' or slug === 'ecommerce' %}
+
+  {% include 'layouts/_preloader.html' %}
+
+  <!-- Header Layout -->
+  <div class="mdk-header-layout js-mdk-header-layout">
+
+    <!-- Header -->
+    {% block header %}
+      <div id="header" class="mdk-header bg-dark js-mdk-header m-0" data-fixed>
+        <div class="mdk-header__content">
+          {% block navbar %}
+            {% include 'layouts/_navbar.html' %}
+          {% endblock %}
+        </div>
+      </div>
+    {% endblock %}
+    <!-- // END Header -->
+
+    <!-- Header Layout Content -->
+    <div class="mdk-header-layout__content page">
+
+      {% block page %}
+        {% include 'pages/_' + slug + '.html' ignore missing %}
+      {% endblock %}
+
+    </div>
+    <!-- // END header-layout__content -->
+
+  </div>
+  <!-- // END header-layout -->
+
+  {% include 'layouts/_app-settings.html' %}
+  {% include 'layouts/_drawer.html' %}
+  {% include 'layouts/_footer.html' %}
+
+  {% block footer %}
+    {% include 'pages/_' + slug + '.footer.html' ignore missing %}
+  {% endblock %}
+</body>
+</html>

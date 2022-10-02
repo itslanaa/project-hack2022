@@ -1,0 +1,78 @@
+<ul class="nav navbar-nav">
+  <li class="nav-item dropdown{% if dashboards_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dashboards</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'dashboard' %} active{% endif %}" href="{{ home_url }}">Default</a>
+      <a class="dropdown-item{% if slug === 'analytics' %} active{% endif %}" href="{{ prefix }}analytics.html">Analytics</a>
+      <a class="dropdown-item{% if slug === 'staff' %} active{% endif %}" href="{{ prefix }}staff.html">CRM/Staff</a>
+      <a class="dropdown-item{% if slug === 'ecommerce' %} active{% endif %}" href="{{ prefix }}ecommerce.html">E-commerce</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown{% if apps_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Apps</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'app-activities' %} active{% endif %}" href="{{ prefix }}app-activities.html">Trello</a>
+      <a class="dropdown-item{% if slug === 'app-trello' %} active{% endif %}" href="{{ prefix }}app-trello.html">Trello</a>
+      <a class="dropdown-item{% if slug === 'app-projects' %} active{% endif %}" href="{{ prefix }}app-projects.html">Projects</a>
+      <a class="dropdown-item{% if slug === 'app-fullcalendar' %} active{% endif %}" href="{{ prefix }}app-fullcalendar.html">Event Calendar</a>
+      <a class="dropdown-item{% if slug === 'app-chat' %} active{% endif %}" href="{{ prefix }}app-chat.html">Chat</a>
+      <a class="dropdown-item{% if slug === 'app-email' %} active{% endif %}" href="{{ prefix }}app-email.html">Email</a>
+      <div class="dropdown-divider"></div>
+      <div class="dropdown-header">Education</div>
+      <a class="dropdown-item{% if slug === 'app-browse-courses' %} active{% endif %}" href="{{ prefix }}app-browse-courses.html">Browse Courses</a>
+      <a class="dropdown-item{% if slug === 'app-course' %} active{% endif %}" href="{{ prefix }}app-course.html">Course</a>
+      <a class="dropdown-item{% if slug === 'app-lesson' %} active{% endif %}" href="{{ prefix }}app-lesson.html">Lesson</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown{% if pages_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'stories' %} active{% endif %}" href="{{ prefix }}stories.html">Stories</a>
+      <a class="dropdown-item{% if slug === 'invoice' %} active{% endif %}" href="{{ prefix }}invoice.html">Invoice</a>
+      <a class="dropdown-item{% if slug === 'pricing' %} active{% endif %}" href="{{ prefix }}pricing.html">Pricing</a>
+      <a class="dropdown-item{% if slug === 'edit-account' %} active{% endif %}" href="{{ prefix }}edit-account.html">Edit Account</a>
+      <a class="dropdown-item{% if slug === 'profile' %} active{% endif %}" href="{{ prefix }}profile.html">Profile</a>
+      <a class="dropdown-item{% if slug === 'payout' %} active{% endif %}" href="{{ prefix }}payout.html">Payout</a>
+      <a class="dropdown-item" href="login.html">Login</a>
+      <a class="dropdown-item" href="signup.html">Sign Up</a>
+      <a class="dropdown-item{% if slug === 'digital-product' %} active{% endif %}" href="{{ prefix }}digital-product.html">Digital Product</a>
+      <a class="dropdown-item d-flex align-items-center{% if slug === 'product-listing' %} active{% endif %}" href="{{ prefix }}product-listing.html">
+        <span class="flex mr-2">Product Listing</span>
+        <span class="badge badge-primary">NEW</span>
+      </a>
+      <a class="dropdown-item d-flex align-items-center{% if slug === 'blank' %} active{% endif %}" href="{{ prefix }}blank.html">
+        <span class="flex mr-2">Blank Page</span>
+        <span class="badge badge-primary">NEW</span>
+      </a>
+    </div>
+  </li>
+  <li class="nav-item dropdown{% if components_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'ui-buttons' %} active{% endif %}" href="{{ prefix }}ui-buttons.html">Buttons</a>
+      <a class="dropdown-item{% if slug === 'ui-alerts' %} active{% endif %}" href="{{ prefix }}ui-alerts.html">Alerts</a>
+      <a class="dropdown-item{% if slug === 'ui-avatars' %} active{% endif %}" href="{{ prefix }}ui-avatars.html">Avatars</a>
+      <a class="dropdown-item{% if slug === 'ui-modals' %} active{% endif %}" href="{{ prefix }}ui-modals.html">Modals</a>
+      <a class="dropdown-item{% if slug === 'ui-charts' %} active{% endif %}" href="{{ prefix }}ui-charts.html">Charts</a>
+      <a class="dropdown-item{% if slug === 'ui-icons' %} active{% endif %}" href="{{ prefix }}ui-icons.html">Icons</a>
+      <a class="dropdown-item{% if slug === 'ui-forms' %} active{% endif %}" href="{{ prefix }}ui-forms.html">Forms</a>
+      <a class="dropdown-item{% if slug === 'ui-range-sliders' %} active{% endif %}" href="{{ prefix }}ui-range-sliders.html">Range Sliders</a>
+      <a class="dropdown-item{% if slug === 'ui-datetime' %} active{% endif %}" href="{{ prefix }}ui-datetime.html">Time &amp; Date</a>
+      <a class="dropdown-item{% if slug === 'ui-tables' %} active{% endif %}" href="{{ prefix }}ui-tables.html">Tables</a>
+      <a class="dropdown-item{% if slug === 'ui-tabs' %} active{% endif %}" href="{{ prefix }}ui-tabs.html">Tabs</a>
+      <a class="dropdown-item{% if slug === 'ui-loaders' %} active{% endif %}" href="{{ prefix }}ui-loaders.html">Loaders</a>
+      <a class="dropdown-item{% if slug === 'ui-drag' %} active{% endif %}" href="{{ prefix }}ui-drag.html">Drag &amp; Drop</a>
+      <a class="dropdown-item{% if slug === 'ui-pagination' %} active{% endif %}" href="{{ prefix }}ui-pagination.html">Pagination</a>
+      <a class="dropdown-item{% if slug === 'ui-vector-maps' %} active{% endif %}" href="{{ prefix }}ui-vector-maps.html">Vector Maps</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Layouts</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if prefix === '' %} active{% endif %}" href="{% if slug === 'dashboard' %}index{% else %}{{ slug }}{% endif %}.html">Default</a>
+      <a class="dropdown-item{% if prefix === 'fluid-' %} active{% endif %}" href="fluid-{{ slug }}.html">Full Width Navs</a>
+      <a class="dropdown-item{% if prefix === 'fixed-' %} active{% endif %}" href="fixed-{{ slug }}.html">Fixed Navs</a>
+      <a class="dropdown-item{% if prefix === 'mini-' %} active{% endif %}" href="mini-{{ slug }}.html">Mini Sidebar + Navs</a>
+    </div>
+  </li>
+</ul>

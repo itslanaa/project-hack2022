@@ -1,0 +1,109 @@
+<template>
+  <div class="position-relative carousel-card">
+    <div
+      :id="id"
+      ref="carousel"
+      class="js-mdk-carousel row d-block">
+      <a
+        v-if="controls" 
+        class="carousel-control-next js-mdk-carousel-control mt-n24pt" 
+        :href="`#${id}`"
+        role="button" 
+        data-slide="next">
+        <span 
+          class="carousel-control-icon material-icons" 
+          aria-hidden="true">keyboard_arrow_right</span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div class="mdk-carousel__content">
+        <div 
+          v-for="item in localItems"
+          :key="item.id"
+          :class="colClass"
+          class="col-12">
+          <course-card
+            :account="account"
+            :title="item.title" 
+            :image="item.image"
+            :avatar="(item.avatar || item.image)"
+            :free="item.free"
+            :favorite="item.favorite"
+            :position="item.position"
+            :class="item.class"
+            compact />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  // import {CourseCard} from 'vue-luma'
+  import CourseCard from './CourseCard.vue'
+
+  import { handler } from 'dom-factory'
+  import { carouselComponent } from 'material-design-kit'
+  handler.register('mdk-carousel', carouselComponent)
+
+  const uniqueId = require('lodash/uniqueId')
+
+  export default {
+    components: {
+      CourseCard
+    },
+    props: {
+      controls: {
+        type: Boolean,
+        default: true
+      },
+      account: {
+        type: Boolean
+      },
+      colClass: {
+        type: String,
+        default: 'col-sm-6 col-md-4 col-xl-3'
+      },
+      items: {
+        type: Array,
+        default() {
+          return [{
+            title: 'Learn Angular fundamentals',
+            image: 'angular',
+            free: true
+          }, {
+            title: 'Build an iOS Application in Swift',
+            image: 'swift',
+            favorite: true
+          }, {
+            title: 'Build a WordPress Website',
+            image: 'wordpress'
+          }, {
+            title: 'Become a React Native Developer',
+            image: 'react',
+            position: 'left'
+          }]
+        }
+      }
+    },
+    data() {
+      return {
+        localItems: this.items
+      }
+    },
+    computed: {
+      id() {
+        return uniqueId('courses_carousel_')
+      }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        if (this.$refs.carousel) {
+          handler.upgradeElement(this.$refs.carousel, 'mdk-carousel')
+        }
+      })
+    },
+    beforeDestroy() {
+      handler.downgradeElement(this.$refs.carousel, 'mdk-carousel')
+    }
+  }
+</script>

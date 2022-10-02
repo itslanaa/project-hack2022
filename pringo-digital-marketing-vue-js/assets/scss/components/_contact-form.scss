@@ -1,0 +1,108 @@
+.contact-form-card {
+    background-color: rgb(247, 250, 255);
+    border-radius: 15px;
+    padding: 30px;
+    @include min-screen(1200) {
+        padding: 80px;
+    }
+    .title {
+        color: $primary;
+        font-size: 35px;
+        line-height: 1.8;
+
+        @include max-screen(767) {
+            font-size: 30px;
+        }
+    }
+    .section-title {
+        margin-bottom: 40px;
+        @include max-screen(1199) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contact-media {
+    display: flex;
+    align-items: center;
+    @include max-screen(575) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        width: 65px;
+        height: 65px;
+        border: 1px solid #eef0f8;
+        border-radius: 50%;
+        background-color: rgb(247, 250, 255);
+        span {
+            font-size: 30px;
+            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @include min-screen(1200) {
+            width: 74px;
+            height: 74px;
+        }
+        @include max-screen(575) {
+            margin-bottom: 20px;
+        }
+    }
+    .content {
+        flex: 1 0 0;
+        .text {
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .number {
+            line-height: 1;
+            font-weight: 700;
+            color: $primary;
+            font-size: 20px;
+            @include min-screen(1200) {
+                font-size: 22px;
+            }
+        }
+        & a.number {
+            &:hover {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+.contact-media-list {
+    background-color: $white;
+    border-radius: 15px;
+    padding: 25px 30px;
+    & + .contact-media-list {
+        margin-top: 20px;
+    }
+    @include min-screen(1200) {
+        padding: 25px 40px;
+    }
+}
+
+.google-map {
+    width: 100%;
+    height: 350px;
+    margin-top: 65px;
+    @include min-screen(992) {
+        height: 500px;
+        margin-top: 100px;
+    }
+}

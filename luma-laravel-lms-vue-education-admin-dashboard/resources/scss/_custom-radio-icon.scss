@@ -1,0 +1,23 @@
+//////////////////////////////////////
+// Custom Radio controls with icons //
+//////////////////////////////////////
+
+.custom-radio-icon {
+  padding-left: $custom-control-indicator-size;
+  .custom-control-indicator {
+    font-size: $custom-control-indicator-size;
+    color: $custom-control-indicator-bg;
+    background-color: transparent;
+    background-image: none;
+  }
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: transparent;
+    background-image: none;
+    color: $primary;
+  }
+  .custom-control-input:active ~ .custom-control-indicator {
+    background-color: transparent;
+    background-image: none;
+    color: $custom-control-active-indicator-bg;
+  }
+}

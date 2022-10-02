@@ -1,0 +1,146 @@
+/////////////////////
+// PROGRESSION BAR //
+/////////////////////
+
+.progression-bar {
+  display: flex;
+  color: $progression-bar-color;
+
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 0%;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    color: inherit;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 1 1 0%;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 15px;
+    }
+    
+    &[href] {
+      @include hover {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $progression-bar-bg;
+      width: 2px;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      margin-left: -1px;
+    }
+    &::before {
+      display: none;
+    }
+
+    &-icon {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid $progression-bar-icon-border;
+      color: inherit;
+      text-align: center;
+      line-height: 22px;
+      background-color: #fff;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      color: inherit;
+      background-color: $progression-bar-text-bg;
+    }
+
+    &-icon:not(&--disabled), 
+    &-text:not(&--disabled) {
+      cursor: pointer;
+    }
+
+    // Complete state
+    &--complete::after {
+      background-color: $progression-bar-complete-bg;
+    }
+    &--complete {
+      color: $progression-bar-complete-color;
+    }
+    &--complete &-icon {
+      border-color: rgba($body-color, .7);
+    }
+
+    // Active state
+    &--active {
+      color: $body-color;
+      &:not(:last-child) {
+        &::after {
+          height: 50%;
+        }
+        &::before {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &--active-#{$color} &__item--active &__item-icon {
+      background-color: $value;
+      border-color: $value;
+      color: #fff;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    align-items: start;
+
+    &__item {
+      padding-bottom: 0 !important;
+
+      &:first-child {
+        align-items: flex-start;
+      }
+
+      &:last-child {
+        align-items: flex-end;
+      }
+
+      &::before,
+      &::after {
+        left: 0;
+        top: 12px;
+        height: 2px !important;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      &--active:not(:last-child) {
+        &::after {
+          width: 50%;
+        }
+        &::before {
+          display: block;
+        }
+      }
+    }
+  }
+}

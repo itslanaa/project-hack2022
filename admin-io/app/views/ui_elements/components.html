@@ -1,0 +1,643 @@
+<div class="page">
+
+  <!-- Notfify -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Notifications
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+
+        <div data-ng-controller="NotifyCtrl">
+
+          <div class="callout-elem callout-elem-info">
+            <p>Notification will show in the top right of the screen.</p>
+          </div>
+
+          <md-button class="btn-width-medium md-raised md-info" data-ng-click="notify('info')">info message</md-button>
+          <md-button class="btn-width-medium md-raised md-success" data-ng-click="notify('success')">Add Alert</md-button>
+          <md-button class="btn-width-medium md-raised md-warning" data-ng-click="notify('warning')">Add Alert</md-button>
+          <md-button class="btn-width-medium md-raised md-danger" data-ng-click="notify('error')">Add Alert</md-button>
+
+        </div>
+
+      </div>
+    </md-content>
+
+  </section>
+  <!-- end Notify -->
+
+  <!-- Ribbons -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Ribbons
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper ribbon-primary">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon-primary</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper ribbon-success">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon-success</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper ribbon-info">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon-info</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper ribbon-warning">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon-warning</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default ribbon-wrapper ribbon-danger">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">
+                  30% Off
+                </div>
+              </div>
+              <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Ribbon-danger</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+  <!-- end Ribbons -->
+
+    <!-- Progressbar -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Progressbar
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="page-header">
+          <h3>Static Progressbar</h3>
+        </div>
+        <progressbar class="progressbar-sm" value="34" type="success"></progressbar>
+        <progressbar class="progressbar-sm" value="68" type="info"></progressbar>
+        <progressbar class="progressbar-sm" value="52" type="warning"></progressbar>
+        <progressbar class="progressbar-sm" value="77" type="danger"></progressbar>
+        <p class="text-muted">Stacked Progress Bars</p>
+        <progress class="progressbar-sm">
+          <bar value="40" type="success"></bar>
+          <bar value="20" type="warning"></bar>
+          <bar value="20" type="danger"></bar>
+        </progress>
+
+        <div class="page-header">
+          <h3>Striped Progressbar</h3>
+        </div>
+        <progressbar class="progressbar-sm progress-striped" value="34" type="success"></progressbar>
+        <progressbar class="progressbar-sm progress-striped" value="68" type="info"></progressbar>
+        <progressbar class="progressbar-sm progress-striped" value="52" type="warning"></progressbar>
+        <progressbar class="progressbar-sm progress-striped" value="77" type="danger"></progressbar>
+        <p class="text-muted">Animated Progress Bars</p>
+        <progressbar class="progressbar-sm progress-striped active" value="55"></progressbar>
+        <progress class="progressbar-sm progress-striped active">
+          <bar value="40" type="success"></bar>
+          <bar value="20" type="warning"></bar>
+          <bar value="20" type="danger"></bar>
+        </progress>
+      </div>
+    </md-content>
+
+  </section>
+  <!-- end Progressbar -->
+
+    <!-- Tab -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Tabs
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="row">
+          <div class="col-sm-6">
+
+
+            <section class="panel panel-default">
+              <div class="panel-heading">Normal Tabs</div>
+              <div class="panel-body">
+                <div class="divider"></div>
+                <tabset class="ui-tab">
+                  <tab heading="Tab nr 1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</tab>
+                  <tab heading="Tab nr 2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
+                  <tab heading="Tab disabled" disabled="1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</tab>
+
+                </tabset>
+              </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="panel panel-default">
+              <div class="panel-heading">Tab container</div>
+              <div class="panel-body">
+
+                <div class="ui-tab-container">
+                  <tabset class="ui-tab">
+                    <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+                    <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
+                    <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+
+                  </tabset>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <section class="panel panel-default">
+              <div class="panel-heading">Justified Tabs</div>
+              <div class="panel-body">
+
+                <tabset justified="true" class="ui-tab">
+                  <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+                  <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
+                  <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+
+                </tabset>
+              </div>
+            </section>
+
+
+
+            <div class="divider divider-md"></div>
+
+
+            <section class="panel panel-default">
+              <div class="panel-heading">Justified Tabs with container</div>
+              <div class="panel-body">
+
+                <div class="ui-tab-container">
+                  <div class="ui-tab-container">
+                    <tabset justified="true" class="ui-tab">
+                      <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+                      <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
+                      <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
+
+                    </tabset>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+  <!-- end Tab -->
+
+  <!-- Accordion -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Accordion
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="row">
+          <div class="col-lg-2">
+            <p>Open only one accordion at a time?</p>
+            <label class="switch switch-info"><input type="checkbox" ng-model="oneAtATime"><i></i></label>
+            <hr>
+          </div>
+          <div class="col-lg-10">
+            <accordion close-others="oneAtATime" class="ui-accordion">
+              <accordion-group heading="First header - first opened" is-open="status.isFirstOpen">
+                This content is straight in the template.
+              </accordion-group>
+              <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+                {{group.content}}
+              </accordion-group>
+            </accordion>
+          </div>
+        </div>
+
+
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-success">
+              <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen1">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="There are many variations of passages">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="Finibus Bonorum et Malorum">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+            </accordion>
+          </div>
+          <div class="col-md-6">
+            <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-info">
+              <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen2">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="There are many variations of passages">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="Finibus Bonorum et Malorum">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+            </accordion>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-warning">
+              <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen3">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="There are many variations of passages">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="Finibus Bonorum et Malorum">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+            </accordion>
+          </div>
+          <div class="col-md-6">
+            <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-danger">
+              <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen4">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="There are many variations of passages">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+              <accordion-group heading="Finibus Bonorum et Malorum">
+                Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              </accordion-group>
+            </accordion>
+          </div>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+  <!-- end Accordion -->
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Popover -->
+            <section class="md-content-section">
+              <md-toolbar class="md-accent">
+                <div class="md-toolbar-tools">
+                  Popover
+                </div>
+              </md-toolbar>
+
+              <md-content>
+                <div class="md-content__body text-center">
+                  <button popover-placement="top" popover-title="Title of tooltip here" popover="Tooltip On the Top!" popover-append-to-body="true" class="btn btn-width-long btn-primary btn-sp">Popover on Top</button>
+                  <br>
+                  <button popover-placement="right" popover-title="Title of tooltip here" popover="Tooltip On the Right!" popover-append-to-body="true" class="btn btn-width-long btn-info btn-sp">Popover on Right</button>
+                  <br>
+                  <button popover-placement="bottom" popover-title="Title of tooltip here" popover="Tooltip On the Bottom!" popover-append-to-body="true" class="btn btn-width-long btn-success btn-sp">Popover on Bottom</button>
+                  <br>
+                  <button popover-placement="left" popover-title="Title of tooltip here" popover="Tooltip On the Left!" popover-append-to-body="true" class="btn btn-width-long btn-warning btn-sp">Popover on Left</button>
+                  <br>
+                  <button popover="On mouse enter!" popover-trigger="mouseenter" class="btn btn-width-long btn-danger btn-sp">Popover on Mouseenter</button>
+                  <input type="text" value="Popover on Click" popover="Tooltip appears on focus! Click away and it will disapear..."  popover-trigger="focus" class="form-control">
+                </div>
+              </md-content>
+
+            </section>
+            <!-- Popover -->
+        </div>
+        <div class="col-md-6">
+            <!-- Tooltip -->
+          <section class="md-content-section">
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                Tooltip
+              </div>
+            </md-toolbar>
+
+            <md-content>
+              <div class="md-content__body text-center">
+                <button class="btn btn-width-long btn-default btn-sp" tooltip-placement="top" tooltip="On the Top!" tooltip-append-to-body="true">Tooltip on Top</button>
+                <br>
+                <button class="btn btn-width-long btn-primary btn-sp" tooltip-placement="left" tooltip="On the Left!" tooltip-append-to-body="true">Tooltip on Left</button>
+                <br>
+                <button class="btn btn-width-long btn-success btn-sp" tooltip-placement="right" tooltip="On the Right!" tooltip-append-to-body="true">Tooltip on Right</button>
+                <br>
+                <button class="btn btn-width-long btn-info btn-sp" tooltip-animation="false" tooltip="I don't fade. :-(" tooltip-append-to-body="true">Without Animation</button>
+                <br>
+                <button class="btn btn-width-long btn-warning btn-sp" tooltip-popup-delay='1000' tooltip='appears with delay' tooltip-append-to-body="true">Tooltip Delayed</button>
+                <br>
+                <button class="btn btn-width-long btn-danger btn-sp" tooltip-placement="bottom" tooltip="On the Bottom!" tooltip-append-to-body="true">Tooltip on Bottom</button>
+              </div>
+            </md-content>
+
+          </section>
+          <!-- end Tooltip -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Labels -->
+          <section class="md-content-section">
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                Labels
+              </div>
+            </md-toolbar>
+
+            <md-content>
+              <div class="md-content__body">
+                <p class="text-muted">Labels</p>
+                <span class="label label-default">Default label</span>
+                <div class="space"></div>
+                <span class="label label-primary">Primary</span>
+                <div class="space"></div>
+                <span class="label label-success">Success</span>
+                <div class="space"></div>
+                <span class="label label-info">Info</span>
+                <div class="space"></div>
+                <span class="label label-warning">Warning</span>
+                <div class="space"></div>
+                <span class="label label-danger">Danger</span>
+              </div>
+            </md-content>
+
+          </section>
+            <!-- end Labels -->
+
+            <!-- Modal -->
+          <section class="md-content-section">
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                Modal
+              </div>
+            </md-toolbar>
+
+            <md-content>
+              <div class="md-content__body">
+                <script type="text/ng-template" id="myModalContent.html">
+                  <div class="modal-header">
+                    <h3>This is what a modal looks like!</h3>
+                  </div>
+                  <div class="modal-body">
+                            <span ng-repeat="item in items" class="list-unstyled">
+                                <label class="ui-radio"><input name="radio1" type="radio" value="{{ item }}"  ng-checked="selected.item === item" ng-click="selected.item = item"><span>{{ item }}</span></label>
+                            </span>
+                    <br>
+                    Selected item: <b>{{ selected.item }}</b>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()">OK</button>
+                    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                  </div>
+                </script>
+
+                <button class="btn btn-sp-v btn-primary" ng-click="open()">Open me!</button>
+                <button class="btn btn-sp-v btn-info" ng-click="open()">Open me!</button>
+                <button class="btn btn-sp-v btn-warning" ng-click="open()">Open me!</button>
+                <button class="btn btn-sp-v btn-success" ng-click="open()">Open me!</button>
+                <button class="btn btn-sp-v btn-danger" ng-click="open()">Open me!</button>
+                <div class="divider"></div>
+                <div class="callout-elem callout-elem-info">
+                  <p>Selected item: <strong>{{ selected }}</strong></p>
+                </div>
+              </div>
+            </md-content>
+
+          </section>
+            <!-- end Modal -->
+
+        </div>
+
+        <div class="col-md-6">
+
+            <!-- Badges -->
+          <section class="md-content-section">
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                Badges
+              </div>
+            </md-toolbar>
+
+            <md-content>
+              <div class="md-content__body">
+                <p class="text-muted">Badges</p>
+                <span class="badge">7</span>
+                <div class="space"></div>
+                <span class="badge badge-primary">1</span>
+                <div class="space"></div>
+                <span class="badge badge-success">2</span>
+                <div class="space"></div>
+                <span class="badge badge-info">4</span>
+                <div class="space"></div>
+                <span class="badge badge-warning">8</span>
+                <div class="space"></div>
+                <span class="badge badge-danger">16</span>
+              </div>
+            </md-content>
+
+          </section>
+            <!-- end Badges -->
+
+            <!-- Collapse -->
+          <section class="md-content-section">
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                Collapse
+              </div>
+            </md-toolbar>
+
+            <md-content>
+              <div class="md-content__body">
+
+                <div data-ng-controller="CollapseDemoCtrl">
+                  <button class="btn btn-primary" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+                  <hr>
+                  <div collapse="isCollapsed">
+                    <div class="well well-lg">Some content</div>
+                  </div>
+                </div>
+
+              </div>
+            </md-content>
+
+          </section>
+            <!-- end Collapse -->
+
+        </div>
+    </div>
+
+    <!-- Pagination -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Pagination
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div data-ng-controller="PaginationDemoCtrl">
+          <div class="page-header">
+            <h3>Pagination sizing</h3>
+          </div>
+          <pagination class="pagination-lg" total-items="totalItems" ng-model="currentPage"></pagination>
+          <br>
+          <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+          <br>
+          <pagination class="pagination-sm" direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
+          <div class="callout-elem callout-elem-info">
+            <p>The selected page no: {{currentPage}}</p>
+          </div>
+          <md-button class="btn-width-medium md-raised md-primary" ng-click="setPage(3)">Set current page to: 3</md-button>
+          <div class="page-header">
+            <h3>Limit the maximum visible buttons</h3>
+          </div>
+          <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination>
+          <br>
+          <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+          <div class="callout-elem callout-elem-info">
+            <p>Page: {{bigCurrentPage}} / {{numPages}}</p>
+          </div>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+    <!-- end Pagination -->
+
+    <!-- callout-elem -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Callout elements
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="callout-elem callout-elem-success">
+          <h4>callout-elem heading</h4>
+          <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Assumenda, alias, in accusantium totam adipisci vel et suscipit quidem libero pariatur minus ratione quo doloremque error at nemo incidunt dicta quia?</p>
+        </div>
+        <div class="callout-elem callout-elem-info">
+          <h4>callout-elem heading</h4>
+          <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Assumenda, alias, in accusantium totam adipisci vel et suscipit quidem libero pariatur minus ratione quo doloremque error at nemo incidunt dicta quia?</p>
+        </div>
+        <div class="callout-elem callout-elem-warning">
+          <h4>callout-elem heading</h4>
+          <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Assumenda, alias, in accusantium totam adipisci vel et suscipit quidem libero pariatur minus ratione quo doloremque error at nemo incidunt dicta quia?</p>
+        </div>
+        <div class="callout-elem callout-elem-danger">
+          <h4>callout-elem heading</h4>
+          <p>Lorem ipsum dolor sit amet, Lorem Ipsum is simply dummy text. Assumenda, alias, in accusantium totam adipisci vel et suscipit quidem libero pariatur minus ratione quo doloremque error at nemo incidunt dicta quia?</p>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+    <!-- end callout-elem -->
+
+    <!-- Alert -->
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Alerts
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <div data-ng-controller="AlertDemoCtrl">
+          <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+          <md-button class="btn-width-medium md-raised md-primary" ng-click="addAlert()">Add Alert</md-button>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+    <!-- end Alert -->
+
+</div>
+
+

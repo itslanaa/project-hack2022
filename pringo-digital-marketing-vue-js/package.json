@@ -1,0 +1,28 @@
+{
+    "name": "Pringo",
+    "version": "1.0.0",
+    "author": "Uzzal",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/style-resources": "^1.0.0",
+        "aos": "^2.3.4",
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.6.5",
+        "nuxt": "^2.15.4",
+        "swiper": "^5.3.7",
+        "vue-awesome-swiper": "^4.1.0",
+        "vue-backtotop": "^1.6.1"
+    },
+    "devDependencies": {
+        "sass": "^1.26.11",
+        "sass-loader": "^10.0.2",
+        "webpack": "^4.44.2"
+    }
+}

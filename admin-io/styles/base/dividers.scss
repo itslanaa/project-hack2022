@@ -1,0 +1,38 @@
+
+.divider {
+  display: block;
+  height: 10px;
+}
+
+.divider-sm {
+  height: 15px;
+}
+
+.divider-md {
+  height: 20px;
+}
+
+.divider-lg {
+  height: 30px;
+}
+
+.divider-xl {
+  height: 50px;
+}
+
+.space {
+  display: inline;
+  padding: 5px;
+}
+
+.space-md {
+  padding: 15px;
+}
+
+.space-lg {
+  padding: 25px;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+}

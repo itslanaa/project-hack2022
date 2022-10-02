@@ -1,0 +1,101 @@
+.vc-pages-contents-area {
+  //overflow: hidden;
+  h1, h2, h3, h4, h5, h6 {
+    @extend .poppins;
+    font-weight: 700;
+  }
+  .common-vc-class {
+    img {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+.inspiry-vc-section-text {
+  p {
+    color: #808080;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+div.background-position-icon {
+  background-position: 20px 0 !important;;
+}
+
+.vc-overlay {
+  background-color: rgba(255, 216, 0, 0.85);
+}
+
+.vc-wrapper-quote-box {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  .flex-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    @extend .poppins;
+    color: $theme-bg-dark;
+    line-height: 32px;
+  }
+  p {
+    margin-bottom: 0;
+    @extend .montserrat;
+    font-size: 18px;
+    color: #4b493d;
+  }
+}
+
+.wrapper-vc-carousel {
+  padding-bottom: 90px;
+  img {
+    max-width: 100% !important;
+    width: auto !important;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .value-icon-wrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.section-common-vc {
+
+}
+
+.section-testimonials-vc {
+  position: relative;
+  h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $theme-bg-dark;
+  }
+  .section-text {
+    color: #808080;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

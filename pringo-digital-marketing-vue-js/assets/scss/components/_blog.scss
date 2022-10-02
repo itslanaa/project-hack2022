@@ -1,0 +1,290 @@
+.blog-section {
+    padding: 145px 0px;
+    background: #f7faff;
+    background-image: url("/images/blog/bg.png");
+    //res
+    @include max-screen(1199) {
+        padding: 92px 0px 100px;
+    }
+}
+
+.blog-card {
+    background-color: $white;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 30px;
+    @include max-screen(991) {
+        margin-top: 0px;
+    }
+
+    &:hover {
+        background-image: linear-gradient(0deg, rgb(2, 18, 106) 0%, rgb(38, 71, 200) 100%);
+    }
+
+    .thumb {
+        background-color: #f7faff;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        a {
+            display: block;
+            img {
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &:hover {
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    .content {
+        p {
+            color: #747785;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 2.5;
+            margin-bottom: 15px;
+            span {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .title {
+            color: $primary;
+            font-weight: 700;
+            line-height: 1.59;
+            font-size: 22px;
+            @include max-screen(1199) {
+                font-size: 18px;
+            }
+
+            a {
+                color: inherit;
+                &:hover {
+                    color: $warning;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .content {
+            p {
+                color: $white;
+            }
+            .title {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                a {
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-meta-cards {
+    margin-bottom: -30px;
+}
+
+.blog-meta-card {
+    background-color: $white;
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    @include max-screen(575) {
+        flex-direction: column;
+    }
+    &:hover {
+        background-image: linear-gradient(0deg, rgb(2, 18, 106) 0%, rgb(38, 71, 200) 100%);
+
+        .content {
+            p {
+                color: $white;
+            }
+            .title {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                a {
+                    color: inherit;
+                    &:hover {
+                        background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .thumb {
+        margin-right: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        @include max-screen(575) {
+            margin-bottom: 30px;
+        }
+    }
+    .content {
+        flex: 1;
+        p {
+            color: #747785;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 14px;
+            span {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .title {
+            font-weight: 700;
+            color: $primary;
+            line-height: 1.6;
+            font-size: 21px;
+
+            @include max-screen(1199) {
+                font-size: 18px;
+            }
+            a {
+                color: inherit;
+                &:hover {
+                    color: $warning;
+                }
+            }
+        }
+    }
+}
+
+.blog-grid-card {
+    background-color: #f7faff;
+    overflow: hidden;
+    border-radius: 15px;
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.blog-grid-thumb {
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    img {
+        width: 100%;
+        border-radius: 15px;
+        transition: all 0.3s linear;
+    }
+}
+
+.blog-grid-content ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.blog-grid-content ul li {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.blog-grid-content {
+    padding: 30px;
+    // max-width: 390px;
+    margin: 0 auto;
+    .title {
+        color: #02126a;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-transform: capitalize;
+        &:hover {
+            color: $warning;
+        }
+        @include max-screen(992, 1199) {
+            font-size: 18px;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+    .btn {
+        text-transform: capitalize;
+    }
+    
+    .comments,
+    .link-share {
+        color: #596190;
+        font-weight: 400;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            color: $warning;
+        }
+    }
+    .comments {
+        margin-right: 10px;
+    }
+    .date {
+        color: #596190;
+        font-weight: 400;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.pagination {
+    justify-content: center;
+    .page-item {
+        margin: 0 5px;
+        &.active {
+            .page-link {
+                box-shadow: none;
+                color: $white;
+                border-color: transparent;
+            }
+        }
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            color: $white;
+            font-size: 20px;
+            border-radius: 50%;
+            color: #fc7418;
+            border: solid 2px transparent;
+            background :linear-gradient(101deg, #fc7318 0%, #feb423 100%);
+            background-origin: border-box;
+            box-shadow: 2px 1000px 1px #f7faff inset;
+            &:hover {
+                box-shadow: none;
+                color: $white;
+                border-color: transparent;
+            }
+        }
+    }
+}

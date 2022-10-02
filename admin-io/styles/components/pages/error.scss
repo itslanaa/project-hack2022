@@ -1,0 +1,78 @@
+
+
+.page-err {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.page-err .err-container {
+  width: 100%;
+  height: 70%;
+  background-color: $color--primary;
+  border-bottom: 1px solid $color--primary;
+  padding: 45px 0 0;
+}
+
+@media (min-width: 768px) {
+  .page-err .err-container {
+    padding: 100px 0 0;
+  }
+}
+
+.page-err .err-status h1 {
+  margin: 0 0 -45px;
+  color: #fafafa;
+  font-size: 100px;
+}
+
+@media (min-width: 768px) {
+  .page-err .err-status h1 {
+    font-size: 180px;
+  }
+}
+
+.page-err .err-message {
+  background-color: $color--primary;
+  padding: 24px;
+  text-transform: none;
+}
+
+.page-err .err-message h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .page-err .err-message h2 {
+    font-size: 50px;
+  }
+}
+
+.page-err .err-body {
+  padding: 20px 10px;
+}
+
+.page-err .btn-goback {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.page-err .btn-goback:hover, .page-err .btn-goback:focus, .page-err .btn-goback:active, .page-err .btn-goback.active {
+  color: $color--primary;
+  background-color: #fff;
+}
+
+.open .page-err .btn-goback.dropdown-toggle {
+  color: $color--primary;
+  background-color: #fff;
+}
+
+.page-err .footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%
+}

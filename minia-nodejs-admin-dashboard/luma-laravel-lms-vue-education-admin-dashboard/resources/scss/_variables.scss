@@ -1,0 +1,577 @@
+$material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/' !default;
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts/' !default;
+
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+@import 'corner-ribbon/sass/variables';
+
+@import './functions';
+@import './mixins';
+
+//////////////////////
+// CUSTOM BOOTSTRAP //
+//////////////////////
+
+$enable-deprecation-messages:       false !default;
+$enable-shadows:                    true !default;
+
+$sizes: (
+  100: 100%,
+  auto: auto,
+  64: 64px
+) !default;
+
+$grid-gutter-width:                 24px !default;
+
+$spacer:                            1rem !default;
+$spacers: (
+  4pt: ($spacer * .25),
+  8pt: ($spacer * .5),
+  12pt: ($spacer * .75),
+  16pt: $spacer,
+  20pt: ($spacer * 1.25),
+  24pt: ($spacer * 1.5),
+  32pt: ($spacer * 2),
+  40pt: ($spacer * 2.5),
+  44pt: ($spacer * 2.75),
+  48pt: ($spacer * 3),
+  64pt: ($spacer * 4),
+  112pt: ($spacer * 7),
+  128pt: ($spacer * 8),
+) !default;
+
+
+$dodger-blue:                       #5567FF !default;
+$electric-violet:                   #9C42FF !default;
+$pickled-bluewood:                  #303956 !default;
+$accent-red:                        #ED0B4C !default;
+$accent-yellow:                     #E4A93C !default;
+
+$primary:                           $dodger-blue !default;
+$dark:                              $pickled-bluewood !default;
+$accent:                            $accent-red !default;
+
+$primary-light:                     #99ccff !default;
+$secondary:                         #868e96 !default;
+$success:                           #77c13a !default;
+$primary-dark:                      darken($primary, 10%);
+$warning:                           #E4A93C !default;
+$danger:                            #d9534f !default;
+$purple-gradient:                   linear-gradient(180deg, #9A55FE 0%, #753EFD 100%) !default;
+$primary-gradient:                  linear-gradient(128deg, #1E6DBD 0%, #3287DB 100%) !default;
+$primary-purple:                    #824EE1 !default;
+$dark-blue:                         #0C2440 !default;
+
+// BLACK
+$black:                             #272C33 !default;
+$black-dodger-blue:                 #22242E !default;
+
+$shadow-baseline-color: $black !default;
+$shadow-opacity-boost: -0.1;
+
+$theme-colors: (
+  "black": $black,
+  "accent": $accent,
+  "accent-red": $accent-red,
+  "accent-yellow": $accent-yellow,
+  "accent-dodger-blue": $dodger-blue,
+  "accent-pickled-bluewood": $pickled-bluewood,
+  "accent-electric-violet": $electric-violet,
+  "primary-purple": $primary-purple,
+  "primary-red": $accent-red,
+  "primary-yellow": $accent-yellow,
+  "primary-light": $primary-light,
+  "primary-dodger-blue": $dodger-blue,
+  "primary-pickled-bluewood": $pickled-bluewood,
+) !default;
+
+// OTHER COLOR
+$gray-600:                          #868e96 !default;
+$gray-light:                        #818A91 !default;
+$gray-dark:                         #383B3D !default;
+$body-color:                        $black !default;
+$text-muted:                        rgba($body-color, .5) !default;
+$body-bg:                           #F5F7FA !default;
+$link-color:                        rgba($body-color, .7) !default;
+// $link-color:                        rgba(#2C84DD, .85) !default;
+$rating:                            #f9c32c !default;
+$alt:                               white !default;
+
+// BORDER
+$border-color:                      #E9EDF2 !default;
+$border-radius-lg:                  .5rem !default;
+
+// TABLE
+$table-cell-padding:                .75rem 1rem !default;
+$table-border-color:                $border-color !default;
+
+// MODAL
+$modal-backdrop-bg:                 rgba($black, .8) !default;
+$modal-backdrop-opacity:            1 !default;
+
+// ALERT
+$alert-padding-y: .5rem !default; 
+$alert-padding-x: .5rem !default;
+
+// FONT
+$font-family-base:                  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// $font-size-base:                    1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:                    .8125rem !default;
+$font-size-lg:                      $font-size-base * 1.5 !default;
+$font-size-sm:                      $font-size-base * .875 !default;
+
+$font-weight-bold:                  500 !default;
+
+$headings-font-family:  "Exo 2", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-weight:  600 !default;
+
+$headings-margin-bottom:            $spacer !default;
+$headings-line-height:              1.5 !default;
+$headings-color:                    $dark !default;
+
+$h1-font-size:                      2.827rem !default;
+$h2-font-size:                      1.999rem !default;
+$h3-font-size:                      1.414rem !default;
+$h4-font-size:                      1.414rem !default;
+$h5-font-size:                      1rem !default;
+
+$h1-line-height:                    1.5 !default;
+$h2-line-height:                    1.5 !default;
+$h3-line-height:                    1.414 !default;
+$h4-line-height:                    1.414 !default;
+$h5-line-height:                    1.5 !default;
+
+$display1-size:                     3.998rem !default;
+$display1-weight:                   700 !default;
+$display1-line-height:              1.25 !default;
+
+$lead-font-size:                    ($font-size-base * 1.125) !default;
+$lead-font-weight:                  400 !default;
+$lead-line-height:                  1.556 !default;
+
+// $small-font-size:                   .707rem !default;
+$small-font-size:                   $font-size-base !default;
+$small-line-height:                 1.5 !default;
+
+// Stack effect
+$stack-bg:                          #ffffff !default;
+$stack-box-shadow:                  0 2px 0 rgba(0,0,0, 0.07), 0px 2px 1px -1px rgba(223, 226, 230, 1) inset, 0px 1px 2px 0px rgba(223, 226, 230, 0.14) inset, 0px 1px 3px 0px rgba(48, 56, 64, 0.12) inset !default;
+
+// page separator
+$page-separator-mask-color:         #ffffff !default;
+
+// PAGINATION
+$pagination-bg:                     transparent !default;
+$pagination-disabled-color:         #cfcfcf !default;
+$pagination-disabled-bg:            transparent !default;
+
+$pagination-padding-y-xsm:           0 !default;
+$pagination-padding-x-xsm:           .5rem !default;
+$pagination-line-height-xsm:         24px !default;
+
+// CARD
+$enable-card-shadow:                true !default;
+$card-shadow-base-color:            $shadow-baseline-color !default;
+$card-border-color:                 #DFE2E6 !default;
+$card-border-width:                 1px !default;
+$card-border-radius:                $border-radius-lg !default;
+$card-inner-border-width:           1px !default;
+$card-inner-border-radius:          $border-radius-lg !default;
+$card-cap-bg:                       #ffffff !default;
+$card-columns-gap:                  $grid-gutter-width !default;
+$card-columns-margin:               $spacer !default;
+$card-spacer-y:                     1rem !default;
+$card-spacer-x:                     1rem !default;
+
+// CARD TITLE
+$card-title-font-size:              1rem !default;
+$card-title-line-height:            1.25 !default;
+$card-title-font-family:            $headings-font-family !default;
+$card-title-font-weight:            $headings-font-weight !default;
+$card-title-color:                  $headings-color !default;
+
+// TOOLTIP
+$tooltip-margin:                    .5rem !default;
+$tooltip-font-size:                 1rem !default;
+$tooltip-padding-x:                 1rem !default;
+$tooltip-padding-y:                 .5rem !default;
+$tooltip-bg:                        white !default;
+$tooltip-color:                     $body-color !default;
+$tooltip-opacity:                   1 !default;
+
+// POPOVER
+// $popover-arrow-outer-color:         transparent !default;
+$popover-font-size:                 $font-size-base !default;
+$popover-max-width:                 304px !default;
+$popover-box-shadow:                0 2px 3px rgba($black, .05) !default;
+$popover-border-color:              $border-color !default;
+$popover-header-bg:                 $body-bg !default;
+$popover-body-color:                $black !default;
+
+// LIST GROUP
+$list-group-item-padding-x:         1.5rem !default;
+$list-group-border-color:           $border-color !default;
+$list-group-active-color:           $body-color !default;
+$list-group-active-bg:              transparent !default;
+
+// NAV
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-color:        $body-color !default;
+$nav-tabs-border-color:             $border-color !default;
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-border-color: transparent transparent $nav-tabs-link-active-bg !default;
+$nav-tabs-link-hover-border-color:  transparent transparent $nav-tabs-border-color !default;
+
+// BREADCRUMB
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-padding-y:              0 !default;
+$breadcrumb-item-padding:           0 !default;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-color:                  rgba($body-color, .5) !default;
+$breadcrumb-divider-color:          rgba($body-color, .5) !default;
+$breadcrumb-active-color:           rgba($body-color, .35) !default;
+$breadcrumb-font-size:              $small-font-size !default;
+$breadcrumb-font-weight:            $headings-font-weight !default;
+$breadcrumb-font-family:            $headings-font-family !default;
+$breadcrumb-text-transform:         uppercase !default;
+$breadcrumb-letter-spacing:         2px !default;
+
+// DROPDOWN
+$dropdown-margin-top:               calc(.125rem + 8px) !default;
+$dropdown-spacer:                   .5rem !default;
+$dropdown-border-color:             transparent !default;
+$dropdown-border-radius:            .1875rem !default;
+$dropdown-box-shadow-base-color:    $shadow-baseline-color !default;
+$dropdown-transition:               opacity .2s cubic-bezier(.3, .5, .5, 1), margin .2s cubic-bezier(.1, .3, .8, 1), visibility .3s ease !default;
+$dropdown-font-size:                .875rem !default;
+
+$dropdown-link-color:               rgba($black, .7) !default;
+$dropdown-link-disabled-color:      rgba($black, .3) !default;
+$dropdown-link-hover-color:         rgba($black, .9) !default;
+$dropdown-link-hover-bg:            transparent !default;
+
+$dropdown-link-active-color:        $black !default;
+$dropdown-link-active-bg:           transparent !default;
+$dropdown-link-active-font-weight:  bold !default;
+
+$dropdown-item-padding-y:           .25rem !default;
+$dropdown-item-padding-x:           1.25rem !default;
+
+// INPUT
+$input-bg:                          white !default;
+$input-color:                       $body-color !default;
+$input-border-color:                #EDF0F2 !default;
+$input-focus-bg:                    white !default;
+$input-focus-border-color:          $input-focus-bg !default;
+$input-placeholder-color:           #949595 !default;
+$input-group-addon-bg:              $input-bg !default;
+$input-btn-focus-width:             1px !default;
+$input-btn-focus-color:             $primary !default;
+
+// label
+$label-color:                       $headings-color !default;
+$label-text-transform:              uppercase !default;
+$label-font-size:                   $small-font-size !default;
+$label-font-family:                 $headings-font-family !default;
+$label-font-weight:                 $headings-font-weight !default;
+$label-letter-spacing:              2px !default;
+
+// input normal
+$input-btn-font-size:               $font-size-base !default;
+$input-btn-padding-y:               .5rem !default;
+$input-btn-padding-x:               .75rem !default;
+
+// button normal
+$btn-padding-y:                     .5rem !default;
+$btn-padding-x:                     1rem !default;
+$btn-font-family:                   "Exo 2", "Helvetica Neue", Arial, sans-serif !default;
+$btn-font-weight:                   600 !default;
+$btn-text-transform:                uppercase !default;
+
+// button large
+$btn-padding-x-lg:                  2rem !default;
+$input-btn-line-height-lg:          1.75 !default;
+
+// CUSTOM SELECT
+// temporary fix for postcss-inline-rtl order issue 
+// https://github.com/jakob101/postcss-inline-rtl/issues/7
+$custom-select-bg-size:                     8px 10px !important !default;
+$custom-select-bg:                          $input-bg !default;
+$custom-select-color:                       $input-color !default;
+$custom-select-indicator-color:             rgba($body-color, .5) !default;
+$custom-select-focus-border-color:          $primary !default;
+$custom-control-indicator-border-color:     $input-border-color !default;
+$custom-control-indicator-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $primary !default;
+$custom-control-active-indicator-bg:        lighten($primary, 30%) !default;
+$custom-file-button-bg:                     $secondary !default;
+$custom-file-button-color:                  #fff !default;
+
+////////////
+// NAVBAR //
+////////////
+
+$header-shadow-base-color:          $body-color !default;
+
+$navbar-height:                     64px !default;
+$navbar-item-spacing:               1rem !default;
+$navbar-dark-color:                 #858D94 !default;
+$navbar-dark-hover-color:           #ffffff !default;
+$navbar-dark-border-color:          rgba(#ffffff, .24) !default;
+$navbar-mini-height:                40px !default;
+$navbar-submenu-bg:                 #ffffff !default;
+
+// FOOTER
+$footer-bg:                         #465A6E !default;
+
+// PROGRESSION BAR
+$progression-bar-text-bg:           #ffffff !default;
+$progression-bar-color:             rgba($body-color, .5) !default;
+$progression-bar-bg:                #f2f2f2 !default;
+$progression-bar-icon-border:       #f2f2f2 !default;
+$progression-bar-complete-bg:       rgba($body-color, .7) !default;
+$progression-bar-complete-color:    rgba($body-color, .7) !default;
+
+// CODE
+$code-color:                        $accent !default;
+
+////////////////
+// MDK DRAWER //
+////////////////
+
+$mdk-drawer-width:                  256px !default;
+$layout-mini-drawer-width:          64px !default;
+$layout-compact-drawer-width:       100px !default;
+
+$sm-spacing-y:                      2rem !default;
+$sm-toggle-font-size:               1.25rem !default;
+$sm-toggle-icon:                    "\e315" !default;
+$sm-open-toggle-icon:               "\e315" !default;
+
+$sm-inner-spacing-x: 8px !default;
+$sm-button-height: 40px !default;
+$ssm-button-height: 32px !default;
+$sm-icon-spacing-x:                 .5rem !default;
+
+$sidebar-spacing:                   1.5rem !default;
+$sidebar-spacing-x:                 $sidebar-spacing !default;
+$sm-indent-spacing:                 2.1875rem !default;
+
+$sidebar-heading-font-size:         .9rem !default;
+$sidebar-heading-font-weight:       $headings-font-weight !default;
+$sidebar-heading-font-family:       $headings-font-family !default;
+$sidebar-heading-text-transform:    uppercase !default;
+$sidebar-heading-letter-spacing:    2px !default;
+
+///////////////////////
+// SIDEBAR DARK SKIN //
+///////////////////////
+
+$sidebar-dark-bg:                   $dark !default;
+$sidebar-dark-heading-color:        #949799 !default;
+$sidebar-dark-border-color:         rgba(#2E3133, .9) !default;
+
+// menu button
+$sm-dark-button-color:              rgba(#ACB6BF, .5) !default;
+$sm-dark-icon-color:                rgba(#ACB6BF, .2) !default;
+$ssm-dark-button-color:             $sm-dark-button-color !default;
+$ssm-dark-icon-color:               $sm-dark-icon-color !default;
+
+// active menu button
+$sm-dark-active-button-color:       white !default;
+
+// hover menu button
+$sm-dark-hover-button-bg:           transparent !default;
+$sm-dark-hover-icon-color:          #8A9199 !default;
+
+// open menu
+$sm-dark-open-button-color:         #8A9199 !default;
+$sm-dark-open-bg:                   #272C33 !default;
+
+////////////////////////
+// SIDEBAR BLACK SKIN //
+////////////////////////
+
+$sidebar-black-bg:                   #1D2126 !default;
+$sidebar-black-heading-color:        #949799 !default;
+$sidebar-black-border-color:         rgba(#2E3133, .9) !default;
+
+// menu button
+$sm-black-button-color:              rgba(#ACB6BF, .5) !default;
+$sm-black-icon-color:                rgba(#ACB6BF, .2) !default;
+$ssm-black-button-color:             $sm-black-button-color !default;
+$ssm-black-icon-color:               $sm-black-icon-color !default;
+
+// active menu button
+$sm-black-active-button-color:       white !default;
+
+// hover menu button
+$sm-black-hover-button-bg:           transparent !default;
+$sm-black-hover-icon-color:          #8A9199 !default;
+
+// open menu
+$sm-black-open-button-color:         #8A9199 !default;
+$sm-black-open-bg:                   rgba(black, .2) !default;
+
+//////////////////////////////
+// SIDEBAR DARK PURPLE SKIN //
+//////////////////////////////
+
+$sidebar-dark-purple-heading-color:        #C8B8E6 !default;
+$sidebar-dark-purple-border-color:         rgba(#ffffff, .2) !default;
+
+// menu button
+$sm-dark-purple-button-color:              #BF9DF2 !default;
+$sm-dark-purple-icon-color:                rgba(#ffffff, .5) !default;
+$ssm-dark-purple-button-color:             $sm-dark-purple-button-color !default;
+$ssm-dark-purple-icon-color:               $sm-dark-purple-icon-color !default;
+
+// active menu button
+$sm-dark-purple-active-button-color:       #DECCFF !default;
+$sm-dark-purple-active-button-bg:                white !default;
+$sm-dark-purple-activebuttonbg-button-color:     $primary-purple !default;
+$sm-dark-purple-activebuttonbg-icon-color:       $primary-purple !default;
+
+// hover menu button
+$sm-dark-purple-hover-button-bg:           transparent !default;
+$sm-dark-purple-hover-icon-color:          white !default;
+
+// open menu
+$sm-dark-purple-open-button-color:         #DECCFF !default;
+$sm-dark-purple-open-icon-color:           rgba(#ffffff, .5) !default;
+$sm-dark-purple-open-toggle-color:         rgba(#ffffff, .5) !default;
+$sm-dark-purple-open-bg:                   rgba(#323233, .05) !default;
+
+////////////////////////////
+// SIDEBAR DARK BLUE SKIN //
+////////////////////////////
+
+$sidebar-dark-blue-heading-color:        #8A9199 !default;
+$sidebar-dark-blue-border-color:         rgba(#0F2B4D, .9) !default;
+
+// menu button
+$sm-dark-blue-button-color:              rgba(#ACB6BF, .5) !default;
+$sm-dark-blue-icon-color:                rgba(#ACB6BF, .2) !default;
+$ssm-dark-blue-button-color:             $sm-dark-blue-button-color !default;
+$ssm-dark-blue-icon-color:               $sm-dark-blue-icon-color !default;
+
+// active menu button
+$sm-dark-blue-active-button-color:       #8A9199 !default;
+$sm-dark-blue-active-button-bg:                #0A1D33 !default;
+$sm-dark-blue-activebuttonbg-button-color:     $primary-purple !default;
+$sm-dark-blue-activebuttonbg-icon-color:       $primary-purple !default;
+
+// hover menu button
+$sm-dark-blue-hover-button-bg:           transparent !default;
+$sm-dark-blue-hover-icon-color:          white !default;
+
+// open menu
+$sm-dark-blue-open-button-color:         #8A9199 !default;
+$sm-dark-blue-open-icon-color:           rgba(#ffffff, .5) !default;
+$sm-dark-blue-open-toggle-color:         rgba(#ffffff, .5) !default;
+$sm-dark-blue-open-bg:                   #0A1D33 !default;
+
+///////////////////////////////////
+// SIDEBAR DARK PICKLED BLUEWOOD //
+///////////////////////////////////
+
+$sidebar-dark-pickled-bluewood-border-color:  #212A45 !default;
+$sidebar-dark-pickled-bluewood-accent-color:  $accent !default;
+$sm-dark-pickled-bluewood-open-bg:            #212A45 !default;
+
+//////////////////////////////
+// SIDEBAR DARK DODGER BLUE //
+//////////////////////////////
+
+$sidebar-dark-dodger-blue-border-color:  #19191A !default;
+$sm-dark-dodger-blue-open-bg:            #1D1E26 !default;
+
+////////////////////////
+// SIDEBAR LIGHT SKIN //
+////////////////////////
+
+$sidebar-light-heading-color:        #949799 !default;
+
+// brand
+$sidebar-light-brand-color:          $black !default;
+
+// menu button
+$sm-light-button-color:              rgba(#2F3740, .4) !default;
+$sm-light-icon-color:                rgba(#2F3740, .2) !default;
+$ssm-light-button-color:             $sm-light-button-color !default;
+$ssm-light-icon-color:               $sm-light-icon-color !default;
+$sm-light-item-border-color:         $border-color !default;
+$ssm-light-item-border-color:        $border-color !default;
+
+// hover menu button
+$sm-light-hover-button-bg:          transparent !default;
+$sm-light-hover-button-color:       #8A9199 !default;
+$sm-light-hover-icon-color:         #8A9199 !default;
+$ssm-light-hover-button-color:      #8A9199 !default;
+
+// open
+$sm-light-open-bg:                  #F5F7FA !default;
+$sm-light-open-button-color:        #8A9199 !default;
+$sm-light-open-icon-color:          #8A9199 !default;
+
+// active
+$sm-light-active-button-color:      #8A9199 !default;
+
+/////////////////////
+// SIDEBAR GENERAL //
+/////////////////////
+
+$sidebar-brand-size:                1.625rem !default;
+$sidebar-brand-icon-width:          5.125rem !default;
+$sidebar-brand-icon-height:         $sidebar-brand-icon-width !default;
+
+// menu buttons
+$sm-button-font-weight:             500 !default;
+$sm-button-height:                  34px !default;
+
+// course nav
+$course-nav-active-bg:              rgba(white, .2) !default;
+
+// courses modal
+$courses-modal-nav-link:            rgba($body-color, .7) !default;
+$courses-modal-active-nav-link:     rgba($body-color, .7) !default;
+
+// page num
+$page-num-tip-bg:                   #D2D5D9 !default;
+$page-num-tip-border-color:         #F5F7FA !default;
+$page-num-border-width:             2px !default;
+$page-num-border-color:             $border-color !default;
+$page-num-bg:                       $body-bg !default;
+$page-num-color:                    $headings-color !default;
+
+$drawer-layout-container-max-widths: (
+  md: 768px,
+  lg: 960px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1366px
+) !default;
+
+$enable-flex-layout: true !default;
+
+//////////////
+// DEFAULTS //
+//////////////
+
+// Bootstrap
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+// Sidebar style guide (default)
+@import 'sidebar-style-guide/sass/variables';
+
+// MDK (default)
+@import 'material-design-kit/src/variables';

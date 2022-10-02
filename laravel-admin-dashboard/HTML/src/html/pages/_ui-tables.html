@@ -1,0 +1,70 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }} page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <li class="breadcrumb-item">UI Components</li>
+        <li class="breadcrumb-item active" aria-current="page">Tables</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Tables</h1>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Toggle Checkboxes</strong></p>
+        <p class="text-muted">A tiny plugin which adds the ability to toggle all checkboxes within a table.</p>
+      </div>
+      <div class="col-lg-8 card-form__body">
+        {% import "pages/_staff.table.html" as staff_table %}
+        {{ staff_table.component(employer=false, projects=false, pagination=false) }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Search</strong></p>
+        <p class="text-muted">Add search functionality to your tables with List.js. Please read the <a href="http://listjs.com/" target="_blank">official plugin documentation</a> for a full list of options.</p>
+      </div>
+      <div class="col-lg-8 card-form__body">
+        {{ staff_table.component(
+          id="staff02",
+          checkboxes=false, 
+          avatar=false, 
+          employer=false, 
+          projects=false, 
+          pagination=false, 
+          search=true) }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Sort Columns</strong></p>
+        <p class="text-muted">Add sorting functionality to your tables with by List.js. Please read the <a href="http://listjs.com/" target="_blank">official plugin documentation</a> for a full list of options.</p>
+      </div>
+      <div class="col-lg-8 card-form__body border-left">
+        {% import "components/sort-table.html" as sort_table %}
+        {{ sort_table.component() }}
+      </div>
+    </div>
+  </div>
+</div>

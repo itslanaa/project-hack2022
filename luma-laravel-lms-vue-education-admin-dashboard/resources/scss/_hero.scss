@@ -1,0 +1,21 @@
+//////////
+// HERO //
+//////////
+
+.hero {
+  @include media-breakpoint-up(lg) {
+    h1, .h1 {
+      font-size: $display1-size;
+      font-weight: $display1-weight;
+      line-height: $display1-line-height;
+    }
+    .lead,
+    &__lead {
+      font-size: 1.414rem;
+      line-height: 1.414;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

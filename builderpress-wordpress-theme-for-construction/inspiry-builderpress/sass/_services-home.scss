@@ -1,0 +1,116 @@
+.services-section {
+  .services-box {
+    display: flex;
+    //justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+    }
+    .image-anchor {
+      &:hover {
+        opacity: .9;
+      }
+    }
+    .single-service-wrapper {
+      width: 33.33%;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+    }
+    .single-service {
+      //margin-left: 15px;
+      //margin-right: 15px;
+      margin-bottom: 60px;
+      background: #ffffff;
+      @extend .transition-200ms;
+      -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+      &:hover {
+        -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.22);
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.22);
+
+      }
+    }
+
+  }
+
+  .service-single-content {
+    padding: 40px 30px 40px;
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 25px;
+      a {
+        color: $theme-bg-dark;
+        &:hover {
+          color: $theme-yellow;
+        }
+      }
+    }
+    P {
+      @extend .montserrat;
+      font-size: 14px;
+      line-height: 24px;
+      color: #808080;
+    }
+  }
+
+  &.services-section-var2 {
+    padding-bottom: 120px;
+  }
+
+  .service-box-var2 {
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    transition: .2s all ease-in-out;
+
+    img {
+      width: 100%;
+    }
+    .image-service {
+      width: 45%;
+      transition: .2s all ease-in-out;
+      &:hover {
+        opacity: .9;
+      }
+
+    }
+    .detail-service {
+      width: 55%;
+      padding: 15px 35px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 700;
+      a {
+        color: $theme-bg-dark;
+        &:hover {
+          color: $theme-yellow;
+        }
+      }
+    }
+    p {
+      @extend .montserrat;
+      font-size: 14px;
+      line-height: 24px;
+      color: #808080;
+      margin-bottom: 0;
+    }
+  }
+
+  .services-button-wrapper {
+    margin-top: 30px;
+  }
+
+}
+
+.wrapper-button-services {
+  margin-bottom: 120px;
+}

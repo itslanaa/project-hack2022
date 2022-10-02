@@ -1,0 +1,54 @@
+[dir=rtl] {
+  .popover {
+    left: 0;
+    right: initial;
+  }
+
+  .bs-popover-right {
+    margin-left: $popover-arrow-height;
+    margin-right: initial;
+
+    > .arrow {
+      left: subtract(-$popover-arrow-height, $popover-border-width);
+      right: initial;
+
+      &::before {
+        left: 0;
+        right: initial;
+        border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+        border-right-color: $popover-arrow-outer-color;
+      }
+
+      &::after {
+        left: $popover-border-width;
+        right: initial;
+        border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+        border-right-color: $popover-arrow-color;
+      }
+    }
+  }
+
+  .bs-popover-left {
+    margin-right: $popover-arrow-height;
+    margin-left: initial;
+
+    > .arrow {
+      right: subtract(-$popover-arrow-height, $popover-border-width);
+      left: initial;
+      
+      &::before {
+        right: 0;
+        left: initial;
+        border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+        border-left-color: $popover-arrow-outer-color;
+      }
+
+      &::after {
+        right: $popover-border-width;
+        left: initial;
+        border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+        border-left-color: $popover-arrow-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+//////////
+// TYPE //
+//////////
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.display-1 {
+  line-height: $display1-line-height;
+  font-family: $headings-font-family;
+}
+
+h1, .h1 { line-height: $h1-line-height; }
+h2, .h2 { line-height: $h2-line-height; }
+h3, .h3 { line-height: $h3-line-height; }
+h4, .h4 { line-height: $h4-line-height; }
+h5, .h5 { 
+  line-height: $h5-line-height; 
+  text-transform: uppercase;
+  color: $headings-color;
+}
+
+.headings-family-exo2 {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Exo 2", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.headings-family-lato {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+  }
+}
+
+.headings-family-oswald {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Oswald", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+  }
+}
+
+.lead {
+  line-height: $lead-line-height;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote {
+  padding: .5rem 1rem;
+  border-left: .25rem solid $border-color;
+}
+
+.blockquote--reverse {
+  border-left: none;
+  border-right: .25rem solid $border-color;
+}
+
+small,
+.small {
+  line-height: $small-line-height;
+}
+
+a {
+	@include hover {
+		text-decoration: none;
+	}
+}
+
+.font-size-16pt {
+  font-size: 1rem !important;
+}
+.font-size-20pt {
+  font-size: 1.25rem !important;
+}
+.font-size-24pt {
+  font-size: 1.5rem !important;
+}
+.font-size-32pt {
+  font-size: 2rem !important;
+}
+.font-size-48pt {
+  font-size: 3rem !important;
+}
+.font-size-56pt {
+  font-size: 3.5rem !important;
+}
+.font-size-64pt {
+  font-size: 4rem !important;
+}

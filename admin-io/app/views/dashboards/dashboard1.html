@@ -1,0 +1,515 @@
+<!-- Breadcrumbs -->
+<div class="region-breadcrumbs">
+    <ol class="breadcrumb">
+        <li><a href="/#"><i class="fa fa-home"></i></a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+</div>
+<!-- end Breadcrumbs -->
+
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+<section data-ng-controller="sparklineCtrl">
+
+  <div class="row">
+
+    <div class="col-md-3">
+
+      <section class="md-content-section">
+
+        <md-content class="md-content--primary">
+          <div class="small-box-icon text-center">
+
+            <div class="pull-left">
+              <span data-sparkline
+                    data-spark-data="simpleChart1.sparkData"
+                    data-spark-options="simpleChart1.sparkOptions"
+                      ></span>
+            </div>
+            <div class="pull-right text-right">
+              <strong class="color-primary">80% </strong>
+              <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_trending_up_24px.svg"></md-icon>
+              <p>
+                Sales
+              </p>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+      <section class="md-content-section">
+
+        <md-content class="md-content--accent">
+          <div class="small-box-icon text-center">
+
+            <div class="pull-left">
+               <span data-sparkline
+                     data-spark-data="tristateChart1.sparkData"
+                     data-spark-options="tristateChart1.sparkOptions"
+                       ></span>
+            </div>
+            <div class="pull-right text-right">
+              <strong class="color-accent">40% </strong>
+              <md-icon class="color-accent" md-svg-src="dist/img/icons/ic_memory_24px.svg"></md-icon>
+              <p>
+                Memory usage
+              </p>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section">
+
+        <md-content class="md-content--warning">
+          <div class="small-box-icon text-center">
+
+            <div class="pull-left">
+                <span data-sparkline
+                      data-spark-data="simpleChart2.sparkData"
+                      data-spark-options="simpleChart2.sparkOptions"
+                        ></span>
+            </div>
+            <div class="pull-right text-right">
+              <strong class="color-warning">183 </strong>
+              <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_security_24px.svg"></md-icon>
+              <p>
+                Warnings
+              </p>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section">
+
+        <md-content class="md-content--danger">
+          <div class="small-box-icon text-center">
+
+            <div class="pull-left">
+                <span data-sparkline
+                      data-spark-data="simpleChart2danger.sparkData"
+                      data-spark-options="simpleChart2danger.sparkOptions"
+                        ></span>
+            </div>
+            <div class="pull-right text-right">
+              <strong class="color-danger">90% </strong>
+              <md-icon class="color-danger" md-svg-src="dist/img/icons/ic_access_alarms_24px.svg"></md-icon>
+              <p>
+                Critical issues
+              </p>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section>
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+
+                <div data-ng-controller="flotChartCtrl">
+
+                  <div class="choices">
+
+                  </div>
+
+                  <div class="choice-switches">
+
+                    <div layout="row" layout-wrap>
+
+                      <div flex>
+                        <md-switch ng-model="new_visitors" ng-change="switchClick(0)" name="0" class="md-primary" aria-label="New visitors">
+                          New visitors
+                        </md-switch>
+                      </div>
+
+                      <div flex>
+                        <md-switch ng-model="returning_visitors" ng-change="switchClick(1)" name="1" class="md-accent" aria-label="Returning visitors">
+                          Returning visitors
+                        </md-switch>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div data-flot-chart
+                       data-data="line1.data"
+                       data-options="line1.options"
+                       style="width: 100%; height: 300px;"
+                          ></div>
+                </div>
+
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-4" data-ng-controller="chartingCtrl">
+            <div>
+              <section class="md-content-section">
+                <md-card>
+                  <img src="dist/images/background/bg_weather3.png" alt="Washed Out">
+                  <md-card-content>
+                    <md-button class="md-fab middle-right md-accent" aria-label="Eat cake">
+                      <md-icon md-svg-src="dist/img/icons/ic_wb_sunny_24px.svg"></md-icon>
+                    </md-button>
+                    <h2>24º - Vienna</h2>
+                    <p>
+                      The titles of Washed Out's breakthrough song and the first single that he performed for the first time in his concert in the Sydney Opera house
+                    </p>
+
+                  </md-card-content>
+                </md-card>
+              </section>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="md-content-section">
+  <div class="row">
+
+    <div class="col-sm-3">
+      <md-card>
+        <md-card-content class="card-primary">
+          <div class="card-bg-icon">
+            <md-icon md-svg-src="dist/img/icons/ic_verified_user_48px.svg"></md-icon>
+          </div>
+          <md-icon md-svg-src="dist/img/icons/ic_verified_user_48px.svg"></md-icon>
+
+          <h3>Security</h3>
+
+          <p>
+            The titles of Washed Out's breakthrough song and the first single
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div class="col-sm-3">
+      <md-card>
+        <md-card-content class="card-accent">
+          <div class="card-bg-icon">
+            <md-icon md-svg-src="dist/img/icons/ic_history_48px.svg"></md-icon>
+          </div>
+          <md-icon md-svg-src="dist/img/icons/ic_history_48px.svg"></md-icon>
+          <h3>Versioning</h3>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div class="col-sm-3">
+      <md-card>
+        <md-card-content class="card-warning">
+          <div class="card-bg-icon">
+            <md-icon md-svg-src="dist/img/icons/ic_invert_colors_48px.svg"></md-icon>
+          </div>
+          <md-icon md-svg-src="dist/img/icons/ic_invert_colors_48px.svg"></md-icon>
+          <h3>Multicolor</h3>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div class="col-sm-3">
+      <md-card>
+        <md-card-content class="card-danger">
+          <div class="card-bg-icon">
+            <md-icon md-svg-src="dist/img/icons/ic_wallet_membership_48px.svg"></md-icon>
+          </div>
+          <md-icon md-svg-src="dist/img/icons/ic_wallet_membership_48px.svg"></md-icon>
+          <h3>Wallet friendly</h3>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <section class="md-content-section">
+
+          <md-content>
+            <div class="md-content__body">
+
+              <div class="text-left col-sm-6">
+                <h2>
+                  Realtime performance feed
+                </h2>
+                <p class="text-muted medium">
+                  Updated on realtime based on a number of API calls
+                </p>
+              </div>
+
+              <div class="panel-body col-sm-8" data-ng-controller="flotChartCtrl">
+
+                <div class="homepage-performance-chart" data-ng-controller="flotChartCtrl">
+                  <div data-flot-chart
+                       data-data="area.data"
+                       data-options="area.options"
+                       style="width: 100%; height: 300px;"
+                          ></div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-4">
+
+                <h4>
+                  Performance listing
+                </h4>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall CSS loading
+                    <span class="pull-right"> 60%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="60" type="warning"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall Js loading time
+                    <span class="pull-right"> 35%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="35" type="success"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Requests / user
+                    <span class="pull-right"> 92%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="92" type="danger"></progressbar>
+                </div>
+                <br/>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Caching requests
+                    <span class="pull-right"> 82%</span>
+                  </p>
+                  <progressbar class="progressbar-xs no-margin" value="82" type="info"></progressbar>
+                </div>
+
+              </div>
+            </div>
+          </md-content>
+
+        </section>
+
+
+      </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+                <h5>
+                  User management
+                </h5>
+                <br/>
+                <ul class="team">
+                  <li>
+                    <img src="dist/images/team1.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John doe</p></span>
+                    <span class="label label-primary">admin</span>
+                  </li>
+
+                  <li>
+                    <img src="dist/images/team2.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Jane Diamond</p></span>
+                    <span class="label label-warning">Tester</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team3.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Gustav Gurty</p></span>
+                    <span class="label label-danger">Tester</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team4.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John Gus</p></span>
+                    <span class="label label-accent">admin</span>
+                  </li>
+                  <li>
+                    <img src="dist/images/team6.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Anthony Watry</p></span>
+                    <span class="label label-success">API Guru</span>
+                  </li>
+                </ul>
+
+                <hr/>
+
+                <div>
+                  <span class="badge badge-info">2</span>
+                  <div class="space"></div>
+                  <span class="badge badge-warning">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-danger">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-success">1</span>
+                </div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-6" ng-controller="morrisChartCtrl">
+          <section class="md-content-section">
+
+            <md-content>
+              <div class="md-content__body">
+                <div morris-chart
+                     data-data="comboData"
+                     data-type="line"
+                     data-xkey="year"
+                     data-ykeys='["a", "b", "c"]'
+                     data-labels='["Value A", "Value B", "Value C"]'
+                     data-line-colors="{{comboColors}}"
+                     data-line-width="3"
+                        ></div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="panel panel-default">
+    <!--<div class="panel-heading"><strong><i class="fa fa-list panel-ico"></i>Table</strong></div>-->
+
+  <section class="md-content-section">
+
+    <md-content>
+      <div class="md-content__body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Task</th>
+              <th>Completion</th>
+              <th>Assigned to</th>
+              <th>Completion %</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td><span class="color-primary"><i class="fa fa-level-up"></i></span> TWLT</td>
+              <td><span class="label label-primary">Pending</span></td>
+              <td>John Doe</td>
+              <td><progressbar class="progressbar-xs no-margin" value="55"></progressbar>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><span class="color-accent"><i class="fa fa-level-up"></i></span> A16Z</td>
+              <td><span class="label label-accent">Testing</span></td>
+              <td>Carol Simmerman</td>
+              <td><progressbar class="progressbar-xs no-margin" value="34" type="accent"></progressbar></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><span class="color-warning"><i class="fa fa-level-down"></i></span> DARK</td>
+              <td><span class="label label-warning">Due</span></td>
+              <td>Joselie Hanna</td>
+              <td><progressbar class="progressbar-xs no-margin" value="68" type="warning"></progressbar></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><span class="color-success"><i class="fa fa-level-up"></i></span> Q300</td>
+              <td><span class="label label-success">Accepted</span></td>
+              <td>Johane Bayer</td>
+              <td><progressbar class="progressbar-xs no-margin" value="52" type="success"></progressbar></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><span class="color-danger"><i class="fa fa-level-down"></i></span> RVNG</td>
+              <td><span class="label label-danger">Suspended</span></td>
+              <td>Donnavon Franklin</td>
+              <td><progressbar class="progressbar-xs no-margin" value="77" type="danger"></progressbar></td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><span class="color-info"><i class="fa fa-level-down"></i></span> FDSA</td>
+              <td><span class="label label-info">In evaluation</span></td>
+              <td>Jane Modrid</td>
+              <td><progressbar class="progressbar-xs no-margin" value="55" type="success"></progressbar></td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+
+</div>
+
+</div>
+  

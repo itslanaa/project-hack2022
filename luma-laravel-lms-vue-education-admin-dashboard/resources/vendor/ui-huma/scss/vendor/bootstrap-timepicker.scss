@@ -1,0 +1,174 @@
+// VARIABLES & OVERRIDES
+@import '../variables';
+
+.bootstrap-timepicker-widget {
+	visibility: visible !important;
+	opacity: 1 !important;
+	transform: scale(1) !important;
+}
+
+/*!
+ * Timepicker Component for Twitter Bootstrap
+ *
+ * Copyright 2013 Joris de Wit
+ *
+ * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+.bootstrap-timepicker {
+	position: relative;
+	&.pull-right {
+		.bootstrap-timepicker-widget {
+			&.dropdown-menu {
+				left: auto;
+				right: 0;
+
+				&:before {
+					left: auto;
+					right: 12px;
+				}
+				&:after {
+					left: auto;
+					right: 13px;
+				}
+			}
+		}
+	}
+
+	.input-group-addon {
+		cursor: pointer;
+		i {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+.bootstrap-timepicker-widget {
+	// buttons up and down binary
+	.material-icons.up:before {
+		font-family: 'Material Icons';
+		font-size: 18px;
+		content: '\e5d8';
+		position: relative;
+		top:-2px;
+
+	}
+	// buttons up and down binary
+	.material-icons.down:before {
+		font-family: 'Material Icons';
+		font-size: 18px;
+		content: '\e5db';
+		position: relative;
+		top:-2px;
+	}
+	&.dropdown-menu {
+		padding: 4px;
+		&.open {
+			display: inline-block;
+		}
+	}
+	&.timepicker-orient-left {
+		&:before {
+			left: 6px;
+		}
+		&:after {
+			left: 7px;
+		}
+	}
+	&.timepicker-orient-right {
+		&:before {
+			right: 6px;
+		}
+		&:after {
+			right: 7px;
+		}
+	}
+	&.timepicker-orient-top {
+		&:before {
+			top: -7px;
+		}
+		&:after {
+			top: -6px;
+		}
+	}
+	&.timepicker-orient-bottom {
+		margin-top: 70px;
+	}
+
+	a.btn, input {
+		border-radius: 4px;
+	}
+
+	table {
+		width: 100%;
+		margin: 0;
+
+		td {
+			text-align: center;
+			height: 30px;
+			margin: 0;
+			padding: 2px;
+
+			&:not(.separator) {
+				min-width: 30px;
+			}
+
+			span {
+				width: 100%;
+			}
+			a {
+				padding:5px;
+				border:1px solid #efefef;
+				border-radius: 3px;
+				width: 100%;
+				display: inline-block;
+
+				outline: 0;
+
+
+				&:hover {
+					text-decoration: none;
+					background-color: #eee;
+					-webkit-border-radius: 4px;
+					-moz-border-radius: 4px;
+					border-radius: 4px;
+					border-color: #ddd;
+				}
+			}
+			input {
+				width: 25px;
+				margin: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.bootstrap-timepicker-widget .modal-content {
+	padding: 4px;
+}
+.bootstrap-timepicker-widget.dropdown-menu.open {
+    display: inline-block;
+    z-index: 99999 !important;
+}
+
+@media (min-width: 767px) {
+	.bootstrap-timepicker-widget.modal {
+		width: 200px;
+		margin-left: -100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.bootstrap-timepicker {
+		width: 100%;
+
+		.dropdown-menu {
+			width: 100%;
+		}
+	}
+
+}

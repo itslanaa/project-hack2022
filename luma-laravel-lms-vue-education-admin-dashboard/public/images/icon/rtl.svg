@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <rect id="rtl-a" width="48" height="48" rx="1"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="rtl-b" fill="#fff">
+      <use xlink:href="#rtl-a"/>
+    </mask>
+    <path stroke="#383B3D" stroke-linecap="round" stroke-linejoin="round" d="M13,10 L27,10 L27,38 L13,38 M17,32 L9,24.2698924 L17,17 M31,12.5 L40,12.5 M31,18.5 L40,18.5 M31,24 L40,24 M31,29.5 L40,29.5 M31,35.5 L40,35.5" mask="url(#rtl-b)"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+.navbar-light {
+  .navbar-brand {
+    color: $dark;
+  }
+  .navbar-nav {
+    > .active {
+      position: relative;
+      &::before {
+        content: "";
+        background-color: $primary;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .text-light {
+    color: $navbar-light-active-color !important;
+  }
+}

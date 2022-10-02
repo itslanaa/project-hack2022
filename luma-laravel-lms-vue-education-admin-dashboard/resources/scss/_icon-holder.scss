@@ -1,0 +1,46 @@
+.icon-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+
+  &[href] {
+    @include hover {
+      text-decoration: none;
+    }
+  }
+
+  &--small {
+    width: 30px;
+    height: 30px;
+  }
+
+  &--default {
+    background-color: $gray-200;
+  }
+}
+
+//////////////////////////
+// ICON HOLDER VARIANTS //
+//////////////////////////
+
+.icon-holder {
+  @each $color, $value in $theme-colors {
+    &--#{$color} {
+      @include icon-holder-variant($value);
+    }
+    &--outline-#{$color} {
+      @include icon-holder-outline-variant($value);
+    }
+  }
+  &--outline-muted {
+    @include icon-holder-outline-variant($text-muted);
+  }
+  &--light {
+    @include plain-hover-focus() {
+      color: rgba($black, .7);
+    }
+  }
+}

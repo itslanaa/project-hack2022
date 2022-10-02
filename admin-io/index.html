@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Admin.io - AngularJS theme</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Theme's own CSS file -->
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="dist/css/angular-material.min.css">
+  <link id="app_main_css" rel="stylesheet" href="dist/css/main.css">
+
+  <!-- Include Jquery in the vendor folder -->
+  <script src="dist/js/jquery.min.js"></script>
+
+  <!--[if lte IE 9]>
+  <script src="dist/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400'
+        rel='stylesheet' type='text/css'>
+
+</head>
+<body data-ng-app="app" id="app" data-custom-background="" data-off-canvas-nav="" data-ng-controller="AdminAppCtrl">
+
+<div class="page-wrapper nav-style--alternative">
+  <div data-ng-hide="checkIfOwnPage()" data-ng-cloak="" class="no-print">
+    <aside data-ng-include=" 'app/views/navigation.html' " id="nav-container"></aside>
+  </div>
+
+  <div class="view-container">
+
+    <div data-ng-hide="checkIfOwnPage()" data-ng-cloak="" class="no-print">
+      <section data-ng-include=" 'app/views/header.html' " id="header" class="top-header"></section>
+    </div>
+    <section ui-view id="content" class="animate-fade-up"></section>
+  </div>
+
+  <md-sidenav class="md-sidenav-right md-whiteframe-z2 md-theme" md-component-id="rightmessages">
+    <div data-ng-include=" 'app/views/right-navbar.html' ">
+
+    </div>
+  </md-sidenav>
+
+</div>
+
+<div class="page-loading-overlay">
+  <div class="loader-2"></div>
+</div>
+
+<div class="load_circle_wrapper">
+
+  <div class="loading_spinner">
+    <div id="wrap_spinner">
+      <md-progress-circular class="md-primary" md-mode="indeterminate"></md-progress-circular>
+    </div>
+  </div>
+</div>
+
+<!-- Theme main app compiled with grunt (replace with below scripts if not using grunt) -->
+<script id="app_js" type="text/javascript" src="dist/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.custom-checkbox-toggle {
+  width: 3rem;
+  height: 1.5rem;
+  padding-left: 0;
+
+  .custom-control-label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::after, 
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      transition: all .2s ease;
+      border-radius: 1.5rem;
+    }
+
+    &:before {
+      width: 100%;
+      height: 100%;
+      background-color: #e3ebf6;
+    }
+
+    &::after {
+      width: 1.5rem;
+      height: 100%;
+      transform: scale(.8);
+      background-color: #fff;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    right: 0;
+    left: 1.5rem;
+    background-color: #fff;
+  }
+}

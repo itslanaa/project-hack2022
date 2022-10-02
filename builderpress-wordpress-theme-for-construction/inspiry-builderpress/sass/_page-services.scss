@@ -1,0 +1,152 @@
+.contents-service-single {
+  padding-top: 45px;
+}
+
+.single-service-box {
+  text-align: center;
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h3 {
+    margin-top: 0;
+    font-size: 18px;
+    @extend .poppins;
+    font-weight: 700;
+    margin-bottom: 25px;
+    a {
+      color: $theme-bg-dark;
+      &:hover {
+        color: $theme-yellow-dark;
+      }
+    }
+  }
+  p {
+    @extend .montserrat;
+    font-size: 14px;
+    color: $light-gray-text;
+    margin-bottom: 25px;
+  }
+  figure {
+    &:hover {
+      opacity: .9;
+      transition: .2s all ease-in-out;
+    }
+  }
+
+}
+
+.services-content-wrapper {
+  @extend .montserrat;
+  font-size: 14px;
+  color: $light-gray-text;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+
+.service-excerpt {
+  padding: 40px 30px;
+}
+
+.side-services-list {
+  ul {
+    padding-left: 0;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  li {
+    display: block;
+    margin-bottom: 40px;
+    position: relative;
+    &:after {
+      display: none;
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px $theme-yellow dashed;
+    }
+    &.current {
+      a {
+        color: $theme-bg-dark;
+      }
+      &:after {
+        display: block;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    @extend .montserrat;
+    text-transform: uppercase;
+    color: $light-gray-text;
+    &:hover {
+      color: $theme-bg-dark;
+    }
+  }
+}
+
+.side-brochures {
+  margin-bottom: 40px;
+  a {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    background: $theme-bg-dark;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    @extend .montserrat;
+    &:hover {
+      background: $theme-yellow;
+      color: $theme-bg-dark;
+    }
+    &:before {
+      color: #f82929;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      margin-top: -17px;
+      font-family: FontAwesome;
+      content: "\f1c1";
+      font-size: 24px;
+      width: 22px;
+      height: 34px;
+    }
+  }
+
+}
+
+.services-sidebar {
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px !important;
+  }
+}
+
+.side-contact-us {
+  overflow: hidden;
+  .contact-box {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+}
+
+.services-pagination {
+  clear: both;
+  overflow: hidden;
+  .pagination {
+    margin-bottom: 20px;
+  }
+}

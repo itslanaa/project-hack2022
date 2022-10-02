@@ -1,0 +1,10 @@
+.daterangepicker td.active {
+  &,
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.daterangepicker .ranges li.active {
+  background-color: $primary;
+}

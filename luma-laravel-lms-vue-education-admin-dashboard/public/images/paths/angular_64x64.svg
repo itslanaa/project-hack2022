@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="angular_64x64-a" width="140%" height="137.5%" x="-20%" y="-18.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="64" height="64"/>
+    <g fill-rule="nonzero" filter="url(#angular_64x64-a)" transform="translate(2)">
+      <polygon fill="#DD0031" points="30 0 30 0 30 0 .287 10.624 4.819 50.016 30 64 30 64 30 64 55.181 50.016 59.713 10.624"/>
+      <polygon fill="#C3002F" points="30 0 30 7.104 30 7.072 30 39.488 30 39.488 30 64 30 64 55.181 50.016 59.713 10.624"/>
+      <path fill="#FFF" d="M30,7.072 L11.4255319,48.832 L18.3510638,48.832 L22.0851064,39.488 L37.8510638,39.488 L41.5851064,48.832 L48.5106383,48.832 L30,7.072 Z M35.4255319,33.728 L24.5744681,33.728 L30,20.64 L35.4255319,33.728 Z"/>
+    </g>
+  </g>
+</svg>

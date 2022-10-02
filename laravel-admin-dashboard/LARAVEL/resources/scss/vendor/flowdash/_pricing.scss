@@ -1,0 +1,64 @@
+.pricing {
+  &__title {
+    font-size: 1.25rem; 
+    font-weight: 400; 
+    letter-spacing: normal;
+  }
+  &__amount {
+    font-size: 3.4rem; 
+    line-height: 4.2rem; 
+    font-weight: 600;
+    margin-right: .466rem;
+  }
+  &__currency {
+    font-size: 1.4rem; 
+    line-height: 1.5rem;
+    font-weight: 600;
+
+  }
+  &__duration {
+    font-size: .933rem; 
+    letter-spacing: 1.4px; 
+    line-height: 1.066rem;
+  }
+
+  &__card--popular {
+    background-color: #F6FAFD;
+    position: relative;
+    .pricing__card-badge {
+      background-color: #EE4059;
+      color: white;
+      padding: .2rem .66rem;
+      border-radius: .2rem .2rem 0 0;
+      font-weight: 700;
+      font-size: .66rem;
+      font-style: italic;
+      letter-spacing: 1px;
+      line-height: .8rem;
+      position: absolute;
+      top: -1.2rem;
+      right: 1.2rem;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+
+  &__features {
+    letter-spacing: 1.4px;
+    line-height: 1.86rem;
+    li {
+      padding-left: 1.466rem;
+      position: relative;
+      &::after {
+        content: '';
+        width: .5rem;
+        height: .5rem;
+        background-color: $primary;
+        border-radius: 100%;
+        left: 0;
+        top: .6rem;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@media(min-width:1400px) and (max-width:1920px) {
+}
+@media(min-width:1200px) and (max-width:1400px) {
+}
+@media(max-width:1200px) {
+}
+@media(max-width:1024px) {
+}
+@media(min-width:992px) and (max-width:1199px) {
+.noo-res {
+	display: none;
+}
+.top-bar .col-md-2 {
+	display: none;
+}
+}
+@media(min-width:768px) and (max-width:991px) {
+header .logo {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ownmenu {
+	width: 100%;
+}
+.top-bar {
+	margin-top: -1px;
+}
+.top-bar .social_icons {
+}
+.top-bar .col-md-3 {
+	float: left;
+}
+.top-bar .col-md-9 {
+	float: right;
+}
+.top-bar .some-info li {
+	margin-left: 20px;
+}
+.top-bar:before {
+	display: none;
+}
+.top-bar:after {
+	display: none;
+}
+header .search-nav ul.dropdown {
+	width: 100% !important;
+}
+.seo-secore li {
+	margin-bottom: 20px;
+}
+.solution {
+	margin-bottom: 30px;
+}
+.offer-services img {
+	width: 100%;
+}
+.flow-work .text-center img {
+	width: 100%;
+	display: none !important;
+}
+.flow-work li {
+	padding: 0 15px;
+}
+.flow-work .row {
+	padding: 0px !important;
+}
+.testimonial #slider .col-md-4 {
+	display: none;
+}
+.testimonial #carousel {
+	margin-top: 10px;
+}
+footer h6 {
+	margin-top: 40px;
+	display: inline-block;
+	width: 100%;
+}
+.news-letter {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0px;
+}
+}
+@media(max-width:767px) {
+header .logo {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ownmenu {
+	width: 100%;
+}
+.testi-slides-flex {
+	width: 100%;
+}
+.top-bar {
+	margin-top: -1px;
+}
+.top-bar .social_icons {
+}
+.top-bar .col-md-3 {
+	float: left;
+}
+.top-bar .col-md-9 {
+	float: right;
+}
+.top-bar .some-info li {
+	margin-left: 20px;
+}
+.top-bar:before {
+	display: none;
+}
+.top-bar:after {
+	display: none;
+}
+header .search-nav ul.dropdown {
+	width: 100% !important;
+}
+.is-sticky .sticky {
+	position: relative !important;
+}
+header nav .ownmenu li.search-nav a {
+	display: none;
+}
+.ownmenu > li {
+	text-align: left;
+}
+.ownmenu > li.showhide {
+	text-align: center;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	float: left;
+}
+header nav .ownmenu .indicator {
+	display: inline-block;
+}
+.ownmenu > li.showhide span.icon {
+	color: #232c3b;
+	font-size: 20px;
+}
+.ownmenu > li.showhide span.icon {
+	float: none;
+	text-align: center;
+}
+.top-bar {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.top-bar .social_icons {
+	width: 100%;
+}
+.top-bar .col-md-3 {
+	width: 100%;
+}
+.top-bar .some-info li {
+	margin: 0px 10px;
+}
+.top-bar .col-md-9 {
+	width: 100%;
+}
+.seo-secore li {
+	margin-bottom: 20px;
+}
+.solution {
+	margin-bottom: 30px;
+}
+.offer-services img {
+	width: 100%;
+}
+.intro-style {
+	width: 100%;
+}
+.case img {
+	width: 100%;
+}
+.flow-work .text-center img {
+	width: 100%;
+	display: none !important;
+}
+.testimonial #slider .col-md-4 {
+	display: none;
+}
+.testimonial #carousel {
+	margin-top: 10px;
+}
+footer h6 {
+	margin-top: 40px;
+	display: inline-block;
+	width: 100%;
+}
+.news-letter {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0px;
+	text-align: center;
+}
+footer .news-letter form {
+	width: 100%;
+}
+footer .news-letter h6 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+footer .news-letter .social_icons {
+	width: 100%;
+	margin: 0px !important;
+}
+.clients .col-5 li {
+	width: 50%;
+	margin-bottom: 30px;
+}
+.testimonial #carousel li {
+	margin-right: 20px;
+}
+#contact_form {
+	padding-right: 0px;
+}
+.contact-info {
+	text-align: center;
+}
+.contact-info li {
+	margin-bottom: 30px;
+	text-align: center;
+}
+}
+@media (max-width:640px) {
+}
+@media(max-width:540px) {
+.front-page .btn {
+	padding: 15px 20px;
+}
+}
+@media(max-width:440px) {
+.front-page .btn {
+	padding: 15px 15px;
+}
+}
+@media(max-width:320px) {
+}

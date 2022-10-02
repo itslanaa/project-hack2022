@@ -1,0 +1,99 @@
+.tabsdemoDynamicTabs .sample {
+  height: 500px; }
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .demo-tab {
+  height: 300px;
+  text-align: center; }
+.tabsdemoDynamicTabs .demo-tab button {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs md-tabs, .tabsdemoDynamicTabs md-tabs .md-header {
+  border-bottom: 1px solid #D8D8D8; }
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoDynamicTabs .md-tab-content {
+  background: white; }
+.tabsdemoDynamicTabs .title {
+  padding-top: 8px;
+  padding-right: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 24px; }
+.tabsdemoDynamicTabs [layout-align] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs form > [layout] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs form > [layout] > span {
+  padding-top: 2px; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  margin-top: 20px;
+  max-height: 30px !important; }
+
+
+.tabsdemoStaticTabs {
+  /*
+ * Animation styles
+ */ }
+.tabsdemoStaticTabs .sample {
+  height: 450px; }
+.tabsdemoStaticTabs #tab1-content {
+  background-color: $color--warning; }
+.tabsdemoStaticTabs #tab2-content {
+  background-color: $color--info; }
+.tabsdemoStaticTabs #tab3-content {
+  background-color: $color--danger; }
+.tabsdemoStaticTabs .tabpanel-container {
+  display: block;
+  position: relative;
+  background: white;
+  border: 0px solid black;
+  height: 300px;
+  overflow: hidden; }
+.tabsdemoStaticTabs [role="tabpanel"] {
+  color: white;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  position: absolute; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave.ng-leave-active, .tabsdemoStaticTabs [role="tabpanel"].ng-enter {
+  top: -300px; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave, .tabsdemoStaticTabs [role="tabpanel"].ng-enter.ng-enter-active {
+  top: 0; }
+.tabsdemoStaticTabs [role="tabpanel"].ng-leave {
+  z-index: 100; }
+.tabsdemoStaticTabs .tabpanel-container [role="tabpanel"] {
+  padding: 20px; }
+.tabsdemoStaticTabs .after-tabs-area {
+  padding: 25px; }
+.tabsdemoStaticTabs .after-tabs-area > span {
+  margin-top: 25px;
+  padding-right: 15px;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 35px; }
+.tabsdemoStaticTabs .after-tabs-area > md-checkbox {
+  margin-top: 26px;
+  margin-left: 0px; }
+.tabsdemoStaticTabs .md-header {
+  background-color: $color--accent !important; }
+.tabsdemoStaticTabs md-tab {
+  color: $color--warning !important; }
+.tabsdemoStaticTabs md-tab.active, .tabsdemoStaticTabs md-tab:focus {
+  color: white !important; }
+.tabsdemoStaticTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoStaticTabs .md-header .md-ripple {
+  border-color: $color--primary !important; }
+.tabsdemoStaticTabs md-tabs-ink-bar {
+  background-color: $color--primary !important; }
+.tabsdemoStaticTabs md-tabs .md-paginator {
+  color: white; }
+
+
+md-tabs.md-default-theme md-tab.active {
+  color:$color--primary;
+}

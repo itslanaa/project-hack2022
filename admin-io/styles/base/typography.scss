@@ -1,0 +1,397 @@
+/************************************
+2 - Typography
+*************************************/
+
+a {
+  color: #333;
+  text-decoration: none;
+  outline:none;
+}
+
+a:hover, a:focus {
+  color: #0d0d0d;
+  text-decoration: underline;
+  outline:none;
+}
+
+span.block {
+  display: block;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+p.small {
+  font-size: 10px;
+}
+
+p.medium {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0;
+}
+
+h3,.h3 {
+  font-weight:normal;
+}
+
+body h3, html h3 {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-size: 1.17em;
+  font-weight: 700;
+}
+
+h4, .h4 {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+
+mark, .mark {
+  background-color: #fffbef;
+  padding: .2em;
+}
+
+$text-colors: (
+        primary:$color--primary,
+        accent:$color--accent,
+        theme:$color--primary,
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger,
+        violet:$color--info-alt,
+        dark:$color--accent
+);
+
+@each $text-class, $text-color in $text-colors {
+  .text-#{$text-class} {
+    color: $text-color;
+  }
+
+  a.text-#{$text-class}:hover {
+    color: $text-color;
+  }
+
+  a.bg-#{$text-class} {
+    background-color: $text-color;
+    color: #fff;
+  }
+
+  a.bg-#{$text-class}:hover {
+    background-color: $text-color;
+    color: #fff;
+  }
+
+  .bg-#{$text-class} {
+    background-color: $text-color;
+    color: #fff;
+  }
+
+}
+
+.bg-bright {
+  background-color: #fafafa;
+  color: #767676;
+}
+
+.bg-reverse {
+  background-color: #fff;
+  color: #767676;
+}
+
+blockquote {
+  border-left: 5px solid $color--primary;
+}
+
+.blockquote-reverse, blockquote.pull-right {
+  border-right: 5px solid $color--primary;
+}
+
+kbd {
+  @include border-radius(0px);
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  @include box-shadow(none);
+}
+
+pre {
+  @include border-radius(0px);
+}
+
+.gradient-text {
+  font-size: 150px;
+  font-weight: 300;
+  color: $color--primary;
+  background: -webkit-linear-gradient(92deg, #fb83fa, #00aced);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-normal {
+  font-size: 14px;
+}
+
+.text-huge {
+  font-size: 72px;
+}
+
+.text-large {
+  font-size: 50px;
+}
+
+.size-h1 {
+  font-size: 36px;
+}
+
+.size-h2 {
+  font-size: 30px;
+}
+
+.size-h3 {
+  font-size: 24px;
+}
+
+.size-h4 {
+  font-size: 18px;
+}
+
+.text-thin {
+  font-weight: 300;
+}
+
+.text-ultralight {
+  font-weight: 100;
+}
+
+$text-colors: (
+        primary:$color--primary,
+        accent:$color--accent,
+        theme:$color--primary,
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger,
+        info-alt:$color--info-alt,
+        dark:$color--accent,
+        white:white,
+        light:$color--gray-light
+);
+
+@each $text-class, $text-color in $text-colors {
+
+  .color-#{$text-class} {
+    color: $text-color;
+  }
+
+}
+
+.color-reverse {
+  color: #fff;
+}
+
+.color-gray-darker {
+  color: #222;
+}
+
+.color-gray-dark {
+  color: #333;
+}
+
+.color-gray {
+  color: #3F4245;
+}
+
+.color-gray-light {
+  color: #999;
+}
+
+.color-gray-lighter {
+  color: #eee;
+}
+
+.dropcap, .dropcap-square, .dropcap-circle {
+  display: block;
+  float: left;
+  font-weight: normal;
+  line-height: 36px;
+  margin-right: 6px;
+  text-shadow: none;
+}
+
+.dropcap {
+  font-size: 3.1em;
+}
+
+.dropcap-square, .dropcap-circle {
+  background-color: #444;
+  color: #fff;
+  width: 36px;
+  text-align: center;
+}
+
+.dropcap-square {
+  @include border-radius(0px);
+  font-size: 2.3em;
+}
+
+.dropcap-circle {
+  @include border-radius(50%);
+  font-size: 1.78em;
+}
+
+.dropcap.colored {
+  color: $color--primary;
+}
+
+.dropcap-square.colored, .dropcap-circle.colored {
+  background-color: $color--primary;
+}
+
+.highlight-primary {
+  background-color: $color--primary;
+  color: #fff;
+  @include border-radius(0px);
+  padding: 2px 5px;
+}
+
+.region-breadcrumbs {
+
+}
+
+.breadcrumb a {
+  color: #767676;
+}
+
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb-alt {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  width: 100%
+}
+
+.breadcrumb-alt > li {
+  float: left;
+  margin: 0 25px 0 0;
+}
+
+.breadcrumb-alt > li > a {
+  position: relative;
+  float: left;
+  background-color: #eee;
+  color: #767676;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.breadcrumb-alt > li > a:before {
+  position: absolute;
+  top: 50%;
+  left: -1em;
+  margin-top: -1.6em;
+  border-color: #eee #eee #eee rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 1.5em 0 1.7em 1em;
+  content: ""
+}
+
+.breadcrumb-alt > li > a:after {
+  position: absolute;
+  top: 50%;
+  right: -1em;
+  margin-top: -1.5em;
+  border-bottom: 1.5em solid rgba(0, 0, 0, 0);
+  border-left: 1em solid #eee;
+  border-top: 1.5em solid rgba(0, 0, 0, 0);
+  content: ""
+}
+
+.breadcrumb-alt > li > a:hover, .breadcrumb-alt > li > a.active {
+  text-decoration: none;
+  background-color: $color--primary;
+  color: #fff;
+}
+
+.breadcrumb-alt > li > a:hover:before, .breadcrumb-alt > li > a.active:before {
+  border-color: $color--primary $color--primary $color--primary rgba(0, 0, 0, 0);
+}
+
+.breadcrumb-alt > li > a:hover:after, .breadcrumb-alt > li > a.active:after {
+  border-left: 1em solid $color--primary;
+}
+
+.callout-elem {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+
+.callout-elem h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.callout-elem p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-elem-success {
+  background-color: #f3faf3;
+  border-color: #419641;
+}
+
+.callout-elem-success h4 {
+  color: #419641;
+}
+
+.callout-elem-info {
+  background-color: #f4f8fa;
+  border-color: $color--info;
+}
+
+.callout-elem-info h4 {
+  color: $color--info;
+}
+
+.callout-elem-warning {
+  background-color: #fcf8f2;
+  border-color: $color--warning;
+}
+
+.callout-elem-warning h4 {
+  color: $color--warning;
+}
+
+.callout-elem-danger {
+  background-color: #fdf7f7;
+  border-color: $color--danger;
+}
+
+.callout-elem-danger h4 {
+  color: $color--danger;
+}

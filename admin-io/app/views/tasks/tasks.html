@@ -1,0 +1,159 @@
+<div class="page page-tasks">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="task-container" data-ng-controller="taskCtrl">
+
+              <md-toolbar md-scroll-shrink>
+                <div class="md-toolbar-tools">
+                  <h3>
+                    <span>My todo list</span>
+                  </h3>
+                </div>
+              </md-toolbar>
+              <md-content>
+
+                <div class="md-content__body">
+
+                  <form data-ng-submit="add()" class="add-task">
+                    <!--<input type="text"
+                           placeholder="What needs to be done?"
+                           class="form-control"
+                           data-ng-model="newTask"
+                           autofocus>-->
+                    <md-input-container flex>
+                      <label>What needs to be done?</label>
+                      <input ng-model="newTask" placeholder="do the boogie">
+                    </md-input-container>
+
+                    <a type="submit" class="submit-button" data-ng-click="add()">
+
+                    </a>
+                  </form>
+
+                  <md-tabs md-selected="1" flex>
+                    <md-tab ng-repeat="taskStatus in tasksStatus"
+                            ng-disabled="tab.disabled"
+                            label="{{taskStatus.label}}">
+                      <div class="demo-tab tab{{$index%4}}" layout="column" layout-align="space-around left">
+
+                        <br/>
+
+                        <ul class="task-list list-unstyled">
+                          <li data-ng-repeat="task in taskStatus.tasks"
+                              data-ng-class="{completed: task.completed, editing: task == editedTask}">
+                            <span class="view">
+                                <!--<input type="checkbox"
+                                       class="toggle-task"
+                                       data-ng-model="task.completed"
+                                       data-ng-change="completed(task)">-->
+                                <md-checkbox aria-label="complete taskStatus.label" class="md-primary" data-ng-model="task.completed"
+                                             data-ng-change="completed(task)"></md-checkbox>
+                                <label data-ng-dblclick="edit(task)">{{task.title}}</label>
+                                <span class="glyphicon glyphicon-pencil"
+                                      data-ng-click="edit(task)"></span>
+                                <span class="glyphicon glyphicon-remove"
+                                      data-ng-click="remove(task, $index)"
+                                        ></span>
+                            </span>
+                            <form data-ng-submit="doneEditing(task, $index)">
+                              <input type="text"
+                                     class="edit form-control"
+                                     data-ng-trim="false"
+                                     data-ng-model="task.title"
+                                     data-ng-blur="doneEditing(task, $index)"
+                                     data-task-focus="task == editedTask">
+                            </form>
+                          </li>
+                        </ul>
+                      </div>
+                    </md-tab>
+                  </md-tabs>
+
+
+                  <!--<section>
+                    <ul class="filters list-inline nav nav-tabs">
+                      <li md-ink-ripple="#bbb" data-ng-class="{active: statusFilter == ''}">
+                        <a href="tasks.html"
+                           data-toggle="tab"
+                           data-ng-click="filter('all')"
+                                >All</a>
+                      </li>
+                      <li data-ng-class="{active: statusFilter.completed == false }">
+                        <a md-ink-ripple="#bbb" href="tasks.html"
+                           data-toggle="tab"
+                           data-ng-click="filter('active')"
+                                >Active</a>
+                      </li>
+                      <li data-ng-class="{active: statusFilter.completed == true }">
+                        <a md-ink-ripple="#bbb" href="tasks.html"
+                           data-toggle="tab"
+                           data-ng-click="filter('completed')"
+                                >Completed</a>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section  data-ng-cloak>
+                    <ul class="task-list list-unstyled">
+                      <li data-ng-repeat="task in tasks | filter:statusFilter track by $index"
+                          data-ng-class="{completed: task.completed, editing: task == editedTask}">
+                            <span class="view">
+                                &lt;!&ndash;<input type="checkbox"
+                                       class="toggle-task"
+                                       data-ng-model="task.completed"
+                                       data-ng-change="completed(task)">&ndash;&gt;
+                                <md-checkbox class="md-primary" data-ng-model="task.completed"
+                                             data-ng-change="completed(task)"></md-checkbox>
+                                <label data-ng-dblclick="edit(task)">{{task.title}}</label>
+                                <span class="glyphicon glyphicon-pencil"
+                                      data-ng-click="edit(task)"></span>
+                                <span class="glyphicon glyphicon-remove"
+                                      data-ng-click="remove(task, $index)"
+                                        ></span>
+                            </span>
+                        <form data-ng-submit="doneEditing(task, $index)">
+                          <input type="text"
+                                 class="edit form-control"
+                                 data-ng-trim="false"
+                                 data-ng-model="task.title"
+                                 data-ng-blur="doneEditing(task, $index)"
+                                 data-task-focus="task == editedTask">
+                        </form>
+                      </li>
+                    </ul>
+                  </section>-->
+
+                  <footer class="task-footer">
+                    <ul class="list-inline clearfix">
+                      <li class="first-item">
+                        <!--<input type="checkbox"
+                               id="toggle-all"
+                               data-ng-model="allChecked"
+                               data-ng-change="markAll(allChecked)">-->
+                        <md-checkbox aria-label="Mark all as done" class="md-primary" data-ng-model="allChecked"
+                                     data-ng-change="markAll(allChecked)">Mark all as done</md-checkbox>
+                      </li>
+                      <li class="text-center">
+                            <span>
+                                <strong>{{countTasksLeft}}</strong>
+                                <span class="text-muted"
+                                      data-ng-pluralize count="countTasksLeft"
+                                      when="{one: 'item left', other: 'items left'}"></span>
+                            </span>
+                      </li>
+                      <li class="text-right">
+                            <span class="clear-completed"
+                                  data-ng-click="clearCompleted()"
+                                  data-ng-show="countTasksLeft < tasks.length">Clear completed ({{tasks.length - countTasksLeft}})</span>
+                      </li>
+                    </ul>
+                  </footer>
+                </div>
+
+              </md-content>
+                
+            </section>
+        </div>
+    </div>
+
+</div>

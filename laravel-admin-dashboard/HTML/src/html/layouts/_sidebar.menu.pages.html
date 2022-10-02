@@ -1,0 +1,96 @@
+<li class="sidebar-menu-item{% if slug === 'companies' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}companies.html">
+    <span class="sidebar-menu-text">Companies</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'stories' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}stories.html">
+    <span class="sidebar-menu-text">Stories</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'discussions' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}discussions.html">
+    <span class="sidebar-menu-text">Discussions</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'invoice' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}invoice.html">
+    <span class="sidebar-menu-text">Invoice</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'pricing' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}pricing.html">
+    <span class="sidebar-menu-text">Pricing</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'edit-account' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}edit-account.html">
+    <span class="sidebar-menu-text">Edit Account</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'profile' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}profile.html">
+    <span class="sidebar-menu-text">User Profile</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'payout' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}payout.html">
+    <span class="sidebar-menu-text">Payout</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'digital-product' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}digital-product.html">
+    <span class="sidebar-menu-text">Digital Product</span>
+    <span class="badge badge-primary ml-auto">NEW</span>
+  </a>
+</li>
+<li class="sidebar-menu-item">
+  <a class="sidebar-menu-button" data-toggle="collapse" href="#login_menu">
+    <span class="sidebar-menu-text">Login</span>
+    <span class="ml-auto sidebar-menu-toggle-icon"></span>
+  </a>
+  <ul class="sidebar-submenu collapse" id="login_menu">
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="login.html">
+        <span class="sidebar-menu-text">Login / Background Image</span>
+      </a>
+    </li>
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="login-centered-boxed.html">
+        <span class="sidebar-menu-text">Login / Centered Boxed</span>
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="sidebar-menu-item">
+  <a class="sidebar-menu-button" data-toggle="collapse" href="#signup_menu">
+    <span class="sidebar-menu-text">Sign Up</span>
+    <span class="ml-auto sidebar-menu-toggle-icon"></span>
+  </a>
+  <ul class="sidebar-submenu collapse" id="signup_menu">
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="signup.html">
+        <span class="sidebar-menu-text">Sign Up / Background Image</span>
+      </a>
+    </li>
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="signup-centered-boxed.html">
+        <span class="sidebar-menu-text">Sign Up / Centered Boxed</span>
+      </a>
+    </li>
+  </ul>
+</li>
+
+<li class="sidebar-menu-item{% if slug === 'product-listing' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}product-listing.html">
+    <span class="sidebar-menu-text">Product Listing</span>
+    <span class="badge badge-primary ml-auto">NEW</span>
+  </a>
+</li>
+
+<li class="sidebar-menu-item{% if slug === 'blank' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}blank.html">
+    <span class="sidebar-menu-text">Blank Page</span>
+    <span class="badge badge-primary ml-auto">NEW</span>
+  </a>
+</li>

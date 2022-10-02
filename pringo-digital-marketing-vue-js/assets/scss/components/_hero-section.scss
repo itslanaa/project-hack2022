@@ -1,0 +1,326 @@
+.hero-section {
+    margin-bottom: 250px;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+    @include max-screen(991) {
+        margin-bottom: 0px;
+    }
+}
+.hero-content {
+    padding-top: 60px;
+    position: relative;
+    @include min-screen(1200) {
+        padding-top: 160px;
+    }
+    .title {
+        margin-bottom: 20px;
+        color: $primary;
+        font-weight: 900;
+        line-height: 1.133;
+        font-size: 75px;
+        @include max-screen(1200, 1499) {
+            font-size: 65px;
+        }
+        @include max-screen(992, 1199) {
+            font-size: 45px;
+        }
+        @include max-screen(768, 991) {
+            font-size: 55px;
+        }
+        @include max-screen(576, 767) {
+            font-size: 40px;
+        }
+        @include max-screen(575) {
+            font-size: 32px;
+        }
+    }
+    p {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        color: #5c6179;
+        line-height: 1.473;
+        font-size: 19px;
+        @include max-screen(768, 1500) {
+            font-size: 18px;
+        }
+        @include max-screen(767) {
+            font-size: 15px;
+        }
+        span {
+            margin-right: 20px;
+            display: inline-block;
+            background-image: linear-gradient(0deg, rgb(252, 115, 24) 0%, rgb(254, 180, 35) 100%);
+            width: 50px;
+            height: 3px;
+        }
+    }
+}
+
+.hero-img {
+    animation: move 1.5s infinite alternate;
+    @include max-screen(991) {
+        display: none;
+    }
+    @include min-screen(992) {
+        position: absolute;
+        right: 165px;
+        top: 40px;
+    }
+    @include min-screen(1920) {
+        max-width: 683px;
+    }
+    @include max-screen(1800, 1919) {
+        max-width: 650px;
+        right: 160px;
+    }
+    @include max-screen(1500, 1799) {
+        max-width: 550px;
+    }
+    @include max-screen(1200, 1499) {
+        max-width: 450px;
+        right: 160px;
+    }
+    @include max-screen(992, 1199) {
+        max-width: 340px;
+        right: 140px;
+    }
+}
+
+.hero-img-mobile {
+    @include min-screen(991) {
+        display: none;
+    }
+    @include max-screen(991) {
+        max-width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.hero-form {
+    max-width: 470px;
+    margin-bottom: 20px;
+    z-index: 1;
+    .form-control {
+        background-color: $white;
+        height: 68px;
+        border: 1px solid #eef3ff;
+        padding-left: 30px;
+        padding-right: 200px;
+        border-radius: 8px;
+    }
+    .btn {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        //res
+        @include max-screen(479) {
+            margin-top: 15px;
+            position: static;
+        }
+        &.btn-warning {
+            padding: 20px 25px;
+            font-size: 16px;
+        }
+    }
+}
+
+.animate-two {
+    left: -160px;
+    bottom: -60px;
+    animation: move 0.6s infinite alternate;
+
+    @include max-screen(1800, 1919) {
+        max-width: 400px;
+        left: -100px;
+    }
+    @include max-screen(1500, 1799) {
+        max-width: 400px;
+        left: -100px;
+        bottom: -200px;
+    }
+    @include max-screen(1200, 1499) {
+        max-width: 350px;
+        left: -100px;
+        bottom: -180px;
+    }
+    @include max-screen(992, 1199) {
+        max-width: 280px;
+        left: -80px;
+        bottom: -150px;
+    }
+}
+.animate-three {
+    right: -160px;
+    bottom: -60px;
+    animation: move 0.9s infinite alternate;
+
+    @include max-screen(1800, 1919) {
+        max-width: 300px;
+        bottom: 0;
+        right: -100px;
+    }
+    @include max-screen(1500, 1799) {
+        max-width: 330px;
+        bottom: -90px;
+        right: -160px;
+    }
+    @include max-screen(1200, 1499) {
+        max-width: 290px;
+        bottom: -90px;
+        right: -150px;
+    }
+    @include max-screen(992, 1199) {
+        max-width: 230px;
+        bottom: -90px;
+        right: -130px;
+    }
+    @include max-screen(767) {
+    }
+}
+
+.shape {
+    position: absolute;
+}
+.shape1 {
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.shape2 {
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.particle1 {
+    top: 195px;
+    left: 90px;
+    z-index: -1;
+    animation: move 0.6s infinite alternate;
+    @include max-screen(1200, 1500) {
+        max-width: 80px;
+    }
+
+    @include max-screen(1199) {
+        max-width: 70px;
+    }
+    @include max-screen(992, 1199) {
+        top: 50px;
+    }
+    @include max-screen(768, 991) {
+        top: 50px;
+    }
+    @include max-screen(576, 767) {
+        top: 20px;
+    }
+
+    @include max-screen(575) {
+        top: 20px;
+    }
+    @include max-screen(991) {
+        display: none;
+    }
+}
+.particle2 {
+    bottom: -125px;
+    left: 200px;
+    z-index: -1;
+    animation: move 0.9s infinite alternate;
+    @include max-screen(1200, 1500) {
+        bottom: -180px;
+        left: 145px;
+        max-width: 200px;
+    }
+    @include max-screen(320, 991) {
+        max-width: 140px;
+        left: 250px;
+        bottom: auto;
+        top: 250px;
+    }
+
+    @include max-screen(1199) {
+        max-width: 140px;
+        left: 250px;
+    }
+    @include max-screen(992, 1199) {
+        top: 250px;
+        left: 50px;
+    }
+
+    @include max-screen(768, 991) {
+        top: 200px;
+        left: 50px;
+    }
+
+    @include max-screen(576, 767) {
+        top: 150px;
+        left: 50px;
+    }
+    @include max-screen(575) {
+        top: 140px;
+        left: 50px;
+    }
+    @include max-screen(991) {
+        display: none;
+    }
+}
+.particle3 {
+    position: absolute;
+    left: 110px;
+    @include max-screen(1199) {
+        left: 60px;
+        max-width: 80px;
+        bottom: -180px;
+    }
+
+    @include max-screen(992, 1199) {
+        left: 200px;
+        bottom: -250px;
+    }
+
+    @include max-screen(768, 991) {
+        left: 200px;
+        bottom: -150px;
+    }
+    @include max-screen(1200, 1499) {
+        left: 310px;
+        max-width: 120px;
+    }
+    @include max-screen(1500, 1800) {
+        left: 200px;
+    }
+
+    @include max-screen(576, 767) {
+        top: 310px;
+        left: 200px;
+    }
+    @include max-screen(575) {
+        top: 300px;
+        left: 200px;
+    }
+    @include max-screen(991) {
+        display: none;
+    }
+    animation: move 1s infinite alternate;
+}
+
+// Animation keyframes
+
+@-webkit-keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

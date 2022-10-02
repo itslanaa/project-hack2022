@@ -1,0 +1,53 @@
+.page-material-icons {
+
+  .col-md-3 {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  md-icon {
+    height:30px;
+    width:30px;
+    margin-bottom:10px;
+  }
+
+  h1 {
+    clear:both;
+    text-align:center;
+  }
+}
+
+.page-icons .bs-glyphicons {
+  overflow: hidden;
+}
+
+.page-icons .bs-glyphicons li {
+  float: left;
+  width: 25%;
+  height: 115px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+  border: 1px solid #f9f9f9;
+}
+
+.page-icons .bs-glyphicons .glyphicon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 55px;
+  color: #3F4245;
+}
+
+.page-icons .bs-glyphicons .glyphicon-class {
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 13px;
+}
+
+.page-icons .bs-glyphicons-list {
+  padding-left: 0;
+  list-style: none;
+}

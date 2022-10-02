@@ -1,0 +1,205 @@
+//
+// helper.scss
+//
+
+@each $color,
+$value in $theme-colors {
+    .text-#{$color} {
+        color: #{$value} !important;
+    }
+    .bg-#{$color} {
+        background-color: #{$value} !important;
+    }
+    .icon-fill-#{$color} {
+        fill: rgba($value, 0.15);
+    }
+    .bg-soft-#{$color} {
+        background: rgba($value, 0.07);
+    }
+}
+
+.shadow {
+    box-shadow: $shadow !important;
+}
+
+.text-white-70 {
+    color: rgba($white, 0.70);
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.bg-overlay {
+    background-color: $black;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+.line-height-1_6 {
+    line-height: 1.6;
+}
+
+.line-height-1_4 {
+    line-height: 1.4;
+}
+
+
+// Font size
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-17 {
+    font-size: 17px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-19 {
+    font-size: 19px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-21 {
+    font-size: 21px;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+.f-23 {
+    font-size: 23px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+// avatar
+.avatar-xs {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.avatar-sm {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+}
+
+.avatar-md {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.avatar-lg {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.avatar-xl {
+    height: 6rem;
+    width: 6rem;
+}
+
+.avatar-xxl {
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+//  icon
+.icon-size-15 {
+    height: 15px;
+    width: 15px;
+}
+
+.icon-xs {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-lg {
+    height: 30px;
+    width: 30px;
+}
+
+.icon-xl {
+    height: 35px;
+    width: 35px;
+}
+
+.sw_1-5 {
+    stroke-width: 1.5px;
+}
+
+.icon {
+    position: relative;
+    top: -2px;
+}
+
+.right-icon {
+    line-height: 0;
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+}
+
+.hero-bottom-shape {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+.card {
+    margin-bottom: 30px;
+    border-color: darken($light, 5%);
+}

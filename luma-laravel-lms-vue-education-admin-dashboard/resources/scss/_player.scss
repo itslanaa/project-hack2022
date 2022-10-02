@@ -1,0 +1,47 @@
+.player {
+  background-color: rgba($body-color, .8);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    @include media-breakpoint-up(md) {
+      left: 2rem;
+      top: 2rem;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    background-image: var(--player-image);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &__play {
+    background-color: $accent;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+
+    .material-icons {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}

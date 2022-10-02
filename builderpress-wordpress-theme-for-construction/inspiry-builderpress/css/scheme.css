@@ -1,0 +1,278 @@
+
+
+.feature-icon svg .a {
+    stroke: #f5b800;
+}
+
+.feature-icon .filler-class .a {
+    stroke: none;
+    fill: #f5b800;
+}
+
+.services-section .service-single-content h3 a:hover {
+    color: #ffd800;
+}
+
+.services-section .service-box-var2 h3 a:hover {
+    color: #ffd800;
+}
+
+.wrapper-portfolio-slider .overlay-slide {
+    background: rgba(255, 216, 0, 0.85);
+}
+
+.wrapper-portfolio-slider .overlay-slide p {
+    color: #7a6d25;
+}
+
+.wrapper-inner-owl .owl-prev:hover, .wrapper-inner-owl .owl-next:hover {
+    background: #ffd800 !important;
+}
+
+#customDots .owl-dot:after {
+    background: #ffd800;
+}
+
+.quote-bar-home .cta-overlay {
+    background: rgba(255, 216, 0, 0.85);
+}
+
+.vc-cta-overlay {
+    background: #FFD800;
+}
+
+.wrapper-recent-single h3 a:hover {
+    color: #ffd800;
+}
+
+.testimonials-section .testimonial-short-border {
+    background: #ffd800;
+}
+
+.testimonials-slider.variation-2 h3 {
+    background: #ffd800;
+}
+
+
+.quality-inner .quality-icon .house-icon .a {
+    fill: #675b19;
+    stroke: #675b19;
+}
+
+
+.single-service-box h3 a:hover {
+    color: #f5b800;
+}
+
+.side-services-list li:after {
+
+    border-bottom: 2px #ffd800 dashed;
+}
+.side-brochures a:hover {
+    background: #ffd800;
+}
+
+/*todo*/
+.side-brochures a:before {
+    color: #f82929;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background: #ffd800;
+
+}
+
+.nf-form-cont input[type="button"]:hover {
+    background: #ffd800;
+
+}
+.wrapper-member .single-member ul li a:hover {
+    color: #ffd800;
+}
+
+.sidebar .widget h3:after {
+
+    background: #ffd800;
+
+}
+
+.sidebar .widget a:hover {
+    color: #f5b800;
+}
+
+.sidebar .widget_tag_cloud a:hover {
+    background: #ffd800;
+}
+
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ffd800;
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    background: #ffd800;
+}
+
+
+.widget_search input[type="submit"] {
+    background-color: #ffd800;
+}
+
+.widget_search input[type="submit"]:hover {
+    background-color: #f5b800;
+}
+
+.wrapper-page-contents .post-heading a:hover {
+    color: #f5b800;
+}
+
+
+
+.wrapper-page-contents .post-meta a span {
+    color: #f5b800;
+}
+
+.wrapper-page-contents .post-meta a:hover {
+    color: #f5b800;
+}
+
+
+
+.wrapper-page-contents .post-meta .post-count:hover {
+    color: #f5b800;
+}
+
+.the-content-wrapper a, .bp-page-contents a {
+    color: #f5b800;
+}
+
+.the-content-wrapper input[type="submit"], .bp-page-contents input[type="submit"] {
+    background: #ffd800;
+}
+
+.the-content-wrapper input[type="submit"]:hover, .bp-page-contents input[type="submit"]:hover {
+    color: #ffd800;
+}
+
+
+.single-post-bp.sticky {
+    border-bottom: 2px solid #ffd800;
+}
+
+
+.single-post-bp.sticky h2 .sticky-pin-icon {
+
+    background: #ffd800;
+
+}
+
+.comments-single .comment-wrapper a {
+    color: #f5b800;
+}
+
+
+
+.comments-single .comment-wrapper .comment-reply-link {
+    background: #ffd800;
+}
+
+.comments-single .comment-wrapper .comment-reply-link:hover {
+    color: #ffd800;
+}
+
+.comments-single .pingback a {
+    color: #f5b800;
+}
+
+.comment-respond input[type="submit"] {
+    background: #ffd800;
+}
+
+.comment-respond input[type="submit"]:hover {
+    color: #ffd800;
+}
+
+.comment-respond #cancel-comment-reply-link {
+    background: #ffd800;
+}
+
+.comment-respond #cancel-comment-reply-link:hover {
+    color: #ffd800;
+}
+
+.pagination a:hover {
+    background: #ffd800;
+    border-color: #ffd800;
+}
+
+.pagination .current {
+    background: #ffd800;
+    border-color: #ffd800;
+}
+
+
+
+.page-links a {
+    color: #f5b800;
+}
+
+blockquote {
+    border-color: #ffd800;
+}
+
+.tag-links a {
+    background: #ffd800;
+}
+
+.tag-links a:hover {
+    color: #ffd800;
+}
+
+
+.footer-intro-section p a:hover {
+    color: #ffd800;
+}
+
+.copyright-text a:hover {
+    color: #ffd800;
+}
+
+
+.vc-overlay {
+    background-color: rgba(255, 216, 0, 0.85);
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .header-nav-top .mini-cart .cart-icon:hover svg {
+        fill: #ffd800;
+    }
+}
+
+.uil-flickr-css > div:nth-of-type(2) {
+    background: #ffd800;
+}
+
+.Shortcode_btn.button-yellow-border {
+    border: 2px solid #ffd800;
+}
+
+.Shortcode_btn.button-dark.hover-to-yellow:hover {
+    background: #ffd800;
+}
+
+.Shortcode_btn.button-yellow {
+    background: #ffd800;
+}
+
+.Shortcode_btn.button-yellow:hover {
+    color: #ffd800;
+}
+
+.Shortcode_btn.bp-lined:after {
+    background: #ffd800;
+}
+

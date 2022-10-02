@@ -1,0 +1,28 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.sidebar-light {
+  @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+}
+
+.sidebar-light .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px solid $ssm-light-item-border-color;
+  }
+}
+
+.sidebar-light-yellow .sidebar-submenu .sidebar-menu-text::after {
+  background-color: $accent-yellow;
+}
+
+.sidebar-light-red .sidebar-submenu .sidebar-menu-text::after {
+  background-color: $accent-red;
+}
+
+.sidebar-light-purple .sidebar-submenu .sidebar-menu-text::after {
+  background-color: $primary-purple;
+}
+
+.sidebar-light-dodger-blue .sidebar-submenu .sidebar-menu-text::after {
+  background-color: $dodger-blue;
+}

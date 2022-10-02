@@ -1,0 +1,20 @@
+.list-todo {
+  &:last-child {
+    margin-bottom: 0;
+  }
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .custom-control-input:checked ~ .custom-control-label {
+    text-decoration: line-through;
+  }
+  .custom-control {
+    padding-left: 2rem;
+  }
+  .custom-control-label {
+    &::before,
+    &::after {
+      left: -2rem;
+    }
+  }
+}

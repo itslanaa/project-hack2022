@@ -1,0 +1,46 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// <form class="search-form search-form--light input-group-lg">                                    //
+//   <input type="text" class="form-control" placeholder="Search">                                 //
+//   <button class="btn" type="button" ><i class="material-icons">search</i></button> //
+// </form>                                                                                         //
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: $input-bg;
+  border: $input-btn-border-width solid $input-border-color;
+  @if $enable-rounded {
+    border-radius: $input-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+  .form-control {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  &:not([class^="input-group-"]) .btn {
+    padding: 0 .5rem;
+  }
+  .btn + .form-control {
+    padding-left: 0;
+  }
+}
+
+.search-form--light {
+  .btn {
+    background: transparent;
+    color: rgba(0, 0, 0, .4);
+  }
+  .form-control:focus + .btn { 
+    color: $input-color;
+    @include hover {
+      color: $body-color;
+    }
+  }
+}

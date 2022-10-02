@@ -1,0 +1,11 @@
+FROM node:12 as build-stage
+WORKDIR /easydev
+COPY /template .
+RUN yarn cache clean
+RUN yarn install
+RUN yarn build
+
+FROM nginx as production-stage
+RUN mkdir -p /app/easydev
+COPY --from=build-stage /easydev/build /app/easydev
+COPY /template/nginx.conf /etc/nginx/nginx.conf

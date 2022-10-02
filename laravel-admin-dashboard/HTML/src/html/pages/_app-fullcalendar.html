@@ -1,0 +1,63 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }} page__heading-container">
+  <div class="page__heading d-flex align-items-center">
+    <div class="flex">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+          <li class="breadcrumb-item">Apps</li>
+          <li class="breadcrumb-item active" aria-current="page">Event Calendar</li>
+        </ol>
+      </nav>
+      <h1 class="m-0">Event Calendar</h1>
+    </div>
+    <a href="" data-toggle="modal" data-target="#add-category"  class="btn btn-success ml-3">New Event</a>
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="card card-body">
+        <div id="calendar" data-toggle="fullcalendar"></div>
+      </div>
+    </div> <!-- end col -->
+
+    <div class="col-lg-3">
+      <div id="external-events">
+        <p class="text-muted">Drag and drop your event or click in the calendar.</p>
+        <div class="external-event bg-success" data-class="bg-success">
+          <i class="mr-2 material-icons">drag_handle</i>
+          <span class="external-event__title">New Theme Release</span>
+        </div>
+        <div class="external-event bg-info" data-class="bg-info">
+          <i class="mr-2 material-icons">drag_handle</i>
+          <span class="external-event__title">My Event</span>
+        </div>
+        <div class="external-event bg-warning" data-class="bg-warning">
+          <i class="mr-2 material-icons">drag_handle</i>
+          <span class="external-event__title">Meet manager</span>
+        </div>
+        <div class="external-event bg-danger" data-class="bg-danger">
+          <i class="mr-2 material-icons">drag_handle</i>
+          <span class="external-event__title">Create New theme</span>
+        </div>
+      </div>
+
+      <!-- checkbox -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="drop-remove">
+        <label class="custom-control-label" for="drop-remove">Remove after drop</label>
+      </div>
+    </div> <!-- end col-->
+  </div>  <!-- end row -->
+</div>

@@ -1,0 +1,10 @@
+#toast-container > div {
+  opacity: 1;
+  box-shadow: 0 10px 25px 0 rgba(50,50,93,0.07), 0 5px 15px 0 rgba(0,0,0,0.07);
+}
+
+@each $color, $value in $theme-colors {
+  .toast-#{$color} {
+    background-color: $value;
+  }
+}

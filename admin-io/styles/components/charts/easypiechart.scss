@@ -1,0 +1,111 @@
+
+.easypiechart {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.easypiechart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.easypiechart .pie-percent {
+  display: inline-block;
+  line-height: 130px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+}
+
+.easypiechartsmall {
+  display: inline-block;
+  position: relative;
+  width: 67px;
+  height: 67px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.easypiechartsmall canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.easypiechartsmall .pie-percent {
+  display: inline-block;
+  line-height: 67px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #333;
+
+  .countTo_small {
+    font-weight: 400;
+  }
+
+  i{
+    font-size:20px;
+  }
+}
+
+.right-info {
+  margin-top: 20px;
+  max-width: 40%;
+  margin-left: 30%;
+  line-height: 16px;
+  font-size: 13px;
+}
+
+.easypiechartmedium {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.easypiechartmedium canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.easypiechartmedium .pie-percent {
+  display: inline-block;
+  line-height: 80px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #333;
+
+  .countTo_small {
+    font-weight: 400;
+  }
+
+  i{
+    font-size:20px;
+  }
+}
+
+.circle-statistic {
+  .easypiechartmedium:before {
+    position: absolute;
+    content: "";
+    height: 15%;
+    left: 30%;
+    right: 30%;
+    bottom: -8%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 40px 20px rgba(0, 0, 0, 0.2), inset 0 0 50px 100px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    -webkit-transform: scaleY(0.07);
+    -ms-transform: scaleY(0.07);
+    -o-transform: scaleY(0.07);
+    transform: scaleY(0.07);
+    z-index: 0;
+  }
+}

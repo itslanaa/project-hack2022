@@ -1,0 +1,27 @@
+//////////////////
+// PAGE HEADING //
+//////////////////
+
+// <div class="page-heading">
+//   <h4>Top Development Courses</h4>
+//   <a href="#" class="ml-sm-auto text-underline">See Development Courses</a>
+// </div>
+
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $headings-margin-bottom;
+  h4,
+  .h4 {
+    margin-bottom: .25rem;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}

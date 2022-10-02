@@ -1,0 +1,22 @@
+<div class="navbar navbar-secondary navbar-light navbar-expand-sm p-0">
+  <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarsExample03" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse collapse" id="navbarsExample03">
+    <ul class="nav navbar-nav">
+      <li class="nav-item{% if slug === 'app-projects' %} active{% endif %}">
+        <a href="{{ prefix }}projects.html" class="nav-link">Activity</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Current Tickets</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Milestones</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Project Buckets <span class="ml-2 badge badge-light-gray">5</span></a>
+      </li>
+    </ul>
+  </div>
+</div>

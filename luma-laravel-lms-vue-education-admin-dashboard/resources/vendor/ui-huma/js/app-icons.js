@@ -1,0 +1,1 @@
+import 'vue-icons-demo-app/src/app-icons'

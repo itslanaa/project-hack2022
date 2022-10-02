@@ -1,0 +1,68 @@
+.card {
+  width: 100%;
+  padding-bottom: 30px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+
+  &.card--not-full-height {
+    height: auto;
+  }
+}
+
+.card-body {
+  height: 100%;
+
+  @include themify($themes) {
+    background-color: themed('colorBackground');
+  }
+
+  @include borderify($borders) {
+    border-radius: bordered('borderRadius');
+  }
+
+  @include shadowify($shadows) {
+    box-shadow: shadowed('blocksShadows');
+  }
+}
+
+.card__title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+
+  @include directify($directions) {
+    text-align: directed('left');
+  }
+
+  h5.card__title-center {
+    text-align: center;
+  }
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  .subhead {
+    text-transform: none;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.7;
+    margin-top: 3px;
+  }
+
+  * {
+    margin-bottom: 0;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+}
+
+.blocks-with-shadow-theme {
+
+  .card-body {
+    box-shadow: 0 10px 30px 1px rgba(0, 0, 0, 0.06);
+  }
+}

@@ -1,0 +1,71 @@
+.label-default {
+  background-color: #999;
+}
+
+.label-default[href]:hover, .label-default[href]:focus {
+  background-color: gray;
+}
+
+$label-colors: (
+        primary:$color--primary,
+        accent:$color--accent,
+        theme:$color--primary,
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger,
+        violet:$color--info-alt
+);
+
+@each $label-class, $label-color in $label-colors {
+
+  .label-#{$label-class} {
+    background-color: $label-color;
+  }
+
+  .label-#{$label-class}[href]:hover, .label-#{$label-class}[href]:focus {
+    background-color: $label-color;
+  }
+
+}
+
+.label {
+  padding: .5em .8em;
+}
+
+.label-info-alt {
+  background: $color--info-alt;
+}
+
+a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  color: #333;
+  background-color: #fff;
+}
+
+.container .jumbotron {
+  @include border-radius(0px);
+}
+
+.thumbnail {
+  @include border-radius(0px);
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+}
+
+.thumbnail > img, .thumbnail a > img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #767676;
+}
+
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+  border-color: #333;
+}

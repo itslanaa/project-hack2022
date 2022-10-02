@@ -1,0 +1,12 @@
+.mdk-drawer__content {
+  background: transparent;
+}
+
+.mdk-header-layout .mdk-drawer__content {
+  top: $navbar-height;
+}
+
+.mdk-drawer {
+  // fix mozilla firefox issue
+  z-index: 1;
+}

@@ -1,0 +1,62 @@
+md-toolbar {
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  font-size:inherit;
+  min-height:50px;
+  display:block;
+  background:$color--primary;
+
+  .md-toolbar-tools {
+    max-height:50px;
+    height:50px;
+    font-size: 14px;
+
+    h3 {
+      font-size: 14px;
+    }
+  }
+}
+
+md-content {
+  @include border-radius(3px);
+  @include box-shadow(0 2px 5px 0 rgba(0,0,0,.06));
+
+  md-content {
+    @include box-shadow(none);
+  }
+}
+
+
+$box-colors: (
+        primary:$color--primary,
+        accent:$color--accent,
+        theme:$color--primary,
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger
+);
+
+@each $box-class, $box-color in $box-colors {
+
+  md-toolba.md-#{$box-class}{
+    background:$box-color;
+  }
+
+  md-content.md-content--#{$box-class} {
+    border-top: 3px solid $box-color;
+  }
+
+  .md-subheade.md-#{$box-class}{
+    color:$box-color;
+  }
+
+}
+
+md-content .md-content__body {
+  padding:15px;
+}
+
+.md-content-section {
+  margin-bottom:30px;
+}

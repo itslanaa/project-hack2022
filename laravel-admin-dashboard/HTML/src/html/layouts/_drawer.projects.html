@@ -1,0 +1,62 @@
+<!-- drawer -->
+<div class="mdk-drawer {{ drawerClass or '' }} js-mdk-drawer" id="default-drawer" data-align="{{ drawerAlign }}">
+  <div class="mdk-drawer__content">
+    <div class="sidebar sidebar-light sidebar-left" data-perfect-scrollbar>
+      <div class="sidebar-heading sidebar-m-t">Main Menu</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item{% if slug === 'projects' %} active{% endif %}">
+          <a class="sidebar-menu-button" href="{{ prefix or '' }}projects.html">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">history</i>
+            <span class="sidebar-menu-text">Activity</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" href="#">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">assignment</i>
+            <span class="sidebar-menu-text">Current Tickets</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" href="#">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">today</i>
+            <span class="sidebar-menu-text">Milesones</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" href="#">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">work</i>
+            <span class="sidebar-menu-text">Project Buckets</span>
+            <span class="ml-auto badge badge-primary">3</span>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-heading sidebar-m-t">Layouts</div>
+
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item{% if slug === 'projects' %} active{% endif %}">
+          <a class="sidebar-menu-button" href="{{ prefix or '' }}projects.html">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+            <span class="sidebar-menu-text">Default (with Sidebar)</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" href="fluid-projects.html">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+            <span class="sidebar-menu-text">Fluid (No Sidebar)</span>
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a class="sidebar-menu-button" href="mini-projects.html">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+            <span class="sidebar-menu-text">Mini Sidebar</span>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-p-a">
+        <a href="https://themeforest.net/item/stack-admin-bootstrap-4-dashboard-template/22959011" class="btn btn-primary btn-block">Purchase &dollar;40</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- // END drawer -->

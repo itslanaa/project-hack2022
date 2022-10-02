@@ -1,0 +1,167 @@
+Change Log: BuilderPress WordPress Theme
+=============================================
+=============================================
+
+Version 1.2.4
+
+List of Improvements
+————————————————————
+1. Tested with latest WordPress version.
+2. Fixed One Click Demo Import URL.
+
+
+Version 1.2.3
+
+List of Improvements
+————————————————————
+1. Lightbox Script Updated.
+
+
+Version 1.2.2
+
+List of Improvements
+————————————————————
+1. WPBakery Visual Composer loading issue fixed.
+2. Removed Google Plus profile settings
+3. Updated included plugins.
+
+
+Version 1.2.1
+
+List of Improvements
+————————————————————
+1. Improved and refactored overall theme code with respect to latest WordPress standards.
+2. Moved Social networks and Google Maps settings to plugin
+3. Removed SVG upload support
+4. Updated included plugins.
+
+
+Version 1.2.0
+
+Improvements
+————————————
+Refactored overall code to full fill Envato’s latest WordPress theme requirements.Improved the packaged plugin in this process to cover plugin territory functionality and included Gutenberg support to cover basic Gutenberg blocks.
+
+
+
+Version 1.1.0
+
+List of Improvements
+————————————————————
+1. Tested & Improved for WordPress 5
+2. Fixed excerpt limit issue.
+3. Enabled autoplay for homepage slider.
+4. Improved WooCommerce related code to fix couple of deprecated calls.
+5. Updated included plugins.
+
+
+
+Version 1.0.4
+
+List of Improvements
+————————————————————
+1. Fixed a banner related issue.
+2. Updated demo contents.
+
+List of Files Changed ( Added, Modified and Removed )
+—————————————————————————————————————————————————————
+functions.php
+inc/demo/default/content.xml
+inc/demo/default/customizer.dat
+inc/demo/default/widgets.wie
+partials/banner/banner-blog.php
+style.css
+
+
+Version 1.0.3
+
+List of Improvements
+————————————————————
+1. WooCommerce Visual Composer Elements styles added.
+2. Project/service post navigation controls added.
+3. Project single detail slider loop enabled.
+4. Color fixes for theme Color Schemes.
+5. Check added in banner image as default.
+6. Banner width fix.
+
+List of Files Changed ( Added, Modified and Removed )
+—————————————————————————————————————————————————————
+inc/color-schemes/color-schemes.php
+inc/customizer/customizer-miscellaneus.php
+partials/banner/banner-blog.php
+single-project.php
+single.service.php
+js/custom.js
+css/custom-woocommerce.css
+css/main.css
+functions.php
+style.css
+
+
+=============================================
+=============================================
+
+Version 1.0.2
+
+List of Improvements
+————————————————————
+1. Color Improvements in indigo color scheme.
+2. Banner background image fix.
+3. Metaboxes added for Image, Text and Text Color in Project/Service single banner.
+4. Breadcrumbs display option added in custoimze > Misc > Breadcrumbs.
+5. WooCommerce Templates Updated.
+6. Visual Composer latest version 5.2 added in theme.
+7. Colors controls added in Visual Composer Recent Projects element.
+
+List of Files Changed ( Added, Modified and Removed )
+—————————————————————————————————————————————————————
+
+inc/color-schemes/color-schemes.php
+inc/customizer/customizer-miscellaneus.php
+inc/theme-meta-box.php
+inc/tgm/inspiry-required-plugins.php
+inc/plugin/builderpress-pack.zip
+inc/plugin/js_composer.zip
+woocommerce/cart/cart-empty.php
+woocommerce/cart/cart.php
+woocommerce/single-product/product-image.php
+partials/banner/banner-blog.php
+css/main.css
+js/custom.js
+single-project.php
+single.service.php
+functions.php
+style.css
+
+=============================================
+=============================================
+
+Version 1.0.1
+
+List of Improvements
+————————————————————
+Added color schemes.
+Added sticky menu.
+Added LinkedIn social profile.
+
+List of Files Changed ( Added, Modified and Removed )
+—————————————————————————————————————————————————————
+inc/customizer/customizer.php
+inc/color-schemes/color-schemes.php
+inc/customizer/customizer-schemes.php
+inc/customizer/customizer-header.php
+partials/header/header-partials/contact-details.php
+partials/header/header-var1.php
+partials/header/header-var2.php
+partials/header/header-var3.php
+partials/social-nav.php
+css/main.css
+js/custom.js
+functions.php
+style.css
+
+=============================================
+=============================================
+
+
+Initial Release Version 1.0.0

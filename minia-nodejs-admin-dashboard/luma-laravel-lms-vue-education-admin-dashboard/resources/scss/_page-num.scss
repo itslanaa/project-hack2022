@@ -1,0 +1,104 @@
+.page-num {
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: $page-num-border-width solid $page-num-border-color;
+  background-color: $page-num-bg;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $page-num-color;
+  [href] & {
+    color: $page-num-color;
+  }
+}
+
+// center align page+num + heading along a vertical line on page
+.page-num-container {
+  margin-left: -3.25rem;
+  margin-bottom: 1rem;
+  .page-num {
+    margin-right: .75rem;
+    flex-shrink: 0;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-num-timeline {
+  position: relative;
+  z-index: 0;
+  
+  &::after {
+    content: '';
+    width: .3125rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: $border-color;
+    z-index: -1;
+    margin-left: -.15625rem;
+  }
+  &__item {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &-tip {
+      width: .75rem;
+      height: .75rem;
+      display: block;
+      border-radius: 100%;
+      background-color: $page-num-tip-bg;
+      border: 2px solid $page-num-tip-border-color;
+      margin-bottom: 5px !important;
+    }
+    &-current {
+      margin-top: .75rem !important;
+    }
+    &-current .page-num {
+      background-color: $primary;
+      color: $primary-light;
+      width: 4rem;
+      height: 4rem;
+      border: none;
+    }
+    &-current &-tip {
+      position: absolute;
+      top: -.375rem;
+      left: 50%;
+      margin-left: -.375rem;
+      border-color: white;
+      background-color: $primary;
+    }
+    &.active &-tip {
+      border-color: $primary-light;
+      background-color: $primary;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-top: -.375rem;
+    &__item {
+      margin: 0 1rem;
+    }
+    &::after {
+      width: 100%;
+      height: .3125rem;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin-top: .375rem;
+      margin-left: 0;
+    }
+  }
+}

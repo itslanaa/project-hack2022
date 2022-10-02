@@ -1,0 +1,186 @@
+.service-card {
+    display: flex;
+    border-radius: 15px;
+    background: #f7faff;
+    position: relative;
+    padding: 40px 40px 40px 50px;
+    @include max-screen(1199) {
+        flex-direction: column;
+    }
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 22px 35px 0px rgba(2, 18, 106, 0.08);
+    width: 115px;
+    height: 115px;
+    margin-right: 50px;
+    border-radius: 50%;
+    position: relative;
+    @include max-screen(1199) {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    .roted-around {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        span {
+            position: relative;
+            display: block;
+            height: 100%;
+            &::before,
+            &::after {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                content: "";
+                border-radius: 50%;
+            }
+
+            &::before {
+                left: 15px;
+                bottom: 10px;
+            }
+            &::after {
+                right: 15px;
+                top: 10px;
+            }
+        }
+
+        &.danger {
+            span {
+                animation: rotation 10s infinite linear;
+                &::before,
+                &::after {
+                    background-image: linear-gradient(-45deg, rgb(253, 68, 133) 0%, rgb(255, 163, 141) 100%);
+                }
+            }
+        }
+        &.warning {
+            span {
+                animation: rotation 9s infinite linear;
+                &::before,
+                &::after {
+                    background-image: linear-gradient(-45deg, rgb(253, 99, 0) 0%, rgb(255, 225, 33) 100%);
+                }
+            }
+        }
+        &.primary {
+            span {
+                animation: rotation 8s infinite linear;
+                &::before,
+                &::after {
+                    background-image: linear-gradient(-45deg, rgb(80, 94, 255) 0%, rgb(3, 189, 255) 100%);
+                }
+            }
+        }
+        &.secondary {
+            span {
+                animation: rotation 7s infinite linear;
+                &::before,
+                &::after {
+                    background-image: linear-gradient(-45deg, rgb(178, 65, 255) 0%, rgb(254, 134, 255) 100%);
+                }
+            }
+        }
+    }
+}
+
+.service-content {
+    flex: 1;
+    .title {
+        color: $primary;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-bottom: 25px;
+        font-size: 25px;
+        @include max-screen(1199) {
+            font-size: 20px;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.btn-outline-danger {
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #fd4485 0%, #ffa38d 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f7faff inset;
+    color: $primary;
+    &:hover {
+        box-shadow: none;
+        color: $white;
+        border-color: transparent;
+    }
+}
+
+.btn-outline-warning {
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #fd6300 0%, #ffe121 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f7faff inset;
+    color: $primary;
+    &:hover {
+        box-shadow: none;
+        color: $white;
+        border-color: transparent;
+    }
+}
+
+.btn-outline-primary {
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #505eff 0%, #03bdff 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f7faff inset;
+    color: $primary;
+    &:hover {
+        box-shadow: none;
+        color: $white;
+        border-color: transparent;
+    }
+}
+.btn-outline-secondary {
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #b241ff 0%, #fe86ff 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #f7faff inset;
+    color: $primary;
+    &:hover {
+        box-shadow: none;
+        color: $white;
+        border-color: transparent;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

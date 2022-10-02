@@ -1,0 +1,11 @@
+<!-- App Settings FAB -->
+<div id="app-settings">
+  <app-settings
+    layout-active="{{ layout }}"
+    :layout-location="{
+      'default': '{% if slug === 'dashboard' %}index{% else %}{{ slug }}{% endif %}.html',
+      'fixed': 'fixed-{{ slug }}.html',
+      'fluid': 'fluid-{{ slug }}.html',
+      'mini': 'mini-{{ slug }}.html'
+    }"></app-settings>
+  </div>

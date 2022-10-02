@@ -1,0 +1,54 @@
+.app-messages {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .mdk-drawer-layout,
+  .mdk-header-layout,
+  .mdk-header-layout__content,
+  .mdk-drawer-layout__content {
+    height: 100%;
+  }
+  .page-content {
+    height: 100%;
+    position: relative;
+    padding: 0;
+  }
+  &__container {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  &__fullbleed {
+    flex: 1 1 0%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+}
+
+.message {
+  &__aside {
+    margin-right: 1rem;
+  }
+
+  &:nth-child(even) {
+    .message__aside {
+      order: 1;
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+    .message__body {
+      margin-left: auto;
+    }
+  }
+}
+
+.messages-toggle {
+  position: absolute;
+  right: -1px;
+  top: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

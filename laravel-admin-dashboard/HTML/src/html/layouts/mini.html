@@ -1,0 +1,25 @@
+{% set layout = 'mini' %}
+{% set prefix = 'mini-' %}
+{% set containerClass = 'container' %}
+{% set home_url = prefix + 'dashboard.html' %}
+{% set navbarSearch = false %}
+{% set navbarContainerClass = 'container-fluid' %}
+{% set bodyClass = bodyClass or 'layout-mini' %}
+{% set drawerFile = '_drawer.mini.html' %}
+
+{% extends "layouts/default.html" %}
+
+{% block footer %}
+  {{ super() }}
+  <script>
+  (function(){
+    'use strict';
+
+    // ENABLE sidebar menu tabs
+    $('#sidebar-mini-tabs [data-toggle="tab"]').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  })()
+</script>
+{% endblock %}

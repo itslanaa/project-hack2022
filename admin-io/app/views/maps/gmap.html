@@ -1,0 +1,62 @@
+<div class="page">
+
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Google Map
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+        <map class="ui-map" zoom="11" center="[38.73, -9.14]" scrollwheel="false">
+          <marker position="[38.72, -9.20]" title="marker" animation="Animation.DROP"></marker>
+          <marker position="[38.73, -9.19]" title="drag me" draggable="true"></marker>
+        </map>
+      </div>
+    </md-content>
+
+  </section>
+
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Dynamic Map
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+
+        <div data-ng-controller="MapDemoCtrl">
+          <map class="ui-map" zoom="14" center="[38.73, -9.14]"></map>
+        </div>
+
+      </div>
+    </md-content>
+
+  </section>
+
+  <section class="md-content-section">
+    <md-toolbar class="md-accent">
+      <div class="md-toolbar-tools">
+        Styled Map
+      </div>
+    </md-toolbar>
+
+    <md-content>
+      <div class="md-content__body">
+
+        <map class="ui-map" zoom="11" center="[38.73, -9.14]"
+             scrollwheel="false"
+             styles='[{"featureType": "all", "stylers": [{ "saturation": -100 } ] }]'>
+          <marker position="[38.73, -9.19]" title="drag me" draggable="true"></marker>
+        </map>
+
+      </div>
+    </md-content>
+
+  </section>
+
+
+</div>

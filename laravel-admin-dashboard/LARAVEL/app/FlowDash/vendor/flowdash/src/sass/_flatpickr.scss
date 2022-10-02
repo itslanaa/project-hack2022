@@ -1,0 +1,23 @@
+.flatpickr-input[readonly] {
+  background-color: $input-bg;
+}
+.flatpickr-wrapper {
+  display: block;
+}
+.flatpickr-hidden-input {
+  visibility: hidden; 
+  height: 0;
+}
+
+.flatpickr-calendar-right .flatpickr-calendar {
+  right: -1.5rem;
+  @include media-breakpoint-up(sm) {
+    right: 0;
+  }
+}
+
+.flatpickr-wrapper .flatpickr-input {
+  height: 0;
+  visibility: hidden;
+  padding: 0;
+}

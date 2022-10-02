@@ -1,0 +1,20 @@
+<svg  xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 26 26">
+<style>
+  .a{
+    fill:none;
+    stroke-linejoin:round;
+    stroke:#f5b800;
+  }
+</style>
+    <polyline points="11 14.5 1.5 14.5 1.5 20 " class="a"/>
+    <polyline points="1.5 15 1.5 9.5 14 9.5 " class="a"/>
+    <rect x="1.5" y="4.5" width="11" height="5" class="a"/>
+    <line x1="5.5" y1="4.5" x2="5.5" y2="9.5" class="a"/>
+    <line x1="9.5" y1="9.5" x2="9.5" y2="14.5" class="a"/>
+    <line x1="5.5" y1="14.5" x2="5.5" y2="19.5" class="a"/>
+    <line x1="17.5" y1="20" x2="17.5" y2="24.5" class="a"/>
+      <path d="M18 7.6c0.5 0.6 1.5 0.7 2.1 0.1l3.9-3.5c0.3-0.3 0.5-0.6 0.5-1 0-0.4-0.1-0.8-0.4-1.1 -0.5-0.6-1.5-0.7-2.1-0.1l-3.9 3.5c-0.3 0.3-0.5 0.6-0.5 1C17.6 7 17.7 7.3 18 7.6z" class="a"/>
+      <polyline points=" 18 7.7 21.2 11.3 17.5 14.7 " class="a"/>
+      <path d="M15 11.4c0.3-1.1 1.7-1.3 2.5-0.5l3.5 3.5c0.8 0.8 0.6 2.2-0.5 2.5l-9 3.5L15 11.4z" class="a"/>
+    <polyline points="19.5 19.5 24.5 19.5 24.5 24.5 1.5 24.5 1.5 19.5 9 19.5 9.5 19.5 9.5 24.5 " class="a"/>
+</svg>

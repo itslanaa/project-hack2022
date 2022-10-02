@@ -1,0 +1,155 @@
+//////////////
+// MD FORMS //
+//////////////
+
+.md-form-group {
+  background-color: $input-bg;
+  border: $input-btn-border-width solid $input-border-color;
+  padding: $input-btn-padding-y $input-btn-padding-x;
+
+  @if $enable-rounded {
+    border-radius: $input-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  @include box-shadow($input-box-shadow);
+}
+
+.md-form-control {
+  &__content {
+    border-bottom: 1px solid $input-border-color;
+    position: relative;
+    height: 48px;
+  }
+
+  label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease;
+    font-size: 1.23rem;
+    font-weight: normal;
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+    display: block;
+    pointer-events: none;
+  }
+  &__control {
+    border: none;
+    background-color: transparent !important;
+    padding-top: 24px;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: 0;
+    
+    &.custom-select {
+      background-position: right;
+    }
+
+    line-height: 1;
+    box-shadow: none !important;
+    border-radius: 0;
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    
+    &::-webkit-input-placeholder { 
+      line-height: normal;
+    }
+  }
+  &:not(&--static) &__control:not(:focus)::placeholder {
+    color: transparent;
+  }
+  &__highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  &__bar {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
+  &__bar::before,
+  &__bar::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: -1px;
+    position: absolute;
+    background: $primary;
+    transition: all 0.2s ease;
+  }
+  &__bar::before {
+    left: 50%;
+  }
+  &__bar::after {
+    right: 50%;
+  }
+  
+  &--static &__control ~ label {
+    font-size: 1rem;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &__control:focus ~ label,
+  &--used &__control ~ label {
+    color: $primary;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  &__control:focus ~ &__highlight {
+    animation: inputHighlighter 0.3s ease;
+  }
+  &__control:focus ~ &__bar::before,
+  &__control:focus ~ &__bar::after {
+    width: 50%;
+  }
+  .input-group {
+    position: initial;
+    width: 100%;
+    label {
+      left: 36px;
+    }
+    .input-group-addon {
+      background-color: transparent;
+      border: none;
+      vertical-align: top;
+      padding: 0;
+      width: 36px;
+      text-align: left;
+      font-size: 1.23rem;
+    }
+  }
+
+  &--required::after {
+    color: $danger;
+    content: "*";
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: $primary;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}

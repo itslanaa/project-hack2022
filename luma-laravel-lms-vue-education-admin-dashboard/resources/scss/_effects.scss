@@ -1,0 +1,14 @@
+/////////////
+// EFFECTS //
+/////////////
+
+.will-shrink-to-hidden {
+    will-change: transform;
+    transition: 0.2s transform;
+}
+.shrink-to-hidden {
+    transform: scale3d(0, 0, 0);
+}
+.will-fade-background {
+  transition: 0.2s background-color;
+}

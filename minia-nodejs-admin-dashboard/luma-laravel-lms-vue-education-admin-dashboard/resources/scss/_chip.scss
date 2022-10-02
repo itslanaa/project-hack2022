@@ -1,0 +1,23 @@
+.chip {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: $btn-border-width solid transparent;
+  @include button-size(.25rem, 1rem, $font-size-base, $btn-line-height, 100px);
+
+  & + .chip {
+    margin-left: .5rem;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .chip-#{$color} {
+    @include button-variant($value, $value);
+  }
+  .chip-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}

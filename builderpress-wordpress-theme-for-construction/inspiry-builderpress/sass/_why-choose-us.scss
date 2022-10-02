@@ -1,0 +1,135 @@
+.qualities-box {
+  display: flex;
+  .left-items {
+    width: 45%;
+    margin-bottom: 95px;
+  }
+  .right-items {
+    width: 55%;
+    overflow: hidden;
+    min-height: 516px;
+  }
+  h3 {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $theme-bg-dark;
+  }
+  p {
+    @extend .montserrat;
+    line-height: 26px;
+    font-size: 15px;
+    color: $light-gray-text;
+  }
+}
+
+.quality-inner {
+  padding-left: 108px;
+  padding-right: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .quality-icon {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    border-radius: 78px;
+    text-align: center;
+    line-height: 78px;
+    svg {
+      max-width: 100%;
+    }
+    img {
+      max-width: 100%;
+    }
+    .house-icon {
+      .a {
+        fill: #675b19;
+        stroke: #675b19;
+      }
+    }
+  }
+}
+
+.right-items {
+  position: relative;
+  margin-bottom: 120px;
+  .image-wrapper {
+    position: absolute;
+    //max-width: 350px;
+    //max-height: 360px;
+    transition: .1s all ease-in-out;
+    margin: auto;
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    //&:nth-of-type(1) {
+    //  left: 0;
+    //  top: 40px;
+    //}
+    //&:nth-of-type(2){
+    //  right: 0;
+    //  top: 0;
+    //}
+    //&:nth-of-type(3){
+    //  right: 10px;
+    //  bottom: 0;
+    //}
+    //&:nth-of-type(4){
+    //  left: 0;
+    //  bottom: 0;
+    //}
+    //&:last-of-type{
+    //  top: 0;
+    //  left: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  margin: auto;
+    //}
+    &:hover {
+      //transform: scale(1.05);
+
+    }
+  }
+}
+
+.pulse {
+  z-index: 99 !important;
+  img {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    opacity: .8;
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}

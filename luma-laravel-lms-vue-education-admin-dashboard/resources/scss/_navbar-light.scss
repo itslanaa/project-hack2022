@@ -1,0 +1,23 @@
+.navbar-light {
+  .badge-notifications {
+    border: 1px solid $white;
+  }
+
+  .navbar-text-50 { color: rgba($body-color, .5); }
+  .navbar-text-70 { color: rgba($body-color, .7); }
+  .navbar-text-100 { color: $body-color; }
+
+  .navbar-btn {
+    @extend .btn-light;
+  }
+
+  .navbar-search {
+    @extend .search-form--light;
+  }
+
+  .navbar-avatar {
+    background-color: #EDF0F2;
+    border: $input-btn-border-width solid #EDF0F2;
+    color: $headings-color;
+  }
+}

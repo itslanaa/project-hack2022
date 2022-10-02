@@ -1,0 +1,99 @@
+.header {
+    .container {
+        @include min-screen(1920) {
+            max-width: 1370px;
+        }
+    }
+}
+
+.header-top {
+    background-color: #02126a;
+    p {
+        font-family: $font-family-base;
+        font-weight: 400;
+        color: $white;
+    }
+    li {
+        color: $white;
+        a {
+            color: $white;
+        }
+    }
+}
+
+.header-social-links {
+    .social-link-item {
+        border-right: 1px solid $border-color;
+        &:first-child {
+            border-left: 1px solid $border-color;
+        }
+        .social-link {
+            display: block;
+            padding: 22px 20px;
+            line-height: 1;
+            &:hover {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+.hr-border {
+    background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+    display: inline-block;
+    width: 90px;
+    height: 1px;
+    margin-right: 30px;
+}
+
+.select-box {
+    .select-item {
+        line-height: 1;
+        &:first-child {
+            padding: 22px 20px;
+            border-left: 1px solid $border-color;
+        }
+
+        a {
+            &:hover {
+                background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .form-select {
+        color: $white;
+        border: 0px;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        background: transparent;
+        border-radius: 0px;
+        cursor: pointer;
+        appearance: none;
+        padding: 22px 20px;
+        position: relative;
+        &:after {
+            content: ">";
+            position: absolute;
+        }
+        &:hover {
+            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:focus {
+            box-shadow: none !important;
+        }
+        &:focus-visible {
+            text-shadow: none;
+            outline: none;
+        }
+
+        option {
+            color: $dark;
+        }
+    }
+}

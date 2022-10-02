@@ -1,0 +1,53 @@
+runTasks:
+  clean: true
+  js: true
+  copy: true
+  sass: true
+  html: true
+enableCssThemes: false
+enableCssRTL: true
+copyCwd: node_modules
+copyDest: dist/assets/vendor
+copy:
+  - ion-rangeslider/js/ion.rangeSlider.min.js
+  - jquery/dist/jquery.min.js
+  - bootstrap/dist/js/bootstrap.min.*
+  - popper.js/dist/umd/popper.min.*
+  - dom-factory/dist/*
+  - material-design-kit/dist/material-design-kit.js
+  - perfect-scrollbar/css/*
+  - perfect-scrollbar/dist/*.min.js
+  - material-design-icons-iconfont/dist/fonts/*.{eot,ttf,woff,woff2,ijmap}: dist/assets/fonts/material-icons
+  - '@fortawesome/fontawesome-free/webfonts/*': dist/assets/fonts/fontawesome-free
+  - vue/dist/vue.min.js
+  - toastr/build/toastr.min.*
+  - chart.js/dist/Chart.min.js
+  - moment/min/moment.min.js
+  - moment-range/dist/moment-range.js
+  - flatpickr/dist/flatpickr.min.{js,css}: dist/assets/vendor/flatpickr
+  - flatpickr/dist/themes/airbnb.css: dist/assets/vendor/flatpickr
+  - daterangepicker/daterangepicker.{js,css}
+  - jquery-mask-plugin/dist/jquery.mask.min.js
+  - quill/dist/quill.min.js
+  - dropzone/dist/min/dropzone.min.js
+  - dragula/dist/dragula.min.{js,css}: dist/assets/vendor/dragula
+  - select2/dist/js/select2.min.js: dist/assets/vendor/select2
+  - select2/dist/css/select2.min.css: dist/assets/vendor/select2
+  - list.js/dist/list.min.js
+  - jqvmap/dist/jquery.vmap.min.js: dist/assets/vendor/jqvmap
+  - jqvmap/dist/jqvmap.min.css: dist/assets/vendor/jqvmap
+  - jqvmap/dist/maps/*.js: dist/assets/vendor/jqvmap/maps
+  - jqvmap/dist/maps/continents/*.js: dist/assets/vendor/jqvmap/maps/continents
+  - fullcalendar/dist/fullcalendar.min.{js,css}: dist/assets/vendor/fullcalendar
+  - jquery-ui-dist/jquery-ui.min.js
+clean:
+  - dist/**/*.html
+  - dist/assets/{css,fonts,js,vendor}
+sassSrc: src/sass/*.scss
+cssDest: dist/assets/css
+jsSrc: src/js/**/**.js
+jsDest: dist/assets/js
+htmlDest: dist/[path][name].html
+htmllint: false
+laravelMixOptions:
+  processCssUrls: false

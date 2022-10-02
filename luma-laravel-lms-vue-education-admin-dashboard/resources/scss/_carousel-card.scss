@@ -1,0 +1,28 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.carousel-card {
+  .carousel-control-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: white;
+    @include mdc-elevation-mixins.elevation(2, $card-shadow-base-color);
+    color: $black;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 2.5rem;
+    opacity: 1;
+  }
+  .carousel-control-prev {
+    left: calc(-2.5rem / 2);
+  }
+  .carousel-control-next {
+    right: calc(-2.5rem / 2);
+  }
+}

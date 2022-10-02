@@ -1,0 +1,20 @@
+// VARIABLES & OVERRIDES
+@import '../variables';
+
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+  box-sizing: content-box;
+  background: $primary;
+}
+.jvectormap-label {
+  z-index: 1;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: $primary;
+  padding: 3px 5px;
+}
+.jvm-legend-item {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}

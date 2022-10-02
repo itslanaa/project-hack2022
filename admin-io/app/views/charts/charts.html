@@ -1,0 +1,311 @@
+<div class="page page-charts" >
+
+    <section data-ng-controller="chartingCtrl">
+        <div class="row">
+            <div class="col-sm-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    {{easypie1.name}}
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div easypiechart options="easypie1.options" percent="easypie1.percent" class="easypiechart">
+                      <span class="pie-percent" ng-bind="easypie1.percent"></span>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+
+            <div class="col-sm-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    {{easypie2.name}}
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div easypiechart options="easypie2.options" percent="easypie2.percent" class="easypiechart">
+                      <span class="pie-percent" ng-bind="easypie2.percent"></span>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+
+            <div class="col-sm-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    {{easypie3.name}}
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div easypiechart options="easypie3.options" percent="easypie3.percent" class="easypiechart">
+                      <span class="pie-percent" ng-bind="easypie3.percent"></span>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section data-ng-controller="gaugeCtrl">
+
+        <div class="row">
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Gauge Chart
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <canvas data-gauge-chart
+                            data-gauge-data="gauge1.gaugeData"
+                            data-gauge-options="gauge1.gaugeOptions"
+                            style="width: 220px; height: 110px; "
+                            ></canvas>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Gauge Chart
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <canvas data-gauge-chart
+                            data-gauge-data="gauge2.gaugeData"
+                            data-gauge-options="gauge2.gaugeOptions"
+                            style="width: 220px; height: 110px; "
+                            ></canvas>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Gauge Chart
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <canvas data-gauge-chart
+                            data-gauge-data="gauge3.gaugeData"
+                            data-gauge-options="gauge3.gaugeOptions"
+                            style="width: 220px; height: 110px; "
+                            ></canvas>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+        </div>
+    </section>
+
+    <section data-ng-controller="sparklineCtrl">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+              <section class="md-content-section">
+
+                <md-content>
+                  <div class="md-content__body">
+                    <div class="small-box-icon text-center">
+                    <span data-sparkline
+                          data-spark-data="simpleChart1.sparkData"
+                          data-spark-options="simpleChart1.sparkOptions"
+                            ></span>
+                      <h5>
+                        Simple chart one
+                      </h5>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+
+            <div class="col-md-3">
+
+
+              <section class="md-content-section">
+
+                <md-content>
+                  <div class="md-content__body">
+                    <div class="small-box-icon text-center">
+                    <span data-sparkline
+                          data-spark-data="simpleChart2.sparkData"
+                          data-spark-options="simpleChart2.sparkOptions"
+                            ></span>
+                      <h5>
+                        A small bar chart
+                      </h5>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+            <div class="col-md-3">
+
+
+              <section class="md-content-section">
+
+                <md-content>
+                  <div class="md-content__body">
+                    <div class="small-box-icon text-center">
+                    <span data-sparkline
+                          data-spark-data="simpleChart3.sparkData"
+                          data-spark-options="simpleChart3.sparkOptions"
+                            ></span>
+                      <h5>
+                        Simple chart one
+                      </h5>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+            <div class="col-md-3">
+
+              <section class="md-content-section">
+
+                <md-content>
+                  <div class="md-content__body">
+                    <div class="small-box-icon text-center">
+                    <span data-sparkline
+                          data-spark-data="tristateChart1.sparkData"
+                          data-spark-options="tristateChart1.sparkOptions"
+                            ></span>
+                      <h5>
+                        Tristate chart
+                      </h5>
+                    </div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section data-ng-controller="sparklineCtrl">
+
+
+        <div class="row">
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Line Charts
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div data-sparkline
+                         data-spark-data="largeChart1.sparkData"
+                         data-spark-options="largeChart1.sparkOptions"
+                            ></div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Bar Charts
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div data-sparkline
+                         data-spark-data="largeChart2.sparkData"
+                         data-spark-options="largeChart2.sparkOptions"
+                            ></div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+            <div class="col-md-4">
+
+              <section class="md-content-section">
+                <md-toolbar class="md-accent">
+                  <div class="md-toolbar-tools">
+                    Pie Charts
+                  </div>
+                </md-toolbar>
+
+                <md-content>
+                  <div class="md-content__body text-center">
+                    <div data-sparkline
+                         data-spark-data="largeChart3.sparkData"
+                         data-spark-options="largeChart3.sparkOptions"
+                            ></div>
+                  </div>
+                </md-content>
+
+              </section>
+
+            </div>
+        </div>
+
+    </section>
+
+</div>

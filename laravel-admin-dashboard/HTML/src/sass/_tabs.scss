@@ -1,0 +1,64 @@
+.card-header-tabs-basic {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  > div {
+    display: flex;
+  }
+  a {
+    padding: .5rem .75rem;
+    color: rgba($body-color, .54);
+    font-weight: 600;
+    &:hover {
+      text-decoration: none;
+      color: rgba(17,43,74,.84);
+    }
+  }
+  .active {
+    color: rgba(17,43,74,.84);
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.nav-tabs-custom {
+  z-index: 2;
+  position: relative;
+
+  .nav-item {
+    margin-bottom: 0; // -1px with border
+    border-top-color: $primary;
+  }
+
+  .nav-item + .nav-item {
+    margin-left: .5rem;
+  }
+
+  .nav-link {
+    padding: .75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    &__count {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    &.disabled {
+      opacity: .75;
+      background-color: $text-muted !important;
+      color: #fff;  
+    }
+  }
+
+  .nav-link:not(.active),
+  .nav-item:not(.show) .nav-link:not(.active) {
+    background-color: $primary-dark;
+    color: #fff;
+  }
+
+  // with border
+  // .nav-link.active,
+  // .nav-item.show .nav-link {
+  //   border-width: 1px;
+  //   border-bottom-width: 0;
+  // }
+}

@@ -1,0 +1,277 @@
+@import './variables';
+
+.irs {
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  user-select: none;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+
+  &-line {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    outline: none !important;
+  }
+
+  &-bar {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 0;
+  }
+
+  &-shadow {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 0;
+  }
+
+  &-handle {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    cursor: default;
+    z-index: 1;
+
+    &.single,
+    &.from,
+    &.to {}
+
+    &.type_last {
+        z-index: 2;
+    }
+  }
+
+  &-min,
+  &-max {
+    position: absolute;
+    display: block;
+    cursor: default;
+  }
+
+  &-min {
+    left: 0;
+  }
+
+  &-max {
+    right: 0;
+  }
+
+  &-from,
+  &-to,
+  &-single {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    cursor: default;
+    white-space: nowrap;
+  }
+
+  &-grid {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+
+    .irs-with-grid & {
+      display: block;
+    }
+
+    &-pol {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 8px;
+      background: #000;
+
+      &.small {
+        height: 4px;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 9px;
+      line-height: 9px;
+      padding: 0 3px;
+      color: #000;
+    }
+  }
+
+  &-disable-mask {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    cursor: default;
+    background: rgba(0,0,0,0.0);
+    z-index: 2;
+
+    .lt-ie9 & {
+      background: #000;
+      filter: alpha(opacity=0);
+      cursor: not-allowed;
+    }
+  }
+
+  &-disabled {
+    opacity: 0.4;
+  }
+
+  &-hidden-input {
+    position: absolute !important;
+    display: block !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    outline: none !important;
+    z-index: -9999 !important;
+    background: none !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+  }
+}
+
+.irs--flat {
+  $name: irs;
+
+  $top: 25px;
+  $bottom: 16px;
+  $line_height: 12px;
+  $handle_width: 16px;
+  $handle_height: 18px;
+  $custom_radius: $border-radius;
+
+  $line_color: darken($progress-bg, 3%);
+  $bar_color: $primary;
+  $handle_color_1: darken($primary, 5%);
+  $handle_color_2: darken($primary, 10%);
+  $minmax_text_color: $body-color;
+  $minmax_bg_color: #fff;
+  $label_color_1: rgba($dark-gray, .84);
+  $label_color_2: white;
+  $grid_color_1: #e1e4e9;
+  $grid_color_2: #999;
+
+  height: 40px;
+
+  &.irs-with-grid {
+    height: 60px;
+  }
+
+  .#{$name}-line {
+    top: $top;
+    height: $line_height;
+    background-color: $line_color;
+    border-radius: $custom_radius;
+  }
+
+  .#{$name}-bar {
+    top: $top;
+    height: $line_height;
+    background-color: $bar_color;
+
+    &--single {
+      border-radius: $custom_radius 0 0 $custom_radius;
+    }
+  }
+
+  .#{$name}-shadow {
+    height: 1px;
+    bottom: $bottom;
+    background-color: $line_color;
+  }
+
+  .#{$name}-handle {
+    top: 22px;
+    width: $handle_width;
+    height: $handle_height;
+    background-color: transparent;
+
+    & > i:first-child {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      margin-left: -1px;
+      background-color: $handle_color_1;
+    }
+
+    &.state_hover,
+    &:hover {
+      & > i:first-child {
+        background-color: $handle_color_2;
+      }
+    }
+  }
+
+  .#{$name}-min,
+  .#{$name}-max {
+    top: 0;
+    padding: 1px 3px;
+    color: $minmax_text_color;
+    font-size: 10px;
+    line-height: 1.333;
+    text-shadow: none;
+    background-color: $minmax_bg_color;
+    border-radius: $custom_radius;
+  }
+
+  .#{$name}-from,
+  .#{$name}-to,
+  .#{$name}-single {
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background-color: $primary;
+    border-radius: $custom_radius;
+    font-weight:bold;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: -6px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-left: -3px;
+      overflow: hidden;
+      border: 3px solid transparent;
+      border-top-color: $primary;
+    }
+  }
+
+  .#{$name}-grid {
+    &-pol {
+      background-color: $grid_color_1;
+    }
+
+    &-text {
+      color: $grid_color_2;
+    }
+  }
+}

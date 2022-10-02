@@ -1,0 +1,178 @@
+.comment-form-space1 {
+    margin-top: 75px;
+}
+.comment-card {
+    background-color: rgb(247, 250, 255);
+    padding: 55px 70px 70px;
+    @include max-screen(992, 1199) {
+        padding: 35px 50px 50px;
+    }
+    @include max-screen(991) {
+        padding: 35px 25px 50px;
+    }
+    border-radius: 15px;
+    .title {
+        color: $primary;
+        line-height: 1.857;
+        font-size: 35px;
+        @include max-screen(768, 1199) {
+            font-size: 30px;
+        }
+        @include max-screen(767) {
+            font-size: 25px;
+        }
+    }
+}
+
+.comment-hr {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(0deg, rgb(252, 115, 24) 0%, rgb(254, 180, 35) 100%);
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    &::before {
+        width: 15px;
+        height: inherit;
+        border-radius: inherit;
+        background: #e6e9f5;
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: 0;
+    }
+    &::after {
+        width: 15px;
+        height: inherit;
+        border-radius: inherit;
+        background: #e6e9f5;
+        content: "";
+        position: absolute;
+        right: -30px;
+        top: 0;
+    }
+}
+
+.comment-form {
+    .form-control {
+        background-color: rgb(255, 255, 255);
+        height: 60px;
+        padding: 15px 30px;
+        color: #596190;
+        margin-bottom: 20px;
+        border: 0px;
+        font-size: 15px;
+        border-radius: 10px;
+        &::placeholder {
+            color: #596190;
+        }
+        &.textarea-control {
+            height: 170px;
+            margin-bottom: 30px;
+            resize: none;
+        }
+    }
+}
+
+.service-dots {
+    strong {
+        font-weight: 700;
+        color: $primary;
+        font-size: 14px;
+    }
+}
+
+.contact-form-card,
+.comment-card {
+    .selectric {
+        background: #fff;
+        height: 60px;
+        padding: 15px 30px;
+        color: #596190;
+        margin-bottom: 20px;
+        border: 0px;
+        font-size: 15px;
+        border-radius: 10px;
+        &::placeholder {
+            color: #596190;
+        }
+
+        .label {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0 38px 0 10px;
+            font-size: 15px;
+            line-height: 38px;
+            color: #596190;
+            height: 38px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+}
+
+.selectric {
+    border: 0px;
+    background: transparent;
+    .label {
+        color: #fff;
+        font-size: 15px;
+    }
+    .button {
+        background: transparent;
+
+        &::after {
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            content: " ";
+            background-image: url("/images/icon/arrow-down.png");
+            background-repeat: no-repeat;
+            border: 0px solid transparent;
+        }
+    }
+}
+
+.selectric-items {
+    background: #fff;
+    border: 0px;
+    box-shadow: 0px 22px 35px 0px rgba(2, 18, 106, 0.08);
+}
+
+.selectric-items li.highlighted {
+    background-image: linear-gradient(to right, #fc7318, #fe8415, #fe9515, #fea51a, #feb423);
+    color: #fff;
+    font-size: 14px;
+}
+
+.selectric-items ul,
+.selectric-items li {
+    font-size: 14px;
+    color: $primary;
+}
+
+.selectric-items li:hover {
+    background: $primary;
+    color: $white;
+}
+
+.comment-form-img2 {
+    @include min-screen(992) {
+        position: relative;
+        right: -20px;
+        margin-top: 10px;
+    }
+
+    @include min-screen(1200) {
+        position: relative;
+        right: -40px;
+        margin-top: 0px;
+        transform: scale(1.05);
+    }
+}

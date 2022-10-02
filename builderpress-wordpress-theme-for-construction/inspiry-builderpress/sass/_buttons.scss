@@ -1,0 +1,94 @@
+
+.bp-button {
+  @extend .montserrat-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $theme-bg-dark;
+  display: inline-block;
+}
+
+.bp-button-plain {
+  padding: 14px 30px;
+
+}
+
+.button-yellow-border {
+  border: 2px solid $theme-yellow;
+  padding: 12px 28px;
+
+}
+
+.button-dark {
+  background: $theme-bg-dark;
+  color: #ffffff;
+  &:hover {
+    background: #ffffff;
+    color: $theme-bg-dark;
+  }
+  &.hover-to-yellow {
+    &:hover {
+      background: $theme-yellow;
+      color: $theme-bg-dark;
+    }
+  }
+}
+
+.button-yellow {
+  background: $theme-yellow;
+  &:hover {
+    color: $theme-yellow;
+    background: $theme-bg-dark;
+
+  }
+}
+
+.common-vc-class{
+  .bp-button {
+    @extend .montserrat-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $theme-bg-dark;
+    display: inline-block;
+  }
+
+  .bp-button-plain {
+    padding: 14px 30px;
+
+  }
+
+  .button-yellow-border {
+    border: 2px solid $theme-yellow;
+    padding: 12px 28px;
+
+  }
+
+  .button-dark {
+    background: $theme-bg-dark;
+    color: #ffffff;
+    &:hover {
+      background: #ffffff;
+      color: $theme-bg-dark;
+    }
+    &.hover-to-yellow {
+      &:hover {
+        background: $theme-yellow;
+        color: $theme-bg-dark;
+      }
+    }
+  }
+
+  .button-yellow {
+    background: $theme-yellow;
+    &:hover {
+      color: $theme-yellow;
+      background: $theme-bg-dark;
+
+    }
+  }
+
+}
+
+
+

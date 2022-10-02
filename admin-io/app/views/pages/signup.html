@@ -1,0 +1,64 @@
+<div class="page-signup">
+
+    <div class="signin-header">
+      <div class="container text-center">
+        <section class="logo">
+          <a href="#/">
+            <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_whatshot_24px.svg"></md-icon>
+          </a>
+        </section>
+      </div>
+    </div>
+
+    <div class="main-body">
+        <div class="container">
+            <div class="form-container">
+
+              <section class="row signin-social text-center">
+                <md-button class="md-default-theme md-raised md-twitter"><i class="fa fa-twitter"></i></md-button>
+                <div class="space"></div>
+                <md-button class="md-default-theme md-raised md-facebook"><i class="fa fa-facebook"></i></md-button>
+                <div class="space"></div>
+                <md-button class="md-default-theme md-raised md-gplus"><i class="fa fa-google"></i></md-button>
+              </section>
+
+              <br/>
+
+                <section>
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <md-input-container md-no-float>
+                          <md-icon md-svg-src="dist/img/icons/ic_person_24px.svg"></md-icon>
+                          <input ng-model="user.name" type="text" placeholder="Username">
+                        </md-input-container>
+                      </div>
+                      <div class="form-group">
+                        <md-input-container class="md-primary" md-no-float>
+                          <md-icon md-svg-src="dist/img/icons/ic_mail_24px.svg"></md-icon>
+                          <input ng-model="user.phone" type="text" placeholder="Email">
+                        </md-input-container>
+                      </div>
+                      <div class="form-group">
+                        <md-input-container class="md-primary" md-no-float>
+                          <md-icon md-svg-src="dist/img/icons/ic_lock_24px.svg"></md-icon>
+                          <input ng-model="user.phone" type="text" placeholder="Password">
+                        </md-input-container>
+                      </div>
+
+                        <div class="form-group">
+                            <p class="text-muted text-small">By clicking on Sign up, you agree to <a href="javascript:;">terms & conditions</a> and <a href="javascript:;">privacy policy</a></p>
+                            <div class="divider"></div>
+                          <md-button class="btn-width-large btn-block btn-lg md-primary md-raised">Sign up</md-button>
+                        </div>
+ 
+                    </form>
+                </section>
+
+                <section>
+                    <p class="text-center text-muted">Already have an account? <a href="signup.html#/pages/signin" >Log in now</a></p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>

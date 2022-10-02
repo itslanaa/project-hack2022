@@ -1,0 +1,56 @@
+<li class="sidebar-menu-item{% if slug === 'app-activities' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}app-activities.html">
+    <span class="sidebar-menu-text">Activities</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'app-trello' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}app-trello.html">
+    <span class="sidebar-menu-text">Trello</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'app-projects' %} active{% endif %}">
+    <a class="sidebar-menu-button" href="{{ prefix or '' }}app-projects.html">
+      <span class="sidebar-menu-text">Projects</span>
+    </a>
+  </li>
+<li class="sidebar-menu-item{% if slug === 'app-fullcalendar' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}app-fullcalendar.html">
+    <span class="sidebar-menu-text">Event Calendar</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'app-chat' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}app-chat.html">
+    <span class="sidebar-menu-text">Chat</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'app-email' %} active{% endif %}">
+  <a class="sidebar-menu-button" href="{{ prefix or '' }}app-email.html">
+    <span class="sidebar-menu-text">Email</span>
+  </a>
+</li>
+<li class="sidebar-menu-item {% if slug === 'app-course' or slug === 'app-browse-courses' or slug === 'app-lesson' %}active open{% endif %}">
+  <a class="sidebar-menu-button" data-toggle="collapse" href="#course_menu">
+    <span class="sidebar-menu-text">Education</span>
+    <span class="ml-auto d-flex align-items-center">
+      <span class="badge badge-primary">NEW</span>
+      <span class="sidebar-menu-toggle-icon"></span>
+    </span>
+  </a>
+  <ul class="sidebar-submenu collapse {% if slug === 'app-course' or slug === 'app-browse-courses' or slug === 'app-lesson'%} show {% endif %}" id="course_menu">
+    <li class="sidebar-menu-item {% if slug === 'app-browse-courses' %} active{% endif %}">
+      <a class="sidebar-menu-button" href="{{ prefix or '' }}app-browse-courses.html">
+        <span class="sidebar-menu-text">Browse Courses</span>
+      </a>
+    </li>
+    <li class="sidebar-menu-item {% if slug === 'app-course' %} active{% endif %}">
+      <a class="sidebar-menu-button" href="{{ prefix or '' }}app-course.html">
+        <span class="sidebar-menu-text">Course</span>
+      </a>
+    </li>
+    <li class="sidebar-menu-item {% if slug === 'app-lesson' %} active{% endif %}">
+        <a class="sidebar-menu-button" href="{{ prefix or '' }}app-lesson.html">
+        <span class="sidebar-menu-text">Lesson</span>
+      </a>
+    </li>
+  </ul>
+</li>

@@ -1,0 +1,58 @@
+/////////////////
+// GENERAL TAG //
+/////////////////
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  .material-icons {
+    font-size: inherit;
+  }
+  > .material-icons {
+    margin-right: 5px;
+  }
+}
+
+.badge-notifications {
+  border-radius: 100px;
+  padding: 0 .5rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+/////////////
+// FILTERS //
+/////////////
+
+.badge-filter {
+  a { 
+    color: inherit; 
+    padding: 0 2px 0 0;
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &_name {
+    opacity: .7;
+    padding-right: 5px;
+  }
+}
+
+//////////////////////////////
+// CUSTOM GENERAL TAG SIZES //
+//////////////////////////////
+
+.badge-lg {
+  padding: 6px 12px;
+}
+
+///////////////////////////////////////////
+// Override Bootstrap color-yiq contrast //
+///////////////////////////////////////////
+
+.badge-success,
+.badge-warning {
+  color: $white;
+}

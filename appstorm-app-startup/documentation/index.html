@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="ThemeStarz">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<title>AppStorm Documentation</title>
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+
+    <div class="sidebar">
+        <section class="logo p-4">
+            <img src="assets/img/logo.png" alt="">
+        </section>
+        <section>
+            <nav class="navbar navbar-light navbar-expand-lg main-navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--end navbar-toggler-->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <div class="navbar-nav flex-column"></div>
+                    <!--end navbar-nav-->
+                </div>
+                <!--end collapse-->
+            </nav>
+        </section>
+    </div>
+
+    <main>
+        <div class="main-content">
+            <header class="d-flex">
+                <div class="align-self-center">
+                    <figure>
+                        <i class="fa fa-user"></i>
+                        <span><strong>Author:</strong> ThemeStarz</span>
+                    </figure>
+                    <figure>
+                        <i class="fa fa-globe"></i>
+                        <span><strong>Web:</strong></span>
+                        <a href="https://themeforest.net/user/themestarz/portfolio">http://www.themestarz.net</a>
+                    </figure>
+                </div>
+            </header>
+            <!--end header d-flex-->
+
+            <!--MAIN TITLE **********************************************************************************-->
+            <div class="content">
+                <section id="main-title">
+                    <h1><strong>Appstorm</strong> Documentation</h1>
+                    <p>
+                        Thank you for purchasing our template! This is the documentation that will help you with customizing
+                        and orienting in the template.
+                    </p>
+                    <p>
+                        <strong class="note">Important!</strong> This is a static HTML template and not a WordPress theme!
+                        It doesn't have any admin/back-end panel and it is created for the developers or people who knows
+                        the HTML code. If this is not you have intended to buy, you can
+                        <a href="https://help.market.envato.com/hc/en-us/articles/202821460-Can-I-Get-A-Refund-">ask for a refund</a>.
+                    </p>
+                </section>
+
+                <!--GETTING STARTED *************************************************************************-->
+                <section id="getting-started">
+                    <header>
+                        <h2>
+                            <a href="#getting-started" class="h-link">Getting started</a>
+                        </h2>
+                        <p>
+                            Before you dive into code, you we want you to explain how the template is structured and organized,
+                            what support is included, what tools did we have used etc.
+                        </p>
+                    </header>
+                    <!--end #getting-started-->
+                    <section id="help-and-support">
+                        <header>
+                            <h3>
+                                <a href="#help-and-support" class="h-link">Help & Support</a>
+                            </h3>
+                            <p>
+                                All the items you buy are quality checked by Envato. Any future update made available
+                                by the author is included with every purchase.
+                            </p>
+                        </header>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Item support includes:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check mr-1 text-success"></i> Availability of the author to answer questions</li>
+                                    <li><i class="fa fa-check mr-1 text-success"></i> Get assistance with reported bugs and issues</li>
+                                    <li><i class="fa fa-check mr-1 text-success"></i> Help with included 3rd party assets</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5>Item support does not include:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-times mr-1 text-danger"></i>Customizations and installations</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>For more details, view the <a href="https://themeforest.net/page/item_support_policy">item support policy</a></p>
+                        <p>
+                            Support is node via email at <a href="mailto:support@themestarz.net">support@themestarz.net</a> (recommended)
+                            or <a href="https://themeforest.net/author_dashboard">Our Dashboard</a>.
+                        </p>
+                        <h5>How to find a version of your template</h5>
+                        <p>
+                            Go to <code>assets/css</code> and open <code>style.css</code>. Here you can find a <code>Version</code> at the very top.
+                        </p>
+                    </section>
+                    <!--end #help-and-support-->
+
+                    <section id="folder-structure">
+                        <header>
+                            <h3>
+                                <a href="#folder-structure" class="h-link">Folder Structure</a>
+                            </h3>
+                        </header>
+                        <article class="folder-structure">
+                            <figure>
+                                <h6>
+                                    <i class="fa fa-folder mr-2"></i>Appstorm
+                                </h6>
+                                <p class="ml-4">
+                                    Main (root) folder with index HTML files and assets folder
+                                </p>
+                            </figure>
+
+                            <article class="pl-4">
+                                <figure>
+                                    <h6>
+                                        <i class="fa fa-folder mr-2"></i>assets
+                                    </h6>
+                                </figure>
+                                <article class="pl-4">
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>bootstrap
+                                        </h6>
+                                        <p class="ml-4">
+                                            Includes minified <a href="https://getbootstrap.com/">Bootstrap</a> JS and CSS files.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>css
+                                        </h6>
+                                        <p class="ml-4">
+                                            Template <code>style.css</code> and other plugins CSS files.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>font-awesome
+                                        </h6>
+                                        <p class="ml-4">
+                                            <a href="https://fontawesome.com/">Font Awesome</a> (icons) CSS files and font files.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>img
+                                        </h6>
+                                        <p class="ml-4">
+                                            Images that are used in the template.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>js
+                                        </h6>
+                                        <p class="ml-4">
+                                            Template <code>custom.js</code> and other JS plugins.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>pcss
+                                        </h6>
+                                        <p class="ml-4">
+                                            Source for <a href="http://postcss.org/">PostCSS</a> (<code>.pcss</code>)
+                                            files that we've used to create <code>style.css</code>
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>php
+                                        </h6>
+                                        <p class="ml-4">
+                                            PHP files used in the template. For example <code>email.php</code> for email sending.
+                                        </p>
+                                    </figure>
+                                    <figure>
+                                        <h6>
+                                            <i class="fa fa-folder mr-2"></i>svg
+                                        </h6>
+                                        <p class="ml-4">
+                                            SVG images. Mostly used as backgrounds.
+                                        </p>
+                                    </figure>
+                                </article>
+                            </article>
+                        </article>
+                    </section>
+                    <!--end #folder-structure-->
+
+                    <section id="image-placeholders">
+                        <header>
+                            <h3>
+                                <a href="#image-placeholders" class="h-link">Image Placeholders</a>
+                            </h3>
+                            <p>
+                                All images are replaced by placeholder due to copyright policy. We cannot include them
+                                in the package and sell it.
+                            </p>
+                        </header>
+
+                        <a href="http://www.themestarz.net/html/appstorm/preview-images.zip" class="btn btn-primary mb-4">
+                            <h4 class="px-4">Download Images from Preview</h4>
+                        </a>
+                        <p>
+                            Unzip the package and replace the new <code>img</code> address with the old one in the <code>assets</code> folder
+                        </p>
+
+                    </section>
+                    <!--end #help-and-support-->
+
+                </section>
+                <!--end #getting-started-->
+
+                <!--LAYOUT **********************************************************************************-->
+                <section id="layout">
+                    <header>
+                        <h2>
+                            <a href="#layout" class="h-link">Layout</a>
+                        </h2>
+                        <p>
+                            Template is build with <strong>mobile first</strong> approach. It is responsive
+                            and uses Bootstrap grid system. Base layout includes three sections.
+                        </p>
+                        <ul>
+                            <li>Hero</li>
+                            <li>Main Content</li>
+                            <li>Footer</li>
+                        </ul>
+                    </header>
+
+                    <article>
+<pre class="prettyprint">
+&lt;html&gt;
+&lt;head&gt;
+&lt;!--CSS includes--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;ts-page-wrapper&quot;&gt;
+
+    &lt;header id=&quot;ts-hero&quot;&gt;&lt;!--hero--&gt;&lt;/header&gt;
+    &lt;main id=&quot;ts-content&quot;&gt;&lt;!--main content--&gt;&lt;/main&gt;
+    &lt;footer id=&quot;ts-footer&quot;&gt;&lt;!--footer--&gt;&lt;/footer&gt;
+
+&lt;/div&gt;
+&lt;script&gt;
+    //JS plugins includes
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                    </article>
+
+                    <section id="layout-hero">
+                        <header>
+                            <h3>
+                                <a href="#layout-hero" class="h-link">Hero</a>
+                            </h3>
+                            <p>
+                                <code>ts-hero</code> section includes main page description, background image (slider) and main navigation.
+                                We are using Bootstrap grid system along with <code>flex</code> styling which helps to vertically center
+                                the content in the Hero section. Here is the structure:
+                            </p>
+                        </header>
+                        <article>
+<pre class="prettyprint code-it">
+<header id="ts-hero">
+
+<nav class="navbar fixed-top"><!--main navigation--></nav>
+<div class="container align-self-center"><!--content--></div>
+
+<!--This code is only for background slider. Otherwise is not used. -->
+<div class="ts-background"><!--background slides--></div>
+
+</header>
+</pre>
+                            <p>
+                                <code>fixed-top</code> is used to stick the navigation to the top of the page, even
+                                when scrolling. More about <code>navbar</code> <a href="https://getbootstrap.com/docs/4.0/components/navbar/#placement">placements</a>.
+                            </p>
+                            <p>
+                                <code>align-self-center</code> is one of the flex CSS features which helps with
+                                elements positioning. In this case the <code>container</code> element is
+                                vertically centered. More about <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flex</a>.
+                            </p>
+                            <p>
+                                <code>ts-background</code> this code is used when you have background slider. <a href="#hero-background">Ream more about it</a>.
+                            </p>
+                        </article>
+                    </section>
+                    <!--end #hero-->
+
+                    <section id="layout-page-content">
+                        <header>
+                            <h3>
+                                <a href="#layout-page-content" class="h-link">Page Content</a>
+                            </h3>
+                            <p>
+                                <code>ts-content</code> is the wrapper for the main page content - this includes all the
+                                content except the hero and footer. <code>ts-content</code> consists of
+                                <code>ts-block</code> &lt;section&gt; elements.
+                            </p>
+                        </header>
+                        <article>
+<pre class="prettyprint code-it">
+<main id="ts-content">
+<section id="section-id" class="ts-block">
+<div class="container">
+    <div class="ts-title">
+        <h2>How It Works</h2>
+    </div>
+
+    <!--Further section content-->
+
+</div>
+</section>
+</main>
+</pre>
+                            <p>
+                                <code>ts-content</code> main page content wrapper.
+                            </p>
+                            <p>
+                                <code>ts-block</code> this class gives the section top and bottom padding.
+                            </p>
+                            <p>
+                                <code>ts-title</code> wrapper for the section headings. Can include one or multiple headings
+                                <code>h2, h3, h4</code> etc.
+                            </p>
+                        </article>
+                    </section>
+                    <!--end #page-content-->
+
+                    <section id="layout-footer">
+                        <header>
+                            <h3>
+                                <a href="#layout-footer" class="h-link">Footer</a>
+                            </h3>
+                            <p>
+                                <code>ts-footer</code> includes map and contact form.
+                            </p>
+                        </header>
+                        <article>
+<pre class="prettyprint code-it">
+<footer id="ts-footer">
+<!--Footer content-->
+</footer>
+</pre>
+                        </article>
+                    </section>
+                    <!--end #hero-->
+
+                </section>
+                <!--end #layout-->
+
+                <!--BASIC CUSTOMIZATION *********************************************************************-->
+                <section id="basic-customization">
+                    <header>
+                        <h2>
+                            <a href="#basic-customization" class="h-link">Basic Customization</a>
+                        </h2>
+                    </header>
+                    <section id="how-to-edit-files">
+                        <h3>
+                            <a href="#how-to-edit-files" class="h-link">How To Edit Files</a>
+                        </h3>
+                        <p>
+                            You can use whatever text editor you like, even default Text Editor in the OS.
+                            But we recommend to use the one with th syntax highlighting such as:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://atom.io/">Atom</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pspad.com/en/">PSPad</a>
+                            </li>
+                            <li>
+                                <a href="https://notepad-plus-plus.org/">Notepad++</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--end #how-to-edit-files-->
+
+                    <section id="how-to-change-fonts">
+                        <h3>
+                            <a href="#how-to-change-fonts" class="h-link">How To Change Fonts</a>
+                        </h3>
+                        <ol>
+                            <li>
+                                If you are not satisfied with the default font, you can choose from hundreds ones from the
+                                <a href="https://fonts.google.com/">Google Fonts</a>. After you are happy with the selected
+                                font, click <strong>SEE SPECIMEN</strong>. You'll be redirected to to font detail. Then
+                                click <strong class="text-uppercase"><i class="fa fa-plus-circle"></i> Select this font</strong>.
+                                Popup window will show with text "1 Family Selected" - click it. Then you can customize your
+                                selection by clicking <strong>Customize</strong>. When you are done <strong>copy</strong> the
+                                text in <strong class="text-uppercase">standard</strong> tab.
+                                <br>
+                                For example
+                                <code class="code-it">
+                                    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
+                                </code>
+                            </li>
+                            <li>
+                                Then open the HTML file where you want to change fonts and find the <code class="code-it"><link>...</code>
+                                element which loads the Google font in the <code>&lt;head&gt;</code> tag and place your copied code.
+                            </li>
+                            <li>
+                                Final step is to change the font family in the <code>stle.css</code> file. Open it and find <code>body</code>
+                                tag on the beginning of the file and <code>font-family</code> inside. Go back to Google Fonts page where you have
+                                chose your font and copy the line placed in the <strong>Specify in CSS</strong>. In this example it is
+                                <code>font-family: 'Source Sans Pro', sans-serif;</code>
+                            </li>
+                        </ol>
+                    </section>
+                    <!--end #how-to-change-fonts-->
+
+                    <section id="how-to-change-color-simple-way">
+                        <h3>
+                            <a href="#how-to-change-color-simple-way" class="h-link">How To Change Colors - Simple Way</a>
+                        </h3>
+                        <p>
+                            There are two method how to change the main color. 1st Just by replacing the HEX color value in the <code>style.css</code>
+                            (simple) and 2nd by installing <a href="https://nodejs.org/en/">node.sj</a> and PostCSS (advanced). Here is the simple way.
+                        </p>
+                        <p>
+                            Let say, that you want to change the default red color to blue one:
+                        </p>
+                        <ol>
+                            <li>Open the <code>style.css</code> in <strong>assets/css/</strong> folder</li>
+                            <li>Find the HEX value of the <strong>Default Color</strong>. If the default color is red, then HEX value is #ff0000</li>
+                            <li>In your text editor find <strong>Replace</strong> or <strong>Find and Replace</strong> function</li>
+                            <li>As original text enter the red color #ff0000 (template default color)</li>
+                            <li>As <strong>Replace with</strong> enter HEX value of blue color #0000ff</li>
+                        </ol>
+
+                    </section>
+
+                    <section id="font-awesome-icons">
+                        <h3>
+                            <a href="#font-awesome-icons" class="h-link">Font Awesome Icons</a>
+                        </h3>
+                        <p>
+                            <a href="https://fontawesome.com/">Font Awesome</a> includes more than 900 icons that can be easily used on your site.
+                            For example you want the download link with the PDF icon.
+                        </p>
+                        <ol>
+                            <li>
+                                Go to <a href="https://fontawesome.com/icons">Font Awesome Icons</a> gallery and find the one you need.
+                                I our example it is <code>file-pdf</code>. Click the detail, then find and copy <code class="code-it"><i class="fas fa-file-pdf"></i></code>.
+                            </li>
+                            <li>
+                                Place the copied line to your link: <code class="code-it"><a href="file.pdf"><i class="fas fa-file-pdf"></i> Download File</a></code>
+                            </li>
+                            <li>
+                                Final result: <a href="file.pdf"><i class="fas fa-file-pdf"></i> Download File</a>
+                            </li>
+                        </ol>
+                    </section>
+                    <!--end #font-awesome-icons-->
+
+                    <section id="bootstrap-utilities">
+                        <h3>
+                            <a href="#bootstrap-utilities" class="h-link">Bootstrap Utilities</a>
+                        </h3>
+                        <p>
+                            Template is using Bootstrap utilities very often. We think that it is better solution as writing
+                            all styles for every element into CSS file. It makes the style.css smaller and it is more flexible.
+                            You can find more about <a href="https://getbootstrap.com/docs/4.0/utilities/borders/">Bootstrap Utilities</a>.
+                        </p>
+                        <p>
+                            Especially <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Spacing</a> utilities are
+                            often used. Here is the example of heading with default margin and the one with custom margin.
+                        </p>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <h5>Heading Default Margin</h5>
+                                <p>This heading has default 15px margin bottom</p>
+<pre class="prettyprint">
+&lt;h5&gt;Default Heading&lt;/h5&gt;
+&lt;p&gt;This heading has default 15px margin bottom&lt;/p&gt;
+</pre>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mb-5">Heading Custom  Margin</h5>
+                                <p class="pl-3">This heading has <strong>5rem</strong> margin bottom and paragraph has <strong>1rem</strong> padding left</p>
+<pre class="prettyprint">
+&lt;h5 <strong>class="mb-5"</strong>&gt;Default Heading&lt;/h5&gt;
+&lt;p <strong>class="pl-3"</strong>&gt;This heading has default 5rem margin bottom and paragraph has 1rem padding left&lt;/p&gt;
+</pre>
+                            </div>
+                        </div>
+                    </section>
+                    <!--end #bootstrap-utilities-->
+
+                </section>
+                <!--end #basic-customization-->
+
+                <!--ADVANCED CUSTOMIZATION ******************************************************************-->
+                <section id="advanced-customization">
+                    <header>
+                        <h2>
+                            <a href="#advanced-customization" class="h-link">Advanced Customization</a>
+                        </h2>
+                    </header>
+                    <section id="compiling-css-with-postcss">
+                        <h3>
+                            <a href="#compiling-css-with-postcss" class="h-link">Compiling CSS with PostCSS</a>
+                        </h3>
+                        <p>
+                            Template is built with <a href="http://postcss.org/">PostCSS</a>. A tool for transforming
+                            CSS with JavaScript. We have stopped using SASS or LESS, because they are big and slow.
+                            In order to use PostCSS, you need to be a little bit familiar with the command line.
+                        </p>
+                        <section id="installing-and-using-postcss">
+                            <h4>
+                                <a href="#installing-and-using-postcss" class="h-link">Installing and Using PostCSS</a>
+                            </h4>
+                            <p>
+                                This process will guide you how to easily install and use PostCSS with command line.
+                            </p>
+                            <ol>
+                                <li>
+                                    Install <a href="https://nodejs.org/en/">node.js</a> to your computer. Note, that Windows XP is not supported.
+                                </li>
+                                <li>
+                                    After successful installation, open the <strong>Node.js command prompt</strong> from you installed applications.
+                                    Alternatively you can just run a command line in your operating system.
+                                </li>
+                                <li>
+                                    Now we need to install the PostCSS. In the opened command line enter <code>npm install -g postcss -g postcss-cli</code>.
+                                    This will install <a href="http://postcss.org/">PostCSS</a> and <a href="https://github.com/postcss/postcss-cli">PostCSS-CLI</a> (command line interface)
+                                </li>
+                                <li>
+                                    The next step is to install required PostCSS plugins. Again, into command line enter this:
+                                    <code>npm install
+                                        -g autoprefixer
+                                        -g postcss-mixins
+                                        -g postcss-nesting
+                                        -g postcss-import
+                                        -g precss
+                                        -g postcss-hexrgba
+                                        -g postcss-conditionals
+                                        -g postcss-for
+                                        -g postcss-pixels-to-rem
+                                        -g postcss-hocus
+                                        -g postcss-sass-color-functions
+                                        -g postcss-remove-root
+                                        -g postcss-if-media
+                                        -g css-mqpacker
+                                        -g perfectionist
+                                    </code>.
+                                    This will install all the plugins we have used.
+                                </li>
+                                <li>
+                                    You can now test, if your PostCSS is running by entering <code>postcss --help</code> into command line
+                                </li>
+                                <li>
+                                    Now you need to navigate into directory with your template. We'll use command line again. For example, your template is
+                                    in this path: <code>c:/websites/cryptonex</code>. But PostCSS (.pcss) files are placed deeper in the <code>assets/pcss</code> folder.
+                                    So the full path is <code>c:/websites/cryptonex/assets/pcss</code>. So enter the path to your template <code>\path\to\assets\pcss</code>.
+                                    In our example enter this to command line:
+                                    <code>\websites\cryptonex\assets\pcss</code>
+                                </li>
+                                <li>
+                                    The final step is to compile the <code>.pcss</code> files into <code>.css</code>. Enter this into command line:
+                                    <code>postcss pcss/style.pcss -o css/style.css --watch --no-map</code>
+                                </li>
+                            </ol>
+                            <p>
+                                Thanks to <code>--watch</code> flag, the last command allows you to edit <code>.pcss</code> file without reentering the command.
+                                It will automatically determine that the file is changed and recompiles it.
+                            </p>
+                        </section>
+                        <!--end #installing-and-using-postcss-->
+                        <section id="postcss-files-structure" class="mt-5">
+                            <h4>
+                                <a href="#postcss-files-structure" class="h-link">PostCSS files structure</a>
+                            </h4>
+                            <p>
+                                PostCSS <code>.pcss</code> files are located in <code>assets/pcss</code> folder. There are couple of another folders:
+                            </p>
+                            <ul>
+                                <li>
+                                    <code>components</code> components that are used in HTML code
+                                </li>
+                                <li>
+                                    <code>helpers</code> these files are utilities used in HTML and PostCSS files
+                                </li>
+                                <li>
+                                    <code>plugins</code> styling for plugins
+                                </li>
+                                <li>
+                                    <code>template-specific</code> styling for components that are unique for the template
+                                </li>
+                            </ul>
+                        </section>
+                        <!--end #postcss-files-structure-->
+                    </section>
+                    <!--end #compiling-css-with-postcss-->
+
+                    <section id="javascript">
+                        <h3>
+                            <a href="#javascript" class="h-link">JavaScript</a>
+                        </h3>
+                        <p>
+                            JavaScript (JS) files/plugins are located in the <code>assets/js</code> folder and in the HTML file
+                            they are called using <code class="code-it"><script></script></code> code. All JS files
+                            are located at the bottom of the HTML file. <code>custom.js</code> file is the template's
+                            JS file that includes scripts for running other plugins.
+                        </p>
+                        <p>
+                            <strong class="note">Note:</strong> You will need to modify only <code>custom.js</code> file.
+                            Read more about it in the <a href="#plugins">Plugins</a> section.
+                        </p>
+                    </section>
+                    <!--end #javascript-->
+                </section>
+                <!--end #advanced-customization-->
+
+                <!--BACKGROUND STYLING **********************************************************************-->
+                <section id="styling-the-background">
+                    <header>
+                        <h2>
+                            <a href="#styling-the-background" class="h-link">Styling the Background</a>
+                        </h2>
+                        <p>
+                            You can easily change the color of the background without editing of the CSS/PCSS files.
+                            This can be applied to whole <code>.ts-block</code> section or just to <code>&lt;p></code>
+                            paragraph.
+                        </p>
+                    </header>
+                    <section id="background-color">
+                        <h3>
+                            <a href="#background-color" class="h-link">Background Color</a>
+                        </h3>
+                        <p>
+                            To change the background color of the element use <code>data-bg-color</code> attribute.
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Change the background color of the section to black.
+                        </p>
+<pre class="prettyprint">
+&lt;section class=&quot;ts-block&quot; <strong>data-bg-color=&quot;#000&quot;</strong>&gt;
+&lt;h2&gt;This Section is Black&lt;/h2&gt;
+&lt;/section&gt;
+</pre>
+                        <p>
+                            As a background color value you can use HEX <code>#000</code>, RGBA <code>rgba(0,0,0,1)</code>
+                            or just a string <code>black</code>
+                        </p>
+                    </section>
+                    <!--end background-color-->
+
+                    <section id="background-image">
+                        <h3>
+                            <a href="#background-image" class="h-link">Background Image</a>
+                        </h3>
+                        <p>
+                            To change the background image of the element use <code>data-bg-image</code> attribute.
+                            You can also add an <strong>opacity</strong> using <code>data-bg-image-opacity</code>
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Background image with the 40% opacity:
+                        </p>
+<pre class="prettyprint">
+&lt;section class=&quot;ts-block <strong><abbr title="This tells the script that it has to create a separate background element">ts-separate-bg-element</abbr></strong>&quot; <strong>data-bg-image="assets/img/background-jpg" data-bg-image-opacity=".4"</strong>&gt;
+&lt;h2&gt;This Section Has An Image&lt;/h2&gt;
+&lt;/section&gt;
+</pre>
+                        <p id="ts-separate-bg-element">
+                            <strong class="note">Important!</strong> If you are using <code>data-bg-image</code> on <code>ts-block</code>
+                            element, you must give it <code>ts-separate-bg-element</code>. This will create a <code>ts-background</code> element
+                            that will wrap a background image. Otherwise, the background image will be placed into element itself.
+                        </p>
+                    </section>
+                    <!--end background-image-->
+
+                    <section id="background-particles">
+                        <h3>
+                            <a href="#background-particles" class="h-link">Background particles</a>
+                        </h3>
+                        <p>
+                            Add the background particles effect into an element. Use <code>data-bg-particles-line-color</code>
+                            or <code>data-bg-particles-dot-color</code> to tell, that this element has to have background with particles.
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Blue background with the particles with the white lines and green dots.
+                        </p>
+<pre class="prettyprint">
+&lt;section class=&quot;ts-block <strong><abbr title="This tells the script that it has to create a separate background element">ts-separate-bg-element</abbr></strong>&quot; <strong>data-bg-color="#0000ff" data-bg-particles-line-color="rgba(255,255,255,.6)" data-bg-particles-dot-color="#00ff00"</strong>&gt;
+&lt;h2&gt;This Section Has An Particles&lt;/h2&gt;
+&lt;/section&gt;
+</pre>
+                        <p>
+                            <strong class="note">Important!</strong> If you are using <code>data-bg-particles-line-color</code>
+                            or <code>data-bg-particles-dot-color</code> on <code>ts-block</code>
+                            element, you must give it <code>ts-separate-bg-element</code>. This will create a <code>ts-background</code> element
+                            that will wrap a background particles. Otherwise, the background particles will be placed into element itself.
+                        </p>
+                    </section>
+                    <!--end background-particles-->
+
+                    <section id="parallax-background">
+                        <h3>
+                            <a href="#parallax-background" class="h-link">Parallax Background</a>
+                        </h3>
+                        <p>
+                            Easy background parallax effect is done using <code>data-bg-parallax="scroll"</code> attribute along
+                            with <a href="#background-image"><code>data-bg-image</code></a> or <a href="#background-particles"><code>data-bg-particles</code></a>.
+                            Then you need to setup the speed of the parallax effect by adding <code>data-bg-parallax-speed="3"</code>.
+                        </p>
+<pre class="prettyprint">
+&lt;section class=&quot;ts-block <strong>ts-separate-bg-element</strong>&quot; <strong>data-bg-image="assets/img/background.jpg" data-bg-parallax="scroll" data-bg-parallax-speed="3"</strong>&gt;
+&lt;h2&gt;This Section Has A Parallax&lt;/h2&gt;
+&lt;/section&gt;
+</pre>
+                    </section>
+                    <!--end #parallax-background-->
+                </section>
+                <!--end #styling-the-background-->
+
+                <!--HERO BACKGROUND *************************************************************************-->
+                <section id="hero-background">
+                    <header>
+                        <h2>
+                            <a href="#hero-background" class="h-link">Hero Background</a>
+                        </h2>
+                        <p>
+                            Setting background for <code>ts-hero</code> is also done by <code>data-bg-color</code>, <code>data-bg-image</code>
+                            or <code>data-bg-particles</code> attributes and with <code>ts-separate-bg-element</code> class. The difference
+                            when you want a <strong>background slide</strong> is that <code>ts-background</code> element has to be placed
+                            manually (how the background is created is <a href="#ts-separate-bg-element">is described here</a>).
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Background slider with three slides and parallax effect.
+                        </p>
+<pre class="prettyprint">
+<span style="opacity:.6;">&lt;header id=&quot;ts-hero&quot; </span>class=&quot;<strong>ts-has-overlay</strong>&quot;<span style="opacity:.6;">&gt;
+
+&lt;nav class=&quot;navbar navbar-expand-xl navbar-dark fixed-top ts-separate-bg-element&quot; data-bg-color=&quot;#131c2b&quot;&gt;&lt;/nav&gt;
+&lt;div class=&quot;container align-self-center&quot;&gt;&lt;/div&gt;
+</span><strong>
+&lt;div class=&quot;ts-background&quot; data-bg-parallax=&quot;scroll&quot; data-bg-parallax-speed=&quot;3&quot;&gt;
+&lt;div class=&quot;ts-slider ts-parallax-element&quot;&gt;
+    &lt;div class=&quot;owl-carousel&quot; data-owl-autoplay=&quot;1&quot; data-owl-loop=&quot;1&quot; data-owl-fadeout=&quot;1&quot;&gt;
+        &lt;div class=&quot;ts-slide&quot; data-bg-image=&quot;assets/img/bg-1.jpg&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;ts-slide&quot; data-bg-image=&quot;assets/img/bg-2.jpg&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;ts-slide&quot; data-bg-image=&quot;assets/img/bg-3.jpg&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</strong>
+<span style="opacity:.6;">
+&lt;/header&gt;
+</span>
+</pre>
+                        <h5>Used code:</h5>
+                        <ul>
+                            <li>
+                                <code>ts-has-overlay</code> gives an element dark overlay with 50% opacity. <a href="#ts-has-overlay">Read more here</a>
+                            </li>
+                            <li>
+                                <code>ts-slider</code> is wrapper for the slider
+                            </li>
+                            <li>
+                                <code>ts-parallax-element</code> tells the script that parallax effect has to be applied on this element
+                            </li>
+                            <li>
+                                <code>owl-carousel</code> slider JS plugin. Read more about <a href="#owl-carousel">Owl Carousel and settings</a>.
+                            </li>
+                            <li>
+                                <code>slide</code> slide with path to image in <code>data-bg-image</code>
+                            </li>
+                        </ul>
+                    </header>
+                </section>
+                <!--end #hero-->
+
+                <!--FORMS ***********************************************************************************-->
+                <section id="forms">
+                    <header>
+                        <h2>
+                            <a href="#forms" class="h-link">Forms</a>
+                        </h2>
+                    </header>
+                    <p>
+                        Template uses <a href="https://getbootstrap.com/docs/4.0/components/forms/">Bootsrap</a> form structure
+                        and brings some small own styles.
+                    </p>
+                    <section id="simple-form">
+                        <h3>
+                            <a href="#simple-form" class="h-link">Simple Form</a>
+                        </h3>
+                        <p>
+                            Simple form with the one input an submit button.
+                        </p>
+<pre class="code-it prettyprint">
+<form class="ts-form">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Send a Message</button>
+</div>
+</form>
+</pre>
+                    </section>
+                    <!--end #simple-form-->
+
+                    <section id="form-styling">
+                        <h3>
+                            <a href="#form-styling" class="h-link">Form Styling</a>
+                        </h3>
+                        <p>
+                            We'll use the same code from the example above, but now we will add transparent inputs
+                            and label will be placed into the input, and after click it moves above it.
+                        </p>
+<pre class="prettyprint">
+<span style="opacity: .6">&lt;form class=&quot;ts-form </span><strong>ts-inputs__transparent ts-labels-inside-input</strong>&quot;&gt;
+<span style="opacity: .6">&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Your Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Send a Message&lt;/button&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</span>
+</pre>
+                        <ul>
+                            <li>
+                                <code>ts-inputs__transparent</code> input background will be transparent. Only border remains
+                            </li>
+                            <li>
+                                <code>ts-labels-inside-input</code> place the label inside the input
+                            </li>
+                        </ul>
+                        <p>
+                            <strong class="note">Note:</strong> if you use <code>ts-labels-inside-input</code> you have to remove the <code>placeholder</code>
+                        </p>
+                    </section>
+                    <!--end #form-styling-->
+
+                    <section id="email-form">
+                        <h3>
+                            <a href="#email-form" class="h-link">Email Form</a>
+                        </h3>
+                        <p>
+                            Appstorm comes with working email forms. You can use them for contact, subscribe or other
+                            forms that will collect the user's email address and send it to your receiving one.
+                        </p>
+                        <p>
+                            <strong class="note">Important!</strong> Every email form must have <code>ts-form-email</code> class
+                        </p>
+                        <div class="alert alert-danger my-5">
+                            <p class="mb-0">
+                                <strong>Note:</strong> It is better to test email sending on live server
+                                or on localhost with the library such as <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a>
+                                as it does not work on a local machine.
+                            </p>
+                        </div>
+                        <section id="setup-a-path-to-php-file">
+                            <h4>
+                                <a href="#setup-a-path-to-php-file">Setup a path to PHP file</a>
+                            </h4>
+                            <p>
+                                In your <code>&lt;form&gt;</code> element you need to specify a path to the <code>.php</code>
+                                file that will handle the email sending using <code>data-php-path</code> attribute.
+                                <br>
+                                As a default it is <code>assets/php/email.php</code>.
+                            </p>
+<pre class="prettyprint">
+<span style="opacity: .6">&lt;form class=&quot;ts-form</span> ts-form-email&quot; <strong>data-php-path="assets/php/email.php"</strong>&gt;
+<span style="opacity: .6">&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Your Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Send a Message&lt;/button&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</span>
+</pre>
+                            <p>
+                                <strong class="note">Note:</strong> You can use different <code>.php</code> file
+                                for each <code>form</code>. For example one for <strong>contact form</strong>
+                                and another for <strong>subscribe form</strong>.
+                            </p>
+                        </section>
+                        <!--end #setup-a-path-to-php-file-->
+
+                        <section id="setup-a-receiving-email-address">
+                            <h4>
+                                <a href="#setup-a-receiving-email-address" class="h-link">Setup a Receiving Email Address</a>
+                            </h4>
+                            <p>
+                                You have to setup your own email address for email receiving. As a default it is
+                                <code>hello@example.com</code> and it is located in the <code>assets/php/email.php</code>.
+                                <br>
+                                How to change the address:
+                            </p>
+                            <p>
+                                Go to <code>assets/php/email.php</code> and find <code>$to = 'hello@example.com';</code>
+                                and change the address to your own.
+                            </p>
+                        </section>
+
+                    </section>
+                    <!--end #form-styling-->
+
+                </section>
+                <!--end #forms-->
+
+                <!--PLUGINS ***********************************************************************************-->
+                <section id="plugins">
+                    <header>
+                        <h2>
+                            <a href="#plugins" class="h-link">Plugins</a>
+                        </h2>
+                    </header>
+                    <p>
+                        Here is the list of the JS plugins used in the template. Usually they are loaded from <code>assets/js</code> folder.
+                    </p>
+                    <div class="alert alert-danger p-3">
+                        <strong>Important!</strong> Every JS plugin loaded from <code>assets/js</code> must be called BEFORE the <code><strong>custom.js</strong></code>
+                    </div>
+<pre class="prettyprint">
+&lt;script src="assets/js/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Plugins from assets/js --&gt;
+
+&lt;script src="assets/js/custom.js"&gt;&lt;/script&gt;
+
+&lt;!-- Other inline plugins such as Google Maps --&gt;
+</pre>
+
+                    <section id="google-maps">
+                        <header>
+                            <h3>
+                                <a href="#google-maps" class="h-link">Google Maps</a>
+                            </h3>
+                            <a href="https://developers.google.com/maps/documentation/" class="btn btn-secondary my-3"><i class="fa fa-globe"></i> Plugin Documentation</a>
+                        </header>
+                        <section id="create-a-map-element">
+                            <h4>
+                                <a href="#create-a-map-element" class="h-link">Create a Map Element</a>
+                            </h4>
+                            <p>
+                                To use a Google Maps on your site, you need to create a map element with <code>map</code>
+                                class and give it a unique ID first:
+                            </p>
+<pre class="code-it prettyprint">
+&lt;div id="map-element" class="map"&gt;&lt;/div&gt;
+</pre>
+
+                        </section>
+                        <!--end #create-a-map-element-->
+
+                        <section id="get-a-google-maps-api-key">
+                            <h4>
+                                <a href="#get-a-google-maps-api-key" class="h-link">Get a Google Maps API Key</a>
+                            </h4>
+                            <p>
+                                You have to obtain your unique API key for the Google Map, otherwise you can see
+                                this error:
+                            </p>
+                            <div class="alert alert-secondary p-4 text-center">
+                                <h4 class="mb-1 mt-0">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </h4>
+                                <strong>Oops Something Went Wrong Error</strong>
+                            </div>
+                            <p>
+                                To get an API key:
+                            </p>
+                            <ul>
+                                <li>
+                                    Go to <a href="https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key">
+                                    https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key
+                                    </a>
+                                </li>
+                                <li>
+                                    Click <div class="badge badge-primary p-2 text-uppercase">Get a Key</div>
+                                </li>
+                                <li>
+                                    After you have successfully obtained a key, open an HTML page with your map
+                                </li>
+                                <li>
+                                    Scroll to very bottom where the <code>&lt;script&gt;</code> tags are
+                                </li>
+                                <li>
+                                    Find <code>&lt;script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"&gt;&lt;/script&gt;</code>
+                                </li>
+                                <li>
+                                    Replace <code>YOUR_API_KEY</code> with your new API key
+                                </li>
+                            </ul>
+                        </section>
+                        <!--end #get-a-google-maps-api-key-->
+
+                        <section id="configuring-the-map">
+                            <h4>
+                                <a href="#configuring-the-map" class="h-link">Configuring the Map</a>
+                            </h4>
+                            <p>
+                                You can set center of the map, marker and map style. In the very bottom of the HTML file with the <code>map</code> element you can find:
+                            </p>
+<pre class="prettyprint">
+&lt;script&gt;
+var latitude = 34.038405;
+var longitude = -117.946944;
+var markerImage = "assets/img/map-marker-w.png";
+var mapElement = "map-element";
+var mapStyle = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#424b5b"},{"weight":2},{"gamma":"1"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"weight":0.6},{"color":"#545b6b"},{"gamma":"0"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#545b6b"},{"gamma":"1"},{"weight":"10"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#666c7b"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#545b6b"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#424a5b"},{"lightness":"0"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#666c7b"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2e3546"}]}];
+google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapStyle, mapElement));
+&lt;/script&gt;
+</pre>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <code>var latitude</code> latitude of the map center
+                                </li>
+                                <li>
+                                    <code>var longitude</code> longitude of the map center
+                                </li>
+                                <li>
+                                    <code>var markerImage</code> path to marker image. You can choose between <code>map-marker.png</code>
+                                    (black marker) and the <code>map-marker-w.png</code> (white marker).
+                                </li>
+                                <li>
+                                    <code>mapElement</code> ID of the map element
+                                </li>
+                                <li>
+                                    <code>mapStyle</code> color theme of the map. You can find more on <a href="https://snazzymaps.com/">Snazzy Maps</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!--end #google-maps-->
+
+                    </section>
+                    <!--end #google-maps-->
+
+                    <section id="wavify">
+                        <h3>
+                            <a href="#wavify" class="h-link">Wavify</a>
+                        </h3>
+                        <a href="https://github.com/peacepostman/wavify" class="btn btn-secondary my-3"><i class="fa fa-globe"></i> Plugin Documentation</a>
+                        <p>
+                            Plugin that creates a "wave" effect. Used as background.
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Two waves with different colors in Hero section. This example is taken from <code>index-waves.html</code>
+                        </p>
+<pre class="prettyprint">
+&lt;div id="ts-dynamic-waves" class="ts-background" data-bg-color="#1a1462"&gt;
+
+    &lt;svg class="ts-svg ts-parallax-element" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;defs&gt;&lt;/defs&gt;
+        &lt;path class="ts-dynamic-wave" d="" data-wave-color="#dd4b5b" data-wave-height=".6" data-wave-bones="4" data-wave-speed="0.15"/&gt;
+    &lt;/svg&gt;
+
+    &lt;svg class="ts-svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;defs&gt;&lt;/defs&gt;
+        &lt;path class="ts-dynamic-wave" d="" data-wave-color="#fff" data-wave-height=".2" data-wave-bones="6" data-wave-speed="0.2"/&gt;
+    &lt;/svg&gt;
+
+&lt;/div&gt;
+</pre>
+                        <p>
+                            <code>data-</code> attributes you can use within <code>&lt;path&gt;</code> element
+                        </p>
+                        <ul>
+                            <li>
+                                <code>data-wave-color</code> background color of the wave
+                            </li>
+                            <li>
+                                <code>data-wave-height</code> height of the wave in percents. <code>.1</code> means 10%, <code>1</code> means 100%
+                            </li>
+                            <li>
+                                <code>data-wave-bones</code> how many peaks the wave has to have
+                            </li>
+                            <li>
+                                <code>data-wave-speed</code> speed of the wave
+                            </li>
+                        </ul>
+                        <p>
+                        <p>
+                            <strong class="note">Note:</strong> class <code>ts-dynamic-wave</code> is necessary.
+                        </p>
+                        <p>
+                            <strong class="note">Note 2:</strong> In the <code>index-defaul.html</code> you can find, that the first wave is flipped
+                            (is upside down). We have used <code>ts-flip-x</code> utility to do that.
+                        </p>
+                    </section>
+                    <!--end count-down-->
+
+                    <section id="owl-carousel">
+                        <h3>
+                            <a href="#owl-carousel" class="h-link">Owl Carousel</a>
+                        </h3>
+                        <a href="https://owlcarousel2.github.io/OwlCarousel2/" class="btn btn-secondary my-3"><i class="fa fa-globe"></i> Plugin Documentation</a>
+                        <p>
+                            This plugin is used for creating slider/carousels from list of images or even HTML elements.
+                            Carousel must be wrapped in <code>owl-carousel</code> class.
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Carousel with 3 visible slides, 30px margin, auto play, infinite loop and 5s pause.
+                        </p>
+                        <figure>
+                            <img src="assets/img/owl-carousel.jpg" class="mw-100">
+                        </figure>
+<pre class="prettyprint">
+&lt;div class="owl-carousel" data-owl-items="3" data-owl-margin="30" data-owl-autoplay="1" data-owl-loop="1" data-owl-autoplay-timeout="2000"&gt;
+&lt;img src="assets/img/1.jpg"&gt;
+&lt;img src="assets/img/2.jpg"&gt;
+&lt;img src="assets/img/3.jpg"&gt;
+&lt;/div>
+</pre>
+                        <p>
+                            All <code>data-*</code> attributes you can use with <code>owl-carousel</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <code>data-owl-items</code> number of items in carousel. <strong>1</strong> item for fullscreen carousel
+                            </li>
+                            <li>
+                                <code>data-owl-nav</code> show or hide navigation arrows. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-dots</code> show or hide navigation dots. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-center</code> center carousel. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-loop</code> infinite loop. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-auto-width</code> carousel will move according the slides width. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-nav-container</code> container for external navigation. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-autoplay</code> carousel will play automatically. Default: <code>0</code>
+                            </li>
+                            <li>
+                                <code>data-owl-autoplay-timeout</code> pause between slides in milliseconds. Default: <code>5000</code>
+                            </li>
+                            <li>
+                                <code>data-owl-auto-height</code> height of the carousel will automatically change according the slide height. Default: <code>5000</code>
+                            </li>
+                            <li>
+                                <code>data-owl-fadeout</code> fade effect between transitions. Default: <code>0</code>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--end #owl-carousel-->
+
+                    <section id="scrolla">
+                        <h3>
+                            <a href="#scrolla" class="h-link">Scrolla</a>
+                        </h3>
+                        <a href="https://github.com/maximzhurkin/jquery-scrolla" class="btn btn-secondary my-3"><i class="fa fa-globe"></i> Plugin Documentation</a>
+                        <p>
+                            jQuery plugin for reveal animations when scrolling. It's done by using these <code>data-*</code> attributes:
+                        </p>
+                        <ul>
+                            <li>
+                                <code>data-animate</code> animation name in CSS
+                            </li>
+                            <li>
+                                <code>data-delay</code> delay after which animation has to start
+                            </li>
+                            <li>
+                                <code>data-duration</code> how long does the animation runs
+                            </li>
+                            <li>
+                                <code>data-offset</code> offset from the bottom of the screen
+                            </li>
+                        </ul>
+                        <p>
+                            <strong class="note">Note:</strong> As default, this plugin requires <a href="https://daneden.github.io/animate.css/">Animate.css</a>
+                            for css animation name in <code>data-animate</code>.
+                        </p>
+                        <h5 id="scrolla-own-animations" class="mt-5">
+                            <a href="#scrolla-own-animations">Own Animations</a>
+                        </h5>
+                        <p>
+                            We have prepared a few own animations that are more fluid that Animate.css. Below is the example.
+                        </p>
+                        <p>
+                            <strong>Example:</strong> Give each column <strong>fade in from bottom up</strong> animation with 0.1s delay.
+                        </p>
+<pre class="code-it prettyprint">
+<div class="row">
+<div class="col" data-animate="ts-fadeInUp">Column 1</div>
+<div class="col" data-animate="ts-fadeInUp" data-delay="0.1s">Column 2</div>
+<div class="col" data-animate="ts-fadeInUp" data-delay="0.2s">Column 3</div>
+</div>
+</pre>
+                        <p>
+                            Here is the list of prepared animations:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><code>ts-fadeInUp</code> fade in and move up 20px</li>
+                            <li><code>ts-fadeInDown</code> fade in and move down 20px</li>
+                            <li><code>ts-fadeInLeft</code> fade in and move 20px from left</li>
+                            <li><code>ts-fadeInRight</code> fade in and move 20px from right</li>
+                            <li><code>ts-zoomIn</code> zoom (scale) the element from 50% size to regular size</li>
+                            <li><code>ts-zoomInShort</code> zoom (scale) the element from 90% size to regular size</li>
+                        </ul>
+                    </section>
+                    <!--end #scrolla-->
+
+                    <section id="validation">
+                        <h3>
+                            <a href="#validation" class="h-link">Validation</a>
+                        </h3>
+                        <a href="https://jqueryvalidation.org/" class="btn btn-secondary my-3"><i class="fa fa-globe"></i>jQuery Validation Plugin</a>
+                        <a href="https://github.com/Thrilleratplay/jquery-validation-bootstrap-tooltip" class="btn btn-secondary my-3"><i class="fa fa-globe"></i>jQuery Validation Bootstrap Tooltip</a>
+                        <p>
+                            Form validation is done by <a href="https://jqueryvalidation.org/">jQuery Validation Plugin</a>. If you use <code>required</code> property on the input,
+                            the popup tooltip will show.
+                        </p>
+                    </section>
+
+                </section>
+                <!--end #plugins-->
+
+                <!--UTILITIES *********************************************************************************-->
+                <section id="utilities">
+                    <header>
+                        <h2>
+                            <a href="#utilities" class="h-link">Utilities</a>
+                        </h2>
+                    </header>
+                    <p>
+                        Template is using <a href="https://getbootstrap.com/docs/4.0/utilities/borders/">Bootstrap Utilities</a>
+                        along with custom ones. Here is the list of available custom utilities:
+                    </p>
+                    <section id="borders">
+                        <h3>
+                            <a href="#borders" class="h-link">Borders</a>
+                        </h3>
+                        <ul class="list-unstyled column-count-2">
+                            <li><code>ts-border-radius__sm</code> 2px border radius</li>
+                            <li><code>ts-border-radius__md</code> 4px border radius</li>
+                            <li><code>ts-border-radius__lg</code> 8px border radius</li>
+                            <li><code>ts-border-radius__xl</code> 12px border radius</li>
+                            <li><code>ts-border-none</code> removes any border</li>
+                            <li><code>ts-border-bottom</code> 1px light grey border on bottom</li>
+                        </ul>
+                    </section>
+                    <!--end #borders-->
+                    <section id="font-color">
+                        <h3>
+                            <a href="#font-color" class="h-link">Font Color</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-font-color__white</code> white text color</li>
+                            <li><code>ts-font-color__black</code> black text color</li>
+                        </ul>
+                    </section>
+                    <!--end #font-color-->
+                    <section id="column-count">
+                        <h3>
+                            <a href="#column-count" class="h-link">Column Count</a>
+                        </h3>
+                        <p>
+                            Split the list of items into columns. You can specify resolution <code>xl</code>, <code>lg</code>
+                            <code>md</code>, <code>sm</code> for each <code>ts-column-count</code>.
+                        </p>
+                        <ul class="list-unstyled ">
+                            <li><code>ts-column-count-*-1</code> 1 column</li>
+                            <li><code>ts-column-count-*-2</code> 2 columns</li>
+                            <li><code>ts-column-count-*-3</code> 3 column</li>
+                        </ul>
+                    </section>
+                    <!--end #column-count-->
+                    <section id="flip">
+                        <h3>
+                            <a href="#flip" class="h-link">Flip</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-flip-x</code> flip the element over the X axis</li>
+                            <li><code>ts-flip-y</code> flip the element over the Y axis</li>
+                        </ul>
+                    </section>
+                    <!--end #flip-->
+                    <section id="height">
+                        <h3>
+                            <a href="#height" class="h-link">Height</a>
+                        </h3>
+                        <ul class="list-unstyled column-count-2">
+                            <li><code>ts-height__50px</code> 50px height</li>
+                            <li><code>ts-height__100px</code> 100px height</li>
+                            <li><code>ts-height__150px</code> 150px height</li>
+                            <li><code>ts-height__200px</code> 200px height</li>
+                            <li><code>ts-height__250px</code> 250px height</li>
+                            <li><code>ts-height__300px</code> 300px height</li>
+                            <li><code>ts-height__350px</code> 350px height</li>
+                            <li><code>ts-height__400px</code> 400px height</li>
+                            <li><code>ts-height__450px</code> 450px height</li>
+                            <li><code>ts-height__500px</code> 500px height</li>
+                        </ul>
+                    </section>
+                    <!--end #height-->
+                    <section id="list-divided">
+                        <h3>
+                            <a href="#list-divided" class="h-link">List Divided</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-list-divided</code> divide the items in a list with 1px border</li>
+                        </ul>
+                    </section>
+                    <!--end #list-divided-->
+                    <section id="margin">
+                        <h3>
+                            <a href="#margin" class="h-link">Margin</a>
+                        </h3>
+                        <ul class="list-unstyled column-count-2">
+                            <li><code>ts-mt__0</code> margin top 0</li>
+                            <li><code>ts-mr__0</code> margin right 0</li>
+                            <li><code>ts-mb__0</code> margin bottom 0</li>
+                            <li><code>ts-ml__0</code> margin left 0</li>
+                        </ul>
+                    </section>
+                    <!--end #margin-->
+                    <section id="no-gutters">
+                        <h3>
+                            <a href="#no-gutters" class="h-link">No Gutters</a>
+                        </h3>
+                        <p>
+                            Removes padding from col*. Apply on <code>row</code> class
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><code>no-gutters</code> removes padding from cols</li>
+                        </ul>
+                    </section>
+                    <!--end #no-gutters-->
+                    <section id="overflow">
+                        <h3>
+                            <a href="#overflow" class="h-link">Overflow</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-overflow__hidden</code> overflow hidden</li>
+                            <li><code>ts-overflow__visible</code> overflow visible</li>
+                        </ul>
+                    </section>
+                    <!--end #overflow-->
+                    <section id="position">
+                        <h3>
+                            <a href="#position" class="h-link">Positon</a>
+                        </h3>
+                        <p>Combine it with the <strong>absolute</strong> position.</p>
+                        <ul class="list-unstyled column-count-4">
+                            <li><code>ts-top__0</code> top 0%</li>
+                            <li><code>ts-top__50</code> top 50%</li>
+                            <li><code>ts-top__100</code> top 100%</li>
+                            <li><code>ts-right__0</code> right 0%</li>
+                            <li><code>ts-right__50</code> right 50%</li>
+                            <li><code>ts-right__100</code> right 100%</li>
+                            <li><code>ts-bottom__0</code> bottom 0%</li>
+                            <li><code>ts-bottom__50</code> bottom 50%</li>
+                            <li><code>ts-bottom__100</code> bottom 100%</li>
+                            <li><code>ts-left__0</code> left 0%</li>
+                            <li><code>ts-left__50</code> left 50%</li>
+                            <li><code>ts-left__100</code> left 100%</li>
+                        </ul>
+                    </section>
+                    <!--end #position-->
+                    <section id="opacity">
+                        <h3>
+                            <a href="#opacity" class="h-link">Opacity</a>
+                        </h3>
+                        <ul class="list-unstyled column-count-2">
+                            <li><code>ts-opacity__5</code> .05 opacity</li>
+                            <li><code>ts-opacity__10</code> .1 opacity</li>
+                            <li><code>ts-opacity__20</code> .2 opacity</li>
+                            <li><code>ts-opacity__30</code> .3 opacity</li>
+                            <li><code>ts-opacity__40</code> .4 opacity</li>
+                            <li><code>ts-opacity__50</code> .5 opacity</li>
+                            <li><code>ts-opacity__60</code> .6 opacity</li>
+                            <li><code>ts-opacity__70</code> .7 opacity</li>
+                            <li><code>ts-opacity__80</code> .8 opacity</li>
+                            <li><code>ts-opacity__90</code> .9 opacity</li>
+                        </ul>
+                    </section>
+                    <!--end #opacity-->
+                    <section id="padding">
+                        <h3>
+                            <a href="#padding" class="h-link">Padding</a>
+                        </h3>
+                        <p>
+                            Although, Bootstrap has <code>p*-0</code> utility,
+                            but sometimes you need to remove just one side of padding and it is not possible with the same Bootstrap's padding utility.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><code>ts-pt__0</code> removes padding top (0px)</li>
+                            <li><code>ts-pr__0</code> removes padding right(0px)</li>
+                            <li><code>ts-pb__0</code> removes padding bottom (0px)</li>
+                            <li><code>ts-pl__0</code> removes padding left (0px)</li>
+                        </ul>
+                    </section>
+                    <!--end #padding-->
+                    <section id="shadow">
+                        <h3>
+                            <a href="#shadow" class="h-link">Shadow</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-shadow__sm</code> small shadow</li>
+                            <li><code>ts-shadow__md</code> medium shadow</li>
+                            <li><code>ts-shadow__lg</code> large shadow</li>
+                            <li><code>ts-shadow__none</code> removes shadow</li>
+                        </ul>
+                    </section>
+                    <!--end #shadow-->
+                    <section id="width">
+                        <h3>
+                            <a href="#width" class="h-link">Width</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-width__10px</code> 10px width</li>
+                            <li><code>ts-width__20px</code> 20px width</li>
+                            <li><code>ts-width__30px</code> 30px width</li>
+                            <li><code>ts-width__40px</code> 40px width</li>
+                            <li><code>ts-width__50px</code> 50px width</li>
+                            <li><code>ts-width__100px</code> 100px width</li>
+                            <li><code>ts-width__200px</code> 200px width</li>
+                            <li><code>ts-width__300px</code> 300px width</li>
+                            <li><code>ts-width__400px</code> 400px width</li>
+                            <li><code>ts-width__500px</code> 500px width</li>
+                        </ul>
+                    </section>
+                    <!--end #width-->
+                    <section id="z-index">
+                        <h3>
+                            <a href="#z-index" class="h-link">Z-Index</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-z-index__-1</code> z-index -1</li>
+                            <li><code>ts-z-index__0</code> z-index 0</li>
+                            <li><code>ts-z-index__1</code> z-index 1</li>
+                            <li><code>ts-z-index__2</code> z-index 2</li>
+                            <li><code>ts-z-index__1000</code> z-index 1000</li>
+                        </ul>
+                    </section>
+                    <!--end #z-index-->
+
+                    <section id="other-utilities">
+                        <h3>
+                            <a href="#other-utilities" class="h-link">Other Utilities</a>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><code>ts-text-small</code> 14px text</li>
+                            <li><code>ts-xs-text-center</code> center the text on xs (mobile) resolutions</li>
+                            <li id="ts-has-overlay"><code>ts-has-overlay</code> element gets black overlay with 50% opacity</li>
+                        </ul>
+                    </section>
+                    <!--end #other-utilities-->
+
+                </section>
+                <!--end #utilities-->
+            </div>
+            <!--end content-->
+        </div>
+        <!--end main-content-->
+    </main>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/code-prettify-master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trackpad-scroll-emulator/1.0.8/jquery.trackpad-scroll-emulator.min.js"></script>
+
+    <script>
+        $(".code-it").each(function(){
+            $(this).text( $(this).html() );
+        });
+
+        $(".main-content h2 a").each(function(e){
+            var navItemText = $(this).text();
+            var navItemHref = $(this).attr("href");
+            var htmlCode =[];
+
+            $(this).closest("section").find("h3").each(function(e){
+                var href = $(this).find("a").attr("href");
+                htmlCode += '<a href="'+href+'" class="small">'+ $(this).find("a").text() +'</a>';
+            });
+            $(".main-navigation .navbar-nav").append(
+                '<article class="nav-sec" id="sec-'+ navItemHref +'">' +
+                '<a class="nav-item nav-link" href="'+ navItemHref +'">'+ navItemText +'</a>' +
+                htmlCode +
+                '</article>'
+            );
+        });
+
+        $(".main-navigation .small").on("click", function(){
+            $(".main-navigation .small").removeClass("active");
+            $(this).addClass("active");
+        });
+        $("a[href*='#']:not(.nav-item)").on("click",function(){
+            var href = $(this).attr("href");
+            $(".main-content").find("section").removeClass("highlight-it");
+            $(".main-content").find(href).addClass("highlight-it");
+        });
+    </script>
+
+</body>
+</html>

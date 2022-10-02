@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////////////////
+// <div class="custom-select-icon">                                        //
+//   <select class="custom-select custom-select-icon__select">...</select> //
+//   <span class="material-icons custom-select-icon__icon">sort</span>     //
+// </div>                                                                  //
+/////////////////////////////////////////////////////////////////////////////
+
+.custom-select-icon {
+  position: relative;
+  z-index: 0;
+  &__select {
+    padding-left: $custom-select-padding-x + $custom-select-indicator-padding;
+    &.form-control-lg {
+      padding-left: $input-btn-padding-x-lg + $custom-select-indicator-padding;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: $custom-select-padding-x;
+    padding-top: $custom-select-padding-y;
+    line-height: inherit !important;
+    font-size: $font-size-base;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .form-control-sm + &__icon,
+  .custom-select-sm + &__icon {
+    font-size: $custom-select-font-size-sm;
+  }
+  .form-control-lg + &__icon {
+    padding-top: $input-btn-padding-y-lg;
+    font-size: $font-size-lg;
+  }
+}

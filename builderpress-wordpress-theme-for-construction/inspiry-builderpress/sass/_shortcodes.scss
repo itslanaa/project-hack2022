@@ -1,0 +1,115 @@
+//alert
+p.message {
+  padding: 20px 25px;
+  position: relative;
+  .close {
+    line-height: 11px;
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    background: transparent;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.bg-info {
+  border-left: 3px solid #afd9ee;
+  background-color: #d9edf7;
+}
+
+.bg-warning {
+  border-left: 3px solid #f7ecb5;
+  background-color: #fcf8e3;
+}
+
+.bg-success {
+  border-left: 3px solid #c1e2b3;
+  background-color: #dff0d8;
+}
+
+.bg-danger {
+  border-left: 3px solid #e4b9b9;
+  background-color: #f2dede;
+}
+
+.Shortcode_btn {
+  &.bp-button {
+    @extend .montserrat-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $theme-bg-dark;
+    display: inline-block;
+  }
+  &.bp-button-plain {
+    padding: 14px 30px;
+
+  }
+
+  &.button-yellow-border {
+    border: 2px solid $theme-yellow;
+    padding: 12px 28px;
+
+  }
+  &.button-dark {
+    background: $theme-bg-dark;
+    color: #ffffff;
+    &:hover {
+      background: #ffffff;
+      color: $theme-bg-dark;
+    }
+    &.hover-to-yellow {
+      &:hover {
+        background: $theme-yellow;
+        color: $theme-bg-dark;
+      }
+    }
+  }
+
+  &.button-yellow {
+    background: $theme-yellow;
+    &:hover {
+      color: $theme-yellow;
+      background: $theme-bg-dark;
+
+    }
+  }
+
+  &.read-more {
+    @extend .montserrat;
+    text-transform: uppercase;
+    color: $theme-bg-dark;
+    font-weight: 700;
+    &:hover {
+      color: $theme-bg-dark;
+    }
+  }
+
+  &.bp-lined {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $theme-yellow;
+      position: absolute;
+      bottom: -15px;
+      transition: .2s all ease-in-out;
+      pointer-events: none;
+
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+    i {
+      margin-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// @material/elevation
+@use '@material/elevation/mixins' as mdc-elevation-mixins;
+
+.layout-boxed {
+  @include media-breakpoint-up(lg) {
+    > .mdk-drawer-layout {
+      padding: 1rem 0;
+    }
+  }
+
+  .page-content {
+    @include media-breakpoint-up(lg) {
+      @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+      margin: 0 1rem 0 0;
+      border-radius: 10px;
+    }
+    overflow: hidden;
+  }
+
+  #default-drawer {
+    @include media-breakpoint-up(lg) {
+      .mdk-drawer__content {
+        padding-top: 1rem;
+      }
+      .sidebar {
+        background-color: transparent !important;
+        box-shadow: none;
+        border: none;
+        border-radius: 10px;
+        padding: 0 1rem 0 0;
+
+        .open {
+          background: transparent !important;
+        }
+      }
+    }
+
+    .sidebar-brand {
+      @include mdc-elevation-mixins.elevation(3, $shadow-baseline-color, $shadow-opacity-boost);
+      margin-bottom: 2rem;
+      height: $navbar-height;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background-color: white;
+
+      @include media-breakpoint-up(lg) {
+        border-radius: 10px;
+        margin-left: 1rem;
+      }
+
+      &-icon {
+        margin-left: 1rem;
+        margin-right: .5rem;
+        margin-bottom: 0;
+        width: 2.5rem;
+      }
+    }
+
+    .sidebar-brand-dark {
+      color: white;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .sidebar-menu > .sidebar-menu-item {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__layout {
+      padding: 1rem 0;
+    }
+  }
+}

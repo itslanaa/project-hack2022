@@ -1,0 +1,1345 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Inspiry BuilderPress\n"
+"POT-Creation-Date: 2020-03-26 16:49+0500\n"
+"PO-Revision-Date: 2019-04-03 19:17+0500\n"
+"Last-Translator: M Saqib Sarwar <saqib@inspirythemes.com>\n"
+"Language-Team: M Saqib Sarwar <saqib@inspirythemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:9
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:10
+msgid "404"
+msgstr ""
+
+#: 404.php:12
+msgid "Oops!"
+msgstr ""
+
+#: 404.php:12
+msgid "We can not seem to find the page you are looking for."
+msgstr ""
+
+#: 404.php:14
+msgid "Back to Home"
+msgstr ""
+
+#: archive-project.php:90 page-templates/template-projects.php:180
+#: taxonomy-project-category.php:87
+msgid "Project Detail"
+msgstr ""
+
+#: archive-project.php:100 archive-service.php:65 archive.php:51 author.php:51
+#: index.php:58 page-templates/template-projects.php:190
+#: page-templates/template-services.php:147
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: archive-service.php:36 page-templates/template-services.php:116
+msgid "view detail"
+msgstr ""
+
+#: archive.php:36 author.php:37 index.php:41 search.php:41 single.php:41
+msgid "0 Comment"
+msgstr ""
+
+#: archive.php:36 author.php:37 index.php:41 search.php:41 single.php:41
+msgid "1 Comment"
+msgstr ""
+
+#: archive.php:36 author.php:37 comments.php:13 index.php:41 search.php:41
+#: single.php:41
+msgid "% Comments"
+msgstr ""
+
+#: archive.php:42 author.php:43 index.php:47 search.php:48
+msgid "Read More"
+msgstr ""
+
+#: comments.php:13
+msgid "No Comment"
+msgstr ""
+
+#: comments.php:13
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:41
+msgid "Name"
+msgstr ""
+
+#: comments.php:47
+msgid "Email"
+msgstr ""
+
+#: comments.php:52
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:56
+msgid "Comment"
+msgstr ""
+
+#: footer.php:107
+msgid "© Copyright"
+msgstr ""
+
+#: footer.php:107
+msgid " All Rights Reserved"
+msgstr ""
+
+#: functions.php:91
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:125 functions.php:126
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:372
+msgid "Default Sidebar"
+msgstr ""
+
+#: functions.php:374
+msgid "Sidebar for main blog page and archive pages."
+msgstr ""
+
+#: functions.php:383
+msgid "Footer 1st column"
+msgstr ""
+
+#: functions.php:385
+msgid "Sidebar for footer first column."
+msgstr ""
+
+#: functions.php:394
+msgid "Footer 2nd column"
+msgstr ""
+
+#: functions.php:396
+msgid "Sidebar for footer second column."
+msgstr ""
+
+#: functions.php:405
+msgid "Footer 3rd column"
+msgstr ""
+
+#: functions.php:407
+msgid "Sidebar for footer third column."
+msgstr ""
+
+#: functions.php:416
+msgid "Footer 4th column"
+msgstr ""
+
+#: functions.php:418
+msgid "Sidebar for footer 4th column."
+msgstr ""
+
+#: functions.php:436
+msgid "..."
+msgstr ""
+
+#: functions.php:465
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:465
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:532
+msgid "PREV"
+msgstr ""
+
+#: functions.php:533
+msgid "NEXT"
+msgstr ""
+
+#: functions.php:536 inc/breadcrumbs.php:216
+msgid "Page"
+msgstr ""
+
+#: inc/breadcrumbs.php:12
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumbs.php:176 inc/breadcrumbs.php:180 inc/breadcrumbs.php:184
+#: inc/breadcrumbs.php:191 inc/breadcrumbs.php:195 inc/breadcrumbs.php:200
+msgid "Archives"
+msgstr ""
+
+#: inc/breadcrumbs.php:211
+msgid "Author:"
+msgstr ""
+
+#: inc/breadcrumbs.php:221
+msgid "Search results for:"
+msgstr ""
+
+#: inc/breadcrumbs.php:226
+msgid "Error 404"
+msgstr ""
+
+#: inc/customizer/custom/control-separator.php:30
+msgid ""
+"<a target=\"_blank\" href=\"https://inspirythemes.github.io/builderpress-"
+"docs/customizer/#google-map-coordinates\">Consult Documentation</a> to learn "
+"how to get <strong>Google Map Coordinates</strong> and <strong>Google Map "
+"API Key</strong>"
+msgstr ""
+
+#: inc/customizer/customizer-blog.php:13 partials/banner/banner-blog.php:119
+#: partials/banner/banner-blog.php:147
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer/customizer-blog.php:23
+msgid "Enter blog banner heading"
+msgstr ""
+
+#: inc/customizer/customizer-blog.php:24
+#: inc/inspiry-woocommerce-functions.php:112
+msgid "Default page title will be shown if field is empty"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:15
+#: inc/customizer/customizer-header.php:14 inc/customizer/customizer.php:24
+msgid "None"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:25
+msgid "Call To Action Bar"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:35
+msgid "Show/Hide Cta Bar"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:40
+#: inc/customizer/customizer-header.php:98
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:41
+#: inc/customizer/customizer-header.php:99
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:54
+msgid "Upload an image for background"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:55
+msgid "recommended size of image is 1900x200"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:73
+msgid "Select overlay color for background"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:74
+msgid "Default color is #ffd800"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:86
+msgid "CTA Banner Heading"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:100
+msgid "CTA Heading Color"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:101
+#: inc/customizer/customizer-header.php:352
+msgid "Default color is #1a1a1a"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:113
+msgid "CTA banner text"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:127
+msgid "CTA Text Color"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:128
+msgid "Default color is #4b493d"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:138
+msgid "GET A QUOTE"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:141
+msgid "CTA Button text"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:153
+msgid "URL for CTA Button"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:154
+msgid "Enter URL or select page from \"Select CTA page\" below"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:168
+msgid "Select CTA Page"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:178
+#: inc/customizer/customizer-footer.php:185
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:199
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:212
+msgid "Footer Introduction Text"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:224
+msgid "Footer Button Text"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:236
+msgid "URL for Footer Button"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:237
+msgid "Enter URL or select page from \"Select Page To Link\" below"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:251
+msgid "Select Page To Link"
+msgstr ""
+
+#: inc/customizer/customizer-footer.php:263
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:29
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:34
+msgid "Header Layouts"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:50
+msgid "Header Layout"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:51
+msgid "Choose your desired layout."
+msgstr ""
+
+#: inc/customizer/customizer-header.php:68
+msgid "Enable Sticky Menu ?"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:73
+#: inc/customizer/customizer-miscellaneous.php:38
+#: inc/customizer/customizer-miscellaneous.php:60
+#: inc/customizer/customizer-miscellaneous.php:78
+#: inc/customizer/customizer-miscellaneous.php:101
+#: inc/customizer/customizer-miscellaneous.php:119 inc/theme-meta-box.php:16
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:74
+#: inc/customizer/customizer-miscellaneous.php:39
+#: inc/customizer/customizer-miscellaneous.php:61
+#: inc/customizer/customizer-miscellaneous.php:79
+#: inc/customizer/customizer-miscellaneous.php:102
+#: inc/customizer/customizer-miscellaneous.php:120 inc/theme-meta-box.php:17
+msgid "No"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:82
+msgid "Top Header Bar"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:93
+msgid "Show/Hide Top Bar"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:108
+msgid "Top Header Tagline"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:119
+msgid "Working Days"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:130
+msgid "Working Hours"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:141
+msgid "Close Days"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:152
+msgid "Close Text"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:161
+msgid "Header Contact Detail"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:170
+msgid "Label for phone number"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:182
+msgid "Enter phone number"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:198
+msgid "Upload a png/jpg image for phone icon 27x27"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:225
+msgid "Label for Email address"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:237
+msgid "Enter email address"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:253
+msgid "Upload a png/jpg image for email icon 27x27"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:277
+msgid "Get A Quote"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:280
+msgid "Header quote button text"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:291
+msgid "URL for quote Button"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:292
+msgid "Enter URL or select page from \"Select page for quote button\" below"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:306
+msgid "Select Page for quote button"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:315
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:321 inc/theme-meta-box.php:6
+msgid "Banner"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:333
+msgid "Banner Image"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:334
+msgid "Upload a banner image of size 1900x250"
+msgstr ""
+
+#: inc/customizer/customizer-header.php:351
+#: inc/inspiry-woocommerce-functions.php:123
+msgid "Banner Title Color"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:17
+msgid "Misc"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:22
+msgid "Pre Loading Screen"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:33
+msgid "Do you want to enable page loading screen?"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:45
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:55
+msgid "Enable Project Single Breadcrumbs?"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:73
+msgid "Enable Service Single Breadcrumbs?"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:86
+msgid "Project/Service Post Nav"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:96
+msgid "Enable Project Post Nav?"
+msgstr ""
+
+#: inc/customizer/customizer-miscellaneous.php:114
+msgid "Enable Service Post Nav?"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:13
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:28
+msgid "Default Theme Color Schemes"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:29
+msgid "Choose your desired Color Scheme."
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:50
+msgid "Custom Theme Color Scheme"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:51
+msgid "Enter your desired hex color (i.e #ffd800)"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:66
+msgid "Top main menu color"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:67
+msgid "Enter your desired hex color (i.e #ffffff)"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:82
+msgid "Top main menu hover color"
+msgstr ""
+
+#: inc/customizer/customizer-schemes.php:83
+msgid ""
+"Enter your desired hex color (i.e #ffffff). This color will also be applied "
+"on current menu item."
+msgstr ""
+
+#: inc/demo/one-click-demo-import.php:11
+msgid ""
+"Please waiting for a few minutes, do not close the window or refresh the "
+"page until the data is imported. </br> After importing this demo, you will "
+"have to set the permalinks settings to <strong>Post name</strong> from "
+"<strong>Settings > Permalinks</strong>. "
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:62
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:63
+msgid "This sidebar is for shop page"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:82
+msgid "Shop"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:94
+msgid "Upload an image for shop banner"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:95
+msgid ""
+"Default image from \"Header Section\" will be shown if no image selected."
+"(1900x250)"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:108
+msgid "Shop page banner title"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:126
+msgid "Default header color will be shown if no color selected"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:138
+msgid "Shop Products Per Page"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:142
+msgid ""
+"If field is empty, Default (Admin > Settings > reading ) blog posts per page "
+"will be applied"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:188
+msgid "Share on Facebook"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:193
+msgid "Share on Twitter"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:203
+msgid "Pin on Pinterest"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:247 woocommerce/cart/cart.php:126
+msgid "Remove this item"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:255 woocommerce/cart/cart.php:39
+#: woocommerce/cart/cart.php:97
+msgid "Quantity"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:268
+msgid "Cart Subtotal"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:276
+msgid "View Cart"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:278
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: inc/inspiry-woocommerce-functions.php:281
+msgid "No products in the cart."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:393
+#: inc/tgm/class-tgm-plugin-activation.php:912
+#: inc/tgm/class-tgm-plugin-activation.php:2618
+#: inc/tgm/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:394
+#: inc/tgm/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:395
+#: inc/tgm/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1019
+#: inc/tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1206
+#: inc/tgm/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/tgm/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/tgm/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgm/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/theme-meta-box.php:11
+msgid "Display Banner in Header? "
+msgstr ""
+
+#: inc/theme-meta-box.php:22
+msgid "Banner Title "
+msgstr ""
+
+#: inc/theme-meta-box.php:25
+msgid ""
+"Default title from customize option will be displayed if field is empty. "
+msgstr ""
+
+#: inc/theme-meta-box.php:29
+msgid "Title Color "
+msgstr ""
+
+#: inc/theme-meta-box.php:32
+msgid "Default color will be applied if no color selected. "
+msgstr ""
+
+#: inc/theme-meta-box.php:36
+msgid "Banner Background Image"
+msgstr ""
+
+#: inc/theme-meta-box.php:39
+msgid "Default background will be displayed if no image selected. "
+msgstr ""
+
+#: page-templates/template-projects.php:110
+msgid "All"
+msgstr ""
+
+#: partials/banner/banner-404.php:13
+msgid "404 - Page Not Found!"
+msgstr ""
+
+#: partials/banner/banner-blog.php:131
+msgid "Search Results"
+msgstr ""
+
+#: search.php:11
+msgid "Search Results for: "
+msgstr ""
+
+#: search.php:57
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching again can help."
+msgstr ""
+
+#: single-project.php:23
+msgid "In"
+msgstr ""
+
+#: single-project.php:135 single-service.php:106
+msgid "Related Projects"
+msgstr ""
+
+#: single-project.php:145 single-service.php:116
+msgid "View Project"
+msgstr ""
+
+#: single-project.php:184 single-service.php:252
+msgid "Previous"
+msgstr ""
+
+#: single-project.php:190 single-service.php:258
+msgid "Next"
+msgstr ""
+
+#: single-service.php:153
+msgid "Brochures"
+msgstr ""
+
+#: single-service.php:174
+msgid "Contact Us"
+msgstr ""
+
+#: single.php:55
+msgid "Pages:"
+msgstr ""
+
+#: single.php:65
+msgid "About Author"
+msgstr ""
+
+#: single.php:83
+msgid "View All Posts"
+msgstr ""
+
+#: taxonomy-project-category.php:97
+msgid "No projects were found."
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:31
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:41
+msgid "Return To Shop"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:30
+msgid "SHIPPING CART TOTALS"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:35 woocommerce/cart/cart-totals.php:36
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:60
+#, php-format
+msgid "estimated for %s"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:91 woocommerce/cart/cart-totals.php:92
+#: woocommerce/cart/cart.php:40 woocommerce/cart/cart.php:114
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:73
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:91
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:86
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:151
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:153
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:155
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:168
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:197
+msgid "CALCULATE SHIPPING"
+msgstr ""
+
+#: woocommerce/cart/cart.php:199
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:41
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:60
+#: woocommerce/cart/shipping-calculator.php:67
+#: woocommerce/cart/shipping-calculator.php:81
+msgid "State / county"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:68
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:95
+msgid "City"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:107
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:117
+msgid "Update Totals"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:28
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:65
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/content-product.php:53 woocommerce/loop/sale-flash.php:28
+#: woocommerce/related-products.php:53
+#: woocommerce/single-product/sale-flash.php:28
+msgid "Sale"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+msgid "Billing Address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:28
+msgid "Shipping Address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:41
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:74
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:81
+msgid "Edit"
+msgstr ""
+
+#: woocommerce/related-products.php:78
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/related-products.php:80
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/related.php:32
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:25
+msgid "You may also like&hellip;"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Inspiry BuilderPress"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://themeforest.net/user/InspiryThemes/portfolio"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A professionally designed WordPress theme for businesses related to "
+"construction industry."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Inspiry Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.inspirythemes.com/"
+msgstr ""

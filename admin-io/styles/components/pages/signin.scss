@@ -1,0 +1,91 @@
+
+
+.page-signin .signin-header, .page-signup .signin-header, .page-forgot .signin-header {
+  padding: 25px 0;
+  background-color: #fff;
+  border-top: 2px solid $color--primary;
+}
+
+.page-signin .logo,
+.page-signup .logo,
+.page-forgot .logo {
+  font-size: 46px;
+  font-weight: bold;
+  color: $color--primary;
+
+  md-icon {
+    height:100px;
+    width:100px;
+  }
+}
+
+.page-signin .logo a, .page-signup .logo a, .page-forgot .logo a {
+  color: $color--primary;
+}
+
+.page-signin .logo a:hover, .page-signup .logo a:hover, .page-forgot .logo a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.page-signin .main-body, .page-signup .main-body, .page-forgot .main-body {
+  padding: 20px 10px;
+}
+
+.page-signin .info, .page-signup .info, .page-forgot .info {
+  padding: 25px 0 0;
+  max-width: 420px;
+  margin: 0 auto 20px;
+}
+
+.page-signin .info h2, .page-signup .info h2, .page-forgot .info h2 {
+  font-size: 18px;
+  color: $color--accent;
+}
+
+.page-signin .form-container, .page-signup .form-container, .page-forgot .form-container {
+  max-width: 420px;
+  margin: 10px auto;
+}
+
+.page-signin .line-thru, .page-signup .line-thru, .page-forgot .line-thru {
+  margin: 1em 0;
+  display: block;
+  font-size: .875em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.page-signin .line-thru:before, .page-signup .line-thru:before, .page-forgot .line-thru:before {
+  width: 50px;
+  height: 10px;
+  background-color: #fff;
+  content: '';
+  margin: -5px 0 0 -20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.page-signin .line-thru:after, .page-signup .line-thru:after, .page-forgot .line-thru:after {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49%;
+  z-index: -2;
+}
+
+.signin-social {
+
+  button.md-default-theme {
+    height:40px;
+    width:40px;
+  }
+}

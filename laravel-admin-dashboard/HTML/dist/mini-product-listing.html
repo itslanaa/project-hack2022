@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en"
+      dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Product Listing</title>
+
+        <!-- Prevent the demo from appearing in search engines -->
+        <meta name="robots"
+              content="noindex">
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css"
+              href="assets/vendor/perfect-scrollbar.css"
+              rel="stylesheet">
+
+        <!-- App CSS -->
+        <link type="text/css"
+              href="assets/css/app.css"
+              rel="stylesheet">
+        <link type="text/css"
+              href="assets/css/app.rtl.css"
+              rel="stylesheet">
+
+        <!-- Material Design Icons -->
+        <link type="text/css"
+              href="assets/css/vendor-material-icons.css"
+              rel="stylesheet">
+        <link type="text/css"
+              href="assets/css/vendor-material-icons.rtl.css"
+              rel="stylesheet">
+
+        <!-- Font Awesome FREE Icons -->
+        <link type="text/css"
+              href="assets/css/vendor-fontawesome-free.css"
+              rel="stylesheet">
+        <link type="text/css"
+              href="assets/css/vendor-fontawesome-free.rtl.css"
+              rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async
+                src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-133433427-1');
+        </script>
+
+    </head>
+
+    <body class="layout-mini">
+
+        <div class="preloader"></div>
+
+        <!-- Header Layout -->
+        <div class="mdk-header-layout js-mdk-header-layout">
+
+            <!-- Header -->
+
+            <div id="header"
+                 class="mdk-header js-mdk-header m-0"
+                 data-fixed>
+                <div class="mdk-header__content">
+
+                    <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-dark  pr-0"
+                         id="navbar"
+                         data-primary>
+                        <div class="container-fluid p-0">
+
+                            <!-- Navbar toggler -->
+
+                            <button class="navbar-toggler navbar-toggler-custom navbar-toggler-right d-block"
+                                    type="button"
+                                    data-toggle="sidebar">
+                                <span class="material-icons">apps</span>
+                            </button>
+
+                            <!-- Navbar Brand -->
+                            <a href="mini-dashboard.html"
+                               class="navbar-brand ">
+
+                                <svg class="mr-2"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     fill="currentColor"
+                                     style="width:20px;"
+                                     viewBox="0 0 40 40">
+                                    <path d="M40 34.16666667c.01-3.21166667-2.58333333-5.82333334-5.795-5.835-1.94-.00666667-3.75666667.955-4.84166667 2.565-.10166666.155-.295.22333333-.47166666.16666666L11.94 25.66666667c-.19-.06-.31-.245-.28833333-.44333334.01-.07333333.015-.14833333.015-.22333333 0-.06833333-.005-.13833333-.01333334-.20666667-.02166666-.20166666.105-.39.3-.44666666l17.96-5.13c.13833334-.04.28666667-.005.39333334.09166666 1.05.97333334 2.42833333 1.51666667 3.86 1.525C37.38833333 20.83333333 40 18.22166667 40 15s-2.61166667-5.83333333-5.83333333-5.83333333C32.52 9.17166667 30.95333333 9.87833333 29.86 11.11c-.11.12166667-.28.16833333-.43666667.11833333L11.91 5.65333333c-.16-.05-.27333333-.19166666-.28833333-.35833333-.30333334-3.20166667-3.14333334-5.55166667-6.345-5.24833333S-.275 3.19.02833333 6.39166667c.28166667 2.99333333 2.79833334 5.28 5.805 5.275 1.64666667-.005 3.21333334-.71333334 4.30666667-1.945.11-.12166667.28-.16833334.43666667-.11833334l16.57 5.27166667c.22.06833333.34166666.30333333.27166666.52333333-.04166666.13333334-.14833333.23833334-.28333333.275L9.90333333 20.59666667c-.13333333.03833333-.275.00833333-.38166666-.08-1.03333334-.86833334-2.33833334-1.34666667-3.68833334-1.35C2.61166667 19.16666667 0 21.77833333 0 25s2.61166667 5.83333333 5.83333333 5.83333333c1.355-.005 2.665-.485 3.7-1.35833333.10833334-.09166667.25833334-.12.39333334-.07666667l18.29 5.81833334c.14.04333333.24666666.15666666.28.3.75666666 3.13166666 3.90833333 5.05666666 7.04 4.3C38.14833333 39.185 39.99 36.85333333 40 34.16666667z" />
+                                </svg>
+
+                                <span>flowdash</span>
+                            </a>
+
+                            <div class="navbar-collapse collapse flex">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown">Dashboards</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                               href="mini-dashboard.html">Default</a>
+                                            <a class="dropdown-item"
+                                               href="mini-analytics.html">Analytics</a>
+                                            <a class="dropdown-item"
+                                               href="mini-staff.html">CRM/Staff</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ecommerce.html">E-commerce</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown">Apps</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                               href="mini-app-activities.html">Trello</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-trello.html">Trello</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-projects.html">Projects</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-fullcalendar.html">Event Calendar</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-chat.html">Chat</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-email.html">Email</a>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="dropdown-header">Education</div>
+                                            <a class="dropdown-item"
+                                               href="mini-app-browse-courses.html">Browse Courses</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-course.html">Course</a>
+                                            <a class="dropdown-item"
+                                               href="mini-app-lesson.html">Lesson</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown active">
+                                        <a href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown">Pages</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                               href="mini-stories.html">Stories</a>
+                                            <a class="dropdown-item"
+                                               href="mini-invoice.html">Invoice</a>
+                                            <a class="dropdown-item"
+                                               href="mini-pricing.html">Pricing</a>
+                                            <a class="dropdown-item"
+                                               href="mini-edit-account.html">Edit Account</a>
+                                            <a class="dropdown-item"
+                                               href="mini-profile.html">Profile</a>
+                                            <a class="dropdown-item"
+                                               href="mini-payout.html">Payout</a>
+                                            <a class="dropdown-item"
+                                               href="login.html">Login</a>
+                                            <a class="dropdown-item"
+                                               href="signup.html">Sign Up</a>
+                                            <a class="dropdown-item"
+                                               href="mini-digital-product.html">Digital Product</a>
+                                            <a class="dropdown-item d-flex align-items-center active"
+                                               href="mini-product-listing.html">
+                                                <span class="flex mr-2">Product Listing</span>
+                                                <span class="badge badge-primary">NEW</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center"
+                                               href="mini-blank.html">
+                                                <span class="flex mr-2">Blank Page</span>
+                                                <span class="badge badge-primary">NEW</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown">Components</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                               href="mini-ui-buttons.html">Buttons</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-alerts.html">Alerts</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-avatars.html">Avatars</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-modals.html">Modals</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-charts.html">Charts</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-icons.html">Icons</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-forms.html">Forms</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-range-sliders.html">Range Sliders</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-datetime.html">Time &amp; Date</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-tables.html">Tables</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-tabs.html">Tabs</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-loaders.html">Loaders</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-drag.html">Drag &amp; Drop</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-pagination.html">Pagination</a>
+                                            <a class="dropdown-item"
+                                               href="mini-ui-vector-maps.html">Vector Maps</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown">Layouts</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                               href="product-listing.html">Default</a>
+                                            <a class="dropdown-item"
+                                               href="fluid-product-listing.html">Full Width Navs</a>
+                                            <a class="dropdown-item"
+                                               href="fixed-product-listing.html">Fixed Navs</a>
+                                            <a class="dropdown-item active"
+                                               href="mini-product-listing.html">Mini Sidebar + Navs</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="nav navbar-nav ml-auto d-none d-md-flex">
+                                <li class="nav-item dropdown">
+                                    <a href="#notifications_menu"
+                                       class="nav-link dropdown-toggle"
+                                       data-toggle="dropdown"
+                                       data-caret="false">
+                                        <i class="material-icons nav-icon navbar-notifications-indicator">notifications</i>
+                                    </a>
+                                    <div id="notifications_menu"
+                                         class="dropdown-menu dropdown-menu-right navbar-notifications-menu">
+                                        <div class="dropdown-item d-flex align-items-center py-2">
+                                            <span class="flex navbar-notifications-menu__title m-0">Notifications</span>
+                                            <a href="javascript:void(0)"
+                                               class="text-muted"><small>Clear all</small></a>
+                                        </div>
+                                        <div class="navbar-notifications-menu__content"
+                                             data-perfect-scrollbar>
+                                            <div class="py-2">
+
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <div class="avatar avatar-sm"
+                                                             style="width: 32px; height: 32px;">
+                                                            <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg"
+                                                                 alt="Avatar"
+                                                                 class="avatar-img rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="">A.Demian</a> left a comment on <a href="">FlowDash</a><br>
+                                                        <small class="text-muted">1 minute ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        New user <a href="#">Peter Parker</a> signed up.<br>
+                                                        <small class="text-muted">1 hour ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title rounded-circle">JD</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                        <div>Hey, how are you? What about our next meeting</div>
+                                                        <small class="text-muted">2 minutes ago</small>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <div class="avatar avatar-sm"
+                                                             style="width: 32px; height: 32px;">
+                                                            <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg"
+                                                                 alt="Avatar"
+                                                                 class="avatar-img rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="">A.Demian</a> left a comment on <a href="">FlowDash</a><br>
+                                                        <small class="text-muted">1 minute ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        New user <a href="#">Peter Parker</a> signed up.<br>
+                                                        <small class="text-muted">1 hour ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title rounded-circle">JD</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                        <div>Hey, how are you? What about our next meeting</div>
+                                                        <small class="text-muted">2 minutes ago</small>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <div class="avatar avatar-sm"
+                                                             style="width: 32px; height: 32px;">
+                                                            <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg"
+                                                                 alt="Avatar"
+                                                                 class="avatar-img rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="">A.Demian</a> left a comment on <a href="">FlowDash</a><br>
+                                                        <small class="text-muted">1 minute ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        New user <a href="#">Peter Parker</a> signed up.<br>
+                                                        <small class="text-muted">1 hour ago</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex">
+                                                    <div class="mr-3">
+                                                        <a href="#">
+                                                            <div class="avatar avatar-xs"
+                                                                 style="width: 32px; height: 32px;">
+                                                                <span class="avatar-title rounded-circle">JD</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                        <div>Hey, how are you? What about our next meeting</div>
+                                                        <small class="text-muted">2 minutes ago</small>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <a href="javascript:void(0);"
+                                           class="dropdown-item text-center navbar-notifications-menu__footer">View All</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="nav navbar-nav d-none d-sm-flex border-left navbar-height align-items-center">
+                                <li class="nav-item dropdown">
+                                    <a href="#account_menu"
+                                       class="nav-link dropdown-toggle"
+                                       data-toggle="dropdown"
+                                       data-caret="false">
+                                        <span class="mr-1 d-flex-inline">
+                                            <span class="text-light">Adrian D.</span>
+                                        </span>
+                                        <img src="assets/images/avatar/demi.png"
+                                             class="rounded-circle"
+                                             width="32"
+                                             alt="Frontted">
+                                    </a>
+                                    <div id="account_menu"
+                                         class="dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-item-text dropdown-item-text--lh">
+                                            <div><strong>Adrian Demian</strong></div>
+                                            <div class="text-muted">@adriandemian</div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item"
+                                           href="mini-dashboard.html"><i class="material-icons">dvr</i> Dashboard</a>
+                                        <a class="dropdown-item"
+                                           href="mini-profile.html"><i class="material-icons">account_circle</i> My profile</a>
+                                        <a class="dropdown-item"
+                                           href="mini-edit-account.html"><i class="material-icons">edit</i> Edit account</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item"
+                                           href="mini-login.html"><i class="material-icons">exit_to_app</i> Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- // END Header -->
+
+            <!-- Header Layout Content -->
+            <div class="mdk-header-layout__content">
+
+                <div class="mdk-drawer-layout js-mdk-drawer-layout"
+                     data-push
+                     data-responsive-width="992px">
+                    <div class="mdk-drawer-layout__content page">
+
+                        <div class="container page__heading-container">
+                            <div class="page__heading d-flex align-items-center">
+                                <div class="flex">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb mb-0">
+                                            <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+                                            <li class="breadcrumb-item active">Products</li>
+                                        </ol>
+                                    </nav>
+                                    <h1 class="m-0">Products</h1>
+                                </div>
+                                <a href=""
+                                   class="btn btn-success ml-3">Create</a>
+                            </div>
+                        </div>
+
+                        <div class="container page__container">
+                            <div class="card">
+
+                                <div class="table-responsive">
+
+                                    <div class="m-3">
+                                        <div class="row">
+                                            <div class="col-md-4">
+
+                                                <select name="#"
+                                                        class="form-control">
+                                                    <option value="-1">All</option>
+                                                    <option value="1">Hats</option>
+                                                    <option value="2">Coats</option>
+                                                    <option value="3">Jeans</option>
+                                                    <option value="4">T-Shirt</option>
+                                                    <option value="5">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="search-form search-form--light">
+                                                    <input type="text"
+                                                           class="form-control search"
+                                                           placeholder="Search">
+                                                    <button class="btn"
+                                                            type="button"
+                                                            role="button"><i class="material-icons">search</i></button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="table mb-0 thead-border-top-0 table-striped">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="width: 18px;">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-toggle-check-all"
+                                                               data-target="#products"
+                                                               id="customCheckAll">
+                                                        <label class="custom-control-label"
+                                                               for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                    </div>
+                                                </th>
+
+                                                <th style="width: 30px;"
+                                                    class="text-center">#ID</th>
+                                                <th>Product</th>
+                                                <th class="text-center">Stock</th>
+                                                <th class="">Category</th>
+                                                <th class="text-right">Price</th>
+                                                <th style="width: 100px; text-align: right;">
+                                                    <div class="dropdown pull-right">
+                                                        <a href="#"
+                                                           data-toggle="dropdown"
+                                                           class="dropdown-toggle">Bulk</a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="javascript:void(0)"
+                                                               class="dropdown-item"><i class="material-icons icon-18pt mr-1">work</i> Set Price</a>
+                                                            <a href="javascript:void(0)"
+                                                               class="dropdown-item"><i class="material-icons icon-18pt mr-1">archive</i> Archive</a>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="list"
+                                               id="products">
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_1">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#101</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/clem-onojeghuo-192088.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Bleu Snow Coat</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    4 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Coats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$22</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_2">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_2"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#102</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/lobostudio-hamburg-64728.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Navy Hat with Stripes</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    10 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Hats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$54</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_3">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_3"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#103</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/nina-strehl-140734.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Bleu Snow Coat</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    4 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Coats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$22</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_4">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_4"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#104</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/lobostudio-hamburg-64728.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Navy Hat with Stripes</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    10 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Hats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$54</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_5">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_5"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#105</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/clem-onojeghuo-192088.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Bleu Snow Coat</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    4 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Coats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$22</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_6">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_6"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#106</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/nina-strehl-140734.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Navy Hat with Stripes</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    10 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Hats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$54</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_7">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_7"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#107</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/clem-onojeghuo-192088.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Bleu Snow Coat</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    4 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Coats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$22</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_8">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_8"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#108</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/nina-strehl-140734.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Navy Hat with Stripes</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    10 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Hats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$54</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_9">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_9"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#109</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/lobostudio-hamburg-64728.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Bleu Snow Coat</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    4 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Coats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$22</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="text-center">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                               class="custom-control-input js-check-selected-row"
+                                                               id="customCheck1_10">
+                                                        <label class="custom-control-label"
+                                                               for="customCheck1_10"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-soft-dark">#110</div>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/avatars/clem-onojeghuo-192088.jpg"
+                                                         alt="product"
+                                                         style="width:35px"
+                                                         class="rounded mr-2">
+                                                    <a href="#">Navy Hat with Stripes</a>
+                                                </td>
+                                                <td style="width: 120px;"
+                                                    class="text-center">
+                                                    10 items</td>
+                                                <td style="width:200px">
+
+                                                    <i class="material-icons icon-18pt text-muted mr-1">list</i> <a href="#">Hats</a>
+
+                                                </td>
+
+                                                <td class="text-right">$54</td>
+                                                <td class="text-right"><a href="#"
+                                                       class="btn btn-sm btn-primary">EDIT</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="card-body text-right">
+                                    15 <span class="text-muted">of 25</span> <a href="#"
+                                       class="text-muted-light"><i class="material-icons ml-1">arrow_forward</i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- // END drawer-layout__content -->
+
+                    <!-- drawer -->
+                    <div class="mdk-drawer  js-mdk-drawer"
+                         id="default-drawer"
+                         data-align="start">
+                        <div class="mdk-drawer__content js-sidebar-mini"
+                             data-responsive-width="992px">
+
+                            <div class="sidebar sidebar-mini sidebar-primary sidebar-left"
+                                 data-perfect-scrollbar>
+                                <ul class="nav flex-column sidebar-menu mt-3"
+                                    id="sidebar-mini-tabs"
+                                    role="tablist">
+                                    <li class="sidebar-menu-item"
+                                        data-toggle="tooltip"
+                                        data-title="Dashboards"
+                                        data-placement="right"
+                                        data-boundary="window">
+                                        <a class="sidebar-menu-button"
+                                           href="#sm_dashboards"
+                                           data-toggle="tab"
+                                           role="tab"
+                                           aria-selected="true">
+                                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+                                            <span class="sidebar-menu-text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item"
+                                        data-toggle="tooltip"
+                                        data-title="Apps"
+                                        data-placement="right"
+                                        data-container="body"
+                                        data-boundary="window">
+                                        <a class="sidebar-menu-button"
+                                           href="#sm_apps"
+                                           data-toggle="tab"
+                                           role="tab"
+                                           aria-selected="false">
+                                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">slideshow</i>
+                                            <span class="sidebar-menu-text">Apps</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item  active "
+                                        data-toggle="tooltip"
+                                        data-title="Pages"
+                                        data-placement="right"
+                                        data-container="body"
+                                        data-boundary="window">
+                                        <a class="sidebar-menu-button"
+                                           href="#sm_pages"
+                                           data-toggle="tab"
+                                           role="tab">
+                                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">description</i>
+                                            <span class="sidebar-menu-text">Pages</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item"
+                                        data-toggle="tooltip"
+                                        data-title="UI Components"
+                                        data-placement="right"
+                                        data-container="body"
+                                        data-boundary="window">
+                                        <a class="sidebar-menu-button"
+                                           href="#sm_components"
+                                           data-toggle="tab"
+                                           role="tab">
+                                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">list</i>
+                                            <span class="sidebar-menu-text">UI Components</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-item"
+                                        data-toggle="tooltip"
+                                        data-title="Layouts"
+                                        data-placement="right"
+                                        data-boundary="window">
+                                        <a class="sidebar-menu-button"
+                                           href="#sm_layouts"
+                                           data-toggle="tab"
+                                           role="tab"
+                                           aria-controls="sm_layouts"
+                                           aria-selected="false">
+                                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_compact</i>
+                                            <span class="sidebar-menu-text">Layouts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar sidebar-light sidebar-left flex sidebar-secondary"
+                                 data-perfect-scrollbar>
+                                <div class="tab-content">
+                                    <div class="tab-pane"
+                                         id="sm_dashboards">
+                                        <div class="sidebar-heading">Dashboards</div>
+                                        <div class="sidebar-block p-0">
+                                            <ul class="sidebar-menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-dashboard.html">
+                                                        <span class="sidebar-menu-text">Default</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-analytics.html">
+                                                        <span class="sidebar-menu-text">Analytics</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-staff.html">
+                                                        <span class="sidebar-menu-text">CRM/Staff</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ecommerce.html">
+                                                        <span class="sidebar-menu-text">E-commerce</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-dashboard-quick-access.html">
+                                                        <span class="sidebar-menu-text">Quick Access</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane"
+                                         id="sm_apps">
+                                        <div class="sidebar-heading">Apps</div>
+                                        <div class="sidebar-block p-0">
+                                            <ul class="sidebar-menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-activities.html">
+                                                        <span class="sidebar-menu-text">Activities</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-trello.html">
+                                                        <span class="sidebar-menu-text">Trello</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-projects.html">
+                                                        <span class="sidebar-menu-text">Projects</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-fullcalendar.html">
+                                                        <span class="sidebar-menu-text">Event Calendar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-chat.html">
+                                                        <span class="sidebar-menu-text">Chat</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-app-email.html">
+                                                        <span class="sidebar-menu-text">Email</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button"
+                                                       data-toggle="collapse"
+                                                       href="#course_menu">
+                                                        <span class="sidebar-menu-text">Education</span>
+                                                        <span class="ml-auto d-flex align-items-center">
+                                                            <span class="badge badge-primary">NEW</span>
+                                                            <span class="sidebar-menu-toggle-icon"></span>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="sidebar-submenu collapse "
+                                                        id="course_menu">
+                                                        <li class="sidebar-menu-item ">
+                                                            <a class="sidebar-menu-button"
+                                                               href="mini-app-browse-courses.html">
+                                                                <span class="sidebar-menu-text">Browse Courses</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="sidebar-menu-item ">
+                                                            <a class="sidebar-menu-button"
+                                                               href="mini-app-course.html">
+                                                                <span class="sidebar-menu-text">Course</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="sidebar-menu-item ">
+                                                            <a class="sidebar-menu-button"
+                                                               href="mini-app-lesson.html">
+                                                                <span class="sidebar-menu-text">Lesson</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane  fade active show "
+                                         id="sm_pages">
+                                        <div class="sidebar-heading">Pages</div>
+                                        <div class="sidebar-block p-0">
+                                            <ul class="sidebar-menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-companies.html">
+                                                        <span class="sidebar-menu-text">Companies</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-stories.html">
+                                                        <span class="sidebar-menu-text">Stories</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-discussions.html">
+                                                        <span class="sidebar-menu-text">Discussions</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-invoice.html">
+                                                        <span class="sidebar-menu-text">Invoice</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-pricing.html">
+                                                        <span class="sidebar-menu-text">Pricing</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-edit-account.html">
+                                                        <span class="sidebar-menu-text">Edit Account</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-profile.html">
+                                                        <span class="sidebar-menu-text">User Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-payout.html">
+                                                        <span class="sidebar-menu-text">Payout</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-digital-product.html">
+                                                        <span class="sidebar-menu-text">Digital Product</span>
+                                                        <span class="badge badge-primary ml-auto">NEW</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       data-toggle="collapse"
+                                                       href="#login_menu">
+                                                        <span class="sidebar-menu-text">Login</span>
+                                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                                    </a>
+                                                    <ul class="sidebar-submenu collapse"
+                                                        id="login_menu">
+                                                        <li class="sidebar-menu-item">
+                                                            <a class="sidebar-menu-button"
+                                                               href="login.html">
+                                                                <span class="sidebar-menu-text">Login / Background Image</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="sidebar-menu-item">
+                                                            <a class="sidebar-menu-button"
+                                                               href="login-centered-boxed.html">
+                                                                <span class="sidebar-menu-text">Login / Centered Boxed</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       data-toggle="collapse"
+                                                       href="#signup_menu">
+                                                        <span class="sidebar-menu-text">Sign Up</span>
+                                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                                    </a>
+                                                    <ul class="sidebar-submenu collapse"
+                                                        id="signup_menu">
+                                                        <li class="sidebar-menu-item">
+                                                            <a class="sidebar-menu-button"
+                                                               href="signup.html">
+                                                                <span class="sidebar-menu-text">Sign Up / Background Image</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="sidebar-menu-item">
+                                                            <a class="sidebar-menu-button"
+                                                               href="signup-centered-boxed.html">
+                                                                <span class="sidebar-menu-text">Sign Up / Centered Boxed</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="sidebar-menu-item active">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-product-listing.html">
+                                                        <span class="sidebar-menu-text">Product Listing</span>
+                                                        <span class="badge badge-primary ml-auto">NEW</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-blank.html">
+                                                        <span class="sidebar-menu-text">Blank Page</span>
+                                                        <span class="badge badge-primary ml-auto">NEW</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="sidebar-p-a sidebar-b-y layout-mini__d-none">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <div class="sidebar-heading m-0 p-0 flex">Progress</div>
+                                                    <div>60%</div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success"
+                                                         role="progressbar"
+                                                         style="width: 60%"
+                                                         aria-valuenow="60"
+                                                         aria-valuemin="0"
+                                                         aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane"
+                                         id="sm_components">
+                                        <div class="sidebar-heading">Components</div>
+                                        <div class="sidebar-block p-0">
+                                            <ul class="sidebar-menu"
+                                                id="components_menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-buttons.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">mouse</i>
+                                                        <span class="sidebar-menu-text">Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-alerts.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">notifications</i>
+                                                        <span class="sidebar-menu-text">Alerts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-avatars.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person</i>
+                                                        <span class="sidebar-menu-text">Avatars</span>
+                                                        <span class="badge badge-primary ml-auto">NEW</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-modals.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+                                                        <span class="sidebar-menu-text">Modals</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-charts.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">pie_chart_outlined</i>
+                                                        <span class="sidebar-menu-text">Charts</span>
+                                                        <span class="badge badge-warning ml-auto">PRO</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-icons.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">brush</i>
+                                                        <span class="sidebar-menu-text">Icons</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-forms.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">text_format</i>
+                                                        <span class="sidebar-menu-text">Forms</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-range-sliders.html">
+                                                        <!-- tune or low_priority or linear_scale or space_bar or swap_calls -->
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">tune</i>
+                                                        <span class="sidebar-menu-text">Range Sliders</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-datetime.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">event_available</i>
+                                                        <span class="sidebar-menu-text">Time &amp; Date</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-tables.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dns</i>
+                                                        <span class="sidebar-menu-text">Tables</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-tabs.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">tab</i>
+                                                        <span class="sidebar-menu-text">Tabs</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-loaders.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">refresh</i>
+                                                        <span class="sidebar-menu-text">Loaders</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-drag.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">control_point</i>
+                                                        <span class="sidebar-menu-text">Drag &amp; Drop</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-pagination.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">last_page</i>
+                                                        <span class="sidebar-menu-text">Pagination</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-ui-vector-maps.html">
+                                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">location_on</i>
+                                                        <span class="sidebar-menu-text">Vector Maps</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane"
+                                         id="sm_layouts">
+                                        <div class="sidebar-heading">Layouts</div>
+                                        <div class="sidebar-block p-0">
+                                            <ul class="sidebar-menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="product-listing.html">Default</a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="fluid-product-listing.html">Fluid</a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button"
+                                                       href="fixed-product-listing.html">Fixed</a>
+                                                </li>
+                                                <li class="sidebar-menu-item active">
+                                                    <a class="sidebar-menu-button"
+                                                       href="mini-product-listing.html">Mini</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // END drawer -->
+                </div>
+                <!-- // END drawer-layout -->
+
+            </div>
+            <!-- // END header-layout__content -->
+
+        </div>
+        <!-- // END header-layout -->
+
+        <!-- App Settings FAB -->
+        <div id="app-settings">
+            <app-settings layout-active="mini"
+                          :layout-location="{
+      'default': 'product-listing.html',
+      'fixed': 'fixed-product-listing.html',
+      'fluid': 'fluid-product-listing.html',
+      'mini': 'mini-product-listing.html'
+    }"></app-settings>
+        </div>
+
+        <!-- jQuery -->
+        <script src="assets/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="assets/vendor/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="assets/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="assets/vendor/material-design-kit.js"></script>
+
+        <!-- App -->
+        <script src="assets/js/toggle-check-all.js"></script>
+        <script src="assets/js/check-selected-row.js"></script>
+        <script src="assets/js/dropdown.js"></script>
+        <script src="assets/js/sidebar-mini.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <!-- App Settings (safe to remove) -->
+        <script src="assets/js/app-settings.js"></script>
+
+        <script>
+            (function() {
+                'use strict';
+                // ENABLE sidebar menu tabs
+                $('#sidebar-mini-tabs [data-toggle="tab"]').on('click', function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                })
+            })()
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,151 @@
+{% macro component(id="staff", checkboxes=true, avatar=true, employer=true, projects=true, pagination=true, search=false) %}
+<div class="table-responsive border-bottom" data-toggle="lists" data-lists-values='["js-lists-values-employee-name"]'>
+  {% if search %}
+  <div class="search-form search-form--light m-3">
+    <input type="text" class="form-control search" placeholder="Search">
+    <button class="btn" type="button" ><i class="material-icons">search</i></button>
+  </div>
+  {% endif %}
+  <table class="table mb-0 thead-border-top-0">
+    <thead>
+      <tr>
+        {% if checkboxes %}
+        <th style="width: 18px;">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input js-toggle-check-all" data-target="#{{ id }}" id="customCheckAll">
+            <label class="custom-control-label" for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+          </div>
+        </th>
+        {% endif %}
+        <th>Employee</th>
+        {% if employer %}<th style="width: 150px;">Current Employer</th>{% endif %}
+        {% if projects %}<th style="width: 48px;">Projects</th>{% endif %}
+        <th style="width: 37px;">Status</th>
+        <th style="width: 120px;">Last Activity</th>
+        <th style="width: 51px;">Earnings</th>
+        <th style="width: 24px;"></th>
+      </tr>
+    </thead>
+    <tbody class="list" id="{{ id }}">
+      {% for i in [1,2] %}
+      <tr{% if checkboxes %} class="selected"{% endif %}>
+        {% if checkboxes %}
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input js-check-selected-row" checked="" id="customCheck1_{{ i }}">
+            <label class="custom-control-label" for="customCheck1_{{ i }}"><span class="text-hide">Check</span></label>
+          </div>
+        </td>
+        {% endif %}
+        <td>
+          {% if avatar %}
+          <div class="media align-items-center">
+              <div class="avatar avatar-xs mr-2">
+                  <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                </div>
+            <div class="media-body">
+              {% endif %}
+              <span class="js-lists-values-employee-name">Michael Smith</span>
+              {% if avatar %}
+            </div>
+          </div>
+          {% endif %}
+        </td>
+        {% if employer %}
+        <td>
+          <div class="media align-items-center">
+            <a href="">Black Ops</a>
+            <a href="#" class="rating-link"><i class="material-icons ml-2">star</i></a>
+          </div>
+        </td>
+        {% endif %}
+        {% if projects %}<td>12</td>{% endif %}
+        <td><span class="badge badge-warning">ADMIN</span></td>
+        <td><small class="text-muted">3 days ago</small></td>
+        <td>&dollar;12,402</td>
+        <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+      </tr>
+      <tr>
+        {% if checkboxes %}
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck2_{{ i }}">
+            <label class="custom-control-label" for="customCheck2_{{ i }}"><span class="text-hide">Check</span></label>
+          </div>
+        </td>
+        {% endif %}
+        <td>
+          {% if avatar %}
+          <div class="media align-items-center">
+            <img src="assets/images/avatar/green.svg" class="mr-2" alt="avatar" />
+            <div class="media-body">
+              {% endif %}
+              <span class="js-lists-values-employee-name">Connie Smith</span>
+              {% if avatar %}
+            </div>
+          </div>
+          {% endif %}
+        </td>
+        {% if employer %}
+        <td>
+          <div class="media align-items-center">
+            <a href="#">Backend Ltd</a>
+            <a href="#" class="rating-link active"><i class="material-icons ml-2">star</i></a>
+          </div>
+        </td>
+        {% endif %}
+        {% if projects %}<td>42</td>{% endif %}
+        <td><span class="badge badge-success">USER</span></td>
+        <td><small class="text-muted">1 week ago</small></td>
+        <td>&dollar;1,943</td>
+        <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+      </tr>
+      <tr>
+          {% if checkboxes %}
+          <td>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck3_{{ i }}">
+              <label class="custom-control-label" for="customCheck3_{{ i }}"><span class="text-hide">Check</span></label>
+            </div>
+          </td>
+          {% endif %}
+          <td>
+            {% if avatar %}
+            <div class="media align-items-center">
+              
+              <div class="avatar avatar-xs mr-2">
+                <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+              </div>
+              <div class="media-body">
+                {% endif %}
+                <span class="js-lists-values-employee-name">John Connor</span>
+                {% if avatar %}
+              </div>
+            </div>
+            {% endif %}
+          </td>
+          {% if employer %}
+          <td>
+            <div class="media align-items-center">
+              <a href="">Frontted</a>
+              <a href="#" class="rating-link" onclick="document.getElementById('box').classList.toggle('grow');"><i class="material-icons ml-2">star</i></a>
+            </div>
+          </td>
+          {% endif %}
+          {% if projects %}<td>42</td>{% endif %}
+          <td><span class="badge badge-primary">MANAGER</span></td>
+          <td><small class="text-muted">1 week ago</small></td>
+          <td>&dollar;1,943</td>
+          <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% if pagination %}
+<div class="card-body text-right">
+  15 <span class="text-muted">of 1,430</span> <a href="#" class="text-muted-light"><i class="material-icons ml-1">arrow_forward</i></a>
+</div>
+{% endif %}
+{% endmacro %}
+{{ component() }}

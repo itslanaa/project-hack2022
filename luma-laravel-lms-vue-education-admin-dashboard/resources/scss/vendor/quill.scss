@@ -1,0 +1,7 @@
+@import '../variables';
+
+@import 'fm-plugin-quill/scss/quill';
+
+.ql-container {
+  background-color: $input-bg;
+}
