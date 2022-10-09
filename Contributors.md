@@ -3,3 +3,6 @@
 - [Aulia Trisyana Putri](https://github.com/auliatp)
 - [Satria Yusuf](https://github.com/satriayusuf)
 - [tuyulmilenial](https://github.com/tuyulmilenial)
+- [Fakhrity Hikmawan](https://github.com/fahixa) 
+- [
+
