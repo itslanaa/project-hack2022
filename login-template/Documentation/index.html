@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<title>iofrm - Documentation</title>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div id="header" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="doc-title"><div class="glyph-icon flaticon-document-1"></div>iofrm - Documentation</div>
+        </div>
+    </div>
+</div>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-3" style="padding:0;">
+            <div class="menu-holder">
+                <ul class="main-menu">
+                    <li><a href="#html" class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>HTML Structure</a></li>
+                    <li><a href="#css"><i class="fa fa-angle-right" aria-hidden="true"></i>CSS & JavaScript</a></li>
+                    <li><a href="#logo"><i class="fa fa-angle-right" aria-hidden="true"></i>Logo</a></li>
+                    <li><a href="#form-content"><i class="fa fa-angle-right" aria-hidden="true"></i>Form Content</a></li>
+                    <li><a href="#alert"><i class="fa fa-angle-right" aria-hidden="true"></i>Using Alerts</a></li>
+                    <li><a href="#forget"><i class="fa fa-angle-right" aria-hidden="true"></i>Successful box</a></li>
+                    <li><a href="#style"><i class="fa fa-angle-right" aria-hidden="true"></i>Style Modifying</a></li>
+                    <li><a href="#files"><i class="fa fa-angle-right" aria-hidden="true"></i>Important Files</a></li>
+                    <li><a href="#integration"><i class="fa fa-angle-right" aria-hidden="true"></i>Integration</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9 content">
+            <h3 id="html">HTML Structure</h3>
+            <p>The template is based on bootstrap 4 library, please read more about bootstrap here: <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/4.1/getting-started/introduction/</a>
+
+                To edit the template, a very basic knowledge in dealing with bootstrap is required.
+            </p>
+            
+            <p>The Html file can be edited in any text editor, best example is Adobe Dreamweaver.
+            </p>
+
+            <br>
+            <h3 id="css">CSS</h3>
+            <p>There are 29 CSS files in the template. First is "bootstrap.min.css", used for layout — originally in bootstrap, the second one is "fontawesome-all.min.css" font awesome 5, it is icons font, "iofrm-style.css" the main style file for the forms, and the others are:
+            "iofrm-theme1.css", "iofrm-theme2.css", "iofrm-theme3.css", "iofrm-theme4.css", "iofrm-theme5.css", "iofrm-theme6.css", "iofrm-theme7.css", "iofrm-theme8.css", "iofrm-theme9.css", "iofrm-theme10.css", "iofrm-theme11.css", "iofrm-theme12.css", "iofrm-theme13.css", "iofrm-theme14.css", "iofrm-theme15.css", "iofrm-theme16.css", "iofrm-theme17.css", "iofrm-theme18.css", "iofrm-theme19.css", "iofrm-theme20.css", "iofrm-theme21.css", "iofrm-theme22.css", "iofrm-theme23.css", "iofrm-theme24.css", "iofrm-theme25.css", "iofrm-theme26.css" the forms themes.</p>
+
+            <h3 id="javascript">JavaScript</h3>
+            <p>This template imports five Javascript files.</p>
+
+            <ul>
+                <li>"jquery.min.js": jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                <li>"bootstrap.min.js": Bootstrap is the most popular Javascript framework for developing responsive, mobile first projects on the web.</li>
+                <li>"popper.min.js": A library used to position poppers in web applications. A popper is an element on the screen which "pops out" from the natural flow of your application. Common examples of poppers are tooltips, popovers, and drop-downs.</li>
+                <li>"cleave.min.js": A library used to format input text content when you are typing.</li>
+                <li>"main.js": Our custom javascript code.</li>
+            </ul>
+            <h3 id="logo">Logo</h3>
+            <p>To change the logo simply replace "logo-light.svg", "logo-dark.svg", "logo-dark2.svg" files.</p>
+
+            <h3 id="form-content">Form Content</h3>
+            <p>You can use bootstrap forms from this page <a href="https://getbootstrap.com/docs/4.1/components/forms/">https://getbootstrap.com/docs/4.1/components/forms/</a> or use simple form as follow:</p>
+            <pre class="prettyprint">
+&#x3C;form&#x3E;
+    &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; name=&#x22;username&#x22; placeholder=&#x22;E-mail Address&#x22; required&#x3E;
+    &#x3C;input class=&#x22;form-control&#x22; type=&#x22;password&#x22; name=&#x22;password&#x22; placeholder=&#x22;Password&#x22; required&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;chk1&#x22;&#x3E;&#x3C;label for=&#x22;chk1&#x22;&#x3E;Remmeber me&#x3C;/label&#x3E;
+    &#x3C;div class=&#x22;form-button&#x22;&#x3E;
+        &#x3C;button id=&#x22;submit&#x22; type=&#x22;submit&#x22; class=&#x22;ibtn&#x22;&#x3E;Login&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/form&#x3E;</pre>
+            <p>It's very important that you put the form inside the following code:</p>
+            <pre class="prettyprint">
+&#x3C;div class=&#x22;form-holder&#x22;&#x3E;
+   &#x3C;div class=&#x22;form-content&#x22;&#x3E;
+       &#x3C;div class=&#x22;form-items&#x22;&#x3E;
+                form is here
+       &#x3C;/div&#x3E;
+   &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+            
+            <h3 id="alert">Using Alerts</h3>
+            <p>You can use Bootstrap Alerts as described here <a href="https://getbootstrap.com/docs/4.1/components/alerts/">https://getbootstrap.com/docs/4.1/components/alerts/</a></p>
+            <p>Alert sample available in "login3.html" file.</p>
+            <p>You can use it with icon by adding "with-icon" class as follow:</p>
+            <pre class="prettyprint">
+&#x3C;div class=&#x22;alert alert-primary with-icon&#x22; role=&#x22;alert&#x22;&#x3E;
+    A simple primary alert&#x2014;check it out!
+&#x3C;/div&#x3E;</pre>
+            
+            <h3 id="forget">Successful box - Forget Password Page</h3>
+            <p>There is an animation for password reset successful function, you can perform this animation with the following jQuery code:</p>
+            <pre class="prettyprint">
+$('.form-items','.form-content').addClass('hide-it');
+$('.form-sent','.form-content').addClass('show-it');</pre>
+
+            <h3 id="style">Style Modifying</h3>
+            <p>To change the text and background colors you have to edit the theme css file, for example "iofrm-theme1.css", to change the body background color, modify the following css code:</p>
+            <pre class="prettyprint">
+.form-content {
+    background-color: #0093FF;
+}</pre>
+            <h3 id="files">Important Files</h3>
+            <p>If you deside to use the login form 1 and the regiser form 1 you must copy the following files to your website:</p>
+            <pre class="prettyprint">
+    - css/bootstrap.min.css
+    - css/fontawesome-all.min.css
+    - css/iofrm-style.css
+    - css/iofrm-theme1.css
+
+    - images/img1.jpg
+    - images/logo-dark.svg
+    - images/logo-light.svg
+
+    - js folder
+    - webfonts folder
+
+    - login1.html
+    - register1.html
+            </pre>
+
+            <p>Or if you want to use login 1 and register 2, copy the following files:</p>
+
+            <pre class="prettyprint">
+    - css/bootstrap.min.css
+    - css/fontawesome-all.min.css
+    - css/iofrm-style.css
+    - css/iofrm-theme1.css
+    - css/iofrm-theme2.css
+
+    - images/img1.jpg
+    - images/img2.jpg
+    - images/logo-dark.svg
+    - images/logo-light.svg
+
+    - js folder
+    - webfonts folder
+
+    - login1.html
+    - register2.html
+            </pre>
+
+            <p>Or simply copy the css folder, the images folder, the js folder and the webfonts folder. That will make all the themes available.</p>
+
+            <h3 id="integration">Integration</h3>
+
+            <p>To integrate the form with any project, you have to link the css files in the head of the HTML as follow:</p>
+            <pre class="prettyprint">
+&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/bootstrap.min.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/fontawesome-all.min.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/iofrm-style.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/iofrm-theme1.css&#x22;&#x3E;</pre>
+
+            <p>And add the following scripts before the ending of body:</p>
+            <pre class="prettyprint">
+&#x3C;script src=&#x22;js/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/popper.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/main.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+
+            <p>You must stick on the following structure of the form page:</p>
+
+            <pre class="prettyprint">
+&#x3C;div class=&#x22;form-body&#x22;&#x3E;
+    &#x3C;div class=&#x22;website-logo&#x22;&#x3E;
+        &#x3C;a href=&#x22;index.html&#x22;&#x3E;
+            &#x3C;div class=&#x22;logo&#x22;&#x3E;
+                &#x3C;img class=&#x22;logo-size&#x22; src=&#x22;images/logo-light.svg&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;row&#x22;&#x3E;
+        &#x3C;div class=&#x22;img-holder&#x22;&#x3E;
+            &#x3C;div class=&#x22;bg&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;info-holder&#x22;&#x3E;
+
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;form-holder&#x22;&#x3E;
+            &#x3C;div class=&#x22;form-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;form-items&#x22;&#x3E;
+                    &#x3C;h3&#x3E;Get more things done with Loggin platform.&#x3C;/h3&#x3E;
+                    &#x3C;p&#x3E;Access to the most powerfull tool in the entire design and web industry.&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;page-links&#x22;&#x3E;
+                        &#x3C;a href=&#x22;login1.html&#x22; class=&#x22;active&#x22;&#x3E;Login&#x3C;/a&#x3E;&#x3C;a href=&#x22;register1.html&#x22;&#x3E;Register&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;form&#x3E;
+                        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; name=&#x22;username&#x22; placeholder=&#x22;E-mail Address&#x22; required&#x3E;
+                        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;password&#x22; name=&#x22;password&#x22; placeholder=&#x22;Password&#x22; required&#x3E;
+                        &#x3C;div class=&#x22;form-button&#x22;&#x3E;
+                            &#x3C;button id=&#x22;submit&#x22; type=&#x22;submit&#x22; class=&#x22;ibtn&#x22;&#x3E;Login&#x3C;/button&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/form&#x3E;
+                    &#x3C;div class=&#x22;other-links&#x22;&#x3E;
+                        &#x3C;span&#x3E;Or login with&#x3C;/span&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Facebook&#x3C;/a&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Google&#x3C;/a&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Linkedin&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+            <br>
+            <hr>
+            <p>Once again, thank you so much for purchasing this template. We'd be glad to help you if you have any questions relating to this template. No guarantees, but We'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+        </div>
+    </div>
+</div>
+<div id="footer" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="doc-info">
+                <div><b>Created:</b> 4 Aug 2018</div>
+                <div><b>By:</b> Brandio</div>
+                <div><b>Support:</b> faisal@brandio.io</div>
+            </div>
+        </div>
+    </div>
+</div>
+<a id="back-to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/prettify.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

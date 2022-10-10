@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iofrm</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme25.css">
+</head>
+<body>
+    <div class="form-body">
+        <div class="website-logo">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="logo-size" src="images/logo-light.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <img class="md-size" src="images/graphic7.svg" alt="">
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="form-title">You’re almost there</h3>
+                        <ul class="nav nav-tabs" id="stepsTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="step1-tab" data-toggle="tab" href="#step1" role="tab" aria-controls="step1" aria-selected="true">Step1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="step2-tab" data-toggle="tab" href="#step2" role="tab" aria-controls="step2" aria-selected="false">Step2</a>
+                            </li>
+                        </ul>
+                        <form>
+                            <div class="tab-content" id="stepsTabContent">
+                                <div class="tab-pane fade show active" id="step1" role="tabpanel" aria-labelledby="step1-tab">
+                                    <div class="form-subtitle">1. Choose your billing cycle</div>
+                                    <div class="inline-el-holder">
+                                        <div class="inline-el">
+                                            <div class="rad-with-details">
+                                                <input type="radio" id="rad1" name="rad" required checked><label for="rad1">Bill Yearly</label>
+                                                <div class="more-info">$99/year</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-el">
+                                            <div class="rad-with-details">
+                                                <input type="radio" id="rad2" name="rad" required><label for="rad2">Bill Monthly</label>
+                                                <div class="more-info">$109/year</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="form-subtitle">2. Enter payment details</div>
+                                    <label>Card number</label>
+                                    <div class="input-with-ccicon">
+                                        <input type="text" class="form-control input-credit-card" placeholder="1234 1234 1234 1234">
+                                        <i id="ccicon"></i>
+                                    </div>
+                                    <div class="inline-el-holder">
+                                        <div class="inline-el">
+                                            <label>Expiry date</label>
+                                            <input type="text" class="form-control sm-content" placeholder="MM/YY">
+                                        </div>
+                                        <div class="inline-el">
+                                            <label>CVV</label>
+                                            <input type="text" class="form-control sm-content" placeholder="123">
+                                        </div>
+                                    </div>
+                                    <div class="inline-el-holder">
+                                        <div class="inline-el">
+                                            <label>Country</label>
+                                            <input type="text" class="form-control" placeholder="Bahrain">
+                                        </div>
+                                        <div class="inline-el">
+                                            <label>Billing ZIP</label>
+                                            <input type="text" class="form-control sm-content" placeholder="12345">
+                                        </div>
+                                    </div>
+                                    <div class="form-button text-right">
+                                        <button id="btn-next" class="ibtn btn-tab-next">Next</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                                    <div class="form-subtitle">3. Confirm your personal information</div>
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                    <input type="text" class="form-control" placeholder="Email address">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                    <div class="form-button">
+                                        <button id="submit" type="submit" class="ibtn">Process payment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/cleave.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+// credit card 
+var cleaveCreditCard = new Cleave(".input-credit-card", {
+  creditCard: true,
+  onCreditCardTypeChanged: function(type) {
+    type = type.split("15")[0];
+    $('.input-with-ccicon #ccicon').removeClass();
+    if(type!="unknown"){
+        if(type=="diners"){
+            $('.input-with-ccicon #ccicon').addClass('fab fa-cc-diners-club');
+        }else{
+            $('.input-with-ccicon #ccicon').addClass('fab fa-cc-'+type);
+        }
+    }
+  }
+});
+</script>
+</body>
+</html>

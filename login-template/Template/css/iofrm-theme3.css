@@ -1,0 +1,494 @@
+/*------------------------------------------------------------------
+ * Theme Name: iofrm - theme
+ * Theme URI: http://www.brandio.io/envato/iofrm
+ * Author: Brandio
+ * Author URI: http://www.brandio.io/
+ * Copyright 2019 Brandio.
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General Styles.
+2. Responsive Styles.
+-------------------------------------------------------------------*/
+/* -----------------------------------
+    1 - General Styles
+------------------------------------*/
+.form-body {
+    background-color: #fff;
+}
+
+.website-logo {
+    display: inline-block;
+    top: 50%;
+    left: 220px;
+    right: initial;
+    bottom: initial;
+}
+
+.website-logo img {
+    width: 100px;
+}
+
+.website-logo .logo {
+    background-image: url("../images/logo-dark.svg");
+}
+
+.website-logo .logo img {
+    width: 100px;
+}
+
+.website-logo-inside img {
+    width: 100px;
+}
+
+.website-logo-inside .logo {
+    background-image: url("../images/logo-dark.svg");
+}
+
+.website-logo-inside .logo img {
+    width: 100px;
+}
+
+.img-holder {
+    width: 550px;
+    background-color: #000;
+}
+
+.img-holder .info-holder h3 {
+    color: #000;
+    text-align: left;
+}
+
+.img-holder .info-holder h3 span {
+    color: #000;
+}
+
+.img-holder .info-holder h2 {
+    color: #000;
+    text-align: left;
+}
+
+.img-holder .info-holder h2 span {
+    color: #000;
+}
+
+.img-holder .info-holder p {
+    color: #000;
+    text-align: left;
+}
+
+.img-holder .bg {
+    opacity: 1;
+    background-image: url("../images/img2.jpg");
+}
+
+.form-holder {
+    margin-left: 550px;
+}
+
+.form-holder .form-content ::-webkit-input-placeholder {
+    color: #000;
+}
+
+.form-holder .form-content :-moz-placeholder {
+    color: #000;
+}
+
+.form-holder .form-content ::-moz-placeholder {
+    color: #000;
+}
+
+.form-holder .form-content :-ms-input-placeholder {
+    color: #000;
+}
+
+.form-content {
+    background-color: #fff;
+}
+
+.form-content .form-group {
+    color: #000;
+}
+
+.form-content .form-items {
+    max-width: 340px;
+    text-align: left;
+}
+
+.form-content .form-icon {
+    margin-top: calc(-42px - 35px);
+}
+
+.form-content .form-icon .icon-holder {
+    background-color: #4A77F7;
+}
+
+.form-content h3 {
+    color: #000;
+    text-align: left;
+}
+
+.form-content p {
+    color: #000;
+    text-align: left;
+}
+
+.form-content label {
+    color: #000;
+    text-align: left;
+}
+
+.form-content .page-links a {
+    color: #000;
+}
+
+.form-content .page-links a:after {
+    background-color: rgba(222, 222, 222, 0.7);
+}
+
+.form-content .page-links a.active:after {
+    background-color: #0092FE;
+}
+
+.form-content .page-links a:hover:after, .form-content .page-links a:focus:after {
+    background-color: #0092FE;
+}
+
+.form-content input, .form-content .dropdown-toggle.btn-default {
+    border: 0;
+    background-color: #F7F7F7;
+    color: #000;
+}
+
+.form-content input:hover, .form-content input:focus, .form-content .dropdown-toggle.btn-default:hover, .form-content .dropdown-toggle.btn-default:focus {
+    border: 0;
+    background-color: #eaeaea;
+    color: #000;
+}
+
+.form-content textarea {
+    border: 0;
+    background-color: #F7F7F7;
+    color: #000;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #eaeaea;
+    color: #000;
+}
+
+.form-content .custom-file-label {
+    border: 0;
+    background-color: #F7F7F7;
+    color: #000;
+}
+
+.form-content .custom-file-label:after {
+    color: #0093FF;
+}
+
+.form-content .custom-file:hover .custom-file-label, .form-content .custom-file:focus .custom-file-label {
+    border: 0;
+    background-color: #eaeaea;
+    color: #000;
+}
+
+.form-content input[type="checkbox"]:not(:checked) + label, .form-content input[type="checkbox"]:checked + label, .form-content input[type="radio"]:not(:checked) + label, .form-content input[type="radio"]:checked + label {
+    color: #000;
+    font-weight: 700;
+}
+
+.form-content input[type="checkbox"]:checked + label, .form-content input[type="radio"]:checked + label {
+    color: #000;
+}
+
+.form-content input[type="checkbox"]:checked + label:before, .form-content input[type="radio"]:checked + label:before {
+    background: #000;
+    border: 0px solid #000;
+}
+
+.form-content input[type="checkbox"]:not(:checked) + label:before, .form-content input[type="radio"]:not(:checked) + label:before {
+    background: transparent;
+    border: 2px solid #000;
+}
+
+.form-content input[type="checkbox"]:not(:checked) + label:after, .form-content input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+
+.form-content input[type="radio"]:not(:checked) + label:after, .form-content input[type="radio"]:checked + label:after {
+    background-color: #fff;
+}
+
+.form-content .custom-options input[type="checkbox"]:not(:checked) + label, .form-content .custom-options input[type="checkbox"]:checked + label, .form-content .custom-options input[type="radio"]:not(:checked) + label, .form-content .custom-options input[type="radio"]:checked + label {
+    color: #606060;
+    background-color: #F7F7F7;
+}
+
+.form-content .custom-options input[type="checkbox"]:checked + label, .form-content .custom-options input[type="radio"]:checked + label {
+    color: #fff;
+    background-color: #57D38C;
+    -webkit-box-shadow: 0 3px 8px rgba(74, 230, 142, 0.35);
+    box-shadow: 0 3px 8px rgba(74, 230, 142, 0.35);
+}
+
+.form-content .form-button .ibtn {
+    background-color: #0093FF;
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 rgba(80, 182, 255, 0.31);
+    box-shadow: 0 0 0 rgba(80, 182, 255, 0.31);
+}
+
+.form-content .form-button .ibtn:hover, .form-content .form-button .ibtn:focus {
+    -webkit-box-shadow: 0 5px 6px rgba(80, 182, 255, 0.31);
+    box-shadow: 0 5px 6px rgba(80, 182, 255, 0.31);
+}
+
+.form-content .form-button a {
+    color: #000;
+}
+
+.form-content .other-links span {
+    color: #000;
+}
+
+.form-content .other-links a {
+    color: #000;
+}
+
+.form-content .form-sent .tick-holder .tick-icon {
+    background-color: rgba(233, 253, 214, 0);
+}
+
+.form-content .form-sent .tick-holder .tick-icon:before {
+    background-color: #8CCB57;
+}
+
+.form-content .form-sent .tick-holder .tick-icon:after {
+    background-color: #8CCB57;
+}
+
+.form-content .form-sent h3 {
+    color: #000;
+}
+
+.form-content .form-sent p {
+    color: #000;
+}
+
+.form-content .form-sent .info-holder {
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-content .form-sent .info-holder span {
+    color: #000;
+}
+
+.form-content .form-sent .info-holder a {
+    color: #000;
+}
+
+@keyframes tick-anime3 {
+    0% {
+        background-color: rgba(233, 253, 214, 0);
+        -webkit-transform: rotate(35deg) scale(2);
+        -moz-transform: rotate(35deg) scale(2);
+        -ms-transform: rotate(35deg) scale(2);
+        transform: rotate(35deg) scale(2);
+    }
+
+    100% {
+        background-color: #E9FDD6;
+        -webkit-transform: rotate(45deg) scale(1);
+        -moz-transform: rotate(45deg) scale(1);
+        -ms-transform: rotate(45deg) scale(1);
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+.alert {
+    color: #000;
+}
+
+.alert.alert-primary {
+    background-color: #e2f0ff;
+    border-color: #3a86d6;
+}
+
+.alert.alert-primary hr {
+    border-top-color: #3a86d6;
+}
+
+.alert.alert-secondary {
+    background-color: #f0f0f0;
+    border-color: #8e9396;
+}
+
+.alert.alert-secondary hr {
+    border-top-color: #8e9396;
+}
+
+.alert.alert-success {
+    background-color: #F7FFF0;
+    border-color: #8CCB57;
+}
+
+.alert.alert-success hr {
+    border-top-color: #8CCB57;
+}
+
+.alert.alert-danger {
+    background-color: #FFFAFA;
+    border-color: #F55050;
+}
+
+.alert.alert-danger hr {
+    border-top-color: #F55050;
+}
+
+.alert.alert-warning {
+    background-color: #fff8e1;
+    border-color: #f1cb4b;
+}
+
+.alert.alert-warning hr {
+    border-top-color: #f1cb4b;
+}
+
+.alert.alert-info {
+    background-color: #dcedf1;
+    border-color: #42bfdb;
+}
+
+.alert.alert-info hr {
+    border-top-color: #42bfdb;
+}
+
+.alert.alert-light {
+    background-color: #fefefe;
+    border-color: #a7a4a4;
+}
+
+.alert.alert-light hr {
+    border-top-color: #a7a4a4;
+}
+
+.alert.alert-dark {
+    background-color: #d6d8d9;
+    border-color: #525557;
+}
+
+.alert.alert-dark hr {
+    border-top-color: #525557;
+}
+
+.alert.with-icon.alert-primary:before {
+    color: #3a86d6;
+}
+
+.alert.with-icon.alert-secondary:before {
+    color: #8e9396;
+}
+
+.alert.with-icon.alert-success:before {
+    color: #8CCB57;
+}
+
+.alert.with-icon.alert-danger:before {
+    color: #F55050;
+}
+
+.alert.with-icon.alert-warning:before {
+    color: #f1cb4b;
+}
+
+.alert.with-icon.alert-info:before {
+    color: #42bfdb;
+}
+
+.alert.with-icon.alert-light:before {
+    color: #a7a4a4;
+}
+
+.alert.with-icon.alert-dark:before {
+    color: #525557;
+}
+
+.alert a, .alert a.alert-link {
+    color: #000;
+}
+
+.alert .close {
+    color: #727272;
+}
+
+.alert .close span {
+    color: #727272;
+}
+
+.form-subtitle {
+    color: #000;
+}
+
+.rad-with-details .more-info {
+    color: #000;
+}
+
+.form-body.without-side .img-holder .info-holder img {
+    display: none;
+}
+
+.form-body.without-side .form-content .form-items {
+    padding: 35px 30px;
+}
+
+.form-body.without-side .form-content .page-links a:after {
+    background-color: rgba(222, 222, 222, 0.7);
+}
+
+.form-body.without-side .form-content .page-links a.active:after {
+    background-color: #0092FE;
+}
+
+.form-body.without-side .form-content .page-links a:hover:after, .form-body.without-side .form-content .page-links a:focus:after {
+    background-color: #0092FE;
+}
+
+.form-body.without-side .form-content .form-button .ibtn {
+    background-color: #0093FF;
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 rgba(80, 182, 255, 0.31);
+    box-shadow: 0 0 0 rgba(80, 182, 255, 0.31);
+}
+
+.form-body.without-side .form-content .form-button .ibtn:hover, .form-body.without-side .form-content .form-button .ibtn:focus {
+    -webkit-box-shadow: 0 5px 6px rgba(80, 182, 255, 0.31);
+    box-shadow: 0 5px 6px rgba(80, 182, 255, 0.31);
+}
+
+/* -----------------------------------
+    2 - Responsive Styles
+------------------------------------*/
+@media (max-width: 992px) {
+    .form-holder {
+        margin-left: 0;
+    }
+
+    .website-logo {
+        top: 50px;
+        left: 50px;
+        right: initial;
+        bottom: initial;
+    }
+
+    .website-logo .logo {
+        background-image: url("../images/logo-dark.svg");
+    }
+
+    .form-body.without-side .website-logo .logo {
+        background-image: url("../images/logo-dark.svg");
+    }
+}
