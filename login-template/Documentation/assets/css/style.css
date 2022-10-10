@@ -1,0 +1,178 @@
+/*------------------------------------------------------------------
+ * Author: Brandio
+ * Author URI: http://www.brandio.io/
+ * Copyright 2016 Brandio.
+ -------------------------------------------------------------------*/
+
+@charset "UTF-8";
+@import url("../fonts/flaticon.css");
+
+@font-face {
+    font-family: 'sofia_prolight';
+    src: url('../fonts/SofiaProLight-webfont.eot');
+    src: url('../fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SofiaProLight-webfont.woff2') format('woff2'),
+         url('../fonts/SofiaProLight-webfont.woff') format('woff'),
+         url('../fonts/SofiaProLight-webfont.ttf') format('truetype'),
+         url('../fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*,body{
+    font-family: "sofia_prolight", sans-serif;
+    transition: all 0.3s ease 0.0s;
+}
+#back-to-top{
+    position: fixed;
+    bottom: 26px;
+    left: 26px;
+    background-color: #0079ff;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50px;
+    opacity: 0;
+}
+#back-to-top.show{
+    opacity: 1;
+}
+#back-to-top.atbottom{
+    bottom: 98px;
+}
+#header{
+    background-color: #0079ff;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+.doc-title{
+    font-size: 22px;
+}
+.doc-title .glyph-icon{
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 22px;
+}
+.menu-holder{
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    /*border-right: 1px solid #c6ddf8;*/
+    transition: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu-holder:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #f1f4f7;
+}
+.menu-holder ul.main-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu-holder ul.main-menu li{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.menu-holder ul.main-menu li a{
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    text-decoration: none;
+    color: #8da3b9;
+    background-color: #ffffff;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+.menu-holder ul.main-menu li a:hover,.menu-holder ul.main-menu li a:focus,.menu-holder ul.main-menu li a.active{
+    background-color: #f1f4f7;
+    color: #0079ff;   
+}
+.menu-holder ul.main-menu li a .fa{
+    margin-right: 10px;
+    color: #0079ff;
+    font-size: 16px;
+}
+
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+.content img{
+    width: 100%;
+    max-width: 90%;
+    display:block;
+    margin: auto;
+}
+.content h3{
+    font-weight: bold;
+    font-size: 22px;
+    color: #444146;
+}
+.content p{
+    font-size: 17px;
+    color: #726D75;
+}
+.content ul{
+    font-size: 16px;
+    color: #726D75;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px
+}
+#footer{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.brandio-logo-holder{
+    display: inline-block;
+    padding: 12px;
+}
+.brandio-logo-holder img{
+    width: 30px;
+    margin-top: -30px;
+}
+.doc-info{
+    font-size: 13px;
+    line-height: 14px;
+    color: #8da3b9;
+    display: inline-block;
+}
+.doc-info b{
+    color: #0079ff;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------
+	Responsive Styles
+-------------------------------------------------------------------*/
+
+/* Other screens styles modifications */
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+    .menu-holder{
+        top:0 !important;
+    }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+    
+}
