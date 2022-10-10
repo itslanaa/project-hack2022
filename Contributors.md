@@ -7,3 +7,4 @@
 - [petz](https://github.com/gendopetz) 
 - [unggulba](https://github.com/unggulba) 
 - [angkitaga27](https://github.com/ankitaga27) 
+- [Aditya Singh](https://github.com/ItzMeAditya)
