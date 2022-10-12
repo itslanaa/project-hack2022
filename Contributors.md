@@ -12,3 +12,4 @@
 - [rizki5411](https://github.com/rizki5411) 
 - [siakmal](https://github.com/siakmal) 
 - [itslana0x](https://github.com/itslana0x) 
+- [destaegy](https://github.com/destaegy) 
