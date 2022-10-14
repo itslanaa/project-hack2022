@@ -15,3 +15,4 @@
 - [destaegy](https://github.com/destaegy) 
 - [mharits197](https://github.com/mharits197) 
 - [jalijallll](https://github.com/jalijallll) 
+- [Aditi Tripathi](https://github.com/AditiiTripathii) 
