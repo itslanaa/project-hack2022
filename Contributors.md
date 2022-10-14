@@ -14,3 +14,4 @@
 - [itslana0x](https://github.com/itslana0x) 
 - [destaegy](https://github.com/destaegy) 
 - [mharits197](https://github.com/mharits197) 
+- [jalijallll](https://github.com/jalijallll) 
