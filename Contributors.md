@@ -16,4 +16,5 @@
 - [mharits197](https://github.com/mharits197) 
 - [jalijallll](https://github.com/jalijallll) 
 - [Daksh Raghuvanshi](https://github.com/Daksh-Raghuvanshi)
-- [Aditi Tripathi](https://github.com/AditiiTripathii) 
+- [Aditi Tripathi](https://github.com/AditiiTripathii)
+- [Febri Tahta](https://github.com/FebriTahta) 
