@@ -20,3 +20,4 @@
 - [Daksh Raghuvanshi](https://github.com/Daksh-Raghuvanshi)
 - [Aditi Tripathi](https://github.com/AditiiTripathii)
 - [Febri Tahta](https://github.com/FebriTahta)
+- [Mohit Saini](https://github.com/Mohitsaini2028/)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project Using JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="outer-frame wow text-white zoomIn" data-wow-iteration="1" data-wow-delay="0.6s">
+            <div class="display-result">
+                <div class="input">0</div>
+            </div>
+
+            <div class="flex-row">
+                <button class="value">7</button>
+                <button class="value">8</button>
+                <button class="value">9</button>
+                <button class="value">X</button>
+            </div>
+
+            <div class="flex-row">
+                <button class="value">4</button>
+                <button class="value">5</button>
+                <button class="value">6</button>
+                <button class="value">-</button>
+            </div>
+
+            <div class="flex-row">
+                <button class="value">1</button>
+                <button class="value">2</button>
+                <button class="value">3</button>
+                <button class="value">+</button>
+            </div>
+
+            <div class="flex-row">
+                <button class="value">0</button>
+                <button class="value">.</button>
+                <button class="value">/</button>
+                <button class="value">%</button>
+            </div>
+            <div class="flex-row">
+                <button class="value">√x</button>
+                <button class="value">x²</button>
+                <button class="value">x³</button>
+                <button class="value">!</button>
+            </div>
+            <div class="flex-row">
+                <button class="value">sin</button>
+                <button class="value">cos</button>
+                <button class="value">tan</button>
+                <button class="value">log</button>
+            </div>
+                
+            <div class="flex-row">
+                <button class="value clear">AC</button>
+                <button class="value enter">Enter</button>
+            </div>
+
+        </div>
+    </div>    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+
+        new WOW().init();
+        };
+    </script>    
+
+
+</body>
+</html>
