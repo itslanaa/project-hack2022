@@ -1,0 +1,84 @@
+body{
+    background-color: #665558;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.outer-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 650px;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background-color: grey;
+    box-shadow: 0 6px 22px #000;
+    border-radius: 20px;
+
+
+}
+
+.display-result{
+    background-color: #fefefe;
+    width: 100%;
+    border: 5px solid #414553;
+    height: 100px;
+    display: flex;
+    align-items:  flex-end;
+    justify-content: center;
+}
+
+.input{
+    text-align: right;
+    overflow: hidden;
+    width: 80%;
+    height: 70px;
+    font-size: 2rem;
+}
+
+.value{
+    color: #41403E;
+    font-size: 2rem;
+    width:50px;
+    height: 50px;
+    flex:1;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.enter{
+    background: lavender;
+    border-radius: 10px;
+}
+
+.clear{
+    background: rgb(234, 46, 46);
+    color:white;
+    border-radius: 10px;
+}
+.clear:hover{
+    background: black;
+    color:white;
+}
+.enter:hover{
+    background: rgba(240, 104, 0, 0.35);
+    color:wheat;
+}
+
