@@ -21,3 +21,4 @@
 - [Aditi Tripathi](https://github.com/AditiiTripathii)
 - [Febri Tahta](https://github.com/FebriTahta)
 - [Mohit Saini](https://github.com/Mohitsaini2028/)
+- [Gabriel França](https://github.com/staiton)
