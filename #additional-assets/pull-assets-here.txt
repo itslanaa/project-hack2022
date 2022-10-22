@@ -1,0 +1,2 @@
+hacktoberfest-2022 collaboration projects
+-assets directory
