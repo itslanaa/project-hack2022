@@ -23,3 +23,4 @@
 - [Mohit Saini](https://github.com/Mohitsaini2028/)
 - [Gabriel França](https://github.com/staiton)
 - [Adel Lathifa](https://github.com/adellathifa)
+- [Chika Dwi Tami](https://github.com/chikzchan)
