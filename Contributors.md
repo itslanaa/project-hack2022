@@ -24,3 +24,4 @@
 - [Gabriel França](https://github.com/staiton)
 - [Adel Lathifa](https://github.com/adellathifa)
 - [Chika Dwi Tami](https://github.com/chikzchan)
+- [Intan Putri](https://github.com/intanptri)
