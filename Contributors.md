@@ -28,3 +28,4 @@
 - [Desvita AR](https://github.com/desvitaAR)
 - [its araa](https://github.com/itsraa-sals)
 - [Fina Alfiani](https://github.com/finalfiani)
+- [Destari Amelia](https://github.com/destariamelia)
