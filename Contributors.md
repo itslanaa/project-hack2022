@@ -30,3 +30,4 @@
 - [Fina Alfiani](https://github.com/finalfiani)
 - [Destari Amelia](https://github.com/destariamelia)
 - [Heinna Maizena](https://github.com/heinnamaizenna)
+- [Noor Ariqah](https://github.com/ariqahdev)
