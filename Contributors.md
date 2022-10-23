@@ -29,3 +29,4 @@
 - [its araa](https://github.com/itsraa-sals)
 - [Fina Alfiani](https://github.com/finalfiani)
 - [Destari Amelia](https://github.com/destariamelia)
+- [Heinna Maizena](https://github.com/heinnamaizenna)
