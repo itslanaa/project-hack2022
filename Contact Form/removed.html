@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="navButton">DropDown</button>
+    <div class="hea">
+        <h2>hoihoihi</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <!-- <li>Item 5</li> -->
+            <li class="contact">Contact us</li>
+        </ul>
+    </div>
+</body>
+<script>
+    
+    document.querySelector(".navButton").addEventListener("click",function()
+            {
+                 x = document.querySelector('.navbar');
+                 y=document.querySelector('.hea')
+      if (x.style.display === 'none') {
+        
+        x.style.display = 'block';
+        y.style.display='none';
+      } else {
+       
+        x.style.display = 'none';
+        y.style.display='block'
+      }
+            }
+    )
+    document.querySelector(".contact").addEventListener("click",function()
+            {
+                 x = document.querySelector('.container');
+               //  y=document.querySelector('.hea')
+      if (x.style.display === 'none') {
+        
+        x.style.display = 'block';
+       // y.style.display='none';
+      } else {
+        
+        x.style.display = 'none';
+        //y.style.display='block'
+      }
+            }
+    )
+    </script>
+</html>

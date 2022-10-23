@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:ital@1&display=swap');
+
+body
+{
+    background-color: rgba(222, 222, 222, 0.799);
+
+}
+
+
+.navbar
+{
+    margin: 2em 20%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+}
+li
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+h1
+{
+    text-align: center;
+}
+.container
+{
+    background-color: whitesmoke;
+    margin: 10em 10% ;
+    margin-top: 12px;
+    padding: 2em 1.5em;
+    
+    align-items: center;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    font-family: Lora;
+    font-size: 2rem;
+}
+h4
+{
+    font-size: x-large;
+    font-family: Dancing Script;
+    
+}
+input
+{
+
+margin-left: 1.2em;
+height: 2.5em;
+}
+.gen input
+{
+   width: 10%;
+height: 1em;
+}
+form button
+{
+    font-family:Dancing Script ;
+    justify-self:  center;
+    width: 3.2em;
+    
+    align-self: center;
+    font-size: x-large;
+    display: block;
+}
+
+@media screen and (max-width: 520px) {
+
+button
+{
+    display:block;
+    margin: 2em 5em;
+}
+.navbar
+{
+    display:none;
+}
+ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+}
+li
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+form button{
+        font-family:Dancing Script ;
+        justify-self:  center;
+        
+        align-self: center;
+        font-size:large;
+        display: block;
+}
+h4{
+    font-size: large;
+    font-family: Dancing Script;
+}
+h2{
+        text-align: center;
+        font-family: Lora;
+        font-size: 1.5rem;
+}
+}
