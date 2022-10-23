@@ -32,4 +32,5 @@
 - [Heinna Maizena](https://github.com/heinnamaizenna)
 - [Noor Ariqah](https://github.com/ariqahdev)
 - [Gita AN](https://github.com/gitaaAN)
+- [Abhijith KR](https://github.com/abhi7745)
 - [jalijalll](https://github.com/jalijalll)
