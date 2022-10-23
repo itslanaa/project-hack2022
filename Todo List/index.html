@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h3 id="edit-mode-text">You are in Edit Mode!</h3>
+    <div class="head-section">
+      <div class="task-input">
+        <img src="bars-icon.svg" alt="icon">
+        <input id="todo-input" type="text" placeholder="Add a new task">
+
+      </div>
+      <div id="edit-btns">
+        <button class="btn update-btn">Update</button>
+        <button class="btn cancel-btn">Cancel</button>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="filters">
+        <span class="active" id="all">All</span>
+        <span id="pending">Pending</span>
+        <span id="completed">Completed</span>
+      </div>
+      <button class="btn clear-btn">Clear All</button>
+    </div>
+    <ul class="task-box">
+    </ul>
+  </div>
+  <footer>UI Credit: CodingNepal</footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

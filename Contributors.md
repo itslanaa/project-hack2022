@@ -11,6 +11,7 @@
 - [Aditya Singh](https://github.com/ItzMeAditya)
 - [Opit Media](https://github.com/opitmedia)
 - [rizki5411](https://github.com/rizki5411)
+- [Adaeze Ndupu](https://github.com/vermilion4)
 - [siakmal](https://github.com/siakmal)
 - [Aniket](https://github.com/aniket-surjey)
 - [itslana0x](https://github.com/itslana0x)
