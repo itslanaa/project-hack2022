@@ -27,3 +27,4 @@
 - [Intan Putri](https://github.com/intanptri)
 - [Desvita AR](https://github.com/desvitaAR)
 - [its araa](https://github.com/itsraa-sals)
+- [Fina Alfiani](https://github.com/finalfiani)
